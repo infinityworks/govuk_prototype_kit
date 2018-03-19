@@ -67,12 +67,12 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/" id="proposition-name">NHS Design Library</a>
 
               <!--
+              <a href="/" id="proposition-name">NHS Design Library</a>
               <ul id="proposition-links">
-                <li><a href="/">Overview</a></li>
-                <li><a href="/toolkit.html" class="active">Toolkit</a></li>
+                <li><a href="/" class="active">Overview</a></li>
+                <li><a href="/toolkit.html">Toolkit</a></li>
               </ul>
               -->
 
@@ -89,324 +89,326 @@
 
     <main id="content" role="main">
 
-          <h1 class="heading-xlarge">
-            Toolkit
-          </h1><script>console.log("v6.3.0");</script>
+        <p><span style="font-size:12px;">&#9664;</span> <a class="back-to-previous" href="/"> Back <span class="visuallyhidden"> to the previous question</span></a></p>
 
-          <p>Use the <a href="https://govuk-elements.herokuapp.com/" target="_blank">Gov.uk page elements</a> to create pages.</p>
-          <p>NHS specific components</p>
+        <h1 class="heading-xlarge">
+          NHS.UK Elements
+        </h1>
+        <script>console.log("v6.3.0");</script>
 
-          <!-- ################################################################################ -->
+        <p>These elements have been taken from the NHS-Frontend-Toolkit and the Gov.uk websites.</p>
 
-          <h2 class="heading-medium">Local header</h2>
+        <!-- ################################################################################ -->
 
-          <div class="local-header">
-            <h2 class="local-header__title">Local header</h2>
-            <p class="local-header__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus lacus et sagittis condimentum. Vivamus quis sollicitudin orci, a pulvinar ante.</p>
+        <h2 class="heading-medium">Local header</h2>
+
+        <div class="local-header">
+          <h2 class="local-header__title">Local header</h2>
+          <p class="local-header__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus lacus et sagittis condimentum. Vivamus quis sollicitudin orci, a pulvinar ante.</p>
+        </div>
+
+        <pre>
+          <code class="language-markup">
+            &lt;div class="local-header"&gt;
+              &lt;h2 class="local-header__title"&gt;Local header&lt;/h2&gt;
+              &lt;p class="local-header__para"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus lacus et sagittis condimentum. Vivamus quis sollicitudin orci, a pulvinar ante.&lt;/p&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- ################################################################################ -->
+
+
+        <h2 class="heading-medium">Tabs</h2>
+
+        <aside class="part-navigation-container" role="complementary">
+          <nav role="navigation" class="app-c-contents-list" data-module="track-click" aria-label="Pages in this guide">
+            <h2>Contents</h2>
+            <ol class="app-c-contents-list__list">
+              <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed app-c-contents-list__list-item--active" aria-current="true">Overview</li>
+              <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+                <a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="/carers-credit/what-youll-get" data-track-options="{&quot;dimension29&quot;:&quot;What you'll get&quot;}" href="/carers-credit/what-youll-get">What you'll get</a>
+              </li>
+              <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed ">
+                <a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="/carers-credit/eligibility" data-track-options="{&quot;dimension29&quot;:&quot;Eligibility&quot;}" href="/carers-credit/eligibility">Eligibility</a>
+              </li>
+              <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed ">
+                <a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="/carers-credit/how-to-claim" data-track-options="{&quot;dimension29&quot;:&quot;How to claim&quot;}" href="/carers-credit/how-to-claim">How to claim</a>
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+
+        <pre>
+          <code class="language-markup">
+            &lt;aside class="part-navigation-container" role="complementary"&gt;
+              &lt;nav role="navigation" class="app-c-contents-list" data-module="track-click" aria-label="Pages in this guide"&gt;
+                &lt;h2&gt;Contents&lt;/h2&gt;
+                &lt;ol class="app-c-contents-list__list"&gt;
+                  &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed app-c-contents-list__list-item--active" aria-current="true"&gt;Overview&lt;/li&gt;
+                  &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed"&gt;
+                    &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="/carers-credit/what-youll-get" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;What you'll get&amp;quot;}" href="/carers-credit/what-youll-get"&gt;What you'll get&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
+                    &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="/carers-credit/eligibility" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;Eligibility&amp;quot;}" href="/carers-credit/eligibility"&gt;Eligibility&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
+                    &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="/carers-credit/how-to-claim" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;How to claim&amp;quot;}" href="/carers-credit/how-to-claim"&gt;How to claim&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/nav&gt;
+            &lt;/aside&gt;
+          </code>
+        </pre>
+
+
+        <!-- ################################################################################ -->
+
+        <h2 class="heading-medium">Callout</h2>
+
+        <div class="callout">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.</p>
+        </div>
+
+        <div class="callout callout--info">
+          <h2 class="callout__title">Info</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+        <div class="callout callout--attention">
+          <h2 class="callout__title">Attention</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+        <div class="callout callout--warning">
+          <h2 class="callout__title">Warning</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+        <div class="callout callout--alert">
+          <h2 class="callout__title">Alert</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+        <div class="callout callout--severe">
+          <h2 class="callout__title">Severe</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+        <div class="callout callout--error">
+          <h2 class="callout__title">Error</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+        <div class="callout callout--muted">
+          <h2 class="callout__title">Muted</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+        <div class="callout callout--compact">
+          <h2 class="callout__title">Compact</h2>
+          <p class="callout__para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+          </p>
+        </div>
+
+
+        <!-- ################################################################################ -->
+
+
+        <h2 class="heading-medium">Accordion with description</h2>
+        <p>Note: have put in a hack to clear the float on the button</p>
+
+
+        <div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
+          <div class="subsection-controls js-subsection-controls">
+            <button aria-expanded="false" aria-controls="subsection_content_0 subsection_content_1 subsection_content_2 subsection_content_3 ">Open all</button>
           </div>
-
-          <pre>
-            <code class="language-markup">
-              &lt;div class="local-header"&gt;
-                &lt;h2 class="local-header__title"&gt;Local header&lt;/h2&gt;
-                &lt;p class="local-header__para"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus lacus et sagittis condimentum. Vivamus quis sollicitudin orci, a pulvinar ante.&lt;/p&gt;
-              &lt;/div&gt;
-            </code>
-          </pre>
-
-          <!-- ################################################################################ -->
-
-
-          <h2 class="heading-medium">Tabs</h2>
-
-          <aside class="part-navigation-container" role="complementary">
-            <nav role="navigation" class="app-c-contents-list" data-module="track-click" aria-label="Pages in this guide">
-              <h2>Contents</h2>
-              <ol class="app-c-contents-list__list">
-                <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed app-c-contents-list__list-item--active" aria-current="true">Overview</li>
-                <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
-                  <a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="/carers-credit/what-youll-get" data-track-options="{&quot;dimension29&quot;:&quot;What you'll get&quot;}" href="/carers-credit/what-youll-get">What you'll get</a>
-                </li>
-                <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed ">
-                  <a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="/carers-credit/eligibility" data-track-options="{&quot;dimension29&quot;:&quot;Eligibility&quot;}" href="/carers-credit/eligibility">Eligibility</a>
-                </li>
-                <li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed ">
-                  <a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="/carers-credit/how-to-claim" data-track-options="{&quot;dimension29&quot;:&quot;How to claim&quot;}" href="/carers-credit/how-to-claim">How to claim</a>
-                </li>
-              </ol>
-            </nav>
-          </aside>
-
-
-          <pre>
-            <code class="language-markup">
-              &lt;aside class="part-navigation-container" role="complementary"&gt;
-                &lt;nav role="navigation" class="app-c-contents-list" data-module="track-click" aria-label="Pages in this guide"&gt;
-                  &lt;h2&gt;Contents&lt;/h2&gt;
-                  &lt;ol class="app-c-contents-list__list"&gt;
-                    &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed app-c-contents-list__list-item--active" aria-current="true"&gt;Overview&lt;/li&gt;
-                    &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed"&gt;
-                      &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="/carers-credit/what-youll-get" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;What you'll get&amp;quot;}" href="/carers-credit/what-youll-get"&gt;What you'll get&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
-                      &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="/carers-credit/eligibility" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;Eligibility&amp;quot;}" href="/carers-credit/eligibility"&gt;Eligibility&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
-                      &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="/carers-credit/how-to-claim" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;How to claim&amp;quot;}" href="/carers-credit/how-to-claim"&gt;How to claim&lt;/a&gt;
-                    &lt;/li&gt;
-                  &lt;/ol&gt;
-                &lt;/nav&gt;
-              &lt;/aside&gt;
-            </code>
-          </pre>
-
-
-          <!-- ################################################################################ -->
-
-          <h2 class="heading-medium">Callout</h2>
-
-          <div class="callout">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.</p>
-          </div>
-
-          <div class="callout callout--info">
-            <h2 class="callout__title">Info</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-          <div class="callout callout--attention">
-            <h2 class="callout__title">Attention</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-          <div class="callout callout--warning">
-            <h2 class="callout__title">Warning</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-          <div class="callout callout--alert">
-            <h2 class="callout__title">Alert</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-          <div class="callout callout--severe">
-            <h2 class="callout__title">Severe</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-          <div class="callout callout--error">
-            <h2 class="callout__title">Error</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-          <div class="callout callout--muted">
-            <h2 class="callout__title">Muted</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-          <div class="callout callout--compact">
-            <h2 class="callout__title">Compact</h2>
-            <p class="callout__para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
-            </p>
-          </div>
-
-
-          <!-- ################################################################################ -->
-
-
-          <h2 class="heading-medium">Accordion with description</h2>
-          <p>Note: have put in a hack to clear the float on the button</p>
-
-
-          <div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
-            <div class="subsection-controls js-subsection-controls">
-              <button aria-expanded="false" aria-controls="subsection_content_0 subsection_content_1 subsection_content_2 subsection_content_3 ">Open all</button>
-            </div>
-            <div class="subsection-wrapper" style="clear: both">
-                <div class="js-subsection subsection">
-                  <div class="subsection__header">
-                    <h2 class="subsection__title" id="designing-government-services">
-                      <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0">Designing government services</button>
-                    </h2>
-                    <p class="subsection__description">Introduction, scoping, naming and prototyping.</p>
-                  <span class="subsection__icon"></span>
-                </div>
-                <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
-                  <ul class="subsection__list">
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/introduction-designing-government-services">Designing government services: an introduction</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/scoping-your-service">Getting your service scope right</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/naming-your-service">Naming your service</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/making-prototypes">Making prototypes</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/making-your-service-look-like-govuk">Making your service look like GOV.UK</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/sending-emails-and-text-messages">Planning and writing text messages and emails</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/services-for-government-users">Services for government users</a>
-                      </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="subsection js-subsection">
-                <div class="subsection__header">
-                  <h2 class="subsection__title" id="working-with-frontend"><button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1">Working with frontend</button></h2>
-                  <p class="subsection__description">GOV.UK template, frontend toolkit, elements. </p>
-                <span class="subsection__icon"></span></div>
-                <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
-                  <ul class="subsection__list">
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/using-the-govuk-template-frontend-toolkit-and-elements">Using the GOV.UK template, frontend toolkit and elements</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/add-the-govuk-header-and-footer">Add the GOV.UK header and footer</a>
-                      </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="subsection js-subsection">
-                <div class="subsection__header">
-                  <h2 class="subsection__title" id="working-with-patterns"><button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_2">Working with patterns</button></h2>
-                  <p class="subsection__description">Using and adapting design patterns.</p>
-                <span class="subsection__icon"></span></div>
-                <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_2">
-                  <ul class="subsection__list">
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/using-adapting-and-creating-patterns">Using, adapting and creating patterns</a>
-                      </li>
-                  </ul>
-                </div>
-              </div>
+          <div class="subsection-wrapper" style="clear: both">
               <div class="js-subsection subsection">
                 <div class="subsection__header">
-                  <h2 class="subsection__title" id="find-patterns"><button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_3">Find patterns</button></h2>
-                  <p class="subsection__description">Solutions to common design problems.</p>
-                <span class="subsection__icon"></span></div>
-                <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_3">
-                  <ul class="subsection__list">
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/addresses">Addresses</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/alpha-and-beta-phase-banners">Alpha and beta phase banners</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/check-before-you-start">Check before you start</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/check-your-answers-pages">Check your answers pages</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/confirmation-pages">Confirmation pages</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/dates">Dates</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/email-addresses">Email addresses</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/email-confirmation-loops">Email confirmation loops</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/feedback-pages">Feedback pages</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/form-structure">Form structure</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/gender-or-sex">Gender or sex</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/help-text">Help text</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/knowledge-based-authentication">Knowledge-based authentication</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/names">Names</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/national-insurance-numbers">National Insurance numbers</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/passwords">Passwords</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/progress-indicators">Progress indicators</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/question-pages">Question pages</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/start-pages">Start pages</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/task-list-pages-beta">Task list pages (beta)</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/user-accounts">User accounts</a>
-                      </li>
-                      <li class="subsection__list-item">
-                        <a href="/service-manual/design/usernames">Usernames</a>
-                      </li>
-                  </ul>
-                </div>
+                  <h2 class="subsection__title" id="designing-government-services">
+                    <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0">Designing government services</button>
+                  </h2>
+                  <p class="subsection__description">Introduction, scoping, naming and prototyping.</p>
+                <span class="subsection__icon"></span>
+              </div>
+              <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/introduction-designing-government-services">Designing government services: an introduction</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/scoping-your-service">Getting your service scope right</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/naming-your-service">Naming your service</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/making-prototypes">Making prototypes</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/making-your-service-look-like-govuk">Making your service look like GOV.UK</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/sending-emails-and-text-messages">Planning and writing text messages and emails</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/services-for-government-users">Services for government users</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="working-with-frontend"><button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1">Working with frontend</button></h2>
+                <p class="subsection__description">GOV.UK template, frontend toolkit, elements. </p>
+              <span class="subsection__icon"></span></div>
+              <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/using-the-govuk-template-frontend-toolkit-and-elements">Using the GOV.UK template, frontend toolkit and elements</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/add-the-govuk-header-and-footer">Add the GOV.UK header and footer</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="working-with-patterns"><button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_2">Working with patterns</button></h2>
+                <p class="subsection__description">Using and adapting design patterns.</p>
+              <span class="subsection__icon"></span></div>
+              <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_2">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/using-adapting-and-creating-patterns">Using, adapting and creating patterns</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class="js-subsection subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="find-patterns"><button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_3">Find patterns</button></h2>
+                <p class="subsection__description">Solutions to common design problems.</p>
+              <span class="subsection__icon"></span></div>
+              <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_3">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/addresses">Addresses</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/alpha-and-beta-phase-banners">Alpha and beta phase banners</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/check-before-you-start">Check before you start</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/check-your-answers-pages">Check your answers pages</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/confirmation-pages">Confirmation pages</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/dates">Dates</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/email-addresses">Email addresses</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/email-confirmation-loops">Email confirmation loops</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/feedback-pages">Feedback pages</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/form-structure">Form structure</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/gender-or-sex">Gender or sex</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/help-text">Help text</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/knowledge-based-authentication">Knowledge-based authentication</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/names">Names</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/national-insurance-numbers">National Insurance numbers</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/passwords">Passwords</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/progress-indicators">Progress indicators</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/question-pages">Question pages</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/start-pages">Start pages</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/task-list-pages-beta">Task list pages (beta)</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/user-accounts">User accounts</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/design/usernames">Usernames</a>
+                    </li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
 
 
 
-          <pre>
-            <code class="language-markup">
-              &lt;div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions"&gt;
-                &lt;div class="subsection-controls js-subsection-controls"&gt;
-                  &lt;button aria-expanded="false" aria-controls="subsection_content_0 subsection_content_1 subsection_content_2 subsection_content_3 "&gt;Open all&lt;/button&gt;
-                &lt;/div&gt;
-                &lt;div class="subsection-wrapper" style="clear: both"&gt;
-                  &lt;div class="js-subsection subsection"&gt;
-                    &lt;div class="subsection__header"&gt;
-                      &lt;h2 class="subsection__title" id="find-patterns"&gt;&lt;button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_3"&gt;Title&lt;/button&gt;&lt;/h2&gt;
-                      &lt;p class="subsection__description"&gt;Sub title&lt;/p&gt;
-                      &lt;span class="subsection__icon"&gt;&lt;/span&gt;
-                    &lt;/div&gt;
-                    &lt;div class="subsection__content js-subsection-content js-hidden" id="subsection_content_3"&gt;
-                      CONTENT
-                    &lt;/div&gt;
+        <pre>
+          <code class="language-markup">
+            &lt;div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions"&gt;
+              &lt;div class="subsection-controls js-subsection-controls"&gt;
+                &lt;button aria-expanded="false" aria-controls="subsection_content_0 subsection_content_1 subsection_content_2 subsection_content_3 "&gt;Open all&lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="subsection-wrapper" style="clear: both"&gt;
+                &lt;div class="js-subsection subsection"&gt;
+                  &lt;div class="subsection__header"&gt;
+                    &lt;h2 class="subsection__title" id="find-patterns"&gt;&lt;button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_3"&gt;Title&lt;/button&gt;&lt;/h2&gt;
+                    &lt;p class="subsection__description"&gt;Sub title&lt;/p&gt;
+                    &lt;span class="subsection__icon"&gt;&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="subsection__content js-subsection-content js-hidden" id="subsection_content_3"&gt;
+                    CONTENT
                   &lt;/div&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
-            </code>
-          </pre>
+            &lt;/div&gt;
+          </code>
+        </pre>
 
 
 
