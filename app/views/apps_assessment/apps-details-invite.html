@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Assessment</title>
+    <title>NHS Apps Assessment / Apps / Details</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -72,10 +72,9 @@
               <a href="/apps_assessment" id="proposition-name">Apps Assessment</a>
 
               <ul id="proposition-links">
-                <li><a href="/apps_assessment/home.html">Home</a></li>
-                <li><a href="/apps_assessment/login.html">Login</a></li>
-                <li><a href="/apps_assessment/signup.html">Sign Up</a></li>
-                <!-- <li><a href="/apps_assessment/reset-password.html" class="active">Reset Password</a></li> -->
+                <li><a href="/apps_assessment/apps.html" class="active">Apps</a></li>
+                <li><a href="/apps_assessment/profile.html">Profile</a></li>
+                <li><a href="/apps_assessment/logout.html">Logout</a></li>
               </ul>
 
             </nav>
@@ -91,22 +90,33 @@
 
       <div class="breadcrumbs">
         <ol>
-          <li><a href="/apps_assessment/login.html">Login</a></li>
-          <li aria-current="page">Reset password</li>
+          <li><a href="/apps_assessment/apps.html">Apps</a></li>
+          <li><a href="/apps_assessment/apps-details.html">Pinpoint Tech</a></li>
+          <li aria-current="page">Invite</li>
         </ol>
       </div>
 
-      <form action="home.html">
-        <h2 class="heading-large">Reset password</h2>
-        <p>
-          <label class="form-label" for="email-f1">E-mail Address</label>
-          <input class="form-control" id="email-f1" type="text" name="email-f1">
-        </p>
-        <p>
-          <input class="button" role="button" type="submit" value="Reset Password">
-        </p>
-      </form>
 
+      <h2 class="heading-large">Invite a user</h2>
+
+      <p>
+        <label class="form-label" for="f-email">Email Address</label>
+        <input class="form-control" id="f-email" name="f-emails" type="text">
+      </p>
+      <p>
+
+      <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radio-group" value="Read Access">
+        <label for="radio-1">Read Access</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="Write Access">
+        <label for="radio-2">Write Access</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-3" type="radio" name="radio-group" value="Admin">
+        <label for="radio-3">Admin</label>
+      </div>
 
     </main>
 

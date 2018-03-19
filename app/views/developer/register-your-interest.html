@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Assessment</title>
+    <title>NHS Developer / Home</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -69,14 +69,16 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/apps_assessment" id="proposition-name">Apps Assessment</a>
+              <a href="/developer" id="proposition-name">NHS Developer</a>
 
+              <!--
               <ul id="proposition-links">
-                <li><a href="/apps_assessment/home.html">Home</a></li>
+                <li><a href="/apps_assessment/home.html" class="active">Home</a></li>
                 <li><a href="/apps_assessment/login.html">Login</a></li>
                 <li><a href="/apps_assessment/signup.html">Sign Up</a></li>
-                <!-- <li><a href="/apps_assessment/reset-password.html" class="active">Reset Password</a></li> -->
+                <li><a href="/apps_assessment/reset-password.html">Reset Password</a></li>
               </ul>
+              -->
 
             </nav>
           </div>
@@ -91,24 +93,92 @@
 
       <div class="breadcrumbs">
         <ol>
-          <li><a href="/apps_assessment/login.html">Login</a></li>
-          <li aria-current="page">Reset password</li>
+          <li><a href="home.html">Home</a></li>
+          <li aria-current="page">Register your interest</li>
         </ol>
       </div>
 
-      <form action="home.html">
-        <h2 class="heading-large">Reset password</h2>
-        <p>
-          <label class="form-label" for="email-f1">E-mail Address</label>
-          <input class="form-control" id="email-f1" type="text" name="email-f1">
-        </p>
-        <p>
-          <input class="button" role="button" type="submit" value="Reset Password">
-        </p>
-      </form>
+      <div class="grid-row">
 
+        <div class="column-two-thirds">
+          <h1 class="heading-large">Register Your Interest</h1>
+          <p>If you have an existing app currently in public use and you feel that it is ready to pass through the <a href="daq-read-only.html">Digital Assessment Questions</a> then please <a href="submit-your-app.html">Submit your app</a> to begin the process; otherwise complete the form below.</p>
+
+
+          <div class="form-group">
+            <label class="form-label" for="full-name-f1"><span class="heading-small">First Name *</span></label>
+            <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="surname-f1"><span class="heading-small">Surname *</span></label>
+            <input class="form-control" id="surname-f1" type="text" name="surname-f1">
+          </div>
+
+          <div class="form-group">
+            <p class="heading-small">Organisation or Member of Public *</p>
+            <p style="clear:left" class="font-xsmall">Are you making a contact on behalf of an organisation? Or are you doing so as a member of the public?</p>
+            <div style="padding: 12px 0">
+              <div class="multiple-choice">
+                <input id="radio-1" type="radio" name="radio-group" value="Organisation">
+                <label for="radio-1">Organisation</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-2" type="radio" name="radio-group" value="Member of Public">
+                <label for="radio-2">Member of Public</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email-f1"><span class="heading-small">Email *</span></label>
+            <input class="form-control" id="email-f1" type="text" name="email-f1">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone-f1"><span class="heading-small">Phone Number *</span></label>
+            <input class="form-control" id="phone-f1" type="text" name="phone-f1">
+          </div>
+
+
+          <div class="form-group">
+            <label class="form-label" for="select-box"><span class="heading-small">Reason *</span></label>
+            <select class="form-control" id="select-box" name="select-box">
+              <option value="Please Select" selected="selected">Please Select</option>
+              <option value="General Interest in The Digital Tools Library">General Interest in The Digital Tools Library</option>
+              <option value="Connect an existing App to The Health Service">Connect an existing App to The Health Service</option>
+              <option value="Join a Community for Health">Join a Community for Health</option>
+              <option value="Events, Developer Hack Days">Events, Developer Hack Days</option>
+              <option value="Media Enquiries">Media Enquiries</option>
+            </select>
+          </div>
+
+          <p><input type="submit" class="button" value="Register"></p>
+
+
+
+
+
+
+        </div>
+
+        <div class="column-one-third">
+          <aside class="govuk-related-items" data-module="track-click" role="complementary">
+            <h3 class="heading-medium">Useful links</h3>
+            <ul class="list">
+              <li><a href="../apps_library/index.html" class="">NHS Apps Library</a></li>
+              <li><a href="the-application-process.html" class="">Assessment Process Explained</a></li>
+              <li><a href="faqs.html" class="">Frequently Asked Questions</a></li>
+              <li><a href="register-your-interest.html" class="">Register Your Interest</a></li>
+            </ul>
+          </aside>
+        </div>
+
+      </div>
 
     </main>
+
 
 
 

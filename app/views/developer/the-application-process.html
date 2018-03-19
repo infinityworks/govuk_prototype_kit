@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Assessment</title>
+    <title>NHS Developer / The application process</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -69,14 +69,16 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/apps_assessment" id="proposition-name">Apps Assessment</a>
+              <a href="/developer" id="proposition-name">NHS Developer</a>
 
+              <!--
               <ul id="proposition-links">
-                <li><a href="/apps_assessment/home.html">Home</a></li>
+                <li><a href="/apps_assessment/home.html" class="active">Home</a></li>
                 <li><a href="/apps_assessment/login.html">Login</a></li>
                 <li><a href="/apps_assessment/signup.html">Sign Up</a></li>
-                <!-- <li><a href="/apps_assessment/reset-password.html" class="active">Reset Password</a></li> -->
+                <li><a href="/apps_assessment/reset-password.html">Reset Password</a></li>
               </ul>
+              -->
 
             </nav>
           </div>
@@ -91,24 +93,36 @@
 
       <div class="breadcrumbs">
         <ol>
-          <li><a href="/apps_assessment/login.html">Login</a></li>
-          <li aria-current="page">Reset password</li>
+          <li><a href="home.html">Home</a></li>
+          <li aria-current="page">Digital Assessment Questionnaire - Beta</li>
         </ol>
       </div>
 
-      <form action="home.html">
-        <h2 class="heading-large">Reset password</h2>
-        <p>
-          <label class="form-label" for="email-f1">E-mail Address</label>
-          <input class="form-control" id="email-f1" type="text" name="email-f1">
-        </p>
-        <p>
-          <input class="button" role="button" type="submit" value="Reset Password">
-        </p>
-      </form>
+      <div class="grid-row">
 
+        <div class="column-two-thirds">
+          <h1 class="heading-large">The Assessment Process Explained</h1>
+          <p class="lede">After submitting your app for assessment it will go through a pre-assessment process at NHS Digital to determine if your app is suitable. Upon qualification, you will be invited to take part in the self-assessment by answering the digital assessment questions.</p>
+          <p>Your answers will be reviewed by our subject matter experts; these are specialists in various fields (regulatory, clinical safety, data security etc.). Assessment timescales may vary depending on how the app performs against the assessment standards.</p>
+          <p>When an app has successfully satisfied the assessment criteria it will go through a process that will lead to publication on the NHS Apps Library. To get an indication of the criteria used, you can view the <a href="daq-read-only.html">Digital Assessment Questionnaire - Beta</a>.</p>
+        </div>
+
+        <div class="column-one-third">
+          <aside class="govuk-related-items" data-module="track-click" role="complementary">
+            <h3 class="heading-medium">Useful links</h3>
+            <ul class="list">
+              <li><a href="../apps_library/index.html" class="">NHS Apps Library</a></li>
+              <li><a href="#" class="">Assessment Process Explained</a></li>
+              <li><a href="faqs.html" class="">Frequently Asked Questions</a></li>
+              <li><a href="register-your-interest.html" class="">Register Your Interest</a></li>
+            </ul>
+          </aside>
+        </div>
+
+      </div>
 
     </main>
+
 
 
 
