@@ -93,8 +93,20 @@
 
       <h1 class="heading-large">DAQ reviewer question states</h1>
 
+      <ul class="list list-bullet">
+        <li><a href="#view1-1">1.1 &nbsp; Standard view</a></li>
+        <li><a href="#view1-2">1.2 &nbsp; Approved question</a></li>
+        <li><a href="#view1-3">1.3 &nbsp; Rejected question</a></li>
+        <li><a href="#view1-4">1.4 &nbsp; Reject question</a></li>
+        <li><a href="#view1-5">1.5 &nbsp; Request information</a></li>
+        <li><a href="#view1-6">1.6 &nbsp; Select box</a></li>
+        <li><a href="#view1-7">1.7 &nbsp; Radio buttons</a></li>
+        <li><a href="#view1-8">1.8 &nbsp; Checkboxes</a></li>
+        <li><a href="#view1-9">1.9 &nbsp; Upload a file</a></li>
+        <li><a href="#view2-0">2.0 &nbsp; Example conversion thread</a></li>
+      </ul>
 
-      <div class="form-group">
+      <div class="form-group" id="view1-1">
         <label class="form-label" for="value-1-1"><span class="heading-medium">1.1 &nbsp; Standard view</span></label>
         <input class="form-control" id="value-1-1" type="text" name="value-1-1" value="Sample" disabled><br>
         <p class="form-buttons">
@@ -108,7 +120,7 @@
       <hr>
 
 
-      <div class="form-group form-group--approved">
+      <div class="form-group form-group--approved" id="view1-2">
         <label class="form-label" for="value-1-2"><span class="heading-medium">1.2 &nbsp; Approved question</span></label>
         <input class="form-control" id="value-1-2" type="text" name="value-1-2" value="Sample" disabled>
         <!-- <span class="form-side-note">Approved</span> -->
@@ -119,7 +131,7 @@
       <hr>
 
 
-      <div class="form-group form-group--rejected">
+      <div class="form-group form-group--rejected" id="view1-3">
         <label class="form-label" for="value-1-3"><span class="heading-medium">1.3 &nbsp; Rejected question</span></label>
         <input class="form-control" id="value-1-3" type="text" name="value-1-3" value="Sample" disabled>
         <p class="form-note">You <span class="red">rejected</span> this question &nbsp; <a href="#">Change</a></p>
@@ -133,7 +145,7 @@
       <hr>
 
 
-      <div class="form-group form-group--rejected">
+      <div class="form-group form-group--rejected" id="view1-4">
         <label class="form-label" for="value-1-4"><span class="heading-medium">1.4 &nbsp; Reject question</span></label>
         <input class="form-control" id="value-1-4" type="text" name="value-1-4" value="Sample" disabled>
         <p class="form-buttons">
@@ -152,7 +164,7 @@
       <hr>
 
 
-      <div class="form-group">
+      <div class="form-group" id="view1-5">
         <label class="form-label" for="value-1-5"><span class="heading-medium">1.5 &nbsp; Request information</span></label>
         <input class="form-control" id="value-1-5" type="text" name="value-1-5" value="Sample" disabled>
         <p class="form-buttons">
@@ -181,7 +193,7 @@
       <hr>
 
 
-      <div class="form-group">
+      <div class="form-group" id="view1-6">
         <label class="form-label" for="select-box"><span class="heading-medium">1.6 &nbsp; Select box</span></label>
         <select class="form-control" id="select-box" name="select-box">
           <option>GOV.UK elements option 1</option>
@@ -199,7 +211,7 @@
       <hr>
 
 
-      <div class="form-group">
+      <div class="form-group" id="view1-7">
         <label class="form-label" for="select-box"><span class="heading-medium">1.7 &nbsp; Radio buttons</span></label>
          <fieldset>
           <div class="multiple-choice">
@@ -227,7 +239,7 @@
       <hr>
 
 
-      <div class="form-group">
+      <div class="form-group" id="view1-8">
         <label class="form-label" for="select-box"><span class="heading-medium">1.8 &nbsp; Checkboxes</span></label>
          <fieldset>
           <div class="multiple-choice">
@@ -255,7 +267,7 @@
       <hr>
 
 
-      <div class="form-group">
+      <div class="form-group" id="view1-9">
         <label class="form-label" for="select-box"><span class="heading-medium">1.9 &nbsp; Upload a file</span></label>
          <fieldset>
            <label class="form-label" for="file-input">
@@ -268,6 +280,36 @@
           <a href="#" class="button button--small button--chevron button--red">Reject</a>
           <a href="#" class="button button--small button--chevron button--grey">Request documents</a>
         </p>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view2-0">
+        <label class="form-label" for="value-1-1"><span class="heading-medium">2.0 &nbsp; Example conversion thread</span></label>
+        <input class="form-control" id="value-1-1" type="text" name="value-1-1" value="Sample" disabled><br>
+        <p class="form-buttons">
+          <a href="#" class="button button--small">Approve</a>
+          <a href="#" class="button button--small button--chevron button--red">Reject</a>
+          <a href="#" class="button button--small button--chevron button--grey">Request documents</a>
+        </p>
+      </div>
+      <div class="panel panel--red-border font-xsmall">
+        <p><strong class="red heading-small">Rejected</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        2 hours ago - <a href="#">David Sayce</a></p>
+      </div>
+      <div class="panel panel--green-border font-xsmall">
+        <p><span class="green heading-small">Approved</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        2 hours ago - <a href="#">David Sayce</a></p>
+      </div>
+      <div class="panel font-xsmall">
+        <p><span class="heading-small">Sent document</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        2 hours ago - <a href="#">Fred Jones (Pinpoint Tech)</a></p>
+      </div>
+      <div class="panel font-xsmall">
+        <p><span class="heading-small">Request documents</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        2 hours ago - <a href="#">David Sayce</a></p>
       </div>
 
 
@@ -298,41 +340,7 @@
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
-    <!-- Pie charts -->
-    <link href="https://rawgit.com/pguso/jquery-plugin-circliful/1.0.2/css/jquery.circliful.css" media="screen" rel="stylesheet" />
-    <script src="https://rawgit.com/pguso/jquery-plugin-circliful/1.0.2/js/jquery.circliful.js"></script>
 
-    <script>
-
-    $( document ).ready(function() { // 6,32 5,38 2,34
-        $("#pie").circliful({
-            animation: 1,
-            animationStep: 5,
-            foregroundBorderWidth: 10,
-            backgroundBorderWidth: 10,
-            percent: 38,
-            textBelow: true,
-            //textSize: 28,
-            backgroundColor: '#DBDBDB',
-            foregroundColor: '#005BBB',
-            textColor: '#FFFFFF',
-            multiPercentage: 1
-        });
-        $("#pie2").circliful({
-            animation: 1,
-            animationStep: 5,
-            foregroundBorderWidth: 10,
-            backgroundBorderWidth: 10,
-            percent: 38,
-            textBelow: true,
-            //textSize: 28,
-            backgroundColor: '#DBDBDB',
-            foregroundColor: '#005BBB',
-            textColor: '#FFFFFF',
-            multiPercentage: 1
-        });
-      });
-    </script>
 
 </body>
 </html>

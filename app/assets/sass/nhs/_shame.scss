@@ -145,9 +145,15 @@
   background-color: #FFF5F5;
   border-color: $nhs-red;
 }
+.panel--red-border {
+  border-color: $nhs-red;
+}
 
 .panel--green {
   background-color: #EDFFF2;
+  border-color: $nhs-green;
+}
+.panel--green-border {
   border-color: $nhs-green;
 }
 
