@@ -96,39 +96,6 @@
       </div>
 
 
-      <h1 class="heading-large">DAQ reviewer headers</h1>
-
-
-      <h3>Section not submitted yet</h3>
-      <div class="panel panel--header">
-        <div class="panel--header__side">
-          <div class="pie" id="pie"></div>
-          <p>25% complete</p>
-        </div>
-        <h2 class="panel--header__title">Section not submitted yet</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie nisl in neque semper tempor. Curabitur condimentum a mauris sit amet fringilla. </p>
-      </div>
-
-
-      <h3>Section not submitted yet</h3>
-      <div class="panel panel--header">
-        <div class="panel--header__side">
-          <div class="pie" id="pie2"></div>
-          <p>25% complete</p>
-        </div>
-        <h2 class="panel--header__title">Review section</h2>
-        <p>Put copy in here to explain how the review process works</p>
-
-        <div class="multiple-choice">
-          <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
-          <label for="waste-type-1">Approve this section</label>
-        </div>
-        <div style="clear: left">
-          <a href="#" class="button">Save</a>
-        </div>
-      </div>
-
-
       <h1 class="heading-large">DAQ reviewer question states</h1>
 
 
@@ -165,7 +132,7 @@
 
 
       <div class="form-group">
-        <label class="form-label" for="value-1-12"><span class="heading-medium">1.1 &nbsp; Checkbox button option</span></label>
+        <label class="form-label" for="value-1-12"><span class="heading-medium">1.2 &nbsp; Checkbox button option</span></label>
         <input class="form-control" id="value-1-12" type="text" name="value-1-12" value="Sample" disabled>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="multiple-choice" data-target="approve2">
@@ -192,6 +159,29 @@
         </fieldset>
       </div>
 
+
+      <hr>
+
+      <div class="form-group">
+        <label class="form-label" for="value-1-3"><span class="heading-medium">1.3 &nbsp; Button group option</span></label>
+        <p>Note: This isn't a standard GDS pattern</p>
+        <input class="form-control" id="value-1-3" type="text" name="value-1-3" value="Sample" disabled>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="stv-radio-buttons-wrapper">
+          	<input type="radio" class="stv-radio-button" name="radioButtonTest" value="1" id="button1" checked />
+          	<label for="button1">Approve</label>
+          	<input type="radio" class="stv-radio-button" name="radioButtonTest" value="2" id="button2" />
+          	<label for="button2">Approve with recommendations</label>
+          	<input type="radio" class="stv-radio-button" name="radioButtonTest" value="3" id="button3" />
+          	<label for="button3">Reject</label>
+          </div>
+          <a href="#" class="button button--chevron button--light-grey">Add note</a>
+        </fieldset>
+
+      </div>
+
+      <hr>
+      <p>Please note: These patterns would require a save button at the bottom of the page</p>
 
       <input type="submit" class="button" value="Save">
 
@@ -224,79 +214,7 @@
     <link href="https://rawgit.com/pguso/jquery-plugin-circliful/1.0.2/css/jquery.circliful.css" media="screen" rel="stylesheet" />
     <script src="https://rawgit.com/pguso/jquery-plugin-circliful/1.0.2/js/jquery.circliful.js"></script>
 
-    <script>
 
-    $( document ).ready(function() { // 6,32 5,38 2,34
-        $("#pie").circliful({
-            animation: 1,
-            animationStep: 5,
-            foregroundBorderWidth: 10,
-            backgroundBorderWidth: 10,
-            percent: 38,
-            textBelow: true,
-            //textSize: 28,
-            backgroundColor: '#DBDBDB',
-            foregroundColor: '#005BBB',
-            textColor: '#FFFFFF',
-            multiPercentage: 1
-        });
-        $("#pie2").circliful({
-            animation: 1,
-            animationStep: 5,
-            foregroundBorderWidth: 10,
-            backgroundBorderWidth: 10,
-            percent: 38,
-            textBelow: true,
-            //textSize: 28,
-            backgroundColor: '#DBDBDB',
-            foregroundColor: '#005BBB',
-            textColor: '#FFFFFF',
-            multiPercentage: 1
-        });
-
-        // hack the checkboxes to behave like radios
-        //status-approve2
-        //status-reject2
-        //status-approve-with-recommendations2
-
-        $("#status-approve2").change(function() {
-            if(this.checked) {
-                $('#status-reject2').prop('checked', false);
-                $('#status-approve-with-recommendations2').prop('checked', false);
-
-                $('#approve-with-recommendations2').addClass("js-hidden");
-                $('#reject2').addClass("js-hidden");
-            }
-        });
-
-        $("#status-reject2").change(function() {
-            if(this.checked) {
-                $('#status-approve2').prop('checked', false);
-                $('#status-approve-with-recommendations2').prop('checked', false);
-
-                $('#approve-with-recommendations2').addClass("js-hidden");
-
-            }
-        });
-
-        $("#status-approve-with-recommendations2").change(function() {
-            if(this.checked) {
-                $('#status-approve2').prop('checked', false);
-                $('#status-reject2').prop('checked', false);
-
-                //$('#approve-with-recommendations2').addClass("js-hidden");
-                $('#reject2').addClass("js-hidden");
-
-            }
-        });
-
-
-
-      });
-
-
-
-    </script>
 
 </body>
 </html>
