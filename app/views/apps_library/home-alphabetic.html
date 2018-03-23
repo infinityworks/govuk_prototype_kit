@@ -51,7 +51,7 @@
       <div class="header-wrapper">
         <div class="header-global">
           <div class="header-logo">
-            <a href="/" title="NHS" id="logo" class="content">
+            <a href="index.html" title="NHS" id="logo" class="content">
               <img src="/images/logotype-nhs-colour__reverse@2x.png" alt="">
             </a>
           </div>
@@ -63,12 +63,11 @@
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
               <a href="/apps_library/home" id="proposition-name">
-                Apps &amp; Wearables (Version 1)
+                NHS Apps Library
               </a>
 
               <ul id="proposition-links">
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/submit-my-app.html">Submit my app</a></li>
+                <li><a href="#">About us</a></li>
               </ul>
 
             </nav>
@@ -94,10 +93,10 @@
 
       <section class="search-banner" aria-label="Search form">
           <div class="search-banner__pad">
-              <h3 class="search-banner__headline">NHS Digital provides technology, information and services, which help the NHS deliver better care</h3>
+              <h3 class="search-banner__headline">Find digital tools to help you manage and improve your health</h3>
               <form role="search" method="get" action="/search" class="search-banner__form">
                   <div>
-                      <input type="text" name="query" id="query" class="search-banner__input" placeholder="What are you looking for today?" value="" title="Search for content on the website">
+                      <input type="text" name="query" id="query" class="search-banner__input" placeholder="Enter the name of the app you're looking for" value="" title="">
                   </div>
                   <div>
                       <button class="search-banner__button">Search</button>
@@ -106,20 +105,6 @@
           </div>
       </section>
 
-      <!--
-      <div class="local-header">
-        <h2 class="local-header__title">NHS Digital provides technology, information and services, which help the NHS deliver better care</h2>
-        <form role="search" method="get" action="/search" class="search-banner__form">
-          <div>
-            <label class="form-label" for="full-name-f1">Full name</label>
-            <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
-              </div>
-            <div>
-                <button class="search-banner__button">Search</button>
-            </div>
-        </form>
-      </div>
-      -->
 
       <div class="apps-grid">
         <div class="apps-grid__controller">
@@ -146,8 +131,8 @@
 
 
           <div class="apps-grid__title">
-            <p class="apps-grid__title__sortby">Sort by: <a href="home.html" class="apps-grid__title__sortby__link">Recently published</a> | <a href="home-alphabetic.html" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--selected">Alphabetic</a></p>
-            <h2 class="apps-grid__title__text">All 200 apps</h2>
+            <p class="apps-grid__title__sortby">Sort by: <a href="home.html" class="apps-grid__title__sortby__link">Recently published</a> | <a href="#" class="apps-grid__title__sortby__link--direction">Alphabetic</a></p>
+            <h2 class="apps-grid__title__text">All apps</h2>
           </div>
 
 
@@ -390,6 +375,15 @@
         $(".apps-grid__controller__list__item__link").removeClass("apps-grid__controller__list__item__link--selected");
         $( this ).addClass("apps-grid__controller__list__item__link--selected");
     });
+
+    // Fake alphabetic assend / decending
+    $( ".apps-grid__title__sortby__link--direction" ).click(function(e) {
+        $(this).toggleClass("apps-grid__title__sortby__link--direction--assending");
+        e.preventDefault();
+
+    });
+
+
 
 
 
