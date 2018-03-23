@@ -62,9 +62,14 @@
 
 }
 
-.apps-grid__controller__list__item__link {
+a.apps-grid__controller__list__item__link {
   display: inline-block;
   margin-bottom: $baseline-grid-unit;
+}
+a.apps-grid__controller__list__item__link--selected {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
 }
 
 .apps-grid__content {
