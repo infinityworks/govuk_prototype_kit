@@ -37,6 +37,14 @@
 
 .cardapp__top__subtitle {
   margin-top: 0;
+  font-size:14px;
+  font-weight: 600;
+  .cardapp__top__subtitle__icon {
+    position: relative;
+    top: 4px;
+    width: 20px;
+    margin-right: 2px;
+  }
 }
 .cardapp__content {
   min-height: 80px;
