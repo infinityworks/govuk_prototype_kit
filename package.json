@@ -1,5 +1,5 @@
 {
-  "name": "express-prototype",
+  "name": "nhsd-govuk-prototype-kit",
   "description": "GOVUK prototyping app in Express",
   "version": "6.3.0",
   "private": true,
