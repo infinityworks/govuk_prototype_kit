@@ -91,7 +91,6 @@
 
       <h1 class="heading-large">DAQ reviewer question states</h1>
 
-
       <div class="form-group">
         <label class="form-label" for="value-1-1"><span class="heading-medium">1.1 &nbsp; Radio button option</span></label>
         <input class="form-control" id="value-1-1" type="text" name="value-1-1" value="Sample" disabled>
@@ -107,14 +106,6 @@
           <div class="multiple-choice" data-target="reject">
             <input id="status-reject" type="radio" name="radio-status-group" value="No">
             <label for="status-reject">Reject</label>
-          </div>
-          <div class="panel panel-border-narrow js-hidden" id="approve-with-recommendations">
-            <label class="form-label" for="status-approve-with-recommendations-input">Approve with recommendations</label>
-            <input class="form-control" name="status-approve-with-recommendations-input" type="text" id="status-approve-with-recommendations-input">
-          </div>
-          <div class="panel panel-border-narrow js-hidden" id="reject">
-            <label class="form-label" for="contact-phone">Reason for rejection</label>
-            <input class="form-control" name="contact-phone" type="text" id="reject-input">
           </div>
           <a href="#" class="button button--chevron button--light-grey">Add note</a>
         </fieldset>
@@ -140,18 +131,9 @@
             <input id="status-reject2" type="checkbox" name="radio-status-group2" value="No">
             <label for="status-reject2">Reject</label>
           </div>
-          <div class="panel panel-border-narrow js-hidden" id="approve-with-recommendations2">
-            <label class="form-label" for="status-approve-with-recommendations-input2">Approve with recommendations</label>
-            <input class="form-control" name="status-approve-with-recommendations-input2" type="text" id="status-approve-with-recommendations-input2">
-          </div>
-          <div class="panel panel-border-narrow js-hidden" id="reject2">
-            <label class="form-label" for="contact-phone2">Reason for rejection</label>
-            <input class="form-control" name="contact-phone2" type="text" id="reject-input2">
-          </div>
           <a href="#" class="button button--chevron button--light-grey">Add note</a>
         </fieldset>
       </div>
-
 
       <hr>
 
@@ -161,22 +143,53 @@
         <input class="form-control" id="value-1-3" type="text" name="value-1-3" value="Sample" disabled>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="stv-radio-buttons-wrapper stv-radio-buttons-wrapper--small">
-          	<input type="radio" class="stv-radio-button" name="radioButtonTest" value="1" id="button1" />
+          	<input type="radio" class="stv-radio-button" name="radioButtonv2" value="1" id="button1" />
           	<label for="button1">Approve</label>
-          	<input type="radio" class="stv-radio-button" name="radioButtonTest" value="2" id="button2" />
+          	<input type="radio" class="stv-radio-button" name="radioButtonv2" value="2" id="button2" />
           	<label for="button2">Approve with recommendations</label>
-          	<input type="radio" class="stv-radio-button" name="radioButtonTest" value="3" id="button3" />
+          	<input type="radio" class="stv-radio-button" name="radioButtonv2" value="3" id="button3" />
           	<label for="button3">Reject</label>
           </div>
           <a href="#" class="button button--chevron button--light-grey">Add note</a>
           <a href="#" class="button button--light-grey">Clear answer</a>
         </fieldset>
-
       </div>
 
       <hr>
-      <p>Please note: These patterns would require a save button at the bottom of the page</p>
 
+      <form action="#">
+        <div class="form-group">
+          <label class="form-label" for="value-1-3"><span class="heading-medium">1.4 &nbsp; Button group option</span></label>
+          <p>Note: This isn't a standard GDS pattern</p>
+          <input class="form-control" id="value-1-3" type="text" name="value-1-3" value="Sample" disabled>
+          <fieldset class="inline" style="margin-top:12px;">
+            <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            	<input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup" value="1" id="button1b" />
+            	<label for="button1b">Approve</label>
+            	<input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup" value="2" id="button2b" />
+            	<label for="button2b">Approve with recommendations</label>
+            	<input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup" value="3" id="button3b" />
+            	<label for="button3b">Reject</label>
+            </div>
+            <a href="#" class="button button--chevron button--light-grey">Add note</a>
+
+            <div class="panel panel-border-narrow js-hidden" id="approve-with-recommendations2">
+              <label class="form-label" for="status-approve-with-recommendations-input2">Approve with recommendations</label>
+              <input class="form-control" name="status-approve-with-recommendations-input2" type="text" id="status-approve-with-recommendations-input2">
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="reject2">
+              <label class="form-label" for="contact-phone2">Reason for rejection</label>
+              <input class="form-control" name="contact-phone2" type="text" id="reject-input2">
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+
+      <hr>
+
+      <p>Please note: These patterns would require a save button at the bottom of the page</p>
       <input type="submit" class="button" value="Save">
 
     </main>
@@ -204,7 +217,26 @@
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
+    <script>
 
+      $('#button1b').attr('checked', true);
+
+      $('input[type=radio][name=radioButtonGroup]').change(function() {
+          if (this.value == '1') {
+              $('#approve-with-recommendations2').addClass("js-hidden");
+              $('#reject2').addClass("js-hidden");
+          }
+          else if (this.value == '2') {
+            $('#approve-with-recommendations2').removeClass("js-hidden");
+            $('#reject2').addClass("js-hidden");
+          }
+          else if (this.value == '3') {
+            $('#approve-with-recommendations2').addClass("js-hidden");
+            $('#reject2').removeClass("js-hidden");
+          }
+      });
+
+    </script>
 
 </body>
 </html>

@@ -13,8 +13,9 @@
 
 .stv-radio-button {
   position: absolute;
-  left: -9999em;
-  top: -9999em;
+  //left: -9999em;
+  //top: -9999em;
+  visibility: hidden;
 
   & + label {
     float: left;
@@ -24,20 +25,68 @@
     margin-right: -2px;
     color: #000;
     background-color: #FFF;
-
-    /*
-    &:first-of-type {
-      border-radius: .7em 0 0 .7em;
-    }
-
-    &:last-of-type {
-      border-radius: 0 .7em .7em 0;
-    }
-    */
   }
 
   &:checked + label {
     background-color: #000;
+    color: #FFF;
+  }
+}
+
+
+
+
+
+
+
+.v2-radio-buttons-wrapper {
+  clear: both;
+  display: inline-block;
+  margin-right: 10px;
+}
+.v2-radio-buttons-wrapper--small {
+  font-size: 16px;
+}
+
+.v2-radio-button {
+  position: absolute;
+  visibility: hidden;
+
+  & + label {
+    float: left;
+    padding: .5em 1em;
+    cursor: pointer;
+    //border: 2px solid #000;
+    margin-right: 4px;
+    color: #000;
+    //ackground-color: #FFF;
+  }
+
+  &:checked + label {
+    background-color: #000;
+    color: #FFF;
+  }
+}
+
+
+.radio-button--approve {
+  & + label {
+    border: 2px solid #00823b;
+    color: #00823b;
+  }
+  &:checked + label {
+    background-color: #00823b;
+    color: #FFF;
+  }
+}
+
+.radio-button--reject {
+  & + label {
+    border: 2px solid $nhs-red;
+    color: $nhs-red;
+  }
+  &:checked + label {
+    background-color: $nhs-red;
     color: #FFF;
   }
 }
