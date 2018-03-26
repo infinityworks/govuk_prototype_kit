@@ -71,22 +71,36 @@
 
 .radio-button--approve {
   & + label {
-    border: 2px solid #00823b;
+    border-left: 2px solid #00823b;
+    border-right: 2px solid #00823b;
+    border-bottom: 2px solid #00823b;
+    border-top: 2px solid #00823b;
     color: #00823b;
   }
   &:checked + label {
     background-color: #00823b;
+    border-left: 2px solid #00823b;
+    border-right: 2px solid #00823b;
+    border-bottom: 2px solid #00823b;
+    border-top: 2px solid #003718;
     color: #FFF;
   }
 }
 
 .radio-button--reject {
   & + label {
-    border: 2px solid $nhs-red;
+    border-left: 2px solid $nhs-red;
+    border-right: 2px solid $nhs-red;
+    border-bottom: 2px solid $nhs-red;
+    border-top: 2px solid $nhs-red;
     color: $nhs-red;
   }
   &:checked + label {
     background-color: $nhs-red;
+    border-left: 2px solid $nhs-red;
+    border-right: 2px solid $nhs-red;
+    border-bottom: 2px solid $nhs-red;
+    border-top: 2px solid #941208;
     color: #FFF;
   }
 }
