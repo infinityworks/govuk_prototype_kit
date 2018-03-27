@@ -15,7 +15,7 @@
     <!--[if gte IE 9]><!--><link href="/stylesheets/fonts.css?0.22.3" media="all" rel="stylesheet" /><!--<![endif]-->
     <!--[if lt IE 9]><script src="/javascripts/ie.js?0.22.3"></script><![endif]-->
 
-    <link rel="shortcut icon" href="/images/favicon.ico?0.22.3" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/nhs-icon.ico" type="image/x-icon" />
 
     <link rel="mask-icon" href="/images/gov.uk_logotype_crown.svg?0.22.3" color="#0b0c0c">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png?0.22.3">
@@ -102,9 +102,11 @@
         <li><a href="#view1-6">1.6 &nbsp; Select box</a></li>
         <li><a href="#view1-7">1.7 &nbsp; Radio buttons</a></li>
         <li><a href="#view1-8">1.8 &nbsp; Checkboxes</a></li>
-        <li><a href="#view1-9">1.9 &nbsp; Upload a file</a></li>
-        <li><a href="#view2-0">2.0 &nbsp; Example conversion thread</a></li>
-        <li><a href="#view2-1">2.1 &nbsp; Breakout content</a></li>
+        <li><a href="#view1-9">1.9 &nbsp; Textarea question</a></li>
+        <li><a href="#view2-0">2.0 &nbsp; Upload a file</a></li>
+        <li><a href="#view2-1">2.1 &nbsp; Example conversion thread</a></li>
+        <li><a href="#view2-2">2.2 &nbsp; Breakout content</a></li>
+
       </ul>
 
       <div class="form-group" id="view1-1">
@@ -277,7 +279,23 @@
 
 
       <div class="form-group" id="view1-9">
-        <label class="form-label" for="select-box"><span class="heading-medium">1.9 &nbsp; Upload a file</span></label>
+        <label class="form-label" for="textarea-box"><span class="heading-medium">1.9 &nbsp; Text Area</span></label>
+         <fieldset>
+           <textarea class="form-control form-control-3-4" name="textarea" id="textarea-box" rows="5" disabled></textarea>
+        </fieldset>
+        <p class="form-buttons">
+          <a href="#" class="button button--small">Approve</a>
+          <a href="#" class="button button--small button--chevron button--red">Reject</a>
+          <a href="#" class="button button--small button--chevron button--grey">Request documents</a>
+        </p>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view2-0">
+        <label class="form-label" for="select-box"><span class="heading-medium">2.0 &nbsp; Upload a file</span></label>
          <fieldset>
            <label class="form-label" for="file-input">
              Upload a file
@@ -295,9 +313,9 @@
       <hr>
 
 
-      <div class="form-group" id="view2-0">
-        <label class="form-label" for="value-1-1"><span class="heading-medium">2.0 &nbsp; Example conversion thread</span></label>
-        <input class="form-control" id="value-1-1" type="text" name="value-1-1" value="Sample" disabled><br>
+      <div class="form-group" id="view2-1">
+        <label class="form-label" for="value-2-1"><span class="heading-medium">2.1 &nbsp; Example conversion thread</span></label>
+        <input class="form-control" id="value-2-1" type="text" name="value-2-1" value="Sample" disabled><br>
         <p class="form-buttons">
           <a href="#" class="button button--small">Approve</a>
           <a href="#" class="button button--small button--chevron button--red">Reject</a>
@@ -324,8 +342,8 @@
       <hr>
 
 
-      <div class="callout callout--muted" id="view2-1">
-        <h2 class="callout__title">2.1 &nbsp; Breakout content</h2>
+      <div class="callout callout--muted" id="view2-2">
+        <h2 class="callout__title">2.2 &nbsp; Breakout content</h2>
         <p class="callout__para">
         This digital service falls under the requirements of SCCI0129 <a href="http://content.digital.nhs.uk/isce/publication/scci0129">Clinical Risk Management: it's Application in the manufacture of Health IT.</a>
         </p>

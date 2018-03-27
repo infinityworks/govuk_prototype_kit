@@ -1,4 +1,14 @@
 
+/* Look into #container */
+.container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $baseline-grid-unit;
+    padding-right: $baseline-grid-unit;
+}
+
+
 
 .breadcrumbs li {
   background-image: url("/images/separator-2x.png");
@@ -95,7 +105,7 @@
 }
 
 /* Field disabled */
-.form-control[type="text"]:disabled {
+.form-control[type="text"]:disabled, textarea.form-control[disabled]  {
     background-color: #F8F8F8;
     border-color: #e0e0e0;
 }
