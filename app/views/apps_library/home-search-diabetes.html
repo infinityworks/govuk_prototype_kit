@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>Apps Libary / About us</title>
+    <title>Apps Libary / Homepage</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.4" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.4" media="screen" rel="stylesheet" /><![endif]-->
@@ -90,52 +90,65 @@
         </p>
       </div>
 
-      <article role="article">
 
-        <p><span style="font-size:12px;">◀</span> <a class="back-to-previous" href="home.html"> Back <span class="visuallyhidden"> to the previous page</span></a></p>
+      <section class="search-banner" aria-label="Search form">
+          <div class="search-banner__pad">
+              <h3 class="search-banner__headline">Find digital tools to help you manage and improve your health</h3>
+              <form role="search" method="get" action="/search" class="search-banner__form">
+                  <div>
+                      <input type="text" name="query" id="query" class="search-banner__input" placeholder="Diabetes" value="">
+                  </div>
+                  <div>
+                      <button class="search-banner__button"><span>Search</span></button>
+                  </div>
+              </form>
+          </div>
+      </section>
 
-        <p class="heading-large">About us</p>
-        <p>These new pages are designed to bring together a number of digital tools that you can use for your health and care.</p>
-        <p>The design is intentionally clear and easy to navigate so that people of all ages and digital ability can move around it.</p>
-        <p>&nbsp;</p>
-        <p class="heading-large">A Beta site</p>
-        <p>As this is a Beta -&nbsp;which means we are testing this with you -&nbsp;you have the opportunity to feed back on every aspect of these pages and their contents.&nbsp;</p>
-        <p>We welcome your feedback on this early version of the Digital Apps Library, so please do take the time to tell us what you think<strong>. </strong></p>
-        <p>There is a small selection of tools to begin with. This is to make sure the tools meet the high standard of quality, safety and effectiveness you expect from the NHS.</p>
-        <p>Over time and with your help we will grow the library to cover many more health and social care needs and continue to drive up quality.</p>
-        <p>&nbsp;</p>
-        <p class="heading-large">Vetting apps</p>
-        <p>You may notice that some apps are labelled, "NHS Approved" meaning there is clinical evidence that it supports clinical outcomes, or "Being Tested in the NHS", which means they are part of an NHS programme that is monitoring and gathering evidence.</p>
-        <p>These products have been selected to trial because we identified where there was a need for digital intervention.</p>
-        <p>We identify the need, the market develops the tools, and patients benefit.</p>
-        <p>The library has a selection of tools that have gone through a technical assessment; this <span>seeks clarification from developers and vendors regarding compliance with the Data Protection Act, through to collecting personal data and other key areas. </span></p>
-        <p>&nbsp;</p>
-        <p class="heading-large">NHS badges</p>
-        <p>For digital tools that are labelled "NHS Approved" or "Being Tested in the NHS" further assessment has been undertaken.</p>
-        <p>Specific information on these assessments is below:<strong><em>&nbsp;</em></strong>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p><strong class="heading-medium"><img style="width: 185px; height:70px;" src="https://apps.beta.nhs.uk/media/1178/nhs-approved-frame.jpg?width=185&amp;height=70" alt="NHS Approved badge" data-id="1273"></strong></p>
-        <p>&nbsp;</p>
-        <p><strong class="heading-medium">Summary</strong>: It meets NHS quality standards for clinical effectiveness, safety, usability and accessibility, and has evidence to support its use.</p>
-        <p><strong class="heading-medium">Detail</strong>: There is&nbsp;strong evidence&nbsp;supporting improvement of patient outcomes.</p>
-        <p>We considered the NHS definition of quality and have applied the same principles to digital products. These will meet what we consider to be good quality digital standards for safety, experience and effectiveness.&nbsp;This means the following:</p>
-        <p><strong class="heading-medium">Safety</strong>: Both clinical safety and information safety (Information Governance, Privacy and Security)</p>
-        <p><strong class="heading-medium">Experience</strong>: Ensuring user-centred design, accessibility and product stability</p>
-        <p><strong class="heading-medium">Effectiveness</strong>: Is measured by clinical effectiveness/outcomes, cost effectiveness and/or effectiveness of impact&nbsp;</p>
-        <p>&nbsp;</p>
-        <p><strong><img style="width: 185px; height:70px;" src="https://apps.beta.nhs.uk/media/1179/being-tested-frame.jpg?width=185&amp;height=70" alt="Being Tested in the NHS badge" data-id="1274"></strong></p>
-        <p>&nbsp;</p>
-        <p><strong class="heading-medium">Summary</strong>: This meets NHS quality standards for safety, usability and accessibility, and is being tested now in the NHS to see if there is sufficient evidence to provide an NHS stamp of approval.</p>
-        <p><strong class="heading-medium">Detail</strong>: This means it is being tested with patients and the public to gather evidence of its effectiveness.</p>
-        <p>For these tools, we have considered the NHS definition of quality and have applied the following principles:</p>
-        <p><strong class="heading-medium">Safety</strong>: Both clinical safety and information safety (Information Governance, Privacy and Security)</p>
-        <p><strong class="heading-medium">Experience</strong>: Ensuring user-centred design, accessibility and product stability</p>
-        <p>During the trial period, the NHS programme managing these tools will monitor and gather evidence to include effectiveness, improved outcomes, cost efficiencies and positive impact.&nbsp;If the standard of effectiveness is met and validated, the digital tool will be categorised as NHS Approved.</p>
+      <!--
+      <div class="local-header">
+        <h2 class="local-header__title">NHS Digital provides technology, information and services, which help the NHS deliver better care</h2>
+        <form role="search" method="get" action="/search" class="search-banner__form">
+          <div>
+            <label class="form-label" for="full-name-f1">Full name</label>
+            <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+              </div>
+            <div>
+                <button class="search-banner__button"><span>Search</span></button>
+            </div>
+        </form>
+      </div>
+      -->
 
-      </article>
+      <p><span style="font-size:12px;">◀</span> <a class="back-to-previous" href="home.html"> Back <span class="visuallyhidden"> to the previous page</span></a></p>
+
+      <div class="apps-grid__title">
+        <p class="apps-grid__title__sortby">Sort by: <a href="home.html" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--direction">Recently published</a> | <a href="home-alphabetic.html" class="apps-grid__title__sortby__link">Alphabetic</a></p>
+        <h2 class="apps-grid__title__text">Search for <strong>"Diabetes"</strong></h2>
+      </div>
+
+
+      <div class="grid-row" id="js-grid">
+
+        <div class="column-one-half" id="js-item6">
+          <div class="cardapp">
+            <div class="cardapp__top">
+              <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1205/c-users-stsh3-desktop-active-10_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496032910000000" alt="Active 10 walking tracker">
+              <a href="details.html" class="cardapp__top__title">Active 10 walking tracker</a>
+              <!--<div class="cardapp__top__subtitle">NHS Approved</div>-->
+            </div>
+            <div class="cardapp__content">
+              The Active 10 app will help you get into the habit of walking briskly for 10 minutes every day.
+            </div>
+            <div class="cardapp__footer">
+              HEALTHY LIVING
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </main>
-
 
 
     <footer class="global-footer" role="contentinfo">
@@ -150,6 +163,8 @@
         </ul>
       </div>
     </footer>
+
+
 
     <div id="global-app-error" class="app-error hidden"></div>
 

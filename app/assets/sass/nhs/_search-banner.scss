@@ -49,16 +49,21 @@
         width: 100%;
     }
 
+
+
     & > div {
         display: table-cell;
         min-width: 100px;
 
         &:not(:first-child) {
-            width: 140px;
+            width: 100px;
         }
     }
 
-
+    span {
+      display: none;
+    }
+    /*
     @include media(mobile) {
         & > div {
             display: block;
@@ -73,6 +78,7 @@
             }
         }
     }
+    */
 }
 
 .search-banner__input {
@@ -127,5 +133,10 @@
     border: 3px solid transparent;
     outline: 0;
     left: -3px;
-    top: -3px;
+    background-image: url("/images/search-icon.png");
+    background-size: 24px 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 52px;
+    top: 7px;
 }
