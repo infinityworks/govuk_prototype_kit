@@ -145,14 +145,26 @@
 
 
           <div class="apps-grid__title">
-            <p class="apps-grid__title__sortby">Sort by: <a href="home.html" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--direction">Date added</a> | <a href="home-alphabetic.html" class="apps-grid__title__sortby__link">Alphabetical</a></p>
-            <h2 class="apps-grid__title__text">All apps</h2>
+              <p class="apps-grid__title__sortby">
+                <span>Sort:&nbsp;</span>
+                <a href="home.html" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--direction">Date added</a> &nbsp;|&nbsp;
+                <a href="home-alphabetic.html" class="apps-grid__title__sortby__link">A/Z</a>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <span>View:&nbsp;</span>
+                <a href="#" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--selected js-view-grid">Grid</a> &nbsp;|&nbsp;
+                <a href="#" class="apps-grid__title__sortby__link js-view-list">List</a>
+              </p>
+              <h2 class="apps-grid__title__text">All apps</h2>
           </div>
+
+
 
 
           <div class="grid-row" id="js-grid">
 
-            <div class="column-one-half" id="js-item1">
+            <div class="js-col column-one-half" id="js-item1">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1170/mycopd_icon2.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131364634110000000" alt="myCOPD">
@@ -171,7 +183,7 @@
             </div>
 
 
-            <div class="column-one-half" id="js-item2">
+            <div class="js-col column-one-half" id="js-item2">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1014/cove-icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359652470000000" alt="Cove">
@@ -187,7 +199,7 @@
               </div>
             </div>
 
-            <div class="column-one-half" id="js-item3">
+            <div class="js-col column-one-half" id="js-item3">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1018/panda-icon.png?anchor=center&mode=crop&width=96&height=96&rnd=131360560850000000" alt="Chill Panda">
@@ -203,7 +215,7 @@
               </div>
             </div>
 
-            <div class="column-one-half" id="js-item4">
+            <div class="js-col column-one-half" id="js-item4">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1272/data1skh-users-rohe4-my-pictures-blueice-icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131539190460000000" alt="BlueIce">
@@ -219,7 +231,7 @@
               </div>
             </div>
 
-            <div class="column-one-half" id="js-item5">
+            <div class="js-col column-one-half" id="js-item5">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1204/c-users-male8-desktop-evergreen-life-app-and-website-app-evergreen-life-app-logo.png?anchor=center&mode=crop&width=96&height=96&rnd=131496149770000000" alt="Evergreen Life">
@@ -235,7 +247,7 @@
               </div>
             </div>
 
-            <div class="column-one-half" id="js-item6">
+            <div class="js-col column-one-half" id="js-item6">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1205/c-users-stsh3-desktop-active-10_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496032910000000" alt="Active 10 walking tracker">
@@ -251,7 +263,7 @@
               </div>
             </div>
 
-            <div class="column-one-half" id="js-item7">
+            <div class="js-col column-one-half" id="js-item7">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1191/logo_appslibrary.png?anchor=center&mode=crop&width=96&height=96&rnd=131388020220000000" alt="Patients Know Best">
@@ -267,7 +279,7 @@
               </div>
             </div>
 
-            <div class="column-one-half" id="js-item8">
+            <div class="js-col column-one-half" id="js-item8">
               <div class="cardapp">
                 <div class="cardapp__top">
                   <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1091/my-choice-pad.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131360396300000000" alt="MyChoicePad">
@@ -378,12 +390,37 @@
         $('#js-grid > div').each(function() {
             $(this).prependTo(this.parentNode);
         });
+        e.preventDefault();
+    });
+
+
+    // Fake view switch list / grid
+    // remove "column-one-half" from "js-col"
+    // add cardapp--list variant
+
+    $( ".js-view-list" ).click(function(e) {
+
+        $(".js-col").removeClass("column-one-half").addClass("column-full");
+        $(".cardapp").addClass("cardapp--list");
+
+
+        $(".js-view-list").addClass("apps-grid__title__sortby__link--selected ");
+        $(".js-view-grid").removeClass("apps-grid__title__sortby__link--selected ");
 
         e.preventDefault();
     });
 
 
+    $( ".js-view-grid" ).click(function(e) {
 
+        $(".js-col").addClass("column-one-half").removeClass("column-full");
+        $(".cardapp").removeClass("cardapp--list");
+
+        $(".js-view-list").removeClass("apps-grid__title__sortby__link--selected ");
+        $(".js-view-grid").addClass("apps-grid__title__sortby__link--selected ");
+
+        e.preventDefault();
+    });
 
 
 
