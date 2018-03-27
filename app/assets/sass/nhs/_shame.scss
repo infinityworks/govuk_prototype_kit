@@ -1,4 +1,14 @@
 
+/* Look into #container */
+.container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $baseline-grid-unit;
+    padding-right: $baseline-grid-unit;
+}
+
+
 
 .breadcrumbs li {
   background-image: url("/images/separator-2x.png");
