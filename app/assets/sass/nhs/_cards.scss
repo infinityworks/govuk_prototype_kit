@@ -61,7 +61,36 @@
 
 
 
-/* Horizontal card */
+.cardapp--list {
+  border-top: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  border-bottom: 1px solid #CCC;
+  padding: $baseline-grid-unit * 2 0;
+  margin-bottom: 0;
+  .cardapp__top__title {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .cardapp__top__img {
+    width: 52px;
+  }
+  .cardapp__content {
+    min-height: auto;
+    margin-top: 0px;
+    font-size: 16px;
+    padding-left: 69px;
+  }
+  .cardapp__footer {
+    border-top: 0;
+    display: none;
+  }
+}
+
+
+
+
+/* Horizontal card
 .card-h {
   position: relative;
   border-top: 1px solid #CAC8CA;
@@ -81,7 +110,13 @@
   }
 
 }
+ */
 
+
+
+
+
+/*
 .card-h__content {
   margin-top: 0;
   padding-left: 60px;
@@ -140,3 +175,5 @@
 .card-h__extra__badge {
   margin-top: $baseline-grid-unit *2;
 }
+
+*/
