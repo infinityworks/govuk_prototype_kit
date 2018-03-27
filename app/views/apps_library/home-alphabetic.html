@@ -131,8 +131,18 @@
 
 
           <div class="apps-grid__title">
-            <p class="apps-grid__title__sortby">Sort by: <a href="home.html" class="apps-grid__title__sortby__link">Date added</a> | <a href="#" class="apps-grid__title__sortby__link--direction">Alphabetical</a></p>
-            <h2 class="apps-grid__title__text">All apps</h2>
+              <p class="apps-grid__title__sortby">
+                <span>Sort:&nbsp;</span>
+                <a href="home.html" class="apps-grid__title__sortby__link">Date added</a> &nbsp;|&nbsp;
+                <a href="home-alphabetic.html" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--direction">A/Z</a>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <span>View:&nbsp;</span>
+                <a href="#" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--selected js-view-grid">Grid</a> &nbsp;|&nbsp;
+                <a href="#" class="apps-grid__title__sortby__link js-view-list">List</a>
+              </p>
+              <h2 class="apps-grid__title__text">All apps</h2>
           </div>
 
 
@@ -398,7 +408,33 @@
     });
 
 
+    // Fake view switch list / grid
+    // remove "column-one-half" from "js-col"
+    // add cardapp--list variant
 
+    $( ".js-view-list" ).click(function(e) {
+
+        $(".js-col").removeClass("column-one-half").addClass("column-full");
+        $(".cardapp").addClass("cardapp--list");
+
+
+        $(".js-view-list").addClass("apps-grid__title__sortby__link--selected ");
+        $(".js-view-grid").removeClass("apps-grid__title__sortby__link--selected ");
+
+        e.preventDefault();
+    });
+
+
+    $( ".js-view-grid" ).click(function(e) {
+
+        $(".js-col").addClass("column-one-half").removeClass("column-full");
+        $(".cardapp").removeClass("cardapp--list");
+
+        $(".js-view-list").removeClass("apps-grid__title__sortby__link--selected ");
+        $(".js-view-grid").addClass("apps-grid__title__sortby__link--selected ");
+
+        e.preventDefault();
+    });
 
 
 
