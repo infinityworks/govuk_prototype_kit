@@ -33,6 +33,7 @@
   <!--[if lte IE 8]><link href="/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 <!--[if gt IE 8]><!--><link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
 
+    <link href="admin-styles.css" media="screen" rel="stylesheet" type="text/css" />
 
   </head>
 
@@ -77,46 +78,74 @@
         Apps Library
       </h1>
 
+
+
+      <h2 class="heading-medium">Set 1</h2>
       <p>This is exactly the same as the <a href="https://apps.beta.nhs.uk/" target="_blank">beta apps library</a>, but created with the Gov.uk frontend
-      <ul class="list list-bullet">
-        <li>
-          <a href="/apps_library/home.html">
-            Homepage
-          </a>
-        </li>
-        <li>
-          <a href="/apps_library/details.html">
-            App details
-          </a>
-        </li>
-      </ul>
 
-      <hr>
-      <h2 class="heading-medium">Variations</h2>
-      <ul class="list list-number">
-        <li>
-          <a href="/apps_library/home-v2.html">
-            Hippo filter style
-          </a>
-        </li>
-        <li>
-          <a href="/apps_library/home-v3.html">
-            Add latest approved apps block
-          </a>
-        </li>
-        <li>
-          <a href="/apps_library/home-v4.html">
-            List view
-          </a>
-        </li>
-        <li>
-          <a href="/apps_library/home-v5.html">
-            GDS intro page
-          </a>
-          &nbsp;&nbsp;&nbsp;- <a href="https://www.gov.uk/service-manual" class="font-xsmall">For example</a>
-        </li>
-      </ul>
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">1.0</td>
+          <td>
+            <a href="/apps_library/home.html">Homepage</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--ready"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.1</td>
+          <td>
+            <a href="/apps_library/details.html">App details</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--ready"></span>
+          </td>
+        </tr>
+      </table>
 
+
+      <h2 class="heading-medium">Set 2 - Variations</h2>
+
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">2.0</td>
+          <td>
+            <a href="/apps_library/home-v2.html">Hippo filter style</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">2.1</td>
+          <td>
+            <a href="/apps_library/home-v3.html">Add latest approved apps block</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">2.3</td>
+          <td>
+            <a href="/apps_library/home-v4.html">List view</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">2.4</td>
+          <td>
+            <a href="/apps_library/home-v5.html">GDS intro page</a>
+            <br><span class="font-xsmall">- for example <a href="https://www.gov.uk/service-manual">click here</a></span>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+      </table>
 
     </main>
 
@@ -144,6 +173,75 @@
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+
+    <!-- ADMIN Styles -->
+    <style>
+
+      table {
+        margin-bottom: 70px;
+      }
+
+      .col1 {
+        width: 34px;
+        text-align: center;
+      }
+
+      /* Status - Not set */
+      .status {
+        position: relative;
+      }
+      .status:before {
+        color: grey;
+        content: "Not set";
+        padding-right: 23px;
+      }
+      .status:after {
+        position: absolute;
+        right: 0px;
+        top: 4px;
+        content: "";
+        background-color: #da291c;
+        display: inline-block;
+        background-color: grey;
+        width: 14px;
+        height: 14px;
+        border-radius: 20px;
+      }
+
+      /* Status - Not signed off */
+      .status--red:before {
+        color: #da291c;
+        content: "Not signed off";
+      }
+      .status--red:after {
+        background-color: #da291c;
+      }
+
+      /* Status - Signed off */
+      .status--green:before {
+        color: #00823b;
+        content: "Signed off";
+      }
+      .status--green:after {
+        background-color: #00823b;
+      }
+
+      /* Status - Ready for show and tell */
+      .status--ready:before {
+        color: #005BBB;
+        content: "Ready for show and tell";
+      }
+      .status--ready:after {
+        background-color: #005BBB;
+      }
+
+      /* Mobile view remove the copy */
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        .status--red:before, .status--green:before, .status--ready:before { content: ""; }
+      }
+
+    </style>
 
 
 </body>
