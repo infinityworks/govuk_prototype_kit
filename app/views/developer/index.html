@@ -73,49 +73,83 @@
 
       <h1 class="heading-xlarge">NHS Developer</h1>
 
-      <h2 class="heading-medium">Version 1</h2>
+      <h2 class="heading-medium">Set 1</h2>
       <p>This is exactly the same as the <a href="https://developer.nhs.uk/apps/" target="_blank">NHS Developer website</a>, but created with the Gov
-      <ul class="list list-bullet">
-        <li>
-          <a href="/developer/home.html">
-            Homepage
-          </a>
-        </li>
-        <li>
-          <a href="/developer/the-application-process.html">
-            The application process
-          </a>
-        </li>
-        <li>
-          <a href="/developer/faqs.html">
-            FAQs
-          </a>
-        </li>
-        <li>
-          <a href="/developer/register-your-interest.html">
-            Register your interest
-          </a>
-        </li>
-        <li>
-          <a href="/developer/daq-read-only.html">
-            DAQ (read only)
-          </a>
-        </li>
-        <li>
-          <a href="/developer/submit-your-app.html">
-            Submit your app
-          </a>
-        </li>
-      </ul>
 
-      <h2 class="heading-medium">Alternative versions</h2>
-      <ul class="list list-bullet">
-        <li>
-          <a href="/developer/home-v2.html">
-            Homepage
-          </a>
-        </li>
-      </ul>
+
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">1.0</td>
+          <td>
+            <a href="/developer/home.html">Homepage</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.1</td>
+          <td>
+            <a href="/developer/the-application-process.html">The application process</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.2</td>
+          <td>
+            <a href="/developer/faqs.html">FAQs</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.3</td>
+          <td>
+            <a href="/developer/register-your-interest.html">Register your interest</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.4</td>
+          <td>
+            <a href="/developer/daq-read-only.html">DAQ (read only)</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.5</td>
+          <td>
+            <a href="/developer/submit-your-app.html">Submit your app</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+      </table>
+
+
+      <h2 class="heading-medium">Set 2 - Alternative versions</h2>
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">2.0</td>
+          <td>
+            <a href="/developer/home-v2.html">Homepage</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+      </table>
+
+
+
 
 
     </main>
@@ -144,6 +178,74 @@
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+    <!-- ADMIN Styles -->
+    <style>
+
+      table {
+        margin-bottom: 70px;
+      }
+
+      .col1 {
+        width: 34px;
+        text-align: center;
+      }
+
+      /* Status - Not set */
+      .status {
+        position: relative;
+      }
+      .status:before {
+        color: grey;
+        content: "Not set";
+        padding-right: 23px;
+      }
+      .status:after {
+        position: absolute;
+        right: 0px;
+        top: 4px;
+        content: "";
+        background-color: #da291c;
+        display: inline-block;
+        background-color: grey;
+        width: 14px;
+        height: 14px;
+        border-radius: 20px;
+      }
+
+      /* Status - Not signed off */
+      .status--red:before {
+        color: #da291c;
+        content: "Not signed off";
+      }
+      .status--red:after {
+        background-color: #da291c;
+      }
+
+      /* Status - Signed off */
+      .status--green:before {
+        color: #00823b;
+        content: "Signed off";
+      }
+      .status--green:after {
+        background-color: #00823b;
+      }
+
+      /* Status - Ready for show and tell */
+      .status--ready:before {
+        color: #005BBB;
+        content: "Ready for show and tell";
+      }
+      .status--ready:after {
+        background-color: #005BBB;
+      }
+
+      /* Mobile view remove the copy */
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        .status--red:before, .status--green:before, .status--ready:before { content: ""; }
+      }
+
+    </style>
 
 
 </body>

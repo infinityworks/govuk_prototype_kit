@@ -77,68 +77,98 @@
         Apps Review
       </h1>
 
-      <h2 class="heading-medium">Version 1</h2>
+      <h2 class="heading-medium">Set 1</h2>
       <p>This is exactly the same as the <a href="https://developer-test.nhs.uk/apps/assessment/login" target="_blank">live site</a>, but created with the Gov.uk frontend</p>
 
-      <ul class="list list-bullet">
-        <li>
-          <a href="/apps_review/apps.html">
-            Apps
-          </a>
-        </li>
-        <li>
-          <a href="/apps_review/apps-details.html">
-            Apps / Details
-          </a>
-        </li>
-        <li>
-          <a href="/apps_review/apps-details-daqs-questions.html">
-            Apps / Details / Questions
-          </a>
-        </li>
-      </ul>
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">1.0</td>
+          <td>
+            <a href="/apps_review/apps.html">Apps</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.1</td>
+          <td>
+            <a href="/apps_review/apps-details.html">Apps / Details</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">1.2</td>
+          <td>
+            <a href="/apps_review/apps-details-daqs-questions.html">Apps / Details / Questions</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+      </table>
 
-      <hr>
 
-      <h2 class="heading-medium">DAQ variations</h2>
-      <ul class="list list-bullet">
-        <li>
-          <a href="/apps_review/apps-details-daqs-questions-v1.html">
-            View 1
-          </a>
-          <span class="font-xsmall"> &nbsp;-&nbsp; This is exactly the same as the current site</span>
-        </li>
-        <li>
-          <a href="/apps_review/apps-details-daqs-questions-v2.html">
-            View 2
-          </a>
-          <span class="font-xsmall"> &nbsp;-&nbsp; Just page headers</span>
-        </li>
-        <li>
-          <a href="/apps_review/apps-details-daqs-questions-v3.html">
-            View 3
-          </a>
-          <span class="font-xsmall"> &nbsp;-&nbsp; Radio button &amp; checkboxes to answer DAQ questions</span>
-        </li>
-      </ul>
+      <h2 class="heading-medium">Set 2 - DAQ variations</h2>
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">2.0</td>
+          <td>
+            <a href="/apps_review/apps-details-daqs-questions-v1.html">This is exactly the same as the current site</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">2.1</td>
+          <td>
+            <a href="/apps_review/apps-details-daqs-questions-v2.html">Just page headers</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">2.2</td>
+          <td>
+            <a href="/apps_review/apps-details-daqs-questions-v3.html">Radio button &amp; checkboxes to answer DAQ questions</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+      </table>
 
-      <hr>
 
-      <h2 class="heading-medium">Alternative tasklist design</h2>
-      <ul class="list list-bullet">
-        <li>
-          <a href="apps-details-tasklist.html">
-            Apps / Details - Task list
-          </a>
-        </li>
-        <li>
-          <a href="apps-details-tasklist-questions.html">
-            Apps / Details - Task list / Questions
-          </a>
-        </li>
-      </ul>
 
-      <hr>
+      <h2 class="heading-medium">Set 3 - Alternative tasklist design</h2>
+
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">3.0</td>
+          <td>
+            <a href="apps-details-tasklist.html">Apps / Details - Task list</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">3.1</td>
+          <td>
+            <a href="apps-details-tasklist-questions.html">Apps / Details - Task list / Questions</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+      </table>
+
+
+
 
       <h2 class="heading-medium">Useful links</h2>
       <ul class="list list-bullet">
@@ -173,6 +203,74 @@
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
+
+    <!-- ADMIN Styles -->
+    <style>
+
+      table {
+        margin-bottom: 70px;
+      }
+
+      .col1 {
+        width: 34px;
+        text-align: center;
+      }
+
+      /* Status - Not set */
+      .status {
+        position: relative;
+      }
+      .status:before {
+        color: grey;
+        content: "Not set";
+        padding-right: 23px;
+      }
+      .status:after {
+        position: absolute;
+        right: 0px;
+        top: 4px;
+        content: "";
+        background-color: #da291c;
+        display: inline-block;
+        background-color: grey;
+        width: 14px;
+        height: 14px;
+        border-radius: 20px;
+      }
+
+      /* Status - Not signed off */
+      .status--red:before {
+        color: #da291c;
+        content: "Not signed off";
+      }
+      .status--red:after {
+        background-color: #da291c;
+      }
+
+      /* Status - Signed off */
+      .status--green:before {
+        color: #00823b;
+        content: "Signed off";
+      }
+      .status--green:after {
+        background-color: #00823b;
+      }
+
+      /* Status - Ready for show and tell */
+      .status--ready:before {
+        color: #005BBB;
+        content: "Ready for show and tell";
+      }
+      .status--ready:after {
+        background-color: #005BBB;
+      }
+
+      /* Mobile view remove the copy */
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        .status--red:before, .status--green:before, .status--ready:before { content: ""; }
+      }
+
+    </style>
 
 </body>
 </html>
