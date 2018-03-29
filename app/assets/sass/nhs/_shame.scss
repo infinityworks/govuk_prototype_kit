@@ -90,6 +90,10 @@
   margin-bottom: 7px;
 }
 
+.multiple-question {
+  margin-top: 20px;
+}
+
 .form-group {
   @include media(tablet) {
     margin-bottom: 40px;
@@ -103,6 +107,10 @@
     margin-bottom: 4px;
   }
 }
+
+
+
+
 
 /* Field disabled */
 .form-control[type="text"]:disabled, textarea.form-control[disabled]  {
