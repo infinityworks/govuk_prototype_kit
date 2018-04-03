@@ -108,10 +108,16 @@
 }
 .form-control {
   @include media(tablet) {
-    width: 57%;
+    width: 64%;
     padding: 10px 10px 6px;
     margin-bottom: 4px;
   }
+}
+
+.js-messages .panel:not(:first-child) {
+    opacity: 0.6;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 
