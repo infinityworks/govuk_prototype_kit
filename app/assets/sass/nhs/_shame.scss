@@ -52,6 +52,10 @@
 
 /* Buttons */
 
+.button--blue {
+  @include button($nhs-blue);
+}
+
 .button--red {
   @include button($nhs-red);
 }
@@ -82,7 +86,9 @@
   background-image: url("https://govuk-elements.herokuapp.com/public/images/icon-pointer-2x.png");
 }
 
-
+.button--large {
+  font-size: 26px;
+}
 
 
 /* Form controls */
@@ -129,20 +135,13 @@
 }
 */
 
+/*
 .form-group--approved {
   .form-control[type="text"] {
     background-color: #EDFFF2;
     border: 2px solid #3E9A57;
     color: #3E9A57;
   }
-  /*
-  .form-side-note {
-    margin-left: 8px;
-    background-image: url("../images/icon-tick.png");
-    color: #3E9A57;
-    font-weight: bold;
-  }
-  */
 }
 
 .form-group--rejected {
@@ -152,6 +151,19 @@
     color: #D00000;
   }
 }
+*/
+
+.form-group--rejected {
+  border-left: 3px solid $nhs-red;
+  padding-left: $baseline-grid-unit * 2;
+}
+
+.form-group--approved {
+  border-left: 3px solid #3E9A57;
+  padding-left: $baseline-grid-unit * 2;
+}
+
+
 
 
 .form-buttons {
