@@ -18,23 +18,38 @@
 /* Search banner */
 .search-banner {
     background: $col-primary;
-    padding: 1.5em 0 1.8em;
+    //padding: 1.5em 0 1.8em;
     margin-bottom: $baseline-grid-unit * 2;
     min-height: 30px;
 }
 
-.search-banner__pad {
-  padding: $baseline-grid-unit * 3;
+.search-banner__inner {
+
+  max-width: 960px;
+  padding: 0 $baseline-grid-unit * 2;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  @include media(tablet) {
+    padding: 0 $baseline-grid-unit * 3;
+  }
+  @media only screen and (min-width: 1020px) {
+    padding: 0 30px;
+    background-image: url("https://apps.beta.nhs.uk/media/1004/runnercheckingapp.jpg?anchor=center&mode=crop&width=475&height=300&rnd=131359762240000000");
+    background-repeat: no-repeat;
+    background-position: 94.5% 0;
+    min-height: 300px;
+  }
 }
+
+// https://apps.beta.nhs.uk/media/1004/runnercheckingapp.jpg?anchor=center&mode=crop&width=475&height=300&rnd=131359762240000000
+
 .search-banner__headline {
     @extend .heading-large;
     color: $col-septenary;
-    max-width: 620px;
-    //margin-bottom: 30px;
-    //@include core-font(20);
+    //max-width: 450px;
 
     @include media(desktop) {
-        max-width: 800px;
+        max-width: 430px;
     }
 }
 
@@ -42,14 +57,16 @@
     position: relative;
     display: table;
     width: 100%;
+    @include media(desktop) {
+      max-width: 450px;
+    }
     left: 3px;
+    margin-bottom: 20px;
 
     .search-banner__input,
     .search-banner__button {
         width: 100%;
     }
-
-
 
     & > div {
         display: table-cell;
@@ -63,22 +80,7 @@
     span {
       display: none;
     }
-    /*
-    @include media(mobile) {
-        & > div {
-            display: block;
-            width: 100%;
 
-            &:not(:first-child) {
-                width: 100%;
-            }
-
-            &:first-child {
-                margin-bottom: 1rem;
-            }
-        }
-    }
-    */
 }
 
 .search-banner__input {
