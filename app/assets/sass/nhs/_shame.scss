@@ -121,15 +121,34 @@
 }
 
 
-
-
-
 /* Field disabled */
 .form-control[type="text"]:disabled, textarea.form-control[disabled]  {
     background-color: #F8F8F8;
     border-color: #e0e0e0;
 }
 
+
+
+/* TRUNCATE HACK */
+
+.form-group{
+  .js-expand-button {
+    display: none;
+  }
+}
+
+.form-group--truncate-messages {
+  .js-messages .panel {
+    display: none;
+  }
+  .js-messages .panel:first-child {
+    display: block;
+  }
+
+  .js-expand-button {
+    display: inline-block;
+  }
+}
 
 /*
 .form-side-note {
@@ -197,7 +216,7 @@
 
 .panel--header {
   border: 10px solid $nhs-blue;
-  
+
   @include media(tablet) {
     padding: $baseline-grid-unit * 4;
   }

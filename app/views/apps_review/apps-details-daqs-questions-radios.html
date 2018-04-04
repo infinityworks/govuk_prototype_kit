@@ -160,6 +160,10 @@
             <!-- Messages -->
             <div class="js-messages"></div>
 
+            <!-- Reveal all messages -->
+            <div class="js-expand-button button button--light-grey button--small">Reveal all (<span>1</span>)</div>
+
+
           </fieldset>
 
 
@@ -169,6 +173,15 @@
       <hr>
 
       <input type="submit" value="Save" class="button button--blue button--large js-page-submit">
+
+
+      <br><br><br><br><br><br>
+      <h3>Fake action from the assessment side</h3>
+      <ul>
+        <li>
+          <a href="#" class="js-assessment-change-answer">User changes answer</a>
+        </li>
+      </ul>
 
 
     </main>
@@ -316,6 +329,22 @@
               $("#viewb01 .js-radio-buttons").show();
 
             }
+
+
+            // Truncate Messages
+            // form-group--truncate-messages
+            messageCount = $("#viewb01 .js-messages").children().length;
+            if (messageCount > 1) {
+
+              $("#viewb01").addClass("form-group--truncate-messages");
+              $(".js-expand-button span").html(messageCount - 1);
+
+
+            }
+            // $("#viewb01 .js-messages").children().length
+
+
+
           });
 
 
@@ -347,46 +376,25 @@
           }
 
 
+          // Assessment side
+          userChangedAnswerHtml = "<div class='panel font-xsmall'><p><span class=''>Answer change</span> - Was 'MyApp' is now 'MyAppNew' <br>2 hours ago - <a href='#'>David Sayce</a></p></div>";
+
+          $( ".js-assessment-change-answer" ).click(function() {
+            $("#b01").val("MyAppNew");
+            $("#viewb01 .js-messages").prepend( userChangedAnswerHtml );
+          });
+
+
+          // Expand button to show all truncated Messages
+          $( ".js-expand-button" ).click(function() {
+            $("#viewb01").removeClass( "form-group--truncate-messages" );
+          });
+
+
       });
     </script>
 
 
-
-    <!-- Pie charts -->
-    <link href="https://rawgit.com/pguso/jquery-plugin-circliful/1.0.2/css/jquery.circliful.css" media="screen" rel="stylesheet" />
-    <script src="https://rawgit.com/pguso/jquery-plugin-circliful/1.0.2/js/jquery.circliful.js"></script>
-
-    <script>
-
-    $( document ).ready(function() { // 6,32 5,38 2,34
-        $("#pie").circliful({
-            animation: 1,
-            animationStep: 5,
-            foregroundBorderWidth: 10,
-            backgroundBorderWidth: 10,
-            percent: 38,
-            textBelow: true,
-            //textSize: 28,
-            backgroundColor: '#DBDBDB',
-            foregroundColor: '#005BBB',
-            textColor: '#FFFFFF',
-            multiPercentage: 1
-        });
-        $("#pie2").circliful({
-            animation: 1,
-            animationStep: 5,
-            foregroundBorderWidth: 10,
-            backgroundBorderWidth: 10,
-            percent: 38,
-            textBelow: true,
-            //textSize: 28,
-            backgroundColor: '#DBDBDB',
-            foregroundColor: '#005BBB',
-            textColor: '#FFFFFF',
-            multiPercentage: 1
-        });
-      });
-    </script>
 
 
 
