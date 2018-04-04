@@ -196,7 +196,8 @@
 
 
 .panel--header {
-  border: 10px solid #F1F2F4;
+  border: 10px solid $nhs-blue;
+  
   @include media(tablet) {
     padding: $baseline-grid-unit * 4;
   }
