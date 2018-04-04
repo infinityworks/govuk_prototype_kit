@@ -71,13 +71,11 @@
             <nav id="proposition-menu">
               <a href="/apps_review" id="proposition-name">Apps Assessment</a>
               <strong class="phase-tag" style="position:relative; left:4px; top:-2px;">REVIEWER</strong>
-
               <ul id="proposition-links">
                 <li><a href="/apps_review/apps.html" class="active">Apps</a></li>
                 <li><a href="/apps_review/profile.html">Profile</a></li>
                 <li><a href="/apps_review/logout.html">Logout</a></li>
               </ul>
-
             </nav>
           </div>
         </div>
@@ -106,8 +104,9 @@
         <li><a href="#view2-0">2.0 &nbsp; Upload a file</a></li>
         <li><a href="#view2-1">2.1 &nbsp; Example conversion thread</a></li>
         <li><a href="#view2-2">2.2 &nbsp; Breakout content</a></li>
-
       </ul>
+
+      <hr>
 
       <div class="form-group" id="view1-1">
         <label class="form-label" for="value-1-1"><span class="heading-medium">1.1 &nbsp; Standard view</span></label>
@@ -126,11 +125,9 @@
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
             <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-1" value="1" id="view1-1-approve" />
             <label for="view1-1-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-1" value="2" id="view1-1-approve-recomend" />
-            <label for="view1-1-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-1" value="3" id="view1-1-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-1" value="2" id="view1-1-reject" />
             <label for="view1-1-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-1" value="4" id="view1-1-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-1" value="3" id="view1-1-request-doc" />
             <label for="view1-1-request-doc">Request document</label>
           </div>
         </fieldset>
@@ -178,16 +175,14 @@
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
             <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-4" value="1" id="view1-4-approve" />
             <label for="view1-4-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-4" value="2" id="view1-4-approve-recomend" />
-            <label for="view1-4-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-4" value="3" id="view1-4-reject" checked />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-4" value="2" id="view1-4-reject" checked />
             <label for="view1-4-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-4" value="4" id="view1-4-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-4" value="3" id="view1-4-request-doc" />
             <label for="view1-4-request-doc">Request document</label>
           </div>
         </fieldset>
         <div class="panel">
-          <label class="form-label" for="value-1-4-1">Reject answer - Information request</label>
+          <label class="form-label" for="value-1-4-1">Please add a reason <span class="red">*</span></label>
           <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
         </div>
       </div>
@@ -197,36 +192,30 @@
 
 
       <div class="form-group" id="view1-5">
-        <label class="form-label" for="value-1-5"><span class="heading-medium">1.5 &nbsp; Request information</span></label>
+        <label class="form-label" for="value-1-5"><span class="heading-medium">1.5 &nbsp; Request document</span></label>
         <fieldset>
           <input class="form-control" id="value-1-5" type="text" name="value-1-5" value="Sample" disabled>
         </fieldset>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-5" value="1" id="view1-5-approve" checked />
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-5" value="1" id="view1-5-approve" />
             <label for="view1-5-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-5" value="2" id="view1-5-approve-recomend" />
-            <label for="view1-5-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-5" value="3" id="view1-5-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-5" value="2" id="view1-5-reject" />
             <label for="view1-5-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-5" value="4" id="view1-5-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-5" value="3" id="view1-5-request-doc" checked />
             <label for="view1-5-request-doc">Request document</label>
           </div>
         </fieldset>
         <div class="panel">
-          <label class="form-label" for="value-1-5-1">Information request</label>
+          <label class="form-label" for="value-1-5-1">Request documents <span class="red">*</span></label>
           <textarea class="form-control form-control-1-5-1" name="textarea" id="textarea" rows="5"></textarea>
-          <div class="form-group" style="padding-top:20px;">
-            <label class="form-label" for="file-input">
-              Upload a file
-            </label>
-            <input type="file" id="file-input">
-          </div>
         </div>
+        <!--
         <div class="panel font-xsmall">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ante imperdiet, cursus felis sit amet, faucibus leo. Suspendisse facilisis luctus ante, sed pulvinar urna aliquam et. </p>
           <p>2 hours ago <a href="#">David Sayce</a></p>
         </div>
+        -->
       </div>
 
 
@@ -246,11 +235,9 @@
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
             <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-6" value="1" id="view1-6-approve" checked />
             <label for="view1-6-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-6" value="2" id="view1-6-approve-recomend" />
-            <label for="view1-6-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-6" value="3" id="view1-6-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-6" value="2" id="view1-6-reject" />
             <label for="view1-6-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-6" value="4" id="view1-6-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-6" value="3" id="view1-6-request-doc" />
             <label for="view1-6-request-doc">Request document</label>
           </div>
         </fieldset>
@@ -279,13 +266,11 @@
         </fieldset>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-7" value="1" id="view1-7-approve" checked />
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-7" value="1" id="view1-7-approve" />
             <label for="view1-7-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-7" value="2" id="view1-7-approve-recomend" />
-            <label for="view1-7-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-7" value="3" id="view1-7-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-7" value="2" id="view1-7-reject" />
             <label for="view1-7-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-7" value="4" id="view1-7-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-7" value="3" id="view1-7-request-doc" />
             <label for="view1-7-request-doc">Request document</label>
           </div>
         </fieldset>
@@ -314,16 +299,13 @@
         </fieldset>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-8" value="1" id="view1-8-approve" checked />
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-8" value="1" id="view1-8-approve" />
             <label for="view1-8-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-8" value="2" id="view1-8-approve-recomend" />
-            <label for="view1-8-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-8" value="3" id="view1-8-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-8" value="2" id="view1-8-reject" />
             <label for="view1-8-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-8" value="4" id="view1-8-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-8" value="3" id="view1-8-request-doc" />
             <label for="view1-8-request-doc">Request document</label>
           </div>
-
         </fieldset>
       </div>
 
@@ -338,13 +320,11 @@
         </fieldset>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-9" value="1" id="view1-9-approve" checked />
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-9" value="1" id="view1-9-approve" />
             <label for="view1-9-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-9" value="2" id="view1-9-approve-recomend" />
-            <label for="view1-9-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-9" value="3" id="view1-9-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-9" value="2" id="view1-9-reject" />
             <label for="view1-9-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-9" value="4" id="view1-9-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-9" value="3" id="view1-9-request-doc" />
             <label for="view1-9-request-doc">Request document</label>
           </div>
         </fieldset>
@@ -364,13 +344,11 @@
         </fieldset>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-0" value="1" id="view2-0-approve" checked />
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-0" value="1" id="view2-0-approve" />
             <label for="view2-0-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-0" value="2" id="view2-0-approve-recomend" />
-            <label for="view2-0-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup2-0" value="3" id="view2-0-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup2-0" value="2" id="view2-0-reject" />
             <label for="view2-0-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup2-0" value="4" id="view2-0-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup2-0" value="3" id="view2-0-request-doc" />
             <label for="view2-0-request-doc">Request document</label>
           </div>
         </fieldset>
@@ -387,33 +365,38 @@
         </fieldset>
         <fieldset class="inline" style="margin-top:12px;">
           <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-1" value="1" id="view2-1-approve" checked />
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-1" value="1" id="view2-1-approve" />
             <label for="view2-1-approve">Approve</label>
-            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-1" value="2" id="view2-1-approve-recomend" />
-            <label for="view2-1-approve-recomend">Approve with recommendations</label>
-            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup2-1" value="3" id="view2-1-reject" />
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup2-1" value="2" id="view2-1-reject" />
             <label for="view2-1-reject">Reject</label>
-            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup2-1" value="4" id="view2-1-request-doc" />
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup2-1" value="3" id="view2-1-request-doc" />
             <label for="view2-1-request-doc">Request document</label>
           </div>
         </fieldset>
+        <div class="js-messages">
+          <div class="panel font-xsmall">
+            <p>
+              <span class="">Requested documents</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <br>2 hours ago - <a href="#">David Sayce</a> - <a href="#" class="js-fake-reply">Fake a reply</a>
+              <div class="panel font-xsmall" style="margin-top: 12px">
+                <p>
+                  <a href="#">FILENAME</a> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <br>2 hours ago - <a href="#">Fred Smith</a>
+                </p>
+              </div>
+            </p>
+          </div>
+          <div class="panel font-xsmall">
+            <p><span class="red">Rejected</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br>2 hours ago - <a href="#">David Sayce</a></p>
+          </div>
+          <div class="panel font-xsmall">
+            <p><span class="green">Approved</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br>2 hours ago - <a href="#">David Sayce</a></p>
+          </div>
+        </div>
       </div>
-      <div class="panel panel--red-border font-xsmall">
-        <p><strong class="red heading-small">Rejected</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-        2 hours ago - <a href="#">David Sayce</a></p>
-      </div>
-      <div class="panel panel--green-border font-xsmall">
-        <p><span class="green heading-small">Approved</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-        2 hours ago - <a href="#">David Sayce</a></p>
-      </div>
-      <div class="panel font-xsmall">
-        <p><span class="heading-small">Sent document</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-        2 hours ago - <a href="#">Fred Jones (Pinpoint Tech)</a></p>
-      </div>
-      <div class="panel font-xsmall">
-        <p><span class="heading-small">Request documents</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-        2 hours ago - <a href="#">David Sayce</a></p>
-      </div>
+
 
       <hr>
 
