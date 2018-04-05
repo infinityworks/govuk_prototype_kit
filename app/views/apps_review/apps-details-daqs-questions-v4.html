@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>NHS Apps Review / Apps / Question States v1</title>
+
+    <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="/stylesheets/govuk-template-ie7.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="/stylesheets/govuk-template-ie8.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="/stylesheets/govuk-template-print.css?0.22.3" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="/stylesheets/fonts-ie8.css?0.22.3" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="/stylesheets/fonts.css?0.22.3" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="/javascripts/ie.js?0.22.3"></script><![endif]-->
+
+    <link rel="shortcut icon" href="/images/nhs-icon.ico" type="image/x-icon" />
+
+    <link rel="mask-icon" href="/images/gov.uk_logotype_crown.svg?0.22.3" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png?0.22.3">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon-167x167.png?0.22.3">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png?0.22.3">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?0.22.3">
+
+
+    <meta name="theme-color" content="#0b0c0c" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/images/opengraph-image.png?0.22.3">
+
+
+  <!--[if lte IE 8]><link href="/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!--><link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+
+  </head>
+
+  <body class=""><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      <p>GOV.UK uses cookies to make the site simpler. <a href="#">Find out more about cookies</a></p>
+    </div>
+
+
+    <header role="banner" id="global-header" class="with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="index.html" title="NHS" id="logo" class="content">
+              <img src="/images/logotype-nhs-colour__reverse@2x.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="header-proposition">
+          <div class="content">
+            <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+            <nav id="proposition-menu">
+              <a href="/apps_review" id="proposition-name">Apps Assessment</a>
+              <strong class="phase-tag" style="position:relative; left:4px; top:-2px;">REVIEWER</strong>
+              <ul id="proposition-links">
+                <li><a href="/apps_review/apps.html" class="active">Apps</a></li>
+                <li><a href="/apps_review/profile.html">Profile</a></li>
+                <li><a href="/apps_review/logout.html">Logout</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <div id="global-header-bar"></div>
+
+    <main id="content" role="main">
+
+      <p><span style="font-size:12px;">&#9664;</span> <a class="back-to-previous" href="index.html"> Back <span class="visuallyhidden"> to the previous question</span></a></p>
+
+      <h1 class="heading-large">DAQ reviewer question states</h1>
+
+      <ul class="list list-bullet">
+        <li><a href="#view1-1">1.1 &nbsp; Standard view</a></li>
+        <li><a href="#view1-2">1.2 &nbsp; Approved question</a></li>
+        <li><a href="#view1-3">1.3 &nbsp; Rejected question</a></li>
+        <li><a href="#view1-4">1.4 &nbsp; Reject question</a></li>
+        <li><a href="#view1-5">1.5 &nbsp; Request information</a></li>
+        <li><a href="#view1-6">1.6 &nbsp; Select box</a></li>
+        <li><a href="#view1-7">1.7 &nbsp; Radio buttons</a></li>
+        <li><a href="#view1-8">1.8 &nbsp; Checkboxes</a></li>
+        <li><a href="#view1-9">1.9 &nbsp; Textarea question</a></li>
+        <li><a href="#view2-0">2.0 &nbsp; Upload a file</a></li>
+        <li><a href="#view2-1">2.1 &nbsp; Example conversion thread</a></li>
+        <li><a href="#view2-2">2.2 &nbsp; Breakout content</a></li>
+      </ul>
+
+      <hr>
+
+      <div class="form-group" id="view1-1">
+        <label class="form-label" for="value-1-1"><span class="heading-medium">1.1 &nbsp; Standard view</span></label>
+        <div class="font-xsmall">
+          <p>Please provide</p>
+          <ol class="list list-number">
+            <li>links to literary evidence that support the use of the behaviour change components you have used in your service;</li>
+            <li>a short summary of how this has influenced the development of your digital service; and</li>
+            <li>a list of potential unintended consequences of your service and how these will be mitigated.</li>
+          </ol>
+        </div>
+        <fieldset>
+          <input class="form-control" id="value-1-1" type="text" name="value-1-1" value="Sample" disabled>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-1" value="1" id="view1-1-approve" />
+            <label for="view1-1-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-1" value="2" id="view1-1-approve-with-improvement" />
+            <label for="view1-1-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-1" value="3" id="view1-1-reject" />
+            <label for="view1-1-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-1" value="4" id="view1-1-request-doc" />
+            <label for="view1-1-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group form-group--approved" id="view1-2">
+        <label class="form-label" for="value-1-2"><span class="heading-medium">1.2 &nbsp; Approved question</span></label>
+        <fieldset>
+          <input class="form-control" id="value-1-2" type="text" name="value-1-2" value="Sample" disabled>
+        </fieldset>
+        <!-- <span class="form-side-note">Approved</span> -->
+        <p class="form-note">You <span class="green">approved</span> this question &nbsp; <a href="#">Change</a></p>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group form-group--rejected" id="view1-3">
+        <label class="form-label" for="value-1-3"><span class="heading-medium">1.3 &nbsp; Rejected question</span></label>
+        <fieldset>
+          <input class="form-control" id="value-1-3" type="text" name="value-1-3" value="Sample" disabled>
+        </fieldset>
+        <p class="form-note">You <span class="red">rejected</span> this question &nbsp; <a href="#">Change</a></p>
+        <div class="panel font-xsmall">
+          <p><span class="red">Rejected</span> - This is still wrong sunshine <br>
+          2 hours ago <a href="#">David Sayce</a></p>
+        </div>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group form-group--rejected" id="view1-4">
+        <label class="form-label" for="value-1-4"><span class="heading-medium">1.4 &nbsp; Reject question</span></label>
+        <fieldset>
+          <input class="form-control" id="value-1-4" type="text" name="value-1-4" value="Sample" disabled>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-4" value="1" id="view1-4-approve" />
+            <label for="view1-4-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-4" value="2" id="view1-4-approve-with-improvement" />
+            <label for="view1-4-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-4" value="3" id="view1-4-reject" />
+            <label for="view1-4-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-4" value="4" id="view1-4-request-doc" />
+            <label for="view1-4-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+        <div class="panel">
+          <label class="form-label" for="value-1-4-1">Reason for rejection <span class="red">*</span></label>
+          <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
+        </div>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view1-5">
+        <label class="form-label" for="value-1-5"><span class="heading-medium">1.5 &nbsp; Information request</span></label>
+        <fieldset>
+          <input class="form-control" id="value-1-5" type="text" name="value-1-5" value="Sample" disabled>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-5" value="1" id="view1-5-approve" />
+            <label for="view1-5-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-5" value="2" id="view1-5-approve-with-improvement" />
+            <label for="view1-5-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-5" value="3" id="view1-5-reject" />
+            <label for="view1-5-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-5" value="4" id="view1-5-request-doc" />
+            <label for="view1-5-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+        <div class="panel">
+          <label class="form-label" for="value-1-5-1">Extra information required <span class="red">*</span></label>
+          <textarea class="form-control form-control-1-5-1" name="textarea" id="textarea" rows="5"></textarea>
+        </div>
+        <!--
+        <div class="panel font-xsmall">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ante imperdiet, cursus felis sit amet, faucibus leo. Suspendisse facilisis luctus ante, sed pulvinar urna aliquam et. </p>
+          <p>2 hours ago <a href="#">David Sayce</a></p>
+        </div>
+        -->
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view1-6">
+        <label class="form-label" for="select-box"><span class="heading-medium">1.6 &nbsp; Select box</span></label>
+        <fieldset>
+          <select class="form-control" id="select-box" name="select-box" disabled>
+            <option>GOV.UK elements option 1</option>
+            <option>GOV.UK elements option 2</option>
+            <option>GOV.UK elements option 3</option>
+          </select>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-6" value="1" id="view1-6-approve" />
+            <label for="view1-6-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-6" value="2" id="view1-6-approve-with-improvement" />
+            <label for="view1-6-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-6" value="3" id="view1-6-reject" />
+            <label for="view1-6-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-6" value="4" id="view1-6-request-doc" />
+            <label for="view1-6-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view1-7">
+        <label class="form-label" for="select-box"><span class="heading-medium">1.7 &nbsp; Radio buttons</span></label>
+         <fieldset>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland" checked disabled>
+            <label for="radio-1">Northern Ireland</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands" disabled>
+            <label for="radio-2">Isle of Man or the Channel Islands</label>
+          </div>
+          <p class="form-block">or</p>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad" disabled>
+            <label for="radio-3">I am a British citizen living abroad</label>
+          </div>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-7" value="1" id="view1-7-approve" />
+            <label for="view1-7-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-7" value="2" id="view1-7-approve-with-improvement" />
+            <label for="view1-7-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-7" value="3" id="view1-7-reject" />
+            <label for="view1-7-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-7" value="4" id="view1-7-request-doc" />
+            <label for="view1-7-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view1-8">
+        <label class="form-label" for="select-box"><span class="heading-medium">1.8 &nbsp; Checkboxes</span></label>
+         <fieldset>
+          <div class="multiple-choice">
+            <input id="checkbox-1" type="checkbox" name="checkbox-group" value="Northern Ireland" checked disabled>
+            <label for="checkbox-1">Northern Ireland</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="checkbox-2" type="checkbox" name="checkbox-group" value="Isle of Man or the Channel Islands" disabled>
+            <label for="checkbox-2">Isle of Man or the Channel Islands</label>
+          </div>
+          <p class="form-block">or</p>
+          <div class="multiple-choice">
+            <input id="checkbox-3" type="checkbox" name="checkbox-group" value="I am a British citizen living abroad" disabled>
+            <label for="checkbox-3">I am a British citizen living abroad</label>
+          </div>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-8" value="1" id="view1-8-approve" />
+            <label for="view1-8-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-8" value="2" id="view1-8-approve-with-improvement" />
+            <label for="view1-8-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-8" value="3" id="view1-8-reject" />
+            <label for="view1-8-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-8" value="4" id="view1-8-request-doc" />
+            <label for="view1-8-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view1-9">
+        <label class="form-label" for="textarea-box"><span class="heading-medium">1.9 &nbsp; Text Area</span></label>
+         <fieldset>
+           <textarea class="form-control form-control-3-4" name="textarea" id="textarea-box" rows="5" disabled></textarea>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-9" value="1" id="view1-9-approve" />
+            <label for="view1-9-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup1-9" value="2" id="view1-9-approve-with-improvement" />
+            <label for="view1-9-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup1-9" value="3" id="view1-9-reject" />
+            <label for="view1-9-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup1-9" value="4" id="view1-9-request-doc" />
+            <label for="view1-9-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view2-0">
+        <label class="form-label" for="select-box"><span class="heading-medium">2.0 &nbsp; Upload a file</span></label>
+         <fieldset>
+           <label class="form-label" for="file-input">
+             Upload a file
+           </label>
+           <input type="file" id="file-input" disabled>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-0" value="1" id="view2-0-approve" />
+            <label for="view2-0-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-0" value="2" id="view2-0-approve-with-improvement" />
+            <label for="view2-0-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup2-0" value="3" id="view2-0-reject" />
+            <label for="view2-0-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup2-0" value="4" id="view2-0-request-doc" />
+            <label for="view2-0-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <hr>
+
+
+      <div class="form-group" id="view2-1">
+        <fieldset>
+          <label class="form-label" for="value-2-1"><span class="heading-medium">2.1 &nbsp; Example conversion thread</span></label>
+          <input class="form-control" id="value-2-1" type="text" name="value-2-1" value="Sample" disabled>
+        </fieldset>
+        <fieldset class="inline" style="margin-top:12px;">
+          <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-1" value="1" id="view2-1-approve" />
+            <label for="view2-1-approve">Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup2-1" value="2" id="view2-1-approve-with-improvement" />
+            <label for="view2-1-approve-with-improvement">Satisfactory with improvement(s)</label>
+            <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroup2-1" value="3" id="view2-1-reject" />
+            <label for="view2-1-reject">Not Satisfactory</label>
+            <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroup2-1" value="4" id="view2-1-request-doc" />
+            <label for="view2-1-request-doc">Request for Information</label>
+          </div>
+        </fieldset>
+        <div class="js-messages">
+          <div class="panel font-xsmall">
+            <p>
+              <span class="">Requested documents</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <br>2 hours ago - <a href="#">David Sayce</a> - <a href="#" class="js-fake-reply">Fake a reply</a>
+              <div class="panel font-xsmall" style="margin-top: 12px">
+                <p>
+                  <a href="#">FILENAME</a> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <br>2 hours ago - <a href="#">Fred Smith</a>
+                </p>
+              </div>
+            </p>
+          </div>
+          <div class="panel font-xsmall">
+            <p><span class="red">Rejected</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br>2 hours ago - <a href="#">David Sayce</a></p>
+          </div>
+          <div class="panel font-xsmall">
+            <p><span class="green">Approved</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br>2 hours ago - <a href="#">David Sayce</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+
+      <div class="callout callout--muted" id="view2-2">
+        <h2 class="callout__title">2.2 &nbsp; Breakout content</h2>
+        <p class="callout__para">
+        This digital service falls under the requirements of SCCI0129 <a href="http://content.digital.nhs.uk/isce/publication/scci0129">Clinical Risk Management: it's Application in the manufacture of Health IT.</a>
+        </p>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+      <p style="text-align: center; color: #adb1b5; padding-top: 20px;">Footer</p>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="/javascripts/govuk-template.js?0.22.3"></script>
+
+
+
+    <!-- Javascript -->
+    <!--[if lte IE 8]><script src="/javascripts/bind.js"></script><![endif]-->
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/govuk/details.polyfill.js"></script>
+    <script src="/javascripts/govuk/shim-links-with-button-role.js"></script>
+    <script src="/javascripts/govuk/show-hide-content.js"></script>
+    <script src="/javascripts/application.js"></script>
+
+    <script src="/javascripts/auto-store-data.js"></script>
+
+    <!-- GOV.UK Prototype kit v6.3.0 -->
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+
+
+</body>
+</html>
