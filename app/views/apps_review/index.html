@@ -73,7 +73,7 @@
             <a href="/apps_review/apps.html">Apps</a>
           </td>
           <td style="text-align:right">
-            <span class="status status--ready"></span>
+            <span class="status status--red"></span>
           </td>
         </tr>
 
@@ -93,7 +93,7 @@
             <p style="margin:0" class="font-xsmall">This is the same states as <a href="/apps_review/apps-details-daqs-questions-v1.html">2.0</a> but assembled as a clickable prototype. </p>
           </td>
           <td style="text-align:right">
-            <span class="status status--ready"></span>
+            <span class="status status--red"></span>
           </td>
         </tr>
         <tr>
@@ -102,7 +102,7 @@
             <a href="/apps_review/apps-details-daqs-questions-v1.html">DAQ question states</a>
           </td>
           <td style="text-align:right">
-            <span class="status status--ready"></span>
+            <span class="status status--red"></span>
           </td>
         </tr>
       </table>
@@ -181,7 +181,7 @@
               <p style="margin:0" class="font-xsmall">This is the same states as <a href="/apps_review/apps-details-daqs-questions-v1.html">2.0</a> but assembled as a clickable prototype. </p>
             </td>
             <td style="text-align:right">
-              <span class="status status--ready"></span>
+              <span class="status status--red"></span>
             </td>
           </tr>
         </table>
@@ -276,18 +276,19 @@
         background-color: #00823b;
       }
 
-      /* Status - Ready for show and tell */
-      .status--ready:before {
+      /* Status - Ready for show and tell
+      .status--red:before {
         color: #005BBB;
         content: "Build";
       }
-      .status--ready:after {
+      .status--red:after {
         background-color: #005BBB;
       }
+      */
 
       /* Mobile view remove the copy */
       @media screen and (min-width: 0px) and (max-width: 700px) {
-        .status--red:before, .status--green:before, .status--ready:before { content: ""; }
+        .status--red:before, .status--green:before, .status--red:before { content: ""; }
       }
 
     </style>

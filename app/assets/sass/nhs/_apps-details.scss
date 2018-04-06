@@ -37,3 +37,15 @@
   @extend .heading-large;
   margin-top:10px;
 }
+
+.apps-details-download {
+    padding-top: $baseline-grid-unit * 2;
+}
+
+.apps-details-download__item {
+  display: inline-block;
+  width: 160px;
+  img {
+    width: 100%;
+  }
+}
