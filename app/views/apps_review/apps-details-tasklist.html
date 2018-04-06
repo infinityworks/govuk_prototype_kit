@@ -100,30 +100,35 @@
       <p>Please complete <a href="#section1">Section 1</a> and we will review your answers before continuing. </p>
       <p>This process usually takes 3 days. </p>
 
+      <!-- <p  class="task-list-extra-details"><span class="green">Requested (1)</span>   &nbsp;&nbsp;  <span class="red">Rejected (2)</span>  &nbsp;&nbsp;   <span class="grey">Approved (1)</span></p> -->
+
       <ol class="task-list">
         <li id="section1">
           <h2 class="task-list-section">
             <span class="task-list-section-number">1. </span> Pre-assessment
           </h2>
-          <p  class="task-list-extra-details"><span class="green">Requested (1)</span>   &nbsp;&nbsp;  <span class="red">Rejected (2)</span>  &nbsp;&nbsp;   <span class="grey">Approved (1)</span></p>
+
           <ul class="task-list-items">
             <li class="task-list-item">
               <a class="task-name" href="apps-details-tasklist-questions.html" aria-describedby="eligibility-completed">
                 Key contact information
               </a>
-              <strong class="task-completed" id="eligibility-completed">Completed</strong>
+              <div class="task-incomplete">
+                <div class="task-incomplete__text">20% complete</div>
+                <div class="task-incomplete__bar" style="width: 20%">&nbsp;</div>
+              </div>
             </li>
             <li class="task-list-item">
               <a class="task-name" href="apps-details-tasklist-questions.html" aria-describedby="read-declaration-completed">
                 Key app information
               </a>
-              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+              <div class="task-completed">Completed</div>
             </li>
             <li class="task-list-item">
               <a class="task-name" href="apps-details-tasklist-questions.html" aria-describedby="read-declaration-completed">
                 Detailed app information
               </a>
-              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+              <div class="task-completed">Completed</div>
             </li>
           </ul>
         </li>
@@ -134,24 +139,20 @@
           </h2>
           <ul class="task-list-items">
             <li class="task-list-item">
-              <a class="task-name" href="apps-details-tasklist-questions.html">
                 Clarity of Purpose &amp; Intended Use
-              </a>
+                <div class="task-locked">Locked</div>
             </li>
             <li class="task-list-item">
-              <a class="task-name" href="apps-details-tasklist-questions.html">
                 Evidence Basis of Digital Service
-              </a>
+                <div class="task-locked">Locked</div>
             </li>
             <li class="task-list-item">
-              <a class="task-name" href="apps-details-tasklist-questions.html">
                 Data and Evidence Related to the Specific Digital Service
-              </a>
+                <div class="task-locked">Locked</div>
             </li>
             <li class="task-list-item">
-              <a class="task-name" href="apps-details-tasklist-questions.html">
                 Ongoing Studies
-              </a>
+                <div class="task-locked">Locked</div>
             </li>
           </ul>
         </li>
@@ -259,7 +260,7 @@
 
       </ol>
 
-      <hr>
+      <br>
 
       <div class="new-section">
         <h2 class="heading-medium">Project Files</h2>
