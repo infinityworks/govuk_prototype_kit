@@ -1,0 +1,31 @@
+.gem-c-step-nav-related {
+  margin-bottom: $gutter-half;
+}
+
+.gem-c-step-nav-related__heading,
+.gem-c-step-nav-related__links {
+  @include bold-19;
+  margin: 0;
+  padding: 0;
+}
+
+.gem-c-step-nav-related__pretitle {
+  display: block;
+  margin-bottom: $gutter-half;
+
+  @include media(tablet) {
+    margin-bottom: 5px;
+  }
+}
+
+.gem-c-step-nav-related__links {
+  list-style: none;
+}
+
+.gem-c-step-nav-related__link-item {
+  margin-top: $gutter-half;
+
+  @include media(tablet) {
+    margin-top: 5px;
+  }
+}
