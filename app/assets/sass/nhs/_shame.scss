@@ -106,6 +106,15 @@
     margin-top: 40px;
   }
 }
+
+.form-group-small {
+  margin-bottom: 10px;
+  @include media(tablet) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
 .form-control {
   @include media(tablet) {
     width: 64%;

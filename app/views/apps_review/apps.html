@@ -88,7 +88,27 @@
 
     <main id="content" role="main">
 
+
+
+
+
       <h1 class="heading-large">Your Apps</h1>
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <div class="form-group-small">
+            <label class="form-label" for="select-box">Sort by:</label>
+            <select class="form-control" id="select-box" name="select-box">
+              <option>Recently updated</option>
+              <option>Date added - Assending</option>
+              <option>Date added - Decending</option>
+              <option>App name - A/Z</option>
+              <option>App name - Z/A</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
 
       <table>
         <thead>
@@ -216,6 +236,23 @@
           </tr>
         </tbody>
       </table>
+
+
+      <div class="pagination" style="clear: both">
+          <ul class="pagination__list">
+              <li class="pagination__list__item pagination__list__item--current">
+                  <span class="">1</span>
+              </li>
+              <li class="pagination__list__item">
+                  <a href="home-page2.html" title="Page 2">2</a>
+              </li>
+              <li class="pagination__list__item pagination__list__item--next">
+                  <a href="home-page2.html" title="Next">
+                      <span class="next">Next</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
 
 
 
