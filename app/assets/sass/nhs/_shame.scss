@@ -168,6 +168,7 @@
   margin-bottom: $baseline-grid-unit * 2;
 }
 
+/* Panels */
 .panel--red {
   background-color: #FFF5F5;
   border-color: $nhs-red;
@@ -184,9 +185,52 @@
   border-color: $nhs-green;
 }
 
+.panel--hero-img {
+  padding-top: $baseline-grid-unit * 6;
+  padding-bottom: $baseline-grid-unit * 6;
+  background-color: #CCC;
+}
 
 
+
+
+.status {
+  float: right;
+  display: inline-block;
+  background-color: #FFF;
+  color: $nhs-grey1;
+
+  padding: 3px 5px 3px;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 13px;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  @include media(desktop) {
+    margin: 2px 0 0 0;
+    padding: 3px 5px 1px;
+    font-size: 16px;
+  }
+}
+.status--part-complete {
+  background-color: #FF9300;
+  color: #FFF;
+}
+.status--complete {
+  background-color: #005ea5;
+  color: #FFF;
+}
+.status--with-vendor {
+  background-color: #F1F2F4;
+}
+
+
+// status--completed
 /* Tasklist */
+
 .task-incomplete {
   position: relative;
   display: inline-block;
@@ -219,7 +263,7 @@
     color: #005ea5;
   }
 }
-
+/*
 .task-locked {
     color: #0b0c0c;
     display: inline-block;
@@ -236,6 +280,7 @@
     margin-right: 0;
     padding-top: 5px;
 }
+*/
 
 
 
