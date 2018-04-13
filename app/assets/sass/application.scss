@@ -10,11 +10,15 @@ $path: "/public/images/";
 @import 'patterns/check-your-answers';
 @import 'patterns/task-list';
 
-// Related items
-// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+// Extra patterns taken from here:
+// https://govuk-publishing-components.herokuapp.com/component-guide
+// https://github.com/alphagov/govuk_publishing_components/tree/master/app/assets/stylesheets/govuk_publishing_components/components
+// I'm not sure why these aren't destributed in the same way as _task-list.scss for example?
+@import 'patterns/step-by-step-nav.scss';
+@import 'patterns/step-by-step-related.scss';
 
 
-// These need reviewing - Don't think these are in the right place
+// These need reviewing - VERY MESSY
 @import 'nhs/global-header-override.scss';
 @import 'nhs/global-variables.scss';
 
