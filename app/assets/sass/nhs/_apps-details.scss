@@ -1,20 +1,16 @@
-.apps-details {
-  background-color: #e8edee;
-}
 
-.apps-details__section {
-  padding: $baseline-grid-unit * 2;
-}
 
+/* Head */
 
 .apps-details-head {
   min-height: 170px;
 }
+
 .apps-details-head__icon {
   float: left;
   margin-right: $baseline-grid-unit * 2;
-  margin-top: $baseline-grid-unit * 3;
-  width: 100px;
+  margin-top: $baseline-grid-unit * 2;
+  width: 80px;
   border: 1px solid #aaa;
   border-radius: 17px;
   @include media(tablet) {
@@ -23,23 +19,47 @@
   }
 }
 
-.apps-details-head__details {
+
+/* Details */
+
+.apps-details {
+  background-color: #e8edee;
+}
+
+.apps-details__section {
+  padding: $baseline-grid-unit * 2;
+}
+
+.apps-details-details {
   padding-top: $baseline-grid-unit * 2;
-  padding-left: 130px;
+  padding-left: 100px;
   @include media(tablet) {
     padding-left: 0px;
   }
+
   p {
     margin:0 0 $baseline-grid-unit;
   }
+
 }
-.apps-details-head__details__title {
+
+.apps-details-details__title {
   @extend .heading-large;
-  margin-top:10px;
+  margin-top: $baseline-grid-unit * 2;
+  margin-bottom: $baseline-grid-unit / 2;
+
+  @include media(desktop) {
+    margin-bottom: $baseline-grid-unit;
+  }
+
+}
+
+.apps-details-details__tooltip {
+  margin-bottom: $baseline-grid-unit * 4;
 }
 
 .apps-details-download {
-    padding-top: $baseline-grid-unit * 2;
+    padding: $baseline-grid-unit * 2 0;
 }
 
 .apps-details-download__item {

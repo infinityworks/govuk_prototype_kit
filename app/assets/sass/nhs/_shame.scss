@@ -51,7 +51,9 @@
 
 
 /* Buttons */
-
+.button {
+  margin-bottom: $baseline-grid-unit;
+}
 .button--blue {
   @include button($nhs-blue);
 }
@@ -194,11 +196,31 @@
   border-color: $nhs-green;
 }
 
-.panel--hero-img {
-  padding-top: $baseline-grid-unit * 6;
-  padding-bottom: $baseline-grid-unit * 6;
+
+
+.panel-hero {
+
   background-color: #CCC;
+  padding: $baseline-grid-unit * 6  $baseline-grid-unit * 2;
+
+  @include media(tablet) {
+    font-size: 19px;
+    padding: $baseline-grid-unit * 6  $baseline-grid-unit * 4;
+  }
 }
+.panel-hero-inner {
+  max-width: 960px;
+  margin: 0px auto;
+}
+.panel-hero__title {
+  @extend .heading-large;
+  margin-top: $baseline-grid-unit * 2;
+  max-width: 700px;
+}
+.panel-hero__para {
+  max-width: 700px;
+}
+
 
 
 

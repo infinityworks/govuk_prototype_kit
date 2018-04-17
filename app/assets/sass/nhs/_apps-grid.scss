@@ -3,7 +3,7 @@
 .apps-grid__controller {
   display: inline-block;
 
-  @include media(tablet) {
+  @media only screen and (min-width: 1020px) {
     float: left;
     max-width: 200px;
     padding: $baseline-grid-unit * 3;
@@ -23,7 +23,7 @@
   font-size: 14px;
   cursor: pointer;
 
-  @include media(tablet) {
+  @media only screen and (min-width: 1020px) {
     cursor: default;
     font-size: 16px;
     padding-left: 0;
@@ -40,7 +40,7 @@
   top: 12px;
   right: 12px;
   font-size: 20px;
-  @include media(tablet) {
+  @media only screen and (min-width: 1020px) {
     display: none;
   }
 }
@@ -48,14 +48,13 @@
 .apps-grid__controller__list {
   display: none;
   padding: $baseline-grid-unit * 3;
-  @include media(tablet) {
+  @media only screen and (min-width: 1020px) {
     display: block;
     padding: 0;
   }
   list-style: none;
   font-size: 16px;
   margin: 0;
-
 }
 
 .apps-grid__controller__list__item {
@@ -66,6 +65,7 @@ a.apps-grid__controller__list__item__link {
   display: inline-block;
   margin-bottom: $baseline-grid-unit;
 }
+
 a.apps-grid__controller__list__item__link--selected {
   font-weight: 600;
   color: #000;
@@ -74,9 +74,18 @@ a.apps-grid__controller__list__item__link--selected {
 
 .apps-grid__content {
   margin-top: $baseline-grid-unit * 2;
-  @include media(tablet) {
-    margin-top: 0;
-    padding-left: 276px;
+  @media only screen and (min-width: 1020px) {
+    padding-left: 250px;
+  }
+}
+
+.apps-grid__content__item {
+  @media only screen and (min-width: 1020px) {
+    float: left;
+    width: 50%;
+    .cardapp {
+      margin-left: $baseline-grid-unit * 2;
+    }
   }
 }
 
@@ -122,7 +131,7 @@ a.apps-grid__controller__list__item__link--selected {
 .apps-grid__title__sortby {
   font-size: 14px;
   color: #6d6d6d;
-  @include media(tablet) {
+  @media only screen and (min-width: 1020px) {
     float: right;
     margin: 0;
   }
