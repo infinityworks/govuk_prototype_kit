@@ -331,11 +331,19 @@
           });
       });
 
-    }
+    };
 
-    // Toggle sub title
+
+    // Toggle tooltips
     $( ".tooltip" ).click(function() {
-        $( this ).toggleClass("tooltip--show");
+
+      if ( $( this ).hasClass( "tooltip--show" ) ) {
+        $( ".tooltip" ).removeClass("tooltip--show");
+      } else {
+        $( ".tooltip" ).removeClass("tooltip--show");
+        $( this ).addClass ("tooltip--show");
+      }
+
     });
 
 
