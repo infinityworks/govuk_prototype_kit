@@ -29,7 +29,14 @@
   font-weight: 600;
   margin-top: 0;
   margin-bottom: $baseline-grid-unit;
+  &:hover, &:active {
+    background-color: #FFF;
+    outline: 0;
+  }
 }
+
+
+
 
 .cardapp__content {
   margin-top: $baseline-grid-unit * 3;
