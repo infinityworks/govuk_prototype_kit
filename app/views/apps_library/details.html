@@ -109,22 +109,27 @@
 
           <div class="apps-details-head">
             <img class="apps-details-head__icon" src="https://apps.beta.nhs.uk/media/1170/mycopd_icon2.jpg?anchor=center&mode=crop&width=120&height=120&rnd=131364634110000000" alt="myCOPD">
-            <div class="apps-details-head__details">
-              <h2 class="apps-details-head__details__title">myCOPD</h2>
+            <div class="apps-details-details">
+              <h2 class="apps-details-details__title">myCOPD</h2>
 
-              <p class="apps-details-head__subtitle">
-                <img src="/images/tick_dark-blue-1.png" class="cardapp__top__subtitle__icon"> NHS Approved
-              </p>
+              <div class="tooltip apps-details-details__tooltip">
+                <div class="tooltip__modal">
+                  These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
+                </div>
+                <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> Being tested in the NHS
+              </div>
+
               <p>Category: COPD</p>
               <p>Price: £20. Free in some areas</p>
-
-
+              <p><img src="/images/icon-website.svg"> Website</p>
+              <p><img src="/images/icon-mobile.svg"> Mobile App</p>
+              <!-- <p><a href="https://mymhealth.com/mycopd" alt="Visit website" class="btn btn-primary external-badge" role="button">Visit website</a></p> -->
 
               <div class="apps-details-download">
-                <p><a href="#" class="apps-details-download__item"><img src="https://apps.beta.nhs.uk/Content/Images/google-play-badge.png"></a></p>
-                <p><a href="#" class="apps-details-download__item"><img src="https://apps.beta.nhs.uk/Content/Images/Download_on_the_App_Store_Badge.svg"></a></p>
+                <a href="#" class="apps-details-download__item"><img src="https://apps.beta.nhs.uk/Content/Images/google-play-badge.png"></a>
+                <a href="#" class="apps-details-download__item"><img src="https://apps.beta.nhs.uk/Content/Images/Download_on_the_App_Store_Badge.svg"></a>
               </div>
-              <p><a href="https://mymhealth.com/mycopd" alt="Visit website" class="btn btn-primary external-badge" role="button">Visit website</a></p>
+
             </div>
           </div>
 
@@ -277,6 +282,10 @@
 
     }
 
+    // Toggle sub title
+    $( ".tooltip" ).click(function() {
+        $( this ).toggleClass("tooltip--show");
+    });
 
 
 
