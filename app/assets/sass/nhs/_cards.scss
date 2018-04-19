@@ -1,11 +1,13 @@
 
 .cardapp {
+  position: relative;
   border-top: 1px solid #e8edee;
   border-left: 1px solid #e8edee;
   border-right: 1px solid #e8edee;
   border-bottom: 4px solid #e8edee;
   padding: $baseline-grid-unit * 3;
-  margin-bottom: $baseline-grid-unit * 3;
+  margin-bottom: $baseline-grid-unit * 2;
+  min-height: 205px;
 }
 
 .cardapp__top {
@@ -35,20 +37,16 @@
   }
 }
 
-
-
-
 .cardapp__content {
-  margin-top: $baseline-grid-unit * 3;
+  margin-top: $baseline-grid-unit * 2;
   font-size: 16px;
 }
 
-.cardapp__content {
-  min-height: 80px;
-}
-
 .cardapp__footer {
-  margin-top: 0;
+  position: absolute;
+  bottom: $baseline-grid-unit * 2;
+  left: $baseline-grid-unit * 2;
+  right: $baseline-grid-unit * 2;
   border-top: 1px solid #CCC;
   padding-top: $baseline-grid-unit * 1;
   font-size: 14px;

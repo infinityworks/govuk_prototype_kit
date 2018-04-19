@@ -80,7 +80,7 @@ a.apps-grid__controller__list__item__link--selected {
 }
 
 .apps-grid__content__item {
-  @include media(tablet) {
+  @include media(desktop) {
     float: left;
     width: 50%;
     .cardapp {
