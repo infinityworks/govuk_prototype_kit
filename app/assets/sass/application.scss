@@ -46,4 +46,7 @@ $path: "/public/images/";
 @import 'nhs/categories-lists.scss';
 
 
+// Extra styling to theme the carosel.
+// Need something better than this
+@import 'nhs/carousel.scss';
 @import 'nhs/shame.scss';

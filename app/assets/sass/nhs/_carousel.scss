@@ -1,0 +1,19 @@
+
+/* Styling on top of the core carousel css file */
+
+.carousel img {
+  width: 100%;
+  max-width: 392px
+}
+.slick-prev {
+  z-index: 100;
+}
+.slick-prev {
+  left: 15px;
+}
+.slick-next {
+  right: 15px;
+}
+.slick-next:before, .slick-prev:before {
+  color: #000;
+}
