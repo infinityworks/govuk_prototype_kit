@@ -1,0 +1,45 @@
+
+.lists {
+  clear: both;
+  font-size: 14px;
+  padding-top: $baseline-grid-unit * 2;
+  margin-bottom: $baseline-grid-unit;
+}
+
+.lists__item {
+
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: $baseline-grid-unit;
+
+  &::after {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: "";
+    background-color: #CCC;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+  }
+
+  &.lists__item--orange::after {
+    background-color: #FF9200;
+  }
+
+  &.lists__item--green::after {
+    background-color: #00823B;
+  }
+
+  &.lists__item--red::after {
+    background-color: #E20000;
+  }
+
+}
+
+/*
+a:link.lists-link, a:visited.lists-link {
+  display: block;
+  color: #CCC;
+}
+*/
