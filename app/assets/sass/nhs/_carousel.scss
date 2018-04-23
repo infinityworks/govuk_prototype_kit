@@ -3,17 +3,17 @@
 
 .carousel img {
   width: 100%;
-  max-width: 392px
+  max-width: 392px;
 }
 .slick-prev {
   z-index: 100;
 }
 .slick-prev {
-  left: 15px;
+  left: 15px!important;
 }
 .slick-next {
-  right: 15px;
+  right: 15px!important;
 }
 .slick-next:before, .slick-prev:before {
-  color: #000;
+  color: #000!important;
 }
