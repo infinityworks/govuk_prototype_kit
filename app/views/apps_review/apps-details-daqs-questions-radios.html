@@ -86,110 +86,136 @@
 
     <div id="global-header-bar"></div>
 
-    <main id="content" role="main">
-
-      <div class="breadcrumbs">
-        <ol>
-          <li><a href="/apps_review/apps.html">Apps</a></li>
-          <li><a href="/apps_review/apps-details-tasklist.html">Pinpoint Tech</a></li>
-          <li aria-current="page">Pre-assessment</li>
-        </ol>
-      </div>
-
-      <h1 class="heading-large">Key contact information</h1>
 
 
-      <!-- ############################################################################################################## -->
-      <!-- Question START -->
-      <!-- ############################################################################################################## -->
+    <form action="#">
+      <main id="content" role="main">
 
-      <form action="#">
+        <div class="breadcrumbs">
+          <ol>
+            <li><a href="/apps_review/apps.html">Apps</a></li>
+            <li><a href="/apps_review/apps-details-tasklist.html">Pinpoint Tech</a></li>
+            <li aria-current="page">1. General</li>
+          </ol>
+        </div>
 
-        <div class="form-group" id="viewb01">
-          <label class="form-label" for="b01"><span class="heading-medium">B.0.1 What is the name of the Digital Service?</span></label>
-          <!-- <p>Note: This isn't a standard GDS pattern</p> -->
-
-          <input class="form-control" id="b01" type="text" name="b01" value="MyApp" disabled>
-          <fieldset class="inline" style="margin-top:12px;">
-
-            <!-- Buttons -->
-            <div class="js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-              <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup" value="1" id="b01a" />
-              <label for="b01a">Approve</label>
-              <input type="radio" class="v2-radio-button radio-button--reject js-btn-reject" name="radioButtonGroup" value="2" id="b01b" />
-              <label for="b01b">Reject</label>
-              <input type="radio" class="v2-radio-button radio-button--request js-btn-request" name="radioButtonGroup" value="3" id="b01c" />
-              <label for="b01c">Information request</label>
-            </div>
-
-            <!-- Rejected -->
-            <div class="js-rejected" style="display: none">
-              <p class="form-note">David Sayce <span class="red">rejected</span> this question &nbsp; <a href="#" class="js-link-change">Change</a></p>
-            </div>
-
-            <!-- Reject input -->
-            <div class="js-rejected-input panel" style="display: none">
-              <label class="form-label" for="value-1-4-1">Reason for rejection <span class="red">*</span></label>
-              <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
-            </div>
-
-            <!-- Approved -->
-            <div class="js-approved" style="display: none">
-              <p class="form-note">David Sayce <span class="green">approved</span> this question &nbsp; <a href="#" class="js-link-change">Change</a></p>
-            </div>
-
-            <!-- Approved input -->
-            <div class="js-approved-input panel" style="display: none">
-              <label class="form-label" for="value-1-4-1">Optional recommendations</label>
-              <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
-            </div>
-
-            <!-- Document request input -->
-            <div class="js-doc-request-input panel" style="display: none">
-              <label class="form-label" for="value-1-4-1">Extra information required <span class="red">*</span></label>
-              <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
-            </div>
-
-            <!-- Document requested -->
-            <div class="js-doc-request panel font-xsmall" style="display: none">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ante imperdiet, cursus felis sit amet, faucibus leo. Suspendisse facilisis luctus ante, sed pulvinar urna aliquam et. </p>
-              <p>2 hours ago <a href="#">David Sayce</a></p>
-            </div>
-
-            <!-- Messages -->
-            <div class="js-messages"></div>
-
-            <!-- Reveal all messages -->
-            <div class="js-expand-button button button--light-grey button--small">Reveal all (<span>1</span>)</div>
+        <h1 class="heading-large">Digital Tool Information</h1>
 
 
-          </fieldset>
 
+
+
+
+        <div class="callout callout--attention">
+
+          <h2 class="heading-medium" style="margin:0">We have answers for you to review</h2>
+
+          <ul class="lists">
+            <li class="lists__item lists__item--grey"><a href="#" class="list-link">B.0.1 What is the name of the Digital Service?</a></li>
+            <li class="lists__item lists__item--red"><a href="#" class="list-link">B.0.2 What are the components of the Digital Service?</a></li>
+            <li class="lists__item lists__item--green"><a href="#" class="list-link">B.0.3 Please select the platforms that are available to users of your digital service:</a></li>
+            <li class="lists__item lists__item--orange"><a href="#" class="list-link">B.0.3.2 For each platform provide the current version number</a></li>
+          </ul>
 
         </div>
-      </form>
-
-      <hr>
-
-      <input type="submit" value="Save" class="button button--blue button--large js-page-submit">
 
 
-      <br><br><br><br><br><br>
-      <h3>Fake action from the assessment side</h3>
-      <ul>
-        <li>
+
+
+
+
+
+
+          <!-- ############################################################################################################## -->
+          <!-- Question START -->
+          <!-- ############################################################################################################## -->
+
+          <div class="form-group" id="viewb01">
+            <label class="form-label" for="b01"><span class="heading-medium">B.0.1 What is the name of the Digital Service?</span></label>
+            <!-- <p>Note: This isn't a standard GDS pattern</p> -->
+
+            <input class="form-control" id="b01" type="text" name="b01" value="MyApp" disabled>
+            <fieldset class="inline" style="margin-top:12px;">
+
+              <!-- Buttons -->
+              <div class="js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+                <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroup" value="1" id="b01a" />
+                <label for="b01a">Approve</label>
+                <input type="radio" class="v2-radio-button radio-button--reject js-btn-reject" name="radioButtonGroup" value="2" id="b01b" />
+                <label for="b01b">Reject</label>
+                <input type="radio" class="v2-radio-button radio-button--request js-btn-request" name="radioButtonGroup" value="3" id="b01c" />
+                <label for="b01c">Information request</label>
+              </div>
+
+              <!-- Rejected -->
+              <div class="js-rejected" style="display: none">
+                <p class="form-note">David Sayce <span class="red">rejected</span> this question &nbsp; <a href="#" class="js-link-change">Change</a></p>
+              </div>
+
+              <!-- Reject input -->
+              <div class="js-rejected-input panel" style="display: none">
+                <label class="form-label" for="value-1-4-1">Reason for rejection <span class="red">*</span></label>
+                <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
+              </div>
+
+              <!-- Approved -->
+              <div class="js-approved" style="display: none">
+                <p class="form-note">David Sayce <span class="green">approved</span> this question &nbsp; <a href="#" class="js-link-change">Change</a></p>
+              </div>
+
+              <!-- Approved input -->
+              <div class="js-approved-input panel" style="display: none">
+                <label class="form-label" for="value-1-4-1">Optional recommendations</label>
+                <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
+              </div>
+
+              <!-- Document request input -->
+              <div class="js-doc-request-input panel" style="display: none">
+                <label class="form-label" for="value-1-4-1">Extra information required <span class="red">*</span></label>
+                <textarea class="form-control form-control-1-4-1" name="textarea" id="textarea" rows="5"></textarea>
+              </div>
+
+              <!-- Document requested -->
+              <div class="js-doc-request panel font-xsmall" style="display: none">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ante imperdiet, cursus felis sit amet, faucibus leo. Suspendisse facilisis luctus ante, sed pulvinar urna aliquam et. </p>
+                <p>2 hours ago <a href="#">David Sayce</a></p>
+              </div>
+
+              <!-- Messages -->
+              <div class="js-messages"></div>
+
+              <!-- Reveal all messages -->
+              <div class="js-expand-button button button--light-grey button--small">Reveal all (<span>1</span>)</div>
+
+            </fieldset>
+
+          </div>
+
+          <hr>
+
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu metus, dictum nec tincidunt ut,
+             egestas vitae ipsum. Etiam interdum massa non tellus pellentesque semper vel sed magna. Nunc at ligula
+             in lectus efficitur gravida quis eu erat. Nullam ac dui euismod sapien porta vestibulum.
+          </p>
+          <input type="submit" value="Approve Section" class="button button--blue button--large js-page-submit">
+
+          <br><br><br>
           <a href="#" class="js-assessment-change-answer">User changes answer</a>
-        </li>
-      </ul>
-
-
-    </main>
 
 
 
-    <footer class="group js-footer" id="footer" role="contentinfo">
-      <p style="text-align: center; color: #adb1b5; padding-top: 20px;">Footer</p>
-    </footer>
+
+
+
+      </main>
+    </form>
+
+
+
+
+
+
 
     <div id="global-app-error" class="app-error hidden"></div>
 
