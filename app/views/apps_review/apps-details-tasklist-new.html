@@ -110,7 +110,8 @@
             <div style="margin-top: 12px;">
               <select class="form-control" id="select-box" name="select-box" style="width: 100%">
                 <option value="simple">Simple view</option>
-                <option value="my-todo">Requiring review</option>
+                <option value="awaiting-review">Awaiting review</option>
+                <option value="my-todo">Review in progress</option>
                 <option value="all-questions">All questions</option>
 
                 <option value="satisfactory">Satisfactory</option>
@@ -138,9 +139,9 @@
 
               <ul class="lists">
                 <li class="lists__item lists__item--grey"><a href="#" class="list-link">B.0.1 What is the name of the Digital Service?</a></li>
-                <li class="lists__item lists__item--red"><a href="#" class="list-link">B.0.2 What are the components of the Digital Service?</a></li>
-                <li class="lists__item lists__item--green"><a href="#" class="list-link">B.0.3 Please select the platforms that are available to users of your digital service:</a></li>
-                <li class="lists__item lists__item--orange"><a href="#" class="list-link">B.0.3.2 For each platform provide the current version number</a></li>
+                <li class="lists__item lists__item--grey"><a href="#" class="list-link">B.0.2 What are the components of the Digital Service?</a></li>
+                <li class="lists__item lists__item--grey"><a href="#" class="list-link">B.0.3 Please select the platforms that are available to users of your digital service:</a></li>
+                <li class="lists__item lists__item--grey"><a href="#" class="list-link">B.0.3.2 For each platform provide the current version number</a></li>
               </ul>
 
             </li>
@@ -678,6 +679,12 @@
         $(".lists").show();
         $(".lists__item").hide();
         $(".lists__item--red").show();
+
+      } else if ( this.value == "awaiting-review")  {
+
+        $(".lists").show();
+        $(".lists__item").hide();
+        $(".lists__item--grey").show();
 
       }
     })
