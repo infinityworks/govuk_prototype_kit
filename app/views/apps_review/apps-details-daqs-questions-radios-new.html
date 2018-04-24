@@ -104,6 +104,28 @@
 
 
 
+
+
+        <div class="callout callout--attention">
+
+          <h2 class="heading-medium" style="margin:0">We have answers for you to review</h2>
+
+          <ul class="lists">
+            <li class="lists__item lists__item--grey"><a href="#" class="list-link">B.0.1 What is the name of the Digital Service?</a></li>
+            <li class="lists__item lists__item--red"><a href="#" class="list-link">B.0.2 What are the components of the Digital Service?</a></li>
+            <li class="lists__item lists__item--green"><a href="#" class="list-link">B.0.3 Please select the platforms that are available to users of your digital service:</a></li>
+            <li class="lists__item lists__item--orange"><a href="#" class="list-link">B.0.3.2 For each platform provide the current version number</a></li>
+          </ul>
+
+        </div>
+
+
+
+
+
+
+
+
           <!-- ############################################################################################################## -->
           <!-- Question START -->
           <!-- ############################################################################################################## -->
@@ -176,22 +198,9 @@
              egestas vitae ipsum. Etiam interdum massa non tellus pellentesque semper vel sed magna. Nunc at ligula
              in lectus efficitur gravida quis eu erat. Nullam ac dui euismod sapien porta vestibulum.
           </p>
-          <input type="submit" value="Save" class="button  button--large js-page-submit">
+          <input type="submit" value="Approve Section" class="button button--blue button--large js-page-submit">
 
-
-          <p>&nbsp;</p>
-          <div class="callout callout--muted">
-            <h2 class="callout__title">Submit this section</h2>
-            <p class="callout__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu metus, dictum nec tincidunt ut,
-               egestas vitae ipsum. Etiam interdum massa non tellus pellentesque semper vel sed magna. Nunc at ligula
-               in lectus efficitur gravida quis eu erat. Nullam ac dui euismod sapien porta vestibulum.
-            </p>
-            <p style="padding-top: 20px;">
-              <input type="submit" value="Approve Section" class="button button--blue js-page-submit">
-            </p>
-          </div>
-
-
+          <br><br><br>
           <a href="#" class="js-assessment-change-answer">User changes answer</a>
 
 
@@ -247,10 +256,57 @@
 
       $( document ).ready(function() { // 6,32 5,38 2,34
 
+        // ######################################
+        // Show the correct extra questions:
+        // ######################################
+
+        $('.v2-radio-buttons-wrapper input:radio').change(
+
+          function(){
+
+              localReject = $(this).parent().siblings('.js-rejected-input');
+              localApproved = $(this).parent().siblings('.js-approved-input');
+              localRequestDoc = $(this).parent().siblings('.js-doc-request-input');
+
+
+              if ($(this).is(':checked') && $(this).val() == '1') {
+                  // alert("approve");
+
+                  $(localReject).hide();
+                  $(localApproved).show();
+                  $(localRequestDoc).hide();
+
+              } else if ($(this).is(':checked') && $(this).val() == '2') {
+                  // alert("reject");
+
+                  $(localReject).show();
+                  $(localApproved).hide();
+                  $(localRequestDoc).hide();
+
+              } else if ($(this).is(':checked') && $(this).val() == '3') {
+                  // alert("request");
+
+                  $(localReject).hide();
+                  $(localApproved).hide();
+                  $(localRequestDoc).show();
+
+              }
+          });
 
           // ######################################
           // On page submit
           // ######################################
+
+          // Fake the corect states for demoing page
+
+          // radioButtonGroup
+          // radioButtonGroupb02
+          // radioButtonGroupb03
+          // radioButtonGroupb04
+          // radioButtonGroupb05
+
+          // form-group > form-group--approved | form-group--rejected
+
 
           approvedHtml = "<div class='panel font-xsmall'><p><span class='green'>Approved</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>2 hours ago - <a href='#'>David Sayce</a></p></div>";
           rejectedHtml = "<div class='panel font-xsmall'><p><span class='red'>Rejected</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>2 hours ago - <a href='#'>David Sayce</a></p></div>";
@@ -263,14 +319,15 @@
 
             $( "html" ).scrollTop( 0 );
 
+            $("#viewb01 .js-radio-buttons").hide();
+            $("#viewb01 .js-approved-input").hide();
+            $("#viewb01 .js-rejected-input").hide();
+            $("#viewb01 .js-doc-request-input").hide();
+
 
             if ($('input[name=radioButtonGroup]:checked').val() == "1") {
               // console.log ("1");
 
-              $("#viewb01 .js-approved-input").hide();
-              $("#viewb01 .js-rejected-input").hide();
-              $("#viewb01 .js-doc-request-input").hide();
-              $("#viewb01 .js-radio-buttons").hide();
               $("#viewb01 .js-approved").show();
               $("#viewb01 .js-rejected").hide();
 
@@ -279,10 +336,6 @@
 
             } else if ($('input[name=radioButtonGroup]:checked').val() == "2") {
 
-              $("#viewb01 .js-approved-input").hide();
-              $("#viewb01 .js-rejected-input").hide();
-              $("#viewb01 .js-doc-request-input").hide();
-              $("#viewb01 .js-radio-buttons").hide();
               $("#viewb01 .js-approved").hide();
               $("#viewb01 .js-rejected").show();
 
@@ -291,11 +344,14 @@
 
             } else if ($('input[name=radioButtonGroup]:checked').val() == "3") {
 
-              $("#viewb01 .js-radio-buttons").hide();
               $("#viewb01 .js-radio-buttons").show();
               $("#viewb01 .js-messages").prepend( requestedHtml );
 
               addClickFake();
+
+            } else {
+
+              $("#viewb01 .js-radio-buttons").show();
 
             }
 
@@ -311,6 +367,8 @@
 
             }
             // $("#viewb01 .js-messages").children().length
+
+
 
           });
 
