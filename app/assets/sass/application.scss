@@ -30,6 +30,7 @@ $path: "/public/images/";
 @import 'nhs/prism.scss';
 
 // NHS specific components
+@import 'nhs/utilities.scss';
 @import 'nhs/local-header.scss';
 @import 'nhs/search-banner.scss';
 @import 'nhs/cards.scss';
@@ -45,7 +46,6 @@ $path: "/public/images/";
 @import 'nhs/global-footer.scss';
 @import 'nhs/categories-lists.scss';
 @import 'nhs/lists.scss';
-
 
 // Extra styling to theme the carosel.
 // Need something better than this
