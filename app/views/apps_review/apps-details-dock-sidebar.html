@@ -88,7 +88,7 @@
 
 
 
-    <form action="#">
+    <form id="my-form" action="#">
       <main id="content" role="main">
 
         <div class="breadcrumbs">
@@ -284,9 +284,9 @@
     <script src="/javascripts/application.js"></script>
 
 
+
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
-
 
 
 
@@ -296,7 +296,6 @@
 
     $(document).ready(function() {
         $('input[type=radio]').change(function() {
-
 
           $("input.js-page-submit").prop('disabled', false);
           $("input.js-page-submit").val("Update");

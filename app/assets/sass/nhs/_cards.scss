@@ -57,11 +57,6 @@
 }
 
 
-
-
-
-/* List */
-
 .cardapp--list {
   position: relative;
   border-top: 1px solid #FFF;
@@ -114,28 +109,40 @@
 
 
 
-
-
 .cardrow {
   border-bottom: 1px solid #BFC1C3;
   position: relative;
-  padding-left: 100px;
-  padding-bottom: 38px;
-  padding-top: 44px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 80px;
+
+  @include media(desktop) {
+    padding-bottom: 25px;
+    padding-top: 44px;
+    padding-left: 105px;
+  }
 
   .cardrow__img {
     position: absolute;
-    top: 40px;
+    top: 22px;
     left: 0px;
-    //border: 1px solid #000;
-    width: 80px;
-    border-radius: 20px;
+    width: 60px;
+    border-radius: 15px;
+    border: 1px solid #BFC1C3;
+
+    @include media(desktop) {
+      top: 40px;
+      width: 80px;
+      border-radius: 20px;
+    }
   }
   .cardrow__title {
     @extend .heading-medium;
     margin: 0;
   }
   .cardrow__para {
-
+    @include media(mobile) {
+      margin-bottom: 5px;
+    }
   }
 }

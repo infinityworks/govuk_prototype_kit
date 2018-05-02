@@ -1,0 +1,28 @@
+.article_nav {
+  hr {
+      background-color: #425563;
+      height: 4px;
+      margin-top: 0;
+  }
+
+  .article_nav__heading {
+    @extend .heading-medium;
+  }
+
+  .article_nav__list {
+
+    list-style: disc;
+    padding-left: 1em;
+
+    li:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    a {
+      color: $nhs-blue;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+
+}

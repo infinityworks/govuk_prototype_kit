@@ -41,11 +41,14 @@ $path: "/public/images/";
 
 @import 'nhs/apps-grid.scss';
 @import 'nhs/apps-details.scss';
+@import 'nhs/apps-store';
 
 @import 'nhs/filter.scss';
 @import 'nhs/global-footer.scss';
 @import 'nhs/categories-lists.scss';
 @import 'nhs/lists.scss';
+@import 'nhs/article_nav';
+
 
 // Extra styling to theme the carosel.
 // Need something better than this

@@ -297,25 +297,6 @@ a.task-name:link {
     color: #005ea5;
   }
 }
-/*
-.task-locked {
-    color: #0b0c0c;
-    display: inline-block;
-    float: right;
-    padding: 2px 5px 0;
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 700;
-    text-transform: none;
-    font-size: 14px;
-    line-height: 1.14286;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    margin-right: 0;
-    padding-top: 5px;
-}
-*/
-
 
 
 .panel--header {
@@ -331,6 +312,51 @@ a.task-name:link {
   .panel--header__side {
     float: right;
   }
+}
+
+
+/* Header for set2-details.html header */
+
+.app-header {
+  @include media(tablet) {
+    position: relative;
+  }
+
+  .app-header__bg {
+    width: 100%;
+    @include media(mobile) {
+      display: none;
+    }
+  }
+  .app-header__icon {
+    position: relative;
+    img {
+      max-width: 100px;
+      border-radius: 25px;
+    }
+    @include media(tablet) {
+      img {
+        max-width: 125px;
+      }
+      position: absolute;
+      bottom: -10px;
+      left: $baseline-grid-unit * 3;
+    }
+    &:after {
+      @include media(tablet) {
+        content: "";
+        position: absolute;
+        bottom: -$baseline-grid-unit;
+        left: $baseline-grid-unit * 3;
+        right: $baseline-grid-unit * 3;
+        border-radius: 10px;
+        background-color: #000;
+        height: 1px;
+        filter: blur(4px);
+      }
+    }
+  }
+
 }
 
 
