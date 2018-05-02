@@ -1,0 +1,17 @@
+
+.app-store {
+
+}
+
+.apps-store__item {
+  display: inline-block;
+  width: 200px;
+  margin-right: $baseline-grid-unit;
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}

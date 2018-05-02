@@ -1,8 +1,10 @@
 
 .sticky {
+  @include media(desktop) {
     position: -webkit-sticky;
     position: sticky;
     z-index: 1;
+  }
 }
 
 .sticky.sticky--top {
