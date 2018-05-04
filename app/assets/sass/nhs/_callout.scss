@@ -63,3 +63,8 @@
     padding: $baseline-grid-unit * 2 $baseline-grid-unit * 6;
   }
 }
+
+.callout__inner {
+  max-width: 900px;
+  margin: 0px auto;
+}
