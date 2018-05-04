@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Assessment</title>
+    <title>NHS Developer / Home</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -69,13 +69,16 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/apps_assessment" id="proposition-name">NHS Apps Library</a>
+              <a href="developer-home.html" id="proposition-name">NHS Developer</a>
 
               <ul id="proposition-links">
-                <li><a href="/apps_library/set2-home.html">Apps Library</a></li>
-                <li><a href="/developer/set2-home.html">Submit an app</a></li>
-                <li><a href="/developer/set2-getting-started.html" class="active">Get started</a></li>
-                <li><a href="/developer/set2-faqs.html">FAQs</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Download &amp; Data</a></li>
+                <li><a href="#">API Hub</a></li>
+                <li><a href="#">Test centre</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="home.html">Apps</a></li>
               </ul>
 
             </nav>
@@ -85,42 +88,96 @@
       </div>
     </header>
 
-    <div id="global-header-bar"></div>
+
 
     <main id="content" role="main">
 
-      <div class="breadcrumbs">
-        <ol>
-          <li><a href="/developer/set2-getting-started.html">Getting started</a></li>
-          <li aria-current="page">Sign in</li>
+      <div class="local-header">
+        <h2 class="local-header__title">Welcome to the Health Developer Network</h2>
+        <p class="local-header__para">Information and tools to help developers create software for health and social care.</p>
+        <a href="#" class="button">Start here</a>
+      </div>
+
+
+      <h2 class="heading-medium">Title for section</h2>
+
+      <div class="categories-lists">
+        <ol class="categories-list">
+          <li>
+            <h3><a href="set2-category.html">Library</a></h3>
+            <p>Browse and search developer information </p>
+          </li>
+          <li>
+            <h3><a href="set2-category.html">Downloads &amp; Data</a></h3>
+            <p>Download tools and source code; access data sources and services</p>
+          </li>
+          <li>
+            <h3><a href="set2-category.html">API Hub</a></h3>
+            <p>Explore and Make use of Nationally Defined Messaging APIs </p>
+          </li>
+        </ol>
+        <ol class="categories-list">
+          <li>
+            <h3><a href="set2-category.html">Apps</a></h3>
+            <p>Access developer information on Apps here</p>
+          </li>
+          <li>
+            <h3><a href="set2-category.html">Test Centre</a></h3>
+            <p>Find testing tools, data and guidance </p>
+          </li>
+          <li>
+            <h3><a href="set2-category.html">Learn</a></h3>
+            <p>Explore development tutorials, how-tos and case studies </p>
+          </li>
+        </ol>
+        <ol class="categories-list">
+          <li>
+            <h3><a href="set2-category.html">Community</a></h3>
+            <p>Read blogs, news and events; participate in forums</p>
+          </li>
         </ol>
       </div>
 
-      <h2 class="heading-large">Sign in to NHS Apps &amp; Wearables</h2>
+      <p style="clear:both"></p>
 
-      <form action="apps.html">
 
-        <p>
-          <label class="form-label" for="email-f1">E-mail Address</label>
-          <input class="form-control" id="email-f1" type="text" name="email-f1">
-        </p>
-        <p>
-          <label class="form-label" for="password-f1">Password</label>
-          <input class="form-control" id="password-f1" type="text" name="password-f1">
-        </p>
-        <p>
-          <input class="button" role="button" type="submit" value="Login">
-        </p>
-      </form>
+      <hr>
+      <h2 class="heading-medium">Recently added content</h2>
 
-      <h2 class="heading-medium">Need some help?</h3>
-      <ul class="list list-bullet">
-        <li><a href="reset-password.html">Reset password</a></li>
-        <li>Forgotten my password?</li>
-      </ul>
+      <div class="grid-row">
+        <div class="column-one-half">
+
+          <article>
+              <header>
+                  <h4 class="heading-small"><a href="#" class="">ODS ORD API Implementation Guide</a></h4>
+                  <p class="font-xsmall"><time>28 Feb 2018</time> - by Danny Ruttle</p>
+              </header>
+              <p class="font-xsmall">*** The information on this page has now been superseded.&nbsp; Please go to the ods-ord-api-implementation-guide&nbsp;*** &nbsp;</p>
+
+          </article>
+
+        </div>
+        <div class="column-one-half">
+
+          <article>
+              <header>
+                  <h4 class="heading-small"><a href="#" class="">ODS API Suite</a></h4>
+                  <p class="font-xsmall"><time>8 Dec 2017</time> - by Danny Ruttle</p>
+              </header>
+              <p class="font-xsmall">This is the temporary landing page for the ODS API Suite.&nbsp; The ODS API Suite is replacing the POC API […]</p>
+
+          </article>
+
+        </div>
+      </div>
+
+
+
+
 
 
     </main>
+
 
 
 
