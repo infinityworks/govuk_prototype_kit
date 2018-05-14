@@ -8,11 +8,10 @@
     padding-right: $baseline-grid-unit;
 }
 
-.grid-row--reverse {
-  .column-third, .column-one-third, .column-two-thirds, .column-one-half {
-    @include media(tablet) {
-      float: right;
-    }
+
+.grid-row--reverse > .column-third, .grid-row--reverse > .column-one-third, .grid-row--reverse > .column-two-thirds, .grid-row--reverse > .column-one-half {
+  @include media(tablet) {
+    float: right;
   }
 }
 
