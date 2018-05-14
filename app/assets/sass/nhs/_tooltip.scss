@@ -5,7 +5,8 @@
   display: inline-block;
   position: relative;
   margin-top: 0;
-  padding-right: $baseline-grid-unit;
+  padding-right: $baseline-grid-unit * 2;
+  padding-top: $baseline-grid-unit;
   font-size: 14px;
   font-weight: 600;
   color: #003087;
@@ -16,6 +17,10 @@
     top: 4px;
     width: 20px;
     margin-right: 2px;
+  }
+
+  .tooltip__title {
+    @extend .heading-small;
   }
 
   .tooltip__modal {

@@ -9,24 +9,37 @@
 }
 
 
+.grid-row--reverse > .column-third, .grid-row--reverse > .column-one-third, .grid-row--reverse > .column-two-thirds, .grid-row--reverse > .column-one-half {
+  @include media(tablet) {
+    float: right;
+  }
+}
 
 .breadcrumbs li {
   background-image: url("/images/separator-2x.png");
 }
 
+
+
+
 /* Could do with some base font colors */
 .blue {
   color: #005BBB;
 }
+
 .green {
   color: #3E9A57;
 }
+
 .lightgreen {
   color: #00BB89;
 }
+
 .red {
+
   color: #D00000;
 }
+
 .grey {
   color: #939293;
 }
@@ -57,6 +70,7 @@ a.task-name:link {
 .button {
   margin-bottom: $baseline-grid-unit;
 }
+
 .button--blue {
   @include button($nhs-blue);
 }
@@ -76,6 +90,7 @@ a.task-name:link {
 .button--small, .button--tiny {
   font-size: 16px;
 }
+
 .button--chevron {
   background-image: url("/images/icon-chevron.png");
   background-size: 13px 13px;
@@ -83,6 +98,7 @@ a.task-name:link {
   background-position: 10px;
   padding-left: 30px;
 }
+
 .button--chevron.button--grey, .button--chevron.button--light-grey {
   background-image: url("/images/icon-grey-chevron.png");
 }
@@ -182,11 +198,15 @@ a.task-name:link {
   margin-bottom: $baseline-grid-unit * 2;
 }
 
+
+
+
 /* Panels */
 .panel--red {
   background-color: #FFF5F5;
   border-color: $nhs-red;
 }
+
 .panel--red-border {
   border-color: $nhs-red;
 }
@@ -195,11 +215,15 @@ a.task-name:link {
   background-color: #EDFFF2;
   border-color: $nhs-green;
 }
+
 .panel--green-border {
   border-color: $nhs-green;
 }
 
 
+
+
+/* Panel Hero */
 
 .panel-hero {
 
@@ -247,13 +271,13 @@ a.task-name:link {
 
 
 
+/* Status */
 
 .status {
   float: right;
   display: inline-block;
   background-color: #FFF;
   color: $nhs-grey1;
-
   padding: 3px 5px 3px;
   font-family: "nta", Arial, sans-serif;
   font-weight: 700;
@@ -269,14 +293,17 @@ a.task-name:link {
     font-size: 16px;
   }
 }
+
 .status--part-complete {
   background-color: #FF9300;
   color: #FFF;
 }
+
 .status--complete {
   background-color: #00823B;
   color: #FFF;
 }
+
 .status--with-vendor {
   background-color: #F1F2F4;
 }
@@ -325,10 +352,12 @@ a.task-name:link {
   @include media(tablet) {
     padding: $baseline-grid-unit * 4;
   }
+
   .panel--header__title {
     @extend .heading-medium;
     margin-top: 0;
   }
+
   .panel--header__side {
     float: right;
   }
@@ -338,6 +367,7 @@ a.task-name:link {
 /* Header for set2-details.html header */
 
 .app-header {
+
   @include media(tablet) {
     position: relative;
   }
@@ -348,6 +378,7 @@ a.task-name:link {
       display: none;
     }
   }
+
   .app-header__icon {
     position: relative;
     img {
@@ -376,7 +407,6 @@ a.task-name:link {
       }
     }
   }
-
 }
 
 
@@ -384,6 +414,26 @@ a.task-name:link {
 .pie {
   max-width: 60px;
 }
+
 .timer {
   display: none;
+}
+
+
+
+
+/* Link to feedback form */
+
+.feedback {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: $nhs-blue;
+  padding: $baseline-grid-unit $baseline-grid-unit * 1.5;
+  a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }

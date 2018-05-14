@@ -21,6 +21,8 @@ $path: "/public/images/";
 // These need reviewing - VERY MESSY
 @import 'nhs/global-header-override.scss';
 @import 'nhs/global-variables.scss';
+@import 'nhs/mixins.scss';
+
 
 // Taken from the gov uk site. But can't find them on git hub?
 @import 'nhs/app-c-contents-list.scss';
@@ -43,13 +45,14 @@ $path: "/public/images/";
 @import 'nhs/apps-details.scss';
 @import 'nhs/apps-store';
 
-// @import 'nhs/filter.scss';
+@import 'nhs/filter.scss';
 @import 'nhs/global-footer.scss';
 @import 'nhs/categories-lists.scss';
 @import 'nhs/lists.scss';
 @import 'nhs/article_nav';
 @import 'nhs/article-rich-text';
-@import 'nhs/tree-nav';
+//@import 'nhs/tree-nav';
+@import 'nhs/tabs-nav';
 
 
 // Extra styling to theme the carosel.

@@ -31,10 +31,12 @@
   font-weight: 600;
   margin-top: 0;
   margin-bottom: $baseline-grid-unit;
+
   &:hover, &:active {
     background-color: #FFF;
     outline: 0;
   }
+
 }
 
 .cardapp__content {
@@ -110,39 +112,39 @@
 
 
 .cardrow {
-  border-bottom: 1px solid #BFC1C3;
+  border-bottom: 1px solid #DFE2E4;
   position: relative;
   padding-bottom: 25px;
   padding-top: 25px;
-  padding-left: 80px;
+  padding-left: 85px;
 
   @include media(desktop) {
-    padding-bottom: 25px;
-    padding-top: 44px;
-    padding-left: 105px;
+    padding-left: 120px;
   }
 
   .cardrow__img {
     position: absolute;
     top: 22px;
-    left: 0px;
+    left: 0;
     width: 60px;
     border-radius: 15px;
     border: 1px solid #BFC1C3;
 
     @include media(desktop) {
-      top: 40px;
+      top: 25px;
       width: 80px;
       border-radius: 20px;
+      left: $baseline-grid-unit * 2;
     }
   }
+
   .cardrow__title {
-    @extend .heading-medium;
+    @extend .heading-small;
     margin: 0;
   }
+
   .cardrow__para {
-    @include media(mobile) {
-      margin-bottom: 5px;
-    }
+    margin-bottom: 0;
   }
+
 }
