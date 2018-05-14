@@ -387,3 +387,21 @@ a.task-name:link {
 .timer {
   display: none;
 }
+
+
+
+/* Link to feedback form */
+
+.feedback {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: $nhs-blue;
+  padding: $baseline-grid-unit $baseline-grid-unit * 1.5;
+  a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
