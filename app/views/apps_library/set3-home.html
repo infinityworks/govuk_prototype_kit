@@ -110,48 +110,64 @@
                 <!-- <div class="filter-by__item">Example filter</div> -->
               </div>
 
-              <div class="filter-section">
+              <div class="filter-section filter-section--toggles">
                 <div class="filter-section__title">APP TYPE</div>
                 <div class="filter-section__contents">
 
-                  <ul class="list list-bullet">
-                    <li class="active">
-                      <a href="#">All</a>
-                    </li>
-                    <li>
-                      <a href="#">Cancer</a>
-                    </li>
-                    <li>
-                      <a href="#">COPD</a>
-                    </li>
-                    <li>
-                      <a href="#">Dementia</a>
-                    </li>
-                    <li>
-                      <a href="#">Dental</a>
-                    </li>
-                    <li>
-                      <a href="#">Diabetes</a>
-                    </li>
-                    <li>
-                      <a href="#">Healthy Living</a>
-                    </li>
-                    <li>
-                      <a href="#">Learning Disabilities</a>
-                    </li>
-                    <li>
-                      <a href="#">Mental Health</a>
-                    </li>
-                    <li>
-                      <a href="#">Online Community</a>
-                    </li>
-                    <li>
-                      <a href="#">Other</a>
-                    </li>
-                    <li>
-                      <a href="#">Pregnancy and Baby</a>
-                    </li>
-                  </ul>
+                  <fieldset class="filter-by-type">
+
+                    <!--
+                    <div class="multiple-choice">
+                      <input id="type-1" name="type-1" type="checkbox" value="#type-1">
+                      <label for="type-1">All</label>
+                    </div>
+                    -->
+
+                    <div class="multiple-choice">
+                      <input id="type-cancer" name="type-cancer" type="checkbox" value="type-cancer">
+                      <label for="type-cancer">Cancer (1)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-copd" name="type-copd" type="checkbox" value="type-copd">
+                      <label for="type-copd">COPD (1)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-dementia" name="type-dementia" type="checkbox" value="type-dementia">
+                      <label for="type-dementia">Dementia (1)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-dental" name="type-dental" type="checkbox" value="type-dental">
+                      <label for="type-dental">Dental (1)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-diabetes" name="type-diabetes" type="checkbox" value="type-diabetes">
+                      <label for="type-diabetes">Diabetes (2)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-healthyliving" name="type-healthyliving" type="checkbox" value="type-healthyliving">
+                      <label for="type-healthyliving">Healthy Living (13)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-learningdisabilities" name="type-learningdisabilities" type="checkbox" value="type-learningdisabilities">
+                      <label for="type-learningdisabilities">Learning Disabilities (2)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-mentalhealth" name="type-mentalhealth" type="checkbox" value="type-mentalhealth">
+                      <label for="type-mentalhealth">Mental Health (13)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-onlinecommunity" name="type-onlinecommunity" type="checkbox" value="type-onlinecommunity">
+                      <label for="type-onlinecommunity">Online Community (2)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-other" name="type-other" type="checkbox" value="type-other">
+                      <label for="type-other">Other (8)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="type-pregnancyandbaby" name="type-pregnancyandbaby" type="checkbox" value="type-pregnancyandbaby">
+                      <label for="type-pregnancyandbaby">Pregnancy and Baby (2)</label>
+                    </div>
+                  </fieldset>
 
                 </div>
               </div>
@@ -162,15 +178,15 @@
 
                     <fieldset>
                       <div class="multiple-choice">
-                        <input id="publisher-1" name="publisher-1" type="checkbox" value="#publisher-1">
+                        <input id="publisher-1" name="publisher-1" type="checkbox" value="publisher-1">
                         <label for="publisher-1">Independent (2)</label>
                       </div>
                       <div class="multiple-choice">
-                        <input id="publisher-2" name="publisher-2" type="checkbox" value="#publisher-2">
+                        <input id="publisher-2" name="publisher-2" type="checkbox" value="publisher-2">
                         <label for="publisher-2">NHS England (2)</label>
                       </div>
                       <div class="multiple-choice">
-                        <input id="publisher-3" name="publisher-3" type="checkbox" value="#publisher-3">
+                        <input id="publisher-3" name="publisher-3" type="checkbox" value="publisher-3">
                         <label for="publisher-3">NHS Trusts (2)</label>
                       </div>
                     </fieldset>
@@ -184,15 +200,15 @@
 
                   <fieldset>
                     <div class="multiple-choice">
-                      <input id="price-1" name="price-1" type="checkbox" value="#price-1">
+                      <input id="price-1" name="price-1" type="checkbox" value="price-1">
                       <label for="price-1">Free (20)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="price-2" name="price-2" type="checkbox" value="#price-2">
+                      <input id="price-2" name="price-2" type="checkbox" value="price-2">
                       <label for="price-2">In-App Purchase(5)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="price-3" name="price-3" type="checkbox" value="#price-3">
+                      <input id="price-3" name="price-3" type="checkbox" value="price-3">
                       <label for="price-3">Paid (14)</label>
                     </div>
                   </fieldset>
@@ -206,23 +222,23 @@
 
                   <fieldset>
                     <div class="multiple-choice">
-                      <input id="available-on-1" name="available-on-1" type="checkbox" value="#available-on-1">
+                      <input id="available-on-1" name="available-on-1" type="checkbox" value="available-on-1">
                       <label for="price-1">Google Play (2)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="available-on-2" name="available-on-2" type="checkbox" value="#available-on-2">
+                      <input id="available-on-2" name="available-on-2" type="checkbox" value="available-on-2">
                       <label for="available-on-2">Apple iOS (2)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="available-on-3" name="available-on-3" type="checkbox" value="#available-on-3">
+                      <input id="available-on-3" name="available-on-3" type="checkbox" value="available-on-3">
                       <label for="available-on-3">Microsoft (0)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="available-on-4" name="available-on-4" type="checkbox" value="#available-on-4" disabled>
+                      <input id="available-on-4" name="available-on-4" type="checkbox" value="available-on-4" disabled>
                       <label for="available-on-4">Website (2)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="available-on-5" name="available-on-5" type="checkbox" value="#available-on-5">
+                      <input id="available-on-5" name="available-on-5" type="checkbox" value="available-on-5">
                       <label for="available-on-5">Chat (2)</label>
                     </div>
                   </fieldset>
@@ -236,15 +252,15 @@
 
                   <fieldset>
                     <div class="multiple-choice">
-                      <input id="sortby-1" name="sortby" type="radio" value="#sortby-1" checked="checked">
+                      <input id="sortby-1" name="sortby" type="radio" value="sortby-1" checked="checked">
                       <label for="sortby-1">Alphabetic</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="sortby-2" name="sortby" type="radio" value="#sortby-2">
+                      <input id="sortby-2" name="sortby" type="radio" value="sortby-2">
                       <label for="sortby-2">App store rating</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="sortby-3" name="sortby" type="radio" value="#sortby-3">
+                      <input id="sortby-3" name="sortby" type="radio" value="sortby-3">
                       <label for="sortby-3">Date added</label>
                     </div>
                   </fieldset>
@@ -276,31 +292,31 @@
 
 
             <!-- CARDS -->
-            <div class="cardrow">
-              <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1170/mycopd_icon2.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131364634110000000">
+            <div class="cardrow cardrow--type-copd">
+              <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1170/mycopd.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131708584730000000">
               <h3 class="cardrow__title"><a href="set3-details.html">myCOPD</a></h3>
-              <p class="cardrow__para">Evergreen Life is a personal health record app that stores your health information in one place.</p>
+              <p class="cardrow__para">myCOPD helps people with COPD to better manage their condition.</p>
               <div class="tooltip">
                 <div class="tooltip__modal">
-                  myCOPD helps people with COPD to better manage their condition.
+                  This digital tool is NHS Approved. It meets NHS quality standards for clinical effectiveness, safety, usability and accessibility and has a supportive evidence base.
                 </div>
                 <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="tooltip__title">NHS Approved</span>
               </div>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1014/cove-icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359652470000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Cove</a></h3>
               <p class="cardrow__para">Create music to capture your mood and express how you feel with the Cove app.</p>
               <div class="tooltip">
                 <div class="tooltip__modal">
-                  myCOPD helps people with COPD to better manage their condition.
+                  These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
                 </div>
                 <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="tooltip__title">Being Tested in the NHS</span>
               </div>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1018/panda-icon.png?anchor=center&mode=crop&width=70&height=70&rnd=131360560850000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Chill Panda</a></h3>
               <p class="cardrow__para">Learn to relax, manage your worries and improve your wellbeing with Chill Panda.</p>
@@ -312,37 +328,37 @@
               </div>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1310/healthera_logo_120x120.jpg?anchor=center&mode=crop&width=70&height=70&rnd=131695748770000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Healthera</a></h3>
               <p class="cardrow__para">The Healthera app helps you get the most out of your local pharmacy services.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1306/engage-120x120-72dpi.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131695706460000000">
               <h3 class="cardrow__title"><a href="set3-details.html">engage warfarin self-care</a></h3>
               <p class="cardrow__para">Patients receiving treatment to prevent blood clots can use the engage self-care app to self-test safely and conveniently.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-pregnancyandbaby">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1298/logo.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131654217710000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Kicks Count</a></h3>
               <p class="cardrow__para">Use the Kicks Count app to keep track of your baby's movements in the womb and look out for any changes.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1303/nhs_online_bexley_-_logo.png?center=0.26580459770114945,0.52806122448979587&mode=crop&width=96&height=96&rnd=131673112020000000">
               <h3 class="cardrow__title"><a href="set3-details.html">NHS Online Bexley</a></h3>
               <p class="cardrow__para">Consult your GP online, book an appointment, order a prescription and much more using the NHS Online Bexley app.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1272/data1skh-users-rohe4-my-pictures-blueice-icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131539190460000000">
               <h3 class="cardrow__title"><a href="set3-details.html">BlueIce</a></h3>
               <p class="cardrow__para">BlueIce is an evidenced-based app to help young people manage their emotions and reduce urges to self-harm.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1204/c-users-male8-desktop-evergreen-life-app-and-website-app-evergreen-life-app-logo.png?anchor=center&mode=crop&width=96&height=96&rnd=131496149770000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Evergreen Life</a></h3>
               <p class="cardrow__para">Evergreen Life is a personal health record app that stores your health information in one place.</p>
@@ -354,175 +370,175 @@
               </div>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1039/food-scanner.webp?anchor=center&mode=crop&width=120&height=120&rnd=131614475780000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Change4Life Food Scanner</a></h3>
               <p class="cardrow__para">The Change4Life Food Scanner app lets you look up the sugar, saturated fat and salt in everyday foods and drinks.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1205/c-users-stsh3-desktop-active-10_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496032910000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Active 10 walking tracker</a></h3>
               <p class="cardrow__para">The Active 10 app will help you get into the habit of walking briskly for 10 minutes every day.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1191/logo_appslibrary.png?anchor=center&mode=crop&width=96&height=96&rnd=131388020220000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Patients Know Best</a></h3>
               <p class="cardrow__para">Patients Know Best works with the NHS to give patients instant access to their medical records.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-learningdisabilities">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1091/my-choice-pad.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131360396300000000">
               <h3 class="cardrow__title"><a href="set3-details.html">MyChoicePad</a></h3>
               <p class="cardrow__para">MyChoicePad helps people with learning disabilities communicate better.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-onlinecommunity">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1090/health-unlocked-app.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131360339450000000">
               <h3 class="cardrow__title"><a href="set3-details.html">HealthUnlocked</a></h3>
               <p class="cardrow__para">Find and connect with people with a similar health condition using HealthUnlocked.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1089/silvercloud_120x120.png?anchor=center&mode=crop&width=96&height=96&rnd=131358903420000000">
               <h3 class="cardrow__title"><a href="set3-details.html">SilverCloud</a></h3>
               <p class="cardrow__para">SilverCloud is an online course to help people manage stress, anxiety and depression.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-dementia">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1054/data1skh-users-rohe4-as_logo_stnd_pos_rgb_eng.png?anchor=center&mode=crop&width=96&height=96&rnd=131469409650000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Talking Point</a></h3>
               <p class="cardrow__para">Talking Point is an online community for anyone affected by dementia.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1047/stress-and-anxiety-companion-companion-app-logo.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131360383830000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Stress &amp; Anxiety Companion</a></h3>
               <p class="cardrow__para">Stress &amp; Anxiety Companion helps you handle stress and anxiety on-the-go.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1046/smoke-free-1.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359745690000000">
               <h3 class="cardrow__title"><a href="set3-details.html">NHS Smokefree</a></h3>
               <p class="cardrow__para">NHS Smokefree is a 28-day plan to help people stop smoking for good.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-cancer">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1045/owise-icon120.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131360361690000000">
               <h3 class="cardrow__title"><a href="set3-details.html">OWise breast cancer</a></h3>
               <p class="cardrow__para">Use the OWise breast cancer app to keep track of your treatment and your wellbeing.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-learningdisabilities">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1043/my-health-guide-logo.png?anchor=center&mode=crop&width=96&height=96&rnd=131358901020000000">
               <h3 class="cardrow__title"><a href="set3-details.html">My Health Guide</a></h3>
               <p class="cardrow__para">My Health Guide is an easy-to-use communication tool for adults with learning disabilities.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-diabetes">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1042/mumoactive.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359614320000000">
               <h3 class="cardrow__title"><a href="set3-details.html">mumoActive</a></h3>
               <p class="cardrow__para">mumoActive makes tracking your type 1 diabetes quick and easy so you can get on with your life.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1040/ieso-patient-sq.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131696601200000000">
-              <h3 class="cardrow__title"><a href="set3-details.html">Ieso</a></h3>
+              <h3 class="cardrow__title"><a href="set3-details.html">Leso</a></h3>
               <p class="cardrow__para">Ieso is an online course using instant messaging for people with mental health problems.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1039/food-scanner.webp?anchor=center&mode=crop&width=120&height=120&rnd=131614475780000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Change4Life Food Scanner</a></h3>
               <p class="cardrow__para">The Change4Life Food Scanner app lets you look up the sugar, saturated fat and salt in everyday foods and drinks.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1038/easy-meals-1.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359746940000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Easy Meals</a></h3>
               <p class="cardrow__para">Plan and eat healthier meals with the Easy Meals recipe app.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1037/drinks-tracker-1.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359746430000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Drinks Tracker</a></h3>
               <p class="cardrow__para">Use this easy-to-use drinks tracker to stay in control of how much alcohol you drink.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1036/c25k.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359734650000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Couch to 5K</a></h3>
               <p class="cardrow__para">Couch to 5K is designed to get you off the couch and running 5km in just nine weeks.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1035/catchit_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359476130000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Catch It</a></h3>
               <p class="cardrow__para">Learn how to manage feelings like anxiety and depression with Catch It.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-dental">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1033/brush-dj-logo-2016-non-rounded-edges-120-x-120-png.png?anchor=center&mode=crop&width=96&height=96&rnd=131360481870000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Brush DJ</a></h3>
               <p class="cardrow__para">Brush DJ plays two minutes of your music so you brush your teeth for the right amount of time.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1032/big-white-wall-app.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131584175640000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Big White Wall</a></h3>
               <p class="cardrow__para">Big White Wall is an online community for people who are stressed, anxious or feeling low.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1009/bmi_.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359646750000000">
               <h3 class="cardrow__title"><a href="set3-details.html">BMI calculator</a></h3>
               <p class="cardrow__para">Use the NHS body mass index calculator to measure and track your weight.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1020/fearfighter-ccbtfull-120x120-72dpi.png?anchor=center&mode=crop&width=96&height=96&rnd=131365509800000000">
               <h3 class="cardrow__title"><a href="set3-details.html">FearFighter</a></h3>
               <p class="cardrow__para">FearFighter is an online course for people who struggle with phobias, panic or anxiety.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1174/smart-recipes.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359735100000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Smart Recipes</a></h3>
               <p class="cardrow__para">Search over 160 easy, calorie-counted recipes across breakfast, lunch, dinner, dessert and snacks with Smart Recipes.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1234/squeezycf_120x120_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496014950000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Squeezy CF</a></h3>
               <p class="cardrow__para">Squeezy helps women to remember to do their pelvic floor muscle (kegel) exercises and to do them in the r...</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1233/squeezymen_120x120_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131493442620000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Squeezy for men</a></h3>
               <p class="cardrow__para">Squeezy helps men to remember to do their pelvic floor muscle (kegel) exercises and to do them in the rig...</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1197/chathealth_logo_120x120.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131490120100000000">
               <h3 class="cardrow__title"><a href="set3-details.html">ChatHealth</a></h3>
               <p class="cardrow__para">ChatHealth is a secure and confidential text messaging service.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1215/dimec-app-copy.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496035030000000">
               <h3 class="cardrow__title"><a href="set3-details.html">DIMEC</a></h3>
               <p class="cardrow__para">Use the DIMEC app to order your NHS repeat prescriptions with your smartphone or tablet.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-diabetes">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1220/logo-1.png?center=0.50241545893719808,0.50241545893719808&mode=crop&width=96&height=96&rnd=131496147650000000">
               <h3 class="cardrow__title"><a href="set3-details.html">GDm-Health</a></h3>
               <p class="cardrow__para">GDm-Health allows pregnant women to track their blood glucose levels and stay in touch with their healthcare team.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1222/engage-consult-image.png?anchor=center&mode=crop&width=96&height=96&rnd=131617989480000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Engage Consult</a></h3>
               <p class="cardrow__para">ngage Consult allows patients and carers to connect with their GP practice and access services online from a PC, tablet or smartphone.</p>
@@ -534,55 +550,61 @@
               <p class="cardrow__para">Echo helps you order and manage your NHS repeat prescriptions.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1232/squeezy_120x120_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131493442400000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Squeezy</a></h3>
               <p class="cardrow__para">Squeezy helps women to remember to do their pelvic floor muscle (kegel) exercises and to do them in the right way.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1249/calm_harm_logo.png?anchor=center&mode=crop&width=96&height=96&rnd=131496013650000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Calm Harm</a></h3>
               <p class="cardrow__para">Calm Harm is an app designed to help people resist or manage the urge to self-harm.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-healthyliving">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1250/my-app-logo.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131491818750000000">
               <h3 class="cardrow__title"><a href="set3-details.html">My Health Fabric</a></h3>
               <p class="cardrow__para">Use the Health Fabric app to access a self-help plan if you have a long-term health condition like diabetes or high blood pressure, or if you want self-help advice on weight loss or stress management.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1263/rr-icon-120.png?anchor=center&mode=crop&width=96&height=96&rnd=131502034890000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Rally Round</a></h3>
               <p class="cardrow__para">Rally Round is a free and secure online tool that allows parents, other family members, friends and carers to organise support for a child with an illness or challenging behaviour. </p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth cardrow--type-onlinecommunity">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1263/rr-icon-120.png?anchor=center&mode=crop&width=96&height=96&rnd=131502034890000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Rally Round older person version</a></h3>
               <p class="cardrow__para">Rally Round is a free and secure online tool that allows family, friends and carers to organise support for an older person.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1268/cypher-logo.png?anchor=center&mode=crop&width=96&height=96&rnd=131626564330000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Cypher</a></h3>
               <p class="cardrow__para">Cypher (formerly Silent Secret) is an anonymous peer-to-peer social network.</p>
+              <div class="tooltip">
+                <div class="tooltip__modal">
+                  These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
+                </div>
+                <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="tooltip__title">Being Tested in the NHS</span>
+              </div>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-other">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1273/hhn-logo.png?anchor=center&mode=crop&width=96&height=96&rnd=131626564000000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Health Help Now</a></h3>
               <p class="cardrow__para">Feeling unwell? Not sure where to go to get the help you need? Health Help Now will help you find the right treatment for your health needs whatever the time, wherever you are.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-pregnancyandbaby">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1280/vcreatesvmlogo.png?anchor=center&mode=crop&width=96&height=96&rnd=131626564930000000">
               <h3 class="cardrow__title"><a href="set3-details.html">vCreate Neonatal</a></h3>
               <p class="cardrow__para">vCreate Neonatal is a secure video messaging service that allows staff in neonatal units to record and send video updates to parents of premature and sick babies when they are unable to be with their child.</p>
             </div>
 
-            <div class="cardrow">
+            <div class="cardrow cardrow--type-mentalhealth">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1288/logo.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131623938720000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Be Mindful</a></h3>
               <p class="cardrow__para">The Be Mindful course is an easy-to-follow web-based training programme that guides you through all the elements of mindfulness-based cognitive therapy.</p>
@@ -640,7 +662,16 @@
       /*  Filter toggle sections  */
 
       $('.filter-section--toggles .filter-section__title').on('click', function(e) {
-        $(this).parent().toggleClass("is-open"); //you can list several class names
+        $(this).parent().toggleClass("is-open");
+        e.preventDefault();
+      });
+
+
+
+      /*  Mobile only close filter button  */
+
+      $('.filter-section--mobile-close .button').on('click', function(e) {
+        $(".filter-section--toggles, .filter-section--mobile-close").hide();
         e.preventDefault();
       });
 
@@ -670,15 +701,21 @@
 
         if(this.checked) {
 
+          // 1. add filter facet
           var link = parentElement.append('<div class=filter-by__item data= ' + val + '>' + label + '</div>');
 
+          // 3. add link
           addLinks();
+
 
         } else {
 
-          $(".filter-by__item[data="  + val + "]").remove();
+          $(".filter-by__item[data=" + val + "]").remove();
 
         }
+
+        setViewCards();
+
       });
 
 
@@ -686,20 +723,51 @@
 
         $(this).remove();
 
-        //var $(this)
+        getID = "#" + $(this).attr("data");
+        $(getID).prop('checked', false);
+        //alert(getID);
 
-        $container.find('[data-generated="true"]');
-        $(".filter-by__item[data="  + val + "]").remove();
+        setViewCards();
 
       }
 
 
       function addLinks() {
+
         $('.filter-by__item').each(function() {
           $(this).click(handler);
         });
+
       }
 
+
+
+      function setViewCards() {
+
+        // if filter-by-type
+        $(".cardrow").hide();
+
+        var $boxes = $('.multiple-choice input:checkbox:checked');
+        var numberOfBoxes = $boxes.length;
+
+        if (numberOfBoxes >= 1) {
+
+          $boxes.each(function(){
+
+              // console.log(this);
+
+              var tempPath = ".cardrow--" + $(this).attr('id');
+              console.log(tempPath);
+
+              $(tempPath).show();
+
+          });
+
+        } else {
+          $(".cardrow").show();
+        }
+
+      }
 
 
 
