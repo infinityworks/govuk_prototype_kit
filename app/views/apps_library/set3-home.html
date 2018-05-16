@@ -106,10 +106,6 @@
                 <!-- <a class="filter-head__reset button button--tiny" href="/search?query=data" title="Reset">Reset</a> -->
               </div>
 
-              <div class="filter-by">
-                <!-- <div class="filter-by__item">Example filter</div> -->
-              </div>
-
               <div class="filter-section filter-section--toggles">
                 <div class="filter-section__title">APP TYPE</div>
                 <div class="filter-section__contents">
@@ -178,16 +174,16 @@
 
                     <fieldset>
                       <div class="multiple-choice">
-                        <input id="publisher-1" name="publisher-1" type="checkbox" value="publisher-1">
-                        <label for="publisher-1">Independent (2)</label>
+                        <input id="publisher-independent" name="publisher-independent" type="checkbox" value="publisher-independent">
+                        <label for="publisher-independent">Independent (1)</label>
                       </div>
                       <div class="multiple-choice">
-                        <input id="publisher-2" name="publisher-2" type="checkbox" value="publisher-2">
-                        <label for="publisher-2">NHS England (2)</label>
+                        <input id="publisher-nhsengland" name="publisher-nhsengland" type="checkbox" value="publisher-nhsengland">
+                        <label for="publisher-nhsengland">NHS England (1)</label>
                       </div>
                       <div class="multiple-choice">
-                        <input id="publisher-3" name="publisher-3" type="checkbox" value="publisher-3">
-                        <label for="publisher-3">NHS Trusts (2)</label>
+                        <input id="publisher-nhstrusts" name="publisher-nhstrusts" type="checkbox" value="publisher-nhstrusts">
+                        <label for="publisher-nhstrusts">NHS Trusts (1)</label>
                       </div>
                     </fieldset>
 
@@ -200,16 +196,16 @@
 
                   <fieldset>
                     <div class="multiple-choice">
-                      <input id="price-1" name="price-1" type="checkbox" value="price-1">
-                      <label for="price-1">Free (20)</label>
+                      <input id="price-free" name="price-free" type="checkbox" value="price-free">
+                      <label for="price-free">Free (20)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="price-2" name="price-2" type="checkbox" value="price-2">
-                      <label for="price-2">In-App Purchase(5)</label>
+                      <input id="price-inapp" name="price-inapp" type="checkbox" value="price-inapp">
+                      <label for="price-inapp">In-App Purchase(5)</label>
                     </div>
                     <div class="multiple-choice">
-                      <input id="price-3" name="price-3" type="checkbox" value="price-3">
-                      <label for="price-3">Paid (14)</label>
+                      <input id="price-paid" name="price-paid" type="checkbox" value="price-paid">
+                      <label for="price-paid">Paid (14)</label>
                     </div>
                   </fieldset>
 
@@ -223,7 +219,7 @@
                   <fieldset>
                     <div class="multiple-choice">
                       <input id="available-on-1" name="available-on-1" type="checkbox" value="available-on-1">
-                      <label for="price-1">Google Play (2)</label>
+                      <label for="price-free">Google Play (2)</label>
                     </div>
                     <div class="multiple-choice">
                       <input id="available-on-2" name="available-on-2" type="checkbox" value="available-on-2">
@@ -278,11 +274,12 @@
           <div class="column-two-thirds">
 
 
+
             <!-- TABS -->
             <div class="js-tabs">
               <ul class="tabs-nav" role="tablist">
                 <li class="tabs-nav__item tabs-nav__item--active">
-                  <a tabindex="0" href="set3-home.html" class="tabs-link" title="All" role="tab">Apps <span class="font-xsmall">(49)</span></a>
+                  <a tabindex="0" href="set3-home.html" class="tabs-link" title="All" role="tab">Apps <span class="font-xsmall">(<span class="js-count">49</span>)</span></a>
                 </li>
                 <li class="tabs-nav__item">
                   <a tabindex="1" href="set3-case-studies.html" class="tabs-link" title="Data and information" role="tab">Case studies <span class="font-xsmall">(2)</span></a>
@@ -290,6 +287,10 @@
               </ul>
             </div>
 
+            <div class="filter-by">
+              Filters
+              <!-- <div class="filter-by__item">Example filter</div> -->
+            </div>
 
             <!-- CARDS -->
             <div class="cardrow cardrow--type-copd">
@@ -328,7 +329,7 @@
               </div>
             </div>
 
-            <div class="cardrow cardrow--type-other">
+            <div class="cardrow cardrow--type-other cardrow--publisher-independent">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1310/healthera_logo_120x120.jpg?anchor=center&mode=crop&width=70&height=70&rnd=131695748770000000">
               <h3 class="cardrow__title"><a href="set3-details.html">Healthera</a></h3>
               <p class="cardrow__para">The Healthera app helps you get the most out of your local pharmacy services.</p>
@@ -346,7 +347,7 @@
               <p class="cardrow__para">Use the Kicks Count app to keep track of your baby's movements in the womb and look out for any changes.</p>
             </div>
 
-            <div class="cardrow cardrow--type-other">
+            <div class="cardrow cardrow--type-other cardrow--publisher-nhsengland">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1303/nhs_online_bexley_-_logo.png?center=0.26580459770114945,0.52806122448979587&mode=crop&width=96&height=96&rnd=131673112020000000">
               <h3 class="cardrow__title"><a href="set3-details.html">NHS Online Bexley</a></h3>
               <p class="cardrow__para">Consult your GP online, book an appointment, order a prescription and much more using the NHS Online Bexley app.</p>
@@ -418,7 +419,7 @@
               <p class="cardrow__para">Stress &amp; Anxiety Companion helps you handle stress and anxiety on-the-go.</p>
             </div>
 
-            <div class="cardrow cardrow--type-healthyliving">
+            <div class="cardrow cardrow--type-healthyliving cardrow--publisher-nhstrusts">
               <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1046/smoke-free-1.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131359745690000000">
               <h3 class="cardrow__title"><a href="set3-details.html">NHS Smokefree</a></h3>
               <p class="cardrow__para">NHS Smokefree is a 28-day plan to help people stop smoking for good.</p>
@@ -704,7 +705,7 @@
           // 1. add filter facet
           var link = parentElement.append('<div class=filter-by__item data= ' + val + '>' + label + '</div>');
 
-          // 3. add link
+          // 2. add link
           addLinks();
 
 
@@ -715,8 +716,10 @@
         }
 
         setViewCards();
+        numOfVisibleCards();
 
       });
+
 
 
       function handler() {
@@ -728,8 +731,10 @@
         //alert(getID);
 
         setViewCards();
+        numOfVisibleCards();
 
       }
+
 
 
       function addLinks() {
@@ -747,14 +752,15 @@
         // if filter-by-type
         $(".cardrow").hide();
 
+        // Show filters if there are any being used
+        $(".filter-by").show();
+
         var $boxes = $('.multiple-choice input:checkbox:checked');
         var numberOfBoxes = $boxes.length;
 
         if (numberOfBoxes >= 1) {
 
           $boxes.each(function(){
-
-              // console.log(this);
 
               var tempPath = ".cardrow--" + $(this).attr('id');
               console.log(tempPath);
@@ -764,13 +770,30 @@
           });
 
         } else {
+
+          // Show all cards
           $(".cardrow").show();
+
+          // Hide filters if all cards are show
+          $(".filter-by").hide();
+
         }
 
       }
 
 
+      /*  Number count  */
+      function numOfVisibleCards() {
+        var num = $('.cardrow:visible').length;
 
+        $('.js-count').html(num);
+
+      }
+
+
+      // Init
+      setViewCards();
+      numOfVisibleCards();
 
 
     </script>
