@@ -49,28 +49,6 @@
     }
 
 
-    /* Filter by tags */
-
-    .filter-by__item {
-      cursor: pointer;
-      position: relative;
-      display: inline-block;
-      background-color: #FFF;
-      padding: $baseline-grid-unit $baseline-grid-unit *3 6px $baseline-grid-unit;
-      margin: $baseline-grid-unit 0 $baseline-grid-unit $baseline-grid-unit;
-      font-size: 14px;
-      border: 1px solid #CBCBCB;
-      border-radius: 4px;
-    }
-
-    .filter-by__item:after {
-      position: absolute;
-      right: $baseline-grid-unit;
-      color: $nhs-blue;
-      font-weight: 600;
-      content: "X";
-
-    }
 
     /* Filter sections */
     /* Unless you add the filter-section--collapse class */
@@ -191,5 +169,30 @@
             content: "-";
         }
     }
+
+}
+
+
+
+/* Filter by tags */
+
+.filter-by__item {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background-color: #FFF;
+  padding: $baseline-grid-unit $baseline-grid-unit *3 6px $baseline-grid-unit;
+  margin: $baseline-grid-unit 0 $baseline-grid-unit $baseline-grid-unit;
+  font-size: 14px;
+  border: 1px solid #CBCBCB;
+  border-radius: 4px;
+}
+
+.filter-by__item:after {
+  position: absolute;
+  right: $baseline-grid-unit;
+  color: $nhs-blue;
+  font-weight: 600;
+  content: "X";
 
 }
