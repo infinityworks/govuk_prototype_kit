@@ -1,25 +1,33 @@
 
 .article-rich-text {
+
   table {
     margin-bottom: 20px;
   }
+
   table td {
     font-size: 14px;
   }
+
   strong {
     font-weight: 600;
   }
+
   h2 {
     @extend .heading-large;
   }
+
   h3 {
     @extend .heading-medium;
   }
+
   h4 {
     @extend .heading-small;
   }
+
   ul {
     @extend .list;
     @extend .list-bullet;
   }
+
 }

@@ -3,19 +3,24 @@
   //@include element-padding;
   background-color: $white;
   padding: $baseline-grid-unit * 2;
+
   p {
     margin-bottom: 0;
   }
+
   .callout__title {
     @extend .heading-medium;
     margin-top: $baseline-grid-unit;
   }
+
   .callout__para {
     margin-top: 0;
   }
+
   &:focus {
     outline: 3px solid $focus-colour;
   }
+
 }
 
 .callout--muted {
