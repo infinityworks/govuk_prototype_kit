@@ -29,6 +29,15 @@ $top-border: solid 2px $grey-3;
   border-width: $stroke-width-large;
 }
 
+.gem-c-step-nav-related {
+  border-top: 2px solid #005ea5;
+  margin-bottom: 45px;
+  .gem-c-step-nav-related__heading {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
 .gem-c-step-nav {
   margin-bottom: $gutter;
 

@@ -4,13 +4,14 @@
   display: block;
   clear: both;
 }
+
 .js-accordion-with-descriptions .subsection__header {
   cursor: pointer;
 }
+
 .js-accordion-with-descriptions .subsection__header:hover {
   background-color: #F8F8F8;
 }
-
 
 .js-accordion-with-descriptions .subsection-controls button {
   float: right;
@@ -24,20 +25,23 @@
   border: none;
   color: #005ea5;
   padding: 0.5em 0;
-
   font-size: 16px;
   line-height: 1.25;
 }
+
 .js-accordion-with-descriptions .subsection {
   margin-bottom: 0;
 }
+
 .js-accordion-with-descriptions .subsection--is-open .subsection__icon {
     background-position: 0 0;
 }
+
 .js-accordion-with-descriptions .subsection--is-open .subsection__content {
   padding-top: 10px;
   padding-bottom: 30px;
 }
+
 .js-accordion-with-descriptions .subsection__header {
   position: relative;
   padding-top: 14px;

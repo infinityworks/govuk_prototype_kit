@@ -96,6 +96,7 @@ a.apps-grid__controller__list__item__link--selected {
   font-weight: 600;
   margin-right: $baseline-grid-unit*3;
 }
+
 .apps-grid-btns-list {
   list-style: none;
 }
@@ -125,9 +126,11 @@ a.apps-grid__controller__list__item__link--selected {
   padding: ($baseline-grid-unit * 3)-2 0;
   margin-bottom: $baseline-grid-unit * 2;
 }
+
 .apps-grid__title__text {
   font-weight: 600;
 }
+
 .apps-grid__title__sortby {
   font-size: 14px;
   color: #6d6d6d;
@@ -136,9 +139,11 @@ a.apps-grid__controller__list__item__link--selected {
     margin: 0;
   }
 }
+
 a.apps-grid__title__sortby__link:link, a.apps-grid__title__sortby__link:visited {
   color: #000;
 }
+
 .apps-grid__title__sortby__link--selected {
   background-size: 12px;
   background-repeat: no-repeat;
@@ -147,6 +152,7 @@ a.apps-grid__title__sortby__link:link, a.apps-grid__title__sortby__link:visited 
   text-decoration: none;
   color: #000;
 }
+
 .apps-grid__title__sortby__link--direction{
   background-image: url("/images/icon-filter-down.png");
   background-size: 12px;
@@ -157,6 +163,7 @@ a.apps-grid__title__sortby__link:link, a.apps-grid__title__sortby__link:visited 
   color: #000;
   padding-left: 14px;
 }
+
 .apps-grid__title__sortby__link--direction--assending {
   background-image: url("/images/icon-filter-up.png");
 }
