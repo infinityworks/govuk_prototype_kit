@@ -8,7 +8,6 @@
     padding-right: $baseline-grid-unit;
 }
 
-
 .grid-row--reverse > .column-third, .grid-row--reverse > .column-one-third, .grid-row--reverse > .column-two-thirds, .grid-row--reverse > .column-one-half {
   @include media(tablet) {
     float: right;
@@ -36,7 +35,6 @@
 }
 
 .red {
-
   color: #D00000;
 }
 
@@ -111,6 +109,11 @@ a.task-name:link {
   font-size: 26px;
 }
 
+.next {
+  clear: both;
+  margin: $baseline-grid-unit * 2 0;
+}
+
 
 /* Form controls */
 .form-label {
@@ -168,9 +171,11 @@ a.task-name:link {
 }
 
 .form-group--truncate-messages {
+
   .js-messages .panel {
     display: none;
   }
+
   .js-messages .panel:first-child {
     display: block;
   }
@@ -189,9 +194,6 @@ a.task-name:link {
   border-left: 3px solid #3E9A57;
   padding-left: $baseline-grid-unit * 2;
 }
-
-
-
 
 .form-buttons {
   display: block;

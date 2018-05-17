@@ -99,24 +99,37 @@
 
       <h2 class="heading-large">Invite a user</h2>
 
-      <p>
-        <label class="form-label" for="f-email">Email Address</label>
-        <input class="form-control" id="f-email" name="f-emails" type="text">
-      </p>
-      <p>
+      <form action="apps-details.html">
 
-      <div class="multiple-choice">
-        <input id="radio-1" type="radio" name="radio-group" value="Read Access">
-        <label for="radio-1">Read Access</label>
-      </div>
-      <div class="multiple-choice">
-        <input id="radio-2" type="radio" name="radio-group" value="Write Access">
-        <label for="radio-2">Write Access</label>
-      </div>
-      <div class="multiple-choice">
-        <input id="radio-3" type="radio" name="radio-group" value="Admin">
-        <label for="radio-3">Admin</label>
-      </div>
+        <fieldset>
+
+          <p>
+            <label class="form-label" for="f-email">Email Address</label>
+            <input class="form-control" id="f-email" name="f-emails" type="text">
+          </p>
+
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radio-group" value="Read Access">
+            <label for="radio-1">Read Access</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="radio-group" value="Write Access">
+            <label for="radio-2">Write Access</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="radio-group" value="Admin">
+            <label for="radio-3">Admin</label>
+          </div>
+
+        </fieldset>
+
+        <button type="submit" id="continue" class="button button--large next">Invite User</button>
+
+      </form>
+
+
 
     </main>
 
