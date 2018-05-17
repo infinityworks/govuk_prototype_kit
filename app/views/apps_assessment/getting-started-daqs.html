@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Assessment</title>
+    <title>NHS Developer / Home</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -70,8 +70,8 @@
             <nav id="proposition-menu">
               <a href="/apps_assessment/" id="proposition-name">NHS App Assessment Portal</a>
               <ul id="proposition-links">
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="getting-started.html">Get started</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="getting-started.html" class="active">Get started</a></li>
                 <li><a href="#">Help &amp; support</a></li>
               </ul>
             </nav>
@@ -80,42 +80,20 @@
       </div>
     </header>
 
+
     <div id="global-header-bar"></div>
 
     <main id="content" role="main">
 
 
-
-
-
-
-
       <div class="grid-row">
 
         <div class="column-two-thirds">
-
-          <h2 class="heading-large">Register</h2>
-
-          <form action="apps.html">
-            <p>
-              <label class="form-label" for="email-f1">Email Address</label>
-              <input class="form-control" id="email-f1" type="text" name="email-f1">
-            </p>
-            <p>
-              <label class="form-label" for="password-f1">Password</label>
-              <input class="form-control" id="password-f1" type="text" name="password-f1">
-            </p>
-            <p>
-              <input class="button" role="button" type="submit" value="Login">
-            </p>
-          </form>
-
-          <h2 class="heading-medium">Need some help?</h3>
-          <ul class="list list-bullet">
-            <li><a href="reset-password.html">Reset password</a></li>
-            <li>Forgotten my password?</li>
-          </ul>
-
+          <h2 class="heading-large">Getting started</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisi risus,
+            dignissim in libero non, semper vehicula lorem. Vestibulum non lectus porttitor
+          </p>
         </div>
 
         <div class="column-one-third">
@@ -132,7 +110,7 @@
 
               <!-- STEP BY STEP NAV -->
               <div data-module="gemstepnav" class=
-              "gem-c-step-nav">
+              "gem-c-step-nav gem-c-step-nav--active">
                 <div class="gem-c-step-nav__controls">
                   <button aria-expanded="false" class=
                   "gem-c-step-nav__button gem-c-step-nav__button--controls js-step-controls-button"
@@ -140,7 +118,7 @@
                 </div>
 
                 <ol class="gem-c-step-nav__steps">
-                  <li class="gem-c-step-nav__step js-step step-is-shown" id=
+                  <li class="gem-c-step-nav__step gem-c-step-nav__step--active js-step step-is-shown" id=
                   "check-youre-allowed-to-drive" data-track-count="stepNavSection">
                     <div class="gem-c-step-nav__header js-toggle-panel" data-position="1">
                       <h2 class="gem-c-step-nav__title"><span class=
@@ -156,7 +134,7 @@
                       aria-hidden="true">Hide</span></span></button></span></h2>
                     </div>
 
-                    <div class="gem-c-step-nav__panel js-panel js-hidden" id=
+                    <div class="gem-c-step-nav__panel js-panel" id=
                     "step-panel-check-youre-allowed-to-drive-1">
                       <p >Your app must comply with:</p>
                       <ol class="list list-number">
@@ -166,15 +144,17 @@
                       </ol>
 
                       <ol class="gem-c-step-nav__list" data-length="3">
-                        <li class="gem-c-step-nav__list-item js-list-item">
-                          <a data-position="1.1" class="gem-c-step-nav__link js-link" href="getting-started-daqs.html"><span class="visuallyhidden">You are currently viewing: </span>Read all the Digital Assessment Questions </a>
+                        <li class="gem-c-step-nav__list-item js-list-item gem-c-step-nav__list-item--active">
+                          <a data-position="1.1" class="gem-c-step-nav__link js-link" href="set2-getting-started.html"><span class="visuallyhidden">You are currently viewing: </span>Read all the Digital Assessment Questions </a>
                         </li>
                       </ol>
+
+
 
                     </div>
                   </li>
 
-                  <li class="gem-c-step-nav__step js-step gem-c-step-nav__step--active" id="get-a-provisional-licence"
+                  <li class="gem-c-step-nav__step js-step" id="get-a-provisional-licence"
                   data-track-count="stepNavSection">
                     <div class="gem-c-step-nav__header js-toggle-panel" data-position="2">
                       <h2 class="gem-c-step-nav__title"><span class=
@@ -190,14 +170,14 @@
                       aria-hidden="true">Show</span></span></button></span></h2>
                     </div>
 
-                    <div class="gem-c-step-nav__panel js-panel" id=
+                    <div class="gem-c-step-nav__panel js-panel js-hidden" id=
                     "step-panel-get-a-provisional-licence-2">
                       <ol class="gem-c-step-nav__list" data-length="1">
                         <li class="gem-c-step-nav__list-item js-list-item"><a data-position="2.1"
                         class="gem-c-step-nav__link js-link" href=
                         "/apps_assessment/login.html">Login</a></li>
 
-                        <li class="gem-c-step-nav__list-item js-list-item gem-c-step-nav__list-item--active"><a data-position="2.1"
+                        <li class="gem-c-step-nav__list-item js-list-item"><a data-position="2.1"
                         class="gem-c-step-nav__link js-link" href=
                         "/apps_assessment/register.html">Register</a></li>
                       </ol>
@@ -331,18 +311,8 @@
         </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
     </main>
+
 
 
 
@@ -368,6 +338,31 @@
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+
+    <!-- Toggle content -->
+    <script>
+
+    $( ".js-step-title-button" ).click(function() {
+
+      linkPath = $(this).find(".js-toggle-link");
+      contentPath = $(this).parent().parent().parent().parent().find(".js-panel");
+
+      $( contentPath ).toggleClass("js-hidden");
+
+    });
+
+
+    $( ".js-step-controls-button" ).click(function() {
+
+      allPath = $(this).parent().next().find(".js-panel");
+
+      $( allPath ).removeClass("js-hidden");
+
+    });
+
+
+    </script>
 
 
 </body>
