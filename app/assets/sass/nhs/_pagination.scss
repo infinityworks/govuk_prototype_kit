@@ -1,13 +1,13 @@
 
 .pagination {
-    border-top: 1px solid $col-senary;
+    // border-top: 1px solid $nhs-grey5;
     text-align: center;
-    padding-top: $gutter;
+    padding-top: $baseline-grid-unit;
 
     a {
         display: inline-block;
         text-decoration: none;
-        padding: $gutter / 2;
+        padding: $baseline-grid-unit;
     }
 
     .pagination__list {
@@ -15,20 +15,20 @@
 
         .pagination__list__item {
             display: inline-block;
-            border: 1px solid $col-senary;
+            border: 1px solid $nhs-grey4;
         }
 
         .pagination__list__item--previous {
-            margin-right: $gutter / 2;
+            margin-right: $baseline-grid-unit;
         }
 
         .pagination__list__item--current {
-            padding: $gutter / 2;
-            background-color: $col-duodenary;
+            padding: $baseline-grid-unit;
+            background-color: $nhs-grey4;
         }
 
         .pagination__list__item--next {
-            margin-left: $gutter / 2;
+            margin-left: $baseline-grid-unit;
         }
     }
 }

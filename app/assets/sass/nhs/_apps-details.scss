@@ -11,8 +11,8 @@
   margin-right: $baseline-grid-unit * 2;
   margin-top: $baseline-grid-unit * 2;
   width: 80px;
-  border: 1px solid #aaa;
-  border-radius: 17px;
+  border: 1px solid $nhs-grey4;
+  border-radius: 16px;
   @include media(tablet) {
     float: none;
     width: 110px;
@@ -23,7 +23,7 @@
 /* Details */
 
 .apps-details {
-  background-color: #e8edee;
+  background-color: $nhs-grey5;
 }
 
 .apps-details__section {
