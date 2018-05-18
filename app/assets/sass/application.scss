@@ -18,15 +18,19 @@ $path: "/public/images/";
 @import 'patterns/step-by-step-related.scss';
 
 
-// These need reviewing - VERY MESSY
+// These need reviewing - MESSY
+// Should we folow the nhsd structure?
+// - components | environment | normalize | objects | units
 @import 'nhs/global-header-override.scss';
 @import 'nhs/global-variables.scss';
+@import 'nhs/fonts.scss';
 @import 'nhs/mixins.scss';
 
 
 // Taken from the gov uk site. But can't find them on git hub?
 @import 'nhs/app-c-contents-list.scss';
 @import 'nhs/accordion-with-descriptions.scss';
+@import 'nhs/swatches.scss';
 
 // Code preview used on toolbox
 @import 'nhs/prism.scss';

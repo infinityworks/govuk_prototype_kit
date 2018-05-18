@@ -10,7 +10,7 @@
 }
 
 .js-accordion-with-descriptions .subsection__header:hover {
-  background-color: #F8F8F8;
+  background-color: $nhs-grey5;
 }
 
 .js-accordion-with-descriptions .subsection-controls button {
@@ -23,7 +23,7 @@
   cursor: pointer;
   background: none;
   border: none;
-  color: #005ea5;
+  color: $nhs-blue;
   padding: 0.5em 0;
   font-size: 16px;
   line-height: 1.25;
@@ -46,11 +46,11 @@
   position: relative;
   padding-top: 14px;
   padding-bottom: 12px;
-  border-top: 1px solid #bfc1c3;
+  border-top: 1px solid $nhs-grey4;
 }
 
 .js-accordion-with-descriptions .subsection__title button {
-  color: #005ea5;
+  color: $nhs-blue;
   cursor: pointer;
   font-family: "nta", Arial, sans-serif;
   font-weight: 700;

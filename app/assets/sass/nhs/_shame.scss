@@ -28,26 +28,6 @@
 
 
 
-/* Could do with some base font colors */
-.blue {
-  color: #005BBB;
-}
-
-.green {
-  color: #3E9A57;
-}
-
-.lightgreen {
-  color: #00BB89;
-}
-
-.red {
-  color: #D00000;
-}
-
-.grey {
-  color: #939293;
-}
 
 
 
@@ -66,7 +46,7 @@ a.task-name:link {
 /* Extra line on the homepage sidebar */
 .govuk-related-items {
   margin-top: 40px;
-  border-top: 2px solid #005BBB;
+  border-top: 2px solid $nhs-blue;
   padding-top: 5px;
 }
 

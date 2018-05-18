@@ -14,7 +14,7 @@
 
 /* Search banner */
 .search-banner {
-  background: $col-primary;
+  background: $nhs-blue;
   margin-bottom: $baseline-grid-unit * 2;
   min-height: 30px;
 }
@@ -44,14 +44,14 @@ a.search-banner__link:link, a.search-banner__link:visited {
 }
 
 .search-banner__headline {
-    color: $col-septenary;
+    color: $nhs-white;
     margin-top: 0;
 
     @media only screen and (min-width: 1020px) {
         max-width: 430px;
         margin-top: $baseline-grid-unit * 6;
     }
-    
+
     @extend .heading-large;
 }
 
@@ -92,7 +92,7 @@ a.search-banner__link:link, a.search-banner__link:visited {
   appearance: none;
   -webkit-appearance: none;
   padding: round($baseline-grid-unit * 1.3) round($baseline-grid-unit * 2);
-  color: $col-quaternary;
+  color: $nhs-grey1;
 
   box-sizing: border-box;
   -webkit-box-sizing: border-box;

@@ -1,0 +1,49 @@
+
+
+.swatch {
+  width: 150px;
+  float: left;
+  border: 1px solid $grey-3;
+  margin-right: $baseline-grid-unit;
+  margin-bottom: $baseline-grid-unit;
+
+  .swatch__colour {
+    width: 100%;
+    height: 100px;
+  }
+
+  .swatch__name {
+    font-weight: 600;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .swatch__ref {
+    padding-bottom: 6px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+
+/* Could do with some base font colors */
+.blue {
+  color: $nhs-blue;
+}
+
+.green {
+  color: $nhs-green;
+}
+
+.lightgreen {
+  color: $nhs-lightgreen;
+}
+
+.red {
+  color: $nhs-red;
+}
+
+.grey {
+  color: $nhs-grey1;
+}
