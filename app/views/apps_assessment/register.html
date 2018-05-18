@@ -106,7 +106,7 @@
               <input class="form-control" id="password-f1" type="text" name="password-f1">
             </p>
             <p>
-              <input class="button" role="button" type="submit" value="Login">
+              <input class="button" role="button" type="submit" value="Register">
             </p>
           </form>
 
@@ -369,6 +369,29 @@
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
+    <!-- Toggle content -->
+    <script>
+
+    $( ".js-step-title-button" ).click(function() {
+
+      linkPath = $(this).find(".js-toggle-link");
+      contentPath = $(this).parent().parent().parent().parent().find(".js-panel");
+
+      $( contentPath ).toggleClass("js-hidden");
+
+    });
+
+
+    $( ".js-step-controls-button" ).click(function() {
+
+      allPath = $(this).parent().next().find(".js-panel");
+
+      $( allPath ).removeClass("js-hidden");
+
+    });
+
+
+    </script>
 
 </body>
 </html>
