@@ -339,11 +339,13 @@ a.task-name:link {
   margin-right: 0;
   width: 111px;
   min-height: 22px;
+
   .task-incomplete__bar {
     background-color: #e8edee;
     min-height: 22px;
     border-right: 1px solid #c2d2d6;
   }
+
   .task-incomplete__text {
     text-align: center;
     position: absolute;
@@ -377,12 +379,19 @@ a.task-name:link {
 
 .app-header {
 
+
+  @include media(desktop) {
+    // Stops the image jumping on load
+    min-height: 166px;
+  }
+
   @include media(tablet) {
     position: relative;
   }
 
   .app-header__bg {
     width: 100%;
+
     @include media(mobile) {
       display: none;
     }
@@ -390,10 +399,12 @@ a.task-name:link {
 
   .app-header__icon {
     position: relative;
+
     img {
       max-width: 100px;
       border-radius: 25px;
     }
+
     @include media(tablet) {
       img {
         max-width: 125px;
@@ -402,6 +413,7 @@ a.task-name:link {
       bottom: -10px;
       left: $baseline-grid-unit * 3;
     }
+
     &:after {
       @include media(tablet) {
         content: "";
@@ -415,6 +427,7 @@ a.task-name:link {
         filter: blur(4px);
       }
     }
+
   }
 }
 
