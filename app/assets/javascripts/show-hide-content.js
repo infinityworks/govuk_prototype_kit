@@ -10,3 +10,10 @@ $( ".tooltip" ).click(function() {
   }
 
 });
+
+
+$( ".callout--mobile-accordion .callout__title" ).click(function() {
+
+  $(this).parent().toggleClass("is-open");
+
+});

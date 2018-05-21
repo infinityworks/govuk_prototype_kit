@@ -9,6 +9,7 @@
     /* Filter head */
     .filter-head {
 
+        position: relative;
         padding: $baseline-grid-unit * 2;
         border-bottom: 1px solid $nhs-grey3;
 
@@ -41,6 +42,25 @@
             padding-left: 5px;
             vertical-align: middle;
             content: " \25BC";
+          }
+        }
+
+        .filter-head__reset {
+          position: absolute;
+          cursor: pointer;
+          padding-left: $baseline-grid-unit;
+          padding-right: $baseline-grid-unit;
+          padding-bottom: $baseline-grid-unit - 4px;
+          padding-top: $baseline-grid-unit;
+          color: #FFF;
+          font-size: 14px;
+          background: $nhs-blue;
+          border-bottom: 2px solid #002f61;
+          top: 10px;
+          right: 10px;
+
+          @include media(mobile) {
+            display: none;
           }
         }
 
@@ -175,6 +195,13 @@
 
 
 /* Filter by tags */
+.filter-by {
+  background-color: #F2F2F2;
+  border-bottom: 1px solid $nhs-grey3;
+  border-left: 1px solid $nhs-grey3;
+  border-right: 1px solid $nhs-grey3;
+  margin-bottom: $baseline-grid-unit;
+}
 
 .filter-by__item {
   cursor: pointer;
@@ -194,5 +221,153 @@
   color: $nhs-blue;
   font-weight: 600;
   content: "X";
+}
+
+
+
+
+
+/* Filter horizontal */
+.filter-horz {
+
+  background-color: #FFF;
+  font-size: 16px;
+
+  @include media(desktop) {
+    border-bottom: 1px solid $nhs-grey3;
+    border-top: 1px solid $nhs-grey3;
+    border-left: 1px solid $nhs-grey3;
+    border-right: 1px solid $nhs-grey3;
+  }
+
+
+  @include clearfix;
+
+  .filter-horz__title {
+    font-weight: 600;
+
+    margin-right: $baseline-grid-unit;
+    padding-top: $baseline-grid-unit * 2;
+
+    padding-right: $baseline-grid-unit;
+    padding-bottom: $baseline-grid-unit;
+
+    @include media(desktop) {
+      float: left;
+      padding-left: $baseline-grid-unit * 2;
+    }
+  }
+
+  .filter-horz-section {
+    position: relative;
+
+    @include media(desktop) {
+      // display: inline-block;
+      float: left;
+    }
+  }
+
+  .filter-horz-section__contents {
+    display: none;
+    background-color: #FFF;
+    //border: 1px solid $nhs-grey3;
+    padding-top: $baseline-grid-unit * 2;
+    padding-left: $baseline-grid-unit * 2;
+    padding-right: $baseline-grid-unit * 2;
+    padding-bottom: $baseline-grid-unit * 2;
+    z-index: 10;
+
+    @include media(desktop) {
+      position: absolute;
+      top: 53px;
+      left: 0px;
+      width: 280px;
+    }
+  }
+
+  .is-open .filter-horz-section__contents {
+    display: block;
+    border: 1px solid $nhs-grey1;
+  }
+
+  .filter-horz-section__title {
+    position: relative;
+    cursor: pointer;
+    background-color: $nhs-white;
+    border: 1px solid $nhs-grey3;
+    margin-bottom: -1px;
+
+    @include media(desktop) {
+      border-top: 1px solid $nhs-grey3;
+      border-left: 1px solid $nhs-white;
+      border-right: 1px solid $nhs-grey4;
+      //border-bottom: 1px solid #FFF;
+      margin-top: -1px;
+    }
+
+    padding-top: $baseline-grid-unit * 2;
+    padding-right: $baseline-grid-unit * 4;
+    padding-left: $baseline-grid-unit * 2;
+    padding-bottom: $baseline-grid-unit * 2;
+
+    &:after {
+      position: absolute;
+      right: 10px;
+      top: 21px;
+      content: "";
+      background-size: 12px 12px;
+      width: 12px;
+      height: 12px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-image: url("/images/icon-grey-chevron.png");
+    }
+  }
+
+  .is-open .filter-horz-section__title {
+    //background: #EEE;
+
+    border-top: 1px solid $nhs-grey1;
+    border-left: 1px solid $nhs-grey1;
+    border-right: 1px solid $nhs-grey1;
+    border-bottom: 1px solid #FFF;
+    z-index: 11;
+
+    &:after {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+
+  .filter-horz__sort {
+
+    display: none;
+    margin-top: $baseline-grid-unit * 3;
+    margin-right: $baseline-grid-unit;
+
+    @include media(desktop) {
+      display: block;
+      margin-top: 10px;
+      float: right;
+    }
+
+    .sort-label {
+      font-weight: 600;
+      display: block;
+      padding-bottom: $baseline-grid-unit / 2;
+
+      @include media(desktop) {
+        display: inline-block;
+      }
+    }
+  }
 
 }
+
+
+
+
+/* */

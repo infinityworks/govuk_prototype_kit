@@ -11,11 +11,9 @@
     top: 0;
 }
 
-
 .cl {
   @include clearfix;
 }
-
 
 .markdown {
 
@@ -39,4 +37,8 @@
     font-size: 16px;
   }
 
+}
+
+.nowrap {
+  white-space: nowrap;
 }
