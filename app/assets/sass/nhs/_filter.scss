@@ -235,9 +235,9 @@
 
   @include media(desktop) {
     border-bottom: 1px solid $nhs-grey3;
-    border-top: 1px solid $nhs-grey3;
-    border-left: 1px solid $nhs-grey3;
-    border-right: 1px solid $nhs-grey3;
+    //border-top: 1px solid $nhs-grey3;
+    //border-left: 1px solid $nhs-grey3;
+    //border-right: 1px solid $nhs-grey3;
   }
 
 
@@ -254,7 +254,7 @@
 
     @include media(desktop) {
       float: left;
-      padding-left: $baseline-grid-unit * 2;
+      //padding-left: $baseline-grid-unit * 2;
     }
   }
 
@@ -293,15 +293,12 @@
   .filter-horz-section__title {
     position: relative;
     cursor: pointer;
-    background-color: $nhs-white;
+    //background-color: $nhs-white;
     border: 1px solid $nhs-grey3;
     margin-bottom: -1px;
 
     @include media(desktop) {
-      border-top: 1px solid $nhs-grey3;
-      border-left: 1px solid $nhs-white;
-      border-right: 1px solid $nhs-grey4;
-      //border-bottom: 1px solid #FFF;
+      border: 1px solid transparent;
       margin-top: -1px;
     }
 
