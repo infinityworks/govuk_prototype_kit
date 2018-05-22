@@ -129,7 +129,7 @@ a.task-name:link {
 .form-control {
   @include media(tablet) {
     width: 64%;
-    padding: 10px 10px 6px;
+    //padding: 10px 10px 6px;
     margin-bottom: 4px;
   }
 }

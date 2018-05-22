@@ -342,8 +342,8 @@
   .filter-horz__sort {
 
     display: none;
-    margin-top: $baseline-grid-unit * 3;
-    margin-right: $baseline-grid-unit;
+    margin-top: 6px;
+    //margin-right: $baseline-grid-unit;
 
     @include media(desktop) {
       display: block;
