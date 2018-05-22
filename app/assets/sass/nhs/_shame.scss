@@ -283,18 +283,33 @@ a.task-name:link {
   }
 }
 
-.status--part-complete {
+.status--in-progress {
   background-color: #FF9300;
   color: #FFF;
 }
 
-.status--complete {
+.status--approved {
   background-color: #00823B;
   color: #FFF;
 }
 
 .status--with-vendor {
   background-color: #F1F2F4;
+}
+
+.status--reject {
+  background-color: $nhs-red;
+  color: #FFF;
+}
+
+.status--info-request {
+  background-color: #768692;
+  color: #FFF;
+}
+
+.status--awaiting {
+  background-color: $nhs-blue;
+  color: #FFF;
 }
 
 
