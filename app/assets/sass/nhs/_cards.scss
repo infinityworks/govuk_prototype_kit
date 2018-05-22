@@ -110,21 +110,33 @@
 
 
 
+/* ######################### */
+/* Card row - Current winner */
+/* ######################### */
+
+
 .cardrow {
   border-bottom: 1px solid #DFE2E4;
   position: relative;
   padding-bottom: 25px;
   padding-top: 25px;
-  padding-left: 85px;
+  padding-left: 90px;
 
   @include media(desktop) {
     padding-left: 120px;
   }
 
+  .cardrow-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+
   .cardrow__img {
     position: absolute;
     top: 22px;
-    left: 0;
+    left: 14px;
     width: 60px;
     border-radius: 15px;
     border: 1px solid #BFC1C3;
@@ -133,7 +145,7 @@
       top: 25px;
       width: 80px;
       border-radius: 20px;
-      left: $baseline-grid-unit * 2;
+      left: 18px;
     }
   }
 
@@ -146,4 +158,42 @@
     margin-bottom: 0;
   }
 
+  .cardrow__featured {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 150px;
+    z-index: 0;
+
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    &:after {
+      content: "Featured";
+      position: absolute;
+      top: $baseline-grid-unit;
+      left: $baseline-grid-unit;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 20;
+      font-size: 16px;
+      color: #FFF;
+      padding: $baseline-grid-unit / 2 10px;
+      border-radius: 20px;
+    }
+  }
+
+}
+
+.cardrow--featured {
+  border: 3px solid $nhs-grey3;
+  padding-top: 170px;
+
+  .cardrow__img {
+    top: 170px;
+  }
 }
