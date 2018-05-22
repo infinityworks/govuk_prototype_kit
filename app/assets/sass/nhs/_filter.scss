@@ -196,10 +196,10 @@
 
 /* Filter by tags */
 .filter-by {
-  background-color: #F2F2F2;
-  border-bottom: 1px solid $nhs-grey3;
-  border-left: 1px solid $nhs-grey3;
-  border-right: 1px solid $nhs-grey3;
+  //background-color: #F2F2F2;
+  //border-bottom: 1px solid $nhs-grey3;
+  //border-left: 1px solid $nhs-grey3;
+  //border-right: 1px solid $nhs-grey3;
   margin-bottom: $baseline-grid-unit;
 }
 
@@ -209,10 +209,10 @@
   display: inline-block;
   background-color: #FFF;
   padding: $baseline-grid-unit $baseline-grid-unit *3 6px $baseline-grid-unit;
-  margin: $baseline-grid-unit 0 $baseline-grid-unit $baseline-grid-unit;
+  margin: $baseline-grid-unit * 2 $baseline-grid-unit $baseline-grid-unit 0;
   font-size: 14px;
-  border: 1px solid $nhs-grey3;
-  border-radius: 4px;
+  border: 1px solid $nhs-grey2;
+  //border-radius: 4px;
 }
 
 .filter-by__item:after {
@@ -341,13 +341,15 @@
 
   .filter-horz__sort {
 
-    display: none;
+    //display: none;
     margin-top: 6px;
+    margin-bottom: $baseline-grid-unit;
     //margin-right: $baseline-grid-unit;
 
     @include media(desktop) {
-      display: block;
+      //display: block;
       margin-top: 10px;
+      margin-bottom: 0;
       float: right;
     }
 
