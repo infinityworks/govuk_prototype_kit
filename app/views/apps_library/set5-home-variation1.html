@@ -87,7 +87,7 @@
       <div class="container">
 
         <h1 class="heading-large">NHS App Library</h1>
-        <p>We provide links to health and well-being apps that are proven to effectively treat, manage or organise your healthcare</p>
+        <p>We provide links to health and well-being apps that are proven to treat, manage or organise your healthcare</p>
 
         <div class="filter-horz">
 
@@ -100,6 +100,7 @@
             </select>
             <!-- <button type="submit" class="btn btn--primary btn--thin btn--small js--hide" style="display: none;">Sort</button>-->
           </div>
+
 
           <div class="filter-horz__title">FILTER BY:</div>
 
@@ -204,6 +205,9 @@
             </div>
           </div>
 
+
+
+
         </div>
 
 
@@ -214,7 +218,7 @@
 
         <div class="grid-row" style="padding-top: 20px;">
 
-          <div class="column-full">
+          <div class="column-two-thirds">
 
 
             <!-- TABS
@@ -234,11 +238,6 @@
             <!-- CARDS -->
             <div id="container">
 
-              <div class="callout callout--muted callout--small callout--mobile-accordion js-review-panel" style="margin-bottom: 24px;">
-                <h4 class="callout__title">How we review apps</h4>
-                <p class="callout__para">This is how we make sure only safe, secure and effective apps are published on our library. &nbsp; <a href="set5-how-we-review-apps.html">Read more</a> - <a class="js-review-panel-action" href="#">Dismiss</a></p>
-              </div>
-
               <div class="cardrow cardrow--featured cardrow--type-healthyliving" data-name="EvergreenLife">
                 <div class="cardrow__featured" style="background-image:url('/images/app-header-evergreen.png')"></div>
                 <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1204/c-users-male8-desktop-evergreen-life-app-and-website-app-evergreen-life-app-logo.png?anchor=center&mode=crop&width=96&height=96&rnd=131496149770000000">
@@ -248,7 +247,7 @@
                   <div class="tooltip__modal">
                     These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
                   </div>
-                  <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="tooltip__title">Being tested in the NICE</span>
+                  <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="tooltip__title">Being tested in the NHS</span>
                 </div>
               </div>
 
@@ -561,26 +560,75 @@
 
             </div>
 
-            <div class="callout callout--small callout--mobile-accordion" style="margin-bottom: 24px;">
+          </div>
+
+          <div class="column-one-third">
+
+            <div class="callout callout--muted callout--small callout--mobile-accordion" style="margin-bottom: 24px;">
+              <h4 class="callout__title">How we review apps</h4>
+              <p class="callout__para">Our rigorous assessment makes sure only safe, secure and effective apps are published on our library. &nbsp; <a href="set5-how-we-review-apps.html">Read more</a></p>
+            </div>
+            
+            <div class="callout callout--muted callout--small callout--mobile-accordion" style="margin-bottom: 24px;">
               <h4 class="callout__title">For developers</h4>
               <p class="callout__para">Find out how you can get your app published on our library. <a href="/developer/wp-apps.html">Read more</a></p>
             </div>
 
+            <div class="callout callout--muted callout--small callout--mobile-accordion" style="margin-bottom: 24px;">
+              <h4 class="callout__title">For healthcare professionals</h4>
+              <p class="callout__para">Why you can confidently recommend the apps on our library. <a href="#">Read more</a></p>
+            </div>
+
           </div>
 
-
-
         </div>
+
+
+
+        <hr>
+
+        <div class="grid">
+          <div class="column-one-half">
+            <h3 class="heading-medium">Had an adverse reaction?</h3>
+            <p class="callout__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam justo sed nibh convallis, sit amet tincidunt felis fermentum. Proin blandit sapien turpis,</p>
+            <ul class="callout__list list list-number">
+              <li>Contact the developer</li>
+              <li>Forward the details to <a href="mailto:m-health@nhs.net">m-health@nhs.net</a></li>
+            </ul>
+          </div>
+          <div class="column-one-half">
+            <h3 class="heading-medium">Disclaimer</h3>
+            <p class="callout__para">Use of the tools / apps presented in this library are not intended to be a substitute for a consultation with a healthcare professional. It is up to you to contact a healthcare professional if you are concerned about your health. See our full disclaimer here.</p>
+            <ul class="callout__list list list-bullet">
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
       </div>
+
+
+
+
 
     </main>
 
 
+
+
+
+
     <footer class="global-footer" role="contentinfo">
       <div class="container">
+
         <a href="index.html" title="NHS" id="logo" class="content" style="display: inline-block; width: 79px;">
           <img src="/images/logotype-nhs-colour__reverse@2x.png" alt="" style="width: 100%;">
         </a>
+
         <ul class="link-list">
           <li><a href="#" target="_blank">Disclaimer</a></li>
           <li><a href="#" target="_blank">Helpdesk</a></li>
@@ -804,18 +852,6 @@
       // Init
       setViewCards();
       numOfVisibleCards();
-
-
-      // Dismiss how we review
-      $('.js-review-panel-action').on('click', function(e) {
-
-        $(".js-review-panel").slideUp( "slow", function() {
-           // Animation complete.
-         });
-
-        e.preventDefault();
-
-      });
 
 
     </script>
