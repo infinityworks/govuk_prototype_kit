@@ -16,7 +16,6 @@
 
 
 /* Missing grid elements */
-
 .column-three-quarters {
   padding: 0 15px;
   -webkit-box-sizing: border-box;
@@ -178,50 +177,6 @@ a.task-name:link {
 
 
 
-/* Panel Hero */
-
-.panel-hero {
-
-  margin-bottom: 40px;
-
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e8f3f7+100 */
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e8f3f7 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%,#e8f3f7 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%,#e8f3f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8f3f7',GradientType=0 ); /* IE6-9 */
-
-  @include media(tablet) {
-    font-size: 19px;
-  }
-}
-
-.panel-hero-inner {
-  max-width: 960px;
-  margin: 0px auto;
-
-  @include media(desktop) {
-    background-image: url("../images/panel-hero-bg.png");
-    background-repeat: no-repeat;
-    background-position: 92% 100%;
-    background-size: 450px;
-  }
-
-  padding: $baseline-grid-unit * 6  $baseline-grid-unit * 2;
-  @include media(tablet) {
-    padding: $baseline-grid-unit * 6  $baseline-grid-unit * 4;
-  }
-}
-
-.panel-hero__title {
-  @extend .heading-large;
-  margin-top: $baseline-grid-unit * 2;
-  max-width: 500px;
-}
-
-.panel-hero__para {
-  max-width: 500px;
-}
 
 
 
