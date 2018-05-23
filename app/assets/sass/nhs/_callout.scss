@@ -4,6 +4,8 @@
   background-color: $white;
   padding: $baseline-grid-unit * 2;
 
+  @include clearfix;
+
   p {
     margin-bottom: 0;
   }
@@ -15,6 +17,10 @@
 
   .callout__para {
     margin-top: 0;
+  }
+
+  .callout__list {
+    margin-left: $baseline-grid-unit * 2;
   }
 
   &:focus {
@@ -81,9 +87,10 @@
     @extend .heading-small;
   }
 
-  .callout__para {
+  .callout__para, .callout__list {
     font-size: 16px;
   }
+
 }
 
 
