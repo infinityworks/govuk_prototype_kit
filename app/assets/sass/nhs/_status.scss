@@ -1,0 +1,53 @@
+/* Status */
+
+.status {
+  float: right;
+  display: inline-block;
+  background-color: #FFF;
+  color: $nhs-grey1;
+  padding: 3px 5px 3px;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 13px;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  @include media(desktop) {
+    margin: 2px 0 0 0;
+    padding: 3px 5px 1px;
+    font-size: 16px;
+  }
+  
+}
+
+.status--in-progress {
+  background-color: #FF9300;
+  color: #FFF;
+}
+
+.status--approved {
+  background-color: #00823B;
+  color: #FFF;
+}
+
+.status--with-vendor {
+  background-color: #F1F2F4;
+}
+
+.status--reject {
+  background-color: $nhs-red;
+  color: #FFF;
+}
+
+.status--info-request {
+  background-color: #768692;
+  color: #FFF;
+}
+
+.status--awaiting {
+  background-color: $nhs-blue;
+  color: #FFF;
+}
