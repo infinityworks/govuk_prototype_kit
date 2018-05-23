@@ -1,0 +1,48 @@
+.button {
+  margin-bottom: $baseline-grid-unit;
+}
+
+.button--blue {
+  @include button($nhs-blue);
+}
+
+.button--red {
+  @include button($nhs-red);
+}
+
+.button--grey {
+  @include button($nhs-grey5);
+}
+
+.button--light-grey {
+  @include button(#F8F8F8);
+}
+
+.button--small, .button--tiny {
+  font-size: 16px;
+}
+
+.button--chevron {
+  background-image: url("/images/icon-chevron.png");
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  padding-left: 30px;
+}
+
+.button--chevron.button--grey, .button--chevron.button--light-grey {
+  background-image: url("/images/icon-grey-chevron.png");
+}
+
+.button-start, .button-get-started {
+  background-image: url("https://govuk-elements.herokuapp.com/public/images/icon-pointer.png");
+}
+
+.button--large {
+  font-size: 26px;
+}
+
+.next {
+  clear: both;
+  margin: $baseline-grid-unit * 2 0;
+}
