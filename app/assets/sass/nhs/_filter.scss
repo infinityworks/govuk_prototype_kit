@@ -228,6 +228,42 @@
 
 
 /* Filter horizontal */
+
+/* This is only used on variation 2 currently */
+.filter-horz-mobile-action {
+  position: relative;
+  display: block;
+  background-color: $nhs-grey2;
+  padding: $baseline-grid-unit * 2;
+  margin-bottom: $baseline-grid-unit * 3;
+  font-weight: 600;
+  color: #FFF;
+
+  @include media(tablet) {
+    display: none;
+  }
+
+  &:after {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    content: "";
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(/images/icon-grey-chevron.png);
+  }
+
+}
+
+.filter-horz--mobile-hide {
+  @include media(mobile) {
+    display: none;
+  }
+}
+
 .filter-horz {
 
   background-color: #FFF;
