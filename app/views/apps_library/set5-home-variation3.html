@@ -89,7 +89,11 @@
         <h1 class="heading-large">NHS App Library</h1>
         <p>We provide links to health and well-being apps that are proven to treat, manage or organise your healthcare</p>
 
-        <div class="filter-horz">
+        <div class="filter-horz-mobile-action">
+          Filter and sort
+        </div>
+
+        <div class="filter-horz filter-horz--mobile-hide">
 
           <div class="filter-horz__sort">
             <label for="sort" class="sort-label">SORT BY: </label>
@@ -215,9 +219,9 @@
           <!-- <div class="filter-by__item">Example filter</div> -->
         </div>
 
-        <h4 style="font-size: 16px; font-weight: 600; margin-right: 8px; padding-top: 22px; padding-right: 8px; padding-bottom: 14px;"><span class="js-count">47</span> APPS:</h4>
+        <!-- <h4 style="font-size: 16px; font-weight: 600; margin-right: 8px; padding-top: 22px; padding-right: 8px; padding-bottom: 14px;"><span class="js-count">47</span> APPS:</h4>-->
 
-        <div class="grid-row">
+        <div class="grid-row" >
 
           <div class="column-two-thirds">
 
@@ -667,6 +671,20 @@
 
     <script>
 
+
+      /* Mobile only toggle fitlers */
+
+
+
+      $('.filter-horz-mobile-action').on('click', function(e) {
+
+        $( ".filter-horz--mobile-hide" ).slideToggle( "fast", function() {
+          // Animation complete.
+        });
+
+        e.preventDefault();
+
+      });
 
 
       /*  Filter toggle sections  */
