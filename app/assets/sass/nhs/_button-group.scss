@@ -53,12 +53,25 @@
 
   & + label {
     float: left;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     cursor: pointer;
-    //border: 2px solid #000;
     margin-right: 4px;
     color: #000;
-    //ackground-color: #FFF;
+
+
+
+
+
+    @media only screen and (min-device-width : 380px) and (max-device-width : 480px) {
+      font-size: 16px;
+      padding: 0.5em 0.75em;
+    }
+
+    @media only screen and (max-device-width : 379px) {
+      font-size: 14px;
+      padding: 0.5em 0.5em;
+    }
+
   }
 
   &:checked + label {

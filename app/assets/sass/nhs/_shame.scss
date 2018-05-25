@@ -15,6 +15,7 @@
 }
 
 
+/* Missing grid elements */
 .column-three-quarters {
   padding: 0 15px;
   -webkit-box-sizing: border-box;
@@ -27,6 +28,9 @@
   }
 }
 
+
+
+/* Missing header elements */
 .breadcrumbs li {
   background-image: url("/images/separator-2x.png");
 }
@@ -41,10 +45,6 @@
 
 
 
-
-
-
-
 /* Task list extra classes */
 a.task-name:link {
   text-decoration: none;
@@ -56,6 +56,7 @@ a.task-name:link {
 }
 
 
+
 /* Extra line on the homepage sidebar */
 .govuk-related-items {
   margin-top: 40px;
@@ -63,56 +64,6 @@ a.task-name:link {
   padding-top: 5px;
 }
 
-
-/* Buttons */
-.button {
-  margin-bottom: $baseline-grid-unit;
-}
-
-.button--blue {
-  @include button($nhs-blue);
-}
-
-.button--red {
-  @include button($nhs-red);
-}
-
-.button--grey {
-  @include button($nhs-grey5);
-}
-
-.button--light-grey {
-  @include button(#F8F8F8);
-}
-
-.button--small, .button--tiny {
-  font-size: 16px;
-}
-
-.button--chevron {
-  background-image: url("/images/icon-chevron.png");
-  background-size: 13px 13px;
-  background-repeat: no-repeat;
-  background-position: 10px;
-  padding-left: 30px;
-}
-
-.button--chevron.button--grey, .button--chevron.button--light-grey {
-  background-image: url("/images/icon-grey-chevron.png");
-}
-
-.button-start, .button-get-started {
-  background-image: url("https://govuk-elements.herokuapp.com/public/images/icon-pointer.png");
-}
-
-.button--large {
-  font-size: 26px;
-}
-
-.next {
-  clear: both;
-  margin: $baseline-grid-unit * 2 0;
-}
 
 
 /* Form controls */
@@ -202,7 +153,6 @@ a.task-name:link {
 
 
 
-
 /* Panels */
 .panel--red {
   background-color: #FFF5F5;
@@ -225,109 +175,16 @@ a.task-name:link {
 
 
 
-/* Panel Hero */
-
-.panel-hero {
-
-  margin-bottom: 40px;
-
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e8f3f7+100 */
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e8f3f7 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%,#e8f3f7 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%,#e8f3f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8f3f7',GradientType=0 ); /* IE6-9 */
-
-  @include media(tablet) {
-    font-size: 19px;
-  }
-}
-
-.panel-hero-inner {
-  max-width: 960px;
-  margin: 0px auto;
-
-  @include media(desktop) {
-    background-image: url("../images/panel-hero-bg.png");
-    background-repeat: no-repeat;
-    background-position: 92% 100%;
-    background-size: 450px;
-  }
-
-  padding: $baseline-grid-unit * 6  $baseline-grid-unit * 2;
-  @include media(tablet) {
-    padding: $baseline-grid-unit * 6  $baseline-grid-unit * 4;
-  }
-}
-
-.panel-hero__title {
-  @extend .heading-large;
-  margin-top: $baseline-grid-unit * 2;
-  max-width: 500px;
-}
-
-.panel-hero__para {
-  max-width: 500px;
-}
 
 
 
 
-/* Status */
 
-.status {
-  float: right;
-  display: inline-block;
-  background-color: #FFF;
-  color: $nhs-grey1;
-  padding: 3px 5px 3px;
-  font-family: "nta", Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
-  font-size: 13px;
-  line-height: 1.14286;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  @include media(desktop) {
-    margin: 2px 0 0 0;
-    padding: 3px 5px 1px;
-    font-size: 16px;
-  }
-}
-
-.status--in-progress {
-  background-color: #FF9300;
-  color: #FFF;
-}
-
-.status--approved {
-  background-color: #00823B;
-  color: #FFF;
-}
-
-.status--with-vendor {
-  background-color: #F1F2F4;
-}
-
-.status--reject {
-  background-color: $nhs-red;
-  color: #FFF;
-}
-
-.status--info-request {
-  background-color: #768692;
-  color: #FFF;
-}
-
-.status--awaiting {
-  background-color: $nhs-blue;
-  color: #FFF;
-}
 
 
 // status--completed
 /* Tasklist */
+/* Can this be removed now - I think we've gone with a different design */
 
 .task-incomplete {
   position: relative;
@@ -386,7 +243,6 @@ a.task-name:link {
 /* Header for set2-details.html header */
 
 .app-header {
-
 
   @include media(desktop) {
     // Stops the image jumping on load
@@ -467,9 +323,6 @@ a.task-name:link {
     text-decoration: none;
   }
 }
-
-
-
 
 
 

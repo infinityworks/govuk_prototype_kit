@@ -37,6 +37,7 @@ $path: "/public/images/";
 
 // NHS specific components
 @import 'nhs/utilities.scss';
+@import 'nhs/buttons.scss';
 @import 'nhs/local-header.scss';
 @import 'nhs/search-banner.scss';
 @import 'nhs/cards.scss';
@@ -44,6 +45,8 @@ $path: "/public/images/";
 @import 'nhs/callout.scss';
 @import 'nhs/pagination.scss';
 @import 'nhs/tooltip.scss';
+@import 'nhs/panel-hero.scss';
+@import 'nhs/status.scss';
 
 @import 'nhs/apps-grid.scss';
 @import 'nhs/apps-details.scss';
