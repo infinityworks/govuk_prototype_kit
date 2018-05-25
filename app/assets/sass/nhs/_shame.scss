@@ -28,6 +28,9 @@
   }
 }
 
+
+
+/* Missing header elements */
 .breadcrumbs li {
   background-image: url("/images/separator-2x.png");
 }
@@ -42,10 +45,6 @@
 
 
 
-
-
-
-
 /* Task list extra classes */
 a.task-name:link {
   text-decoration: none;
@@ -57,13 +56,13 @@ a.task-name:link {
 }
 
 
+
 /* Extra line on the homepage sidebar */
 .govuk-related-items {
   margin-top: 40px;
   border-top: 2px solid $nhs-blue;
   padding-top: 5px;
 }
-
 
 
 
@@ -154,7 +153,6 @@ a.task-name:link {
 
 
 
-
 /* Panels */
 .panel--red {
   background-color: #FFF5F5;
@@ -186,6 +184,7 @@ a.task-name:link {
 
 // status--completed
 /* Tasklist */
+/* Can this be removed now - I think we've gone with a different design */
 
 .task-incomplete {
   position: relative;
@@ -244,7 +243,6 @@ a.task-name:link {
 /* Header for set2-details.html header */
 
 .app-header {
-
 
   @include media(desktop) {
     // Stops the image jumping on load
@@ -325,9 +323,6 @@ a.task-name:link {
     text-decoration: none;
   }
 }
-
-
-
 
 
 
