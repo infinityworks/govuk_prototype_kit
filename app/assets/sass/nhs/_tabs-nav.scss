@@ -39,3 +39,12 @@
         }
     }
 }
+
+.tabs-nav--3tabs {
+  .tabs-nav__item {
+    @include media(mobile) {
+      width: 32.5%;
+      text-align: center;
+    }
+  }
+}

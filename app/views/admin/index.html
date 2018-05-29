@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Review / Apps</title>
+    <title>NHS Developer</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -36,9 +36,7 @@
 
   </head>
 
-  <body class=""><script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
-//]]></script>
+  <body class="">
 
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
@@ -54,61 +52,31 @@
       <p>GOV.UK uses cookies to make the site simpler. <a href="#">Find out more about cookies</a></p>
     </div>
 
-
-    <header role="banner" id="global-header" class="with-proposition">
-      <div class="header-wrapper">
-        <div class="header-global">
-          <div class="header-logo">
-            <a href="index.html" title="NHS" id="logo" class="content">
-              <img src="/images/logotype-nhs-colour__reverse@2x.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="header-proposition">
-          <div class="content">
-            <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-            <nav id="proposition-menu">
-              <a href="/apps_review" id="proposition-name">Apps Assessment</a>
-              <strong class="phase-tag" style="position:relative; left:4px; top:-2px;">REVIEWER</strong>
-
-              <ul id="proposition-links">
-                <li><a href="/apps_review/apps.html" class="active">Apps</a></li>
-                <li><a href="/apps_review/profile.html">Profile</a></li>
-                <li><a href="/apps_review/logout.html">Logout</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-      </div>
-    </header>
-
     <div id="global-header-bar"></div>
 
     <main id="content" role="main">
 
+      <p><span style="font-size:12px;">&#9664;</span> <a class="back-to-previous" href="/"> Back <span class="visuallyhidden"> to the previous question</span></a></p>
+
+      <h1 class="heading-xlarge">Admin</h1>
+
+      <h2 class="heading-medium">Set 1</h2>
+
+
+      <table style="max-width:800px">
+        <tr>
+          <td class="col1">-</td>
+          <td>
+            <a href="home.html">Apps Home</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+      </table>
 
 
 
-
-      <h1 class="heading-large">Your Apps</h1>
-
-      <div class="js-tabs">
-        <ul class="tabs-nav" role="tablist">
-          <li class="tabs-nav__item">
-            <a tabindex="0" href="/apps_assessment/apps.html" class="tabs-link" role="tab">Assessor</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
-          </li>
-          <li class="tabs-nav__item tabs-nav__item--active">
-            <a tabindex="1" href="/admin/index.html" class="tabs-link" role="tab">Admin</a>
-          </li>
-        </ul>
-      </div>
-
-      <p>TBC</p>
 
 
 
@@ -138,6 +106,78 @@
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+    <!-- ADMIN Styles -->
+    <style>
+
+      table {
+        margin-bottom: 70px;
+      }
+
+      .col1 {
+        width: 34px;
+        text-align: center;
+      }
+
+      .td-group td {
+        border-bottom:0px;
+      }
+
+      /* Status - Not set */
+      .status {
+        position: relative;
+      }
+      .status:before {
+        color: grey;
+        content: "Not set";
+        padding-right: 23px;
+      }
+      .status:after {
+        position: absolute;
+        right: 0px;
+        top: 4px;
+        content: "";
+        background-color: #da291c;
+        display: inline-block;
+        background-color: grey;
+        width: 14px;
+        height: 14px;
+        border-radius: 20px;
+      }
+
+      /* Status - Not signed off */
+      .status--red:before {
+        color: #da291c;
+        content: "Not signed off";
+      }
+      .status--red:after {
+        background-color: #da291c;
+      }
+
+      /* Status - Signed off */
+      .status--green:before {
+        color: #00823b;
+        content: "Signed off";
+      }
+      .status--green:after {
+        background-color: #00823b;
+      }
+
+      /* Status - Ready for show and tell */
+      .status--ready:before {
+        color: #005BBB;
+        content: "Ready for show and tell";
+      }
+      .status--ready:after {
+        background-color: #005BBB;
+      }
+
+      /* Mobile view remove the copy */
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        .status--red:before, .status--green:before, .status--ready:before { content: ""; }
+      }
+
+    </style>
 
 
 </body>
