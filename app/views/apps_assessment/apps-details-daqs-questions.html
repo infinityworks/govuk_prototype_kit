@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Assessment / Apps / Details</title>
+    <title>NHS Apps Assessment / Apps / Question</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -23,22 +23,23 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png?0.22.3">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?0.22.3">
 
-
     <meta name="theme-color" content="#0b0c0c" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.22.3">
 
-
-  <!--[if lte IE 8]><link href="/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if gt IE 8]><!--><link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if lte IE 8]><link href="/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if gt IE 8]><!--><link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
 
 
   </head>
 
-  <body class=""><script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
-//]]></script>
+  <body class="">
+    <script id="__bs_script__">
+    //<![CDATA[
+      document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+    //]]>
+    </script>
 
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
@@ -70,13 +71,11 @@
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
               <a href="/apps_assessment" id="proposition-name">Apps Assessment</a>
-
               <ul id="proposition-links">
-                <li><a href="/apps_assessment/apps.html" class="active">Apps</a></li>
-                <li><a href="/apps_assessment/profile.html">Profile</a></li>
-                <li><a href="/apps_assessment/logout.html">Logout</a></li>
+                <li><a href="apps.html" class="active">Apps</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
               </ul>
-
             </nav>
           </div>
         </div>
@@ -86,101 +85,175 @@
 
     <div id="global-header-bar"></div>
 
-    <main id="content" role="main">
-
-      <div class="breadcrumbs">
-        <ol>
-          <li><a href="/apps_assessment/apps.html">Apps</a></li>
-          <li><a href="/apps_assessment/apps-details-daqs.html">Pinpoint Tech</a></li>
-          <li aria-current="page">Questions</li>
-        </ol>
-      </div>
-
-      <h1 class="heading-large">General</h1>
 
 
+    <form action="#">
+      <main id="content" role="main">
 
-      <h3 class="heading-medium">B.0.1 What is the name of the Digital Service?</h3>
-      <p>
-        <input class="form-control" id="full-name-f1" type="text" name="full-name-f1" value="Now Patient Powered by Now Healthcare Group Ltd" >
-      </p>
-      <p class="font-xsmall">Updated on Thu Jan 11 2018</p>
+        <div class="breadcrumbs">
+          <ol>
+            <li><a href="apps.html">Apps</a></li>
+            <li><a href="apps-details-tasklist.html">Pinpoint Tech</a></li>
+            <li aria-current="page">1. General</li>
+          </ol>
+        </div>
 
-      <h3 class="heading-medium">B.0.2 What are the components of the Digital Service?</h3>
-      <p>
-        <input class="form-control" id="full-name-f1" type="text" name="full-name-f1" value="Application for smartphone or tablet" >
-      </p>
-      <p>
-        <label class="form-label" for="full-name-f2">Website</label>
-        <input class="form-control" id="full-name-f2" type="text" name="full-name-f2" value="Yes" >
-      </p>
-      <p>
-        <label class="form-label" for="full-name-f3">Wearable</label>
-        <input class="form-control" id="full-name-f3" type="text" name="full-name-f3" value="No" >
-      </p>
-      <p>
-        <label class="form-label" for="full-name-f3">Medical Device</label>
-        <input class="form-control" id="full-name-f3" type="text" name="full-name-f3" value="No" >
-      </p>
-      <p class="font-xsmall">Updated on Thu Jan 11 2018</p>
+        <h1 class="heading-large">Digital Tool Information</h1>
 
 
+              <div class="form-group">
+                <h3 class="heading-medium">B.0.1 What is the name of the Digital Service?</h3>
+                <input class="form-control" id="full-name-f1" type="text" name="full-name-f1" value="Now Patient Powered by Now Healthcare Group Ltd" >
+                <!--
+                <fieldset class="inline" style="margin-top:12px;">
+                  <div class="js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+                    <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroupb01" value="1" id="b01a" />
+                    <label for="b01a">Approve</label>
+                    <input type="radio" class="v2-radio-button radio-button--reject js-btn-reject" name="radioButtonGroupb01" value="2" id="b01b" />
+                    <label for="b01b">Reject</label>
+                    <input type="radio" class="v2-radio-button radio-button--request js-btn-request" name="radioButtonGroupb01" value="3" id="b01c" />
+                    <label for="b01c">Information request</label>
+                  </div>
+                </fieldset>
+                -->
+              </div>
+
+              <hr>
+
+              <div class="form-group">
+                <label class="form-label" for="select-box"><span class="heading-medium">B.0.2 What are the components of the Digital Service?</span></label>
+                 <fieldset>
+                  <div class="multiple-choice">
+                    <input id="checkbox-1" type="checkbox" name="checkbox-group1" value="Northern Ireland" checked="" ="">
+                    <label for="checkbox-1">Application for smartphone or tablet</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-2" type="checkbox" name="checkbox-group1" value="Isle of Man or the Channel Islands" ="">
+                    <label for="checkbox-2">Website</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-3" type="checkbox" name="checkbox-group1" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-3">Wearable</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-3" type="checkbox" name="checkbox-group1" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-3">Other</label>
+                  </div>
+                </fieldset>
+                <!--
+                <fieldset class="inline" style="margin-top:12px;">
+                  <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+                    <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroupb02" value="1" id="view1-8-approve">
+                    <label for="view1-8-approve">Approve</label>
+                    <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroupb02" value="2" id="view1-8-reject">
+                    <label for="view1-8-reject">Reject</label>
+                    <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroupb02" value="3" id="view1-8-request-doc">
+                    <label for="view1-8-request-doc">Information request</label>
+                  </div>
+                </fieldset>
+                -->
+              </div>
+
+              <hr>
+
+              <div class="form-group">
+                <label class="form-label" for="select-box"><span class="heading-medium">B.0.3 Please select the platforms that are available to users of your digital service:</span></label>
+                 <fieldset>
+                  <div class="multiple-choice">
+                    <input id="checkbox-1" type="checkbox" name="checkbox-group2" value="Northern Ireland" checked="" ="">
+                    <label for="checkbox-1">Web Browser</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-2" type="checkbox" name="checkbox-group2" value="Isle of Man or the Channel Islands" ="">
+                    <label for="checkbox-2">iOS Download</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-3" type="checkbox" name="checkbox-group2" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-3">Android Download</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-3" type="checkbox" name="checkbox-group2" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-3">Windows Mobile Download</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-4" type="checkbox" name="checkbox-group2" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-4">Windows Download</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-5" type="checkbox" name="checkbox-group2" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-5">OSX Download</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-6" type="checkbox" name="checkbox-group2" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-6">Linux Download</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="checkbox-7" type="checkbox" name="checkbox-group2" value="I am a British citizen living abroad" ="">
+                    <label for="checkbox-7">Other</label>
+                  </div>
+                </fieldset>
+                <!--
+                <fieldset class="inline" style="margin-top:12px;">
+                  <div class="v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+                    <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroupb03" value="1" id="viewb03-approve">
+                    <label for="viewb03-approve">Approve</label>
+                    <input type="radio" class="v2-radio-button radio-button--reject" name="radioButtonGroupb03" value="2" id="viewb03-reject">
+                    <label for="viewb03-reject">Reject</label>
+                    <input type="radio" class="v2-radio-button radio-button--request" name="radioButtonGroupb03" value="3" id="viewb03-request-doc">
+                    <label for="viewb03-request-doc">Information request</label>
+                  </div>
+                </fieldset>
+                -->
+              </div>
+
+              <hr>
+
+              <div class="form-group">
+                <h3 class="heading-medium">B.0.3.1 (if Other) Please specify</h3>
+                <input class="form-control" id="full-name-f1" type="text" name="full-name-f1" value="Not sure" >
+                <!--
+                <fieldset class="inline" style="margin-top:12px;">
+                  <div class="js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+                    <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroupb031" value="1" id="b031a" />
+                    <label for="b031a">Approve</label>
+                    <input type="radio" class="v2-radio-button radio-button--reject js-btn-reject" name="radioButtonGroupb031" value="2" id="b031b" />
+                    <label for="b031b">Reject</label>
+                    <input type="radio" class="v2-radio-button radio-button--request js-btn-request" name="radioButtonGroupb031" value="3" id="b031c" />
+                    <label for="b031c">Information request</label>
+                  </div>
+                </fieldset>
+                -->
+              </div>
 
 
-      <h3 class="heading-medium">B.0.2 What are the components of the Digital Service?</h3>
-      <p>
-        <label class="form-label" for="b2-q1">Application for smartphone or tablet</label>
-        <input class="form-control" id="b2-q1" type="text" name="b2-q1" value="Yes" >
-      </p>
-      <p>
-        <label class="form-label" for="b2-q2">Website</label>
-        <input class="form-control" id="b2-q2" type="text" name="b2-q2" value="Yes" >
-      </p>
-      <p>
-        <label class="form-label" for="b2-q3">Wearable</label>
-        <input class="form-control" id="b2-q3" type="text" name="b2-q3" value="Yes" >
-      </p>
-      <p>
-        <label class="form-label" for="b2-q4">Medical Device</label>
-        <input class="form-control" id="b2-q4" type="text" name="b2-q4" value="Yes" >
-      </p>
-      <p>
-        <label class="form-label" for="b2-q5">Other</label>
-        <input class="form-control" id="b2-q5" type="text" name="b2-q5" value="Yes" >
-      </p>
-      <p class="font-xsmall">Updated on Thu Jan 11 2018</p>
+          <input type="submit" value="Save" class="button  button--large js-page-submit">
+
+
+          <p>&nbsp;</p>
+          <div class="callout callout--muted">
+            <h2 class="callout__title">Status: Unapproved</h2>
+            <p class="callout__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu metus, dictum nec tincidunt ut,
+               egestas vitae ipsum. Etiam interdum massa non tellus pellentesque semper vel sed magna. Nunc at ligula
+               in lectus efficitur gravida quis eu erat. Nullam ac dui euismod sapien porta vestibulum.
+            </p>
+            <p style="padding-top: 20px;">
+              <input type="submit" value="Approve Section" class="button button--blue js-page-submit">
+            </p>
+          </div>
 
 
 
-      <h3 class="heading-medium">B.0.3 Please select the platforms that are available to users of your digital service:</h3>
-      <p>
-        <label class="form-label" for="b2-q1">Web Browser</label>
-        <input class="form-control" id="b2-q1" type="text" name="b2-q1" value="Yes" >
-      </p>
-
-      <p><input type="submit" class="button button--large" value="Save"></p>
 
 
 
-      <p>&nbsp;</p>
-      <div class="callout callout--muted">
-        <h2 class="callout__title">Status: Not Submitted</h2>
-        <p class="callout__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu metus, dictum nec tincidunt ut,
-           egestas vitae ipsum. Etiam interdum massa non tellus pellentesque semper vel sed magna. Nunc at ligula
-           in lectus efficitur gravida quis eu erat. Nullam ac dui euismod sapien porta vestibulum.
-        </p>
-        <p style="padding-top: 20px;">
-          <input type="submit" value="Submit section" class="button button--blue js-page-submit">
-        </p>
-      </div>
-
-    </main>
+      </main>
+    </form>
 
 
 
-    <footer class="group js-footer" id="footer" role="contentinfo">
-      <p style="text-align: center; color: #adb1b5; padding-top: 20px;">Footer</p>
-    </footer>
+
+
+
 
     <div id="global-app-error" class="app-error hidden"></div>
 
@@ -196,10 +269,19 @@
     <script src="/javascripts/govuk/show-hide-content.js"></script>
     <script src="/javascripts/application.js"></script>
 
-    <script src="/javascripts/auto-store-data.js"></script>
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
