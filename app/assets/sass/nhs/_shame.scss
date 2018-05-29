@@ -146,6 +146,11 @@ a.task-name:link {
   padding-left: $baseline-grid-unit * 2;
 }
 
+.form-group--inforequest {
+  border-left: 3px solid #768692;
+  padding-left: $baseline-grid-unit * 2;
+}
+
 .form-buttons {
   display: block;
   margin-bottom: $baseline-grid-unit * 2;
