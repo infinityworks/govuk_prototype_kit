@@ -27,23 +27,27 @@
 }
 
 
-/* Could do with some base font colors */
-.blue {
-  color: $nhs-blue;
+/* TRUMP ALL */
+.blue, a.blue:link {
+  color: $nhs-blue!important;
 }
 
-.green {
-  color: $nhs-green;
+.green, a.green:link {
+  color: $nhs-green!important;
 }
 
-.lightgreen {
-  color: $nhs-lightgreen;
+.lightgreen, a.lightgreen:link {
+  color: $nhs-lightgreen!important;
 }
 
-.red {
-  color: $nhs-red;
+.red, a.red:link {
+  color: $nhs-red!important;
 }
 
-.grey {
-  color: $nhs-grey1;
+.grey, a.grey:link {
+  color: $nhs-grey1!important;
+}
+
+.black, a.black:link {
+  color: $nhs-black!important;
 }
