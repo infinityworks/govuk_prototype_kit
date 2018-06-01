@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Review / Apps</title>
+    <title>NHS Apps Review / Apps / Details</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -73,10 +73,11 @@
               <strong class="phase-tag" style="position:relative; left:4px; top:-2px;">REVIEWER</strong>
 
               <ul id="proposition-links">
-                <li><a href="/apps_review/apps.html" class="active">Apps</a></li>
-                <li><a href="/apps_review/profile.html">Profile</a></li>
-                <li><a href="/apps_review/logout.html">Logout</a></li>
+                <li><a href="apps.html" class="active">Apps</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
               </ul>
+
             </nav>
           </div>
         </div>
@@ -88,69 +89,66 @@
 
     <main id="content" role="main">
 
-      <h1 class="heading-large">Your Apps</h1>
-
-      <div class="js-tabs tabs-nav--3tabs">
-        <ul class="tabs-nav" role="tablist">
-          <li class="tabs-nav__item">
-            <a tabindex="0" href="/apps_assessment/apps.html" class="tabs-link" role="tab">Assessor</a>
-          </li>
-          <li class="tabs-nav__item tabs-nav__item--active">
-            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="/admin/home.html" class="tabs-link" role="tab">Admin</a>
-          </li>
-        </ul>
+      <div class="breadcrumbs">
+        <ol>
+          <li><a href="apps.html">Apps</a></li>
+          <li aria-current="page">Pinpoint Tech</li>
+        </ol>
       </div>
 
-      <div class="grid-row">
-        <div class="column-two-thirds">
-          <div class="form-group-small">
-            <label class="form-label" for="select-box">Sort by:</label>
-            <select class="form-control" id="select-box" name="select-box">
-              <option>Recently updated</option>
-              <option>Date added - Assending</option>
-              <option>Date added - Decending</option>
-              <option>App name - A/Z</option>
-              <option>App name - Z/A</option>
-            </select>
-          </div>
-        </div>
+      <h1 class="heading-large">Pinpoint Tech</h1>
+
+      <h2 class="heading-medium">Assessments</h2>
+      <div class="new-section">
+        <table class="ui celled collapsing stackable five column table">
+          <thead class="">
+            <tr class="">
+              <th class="">Name</th>
+              <th class="">Date Activated</th>
+              <th class="">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="">
+            <tr class="">
+              <td class="grey">Digital Assessment Questions</td>
+              <td class="grey">Not activated</td>
+              <td class=""></td>
+            </tr>
+            <tr class="">
+              <td class="">Submit Your App</td>
+              <td class="">2017-10-25 14:27:57</td>
+              <td class=""><a href="apps-details-submit-your-app.html">Go To Assessment</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
 
-      <table>
-        <thead>
-          <tr>
-            <th>Team Name</th>
-            <th>App Name</th>
-            <th>Invited</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Pinpoint Tech</td>
-            <td>Mediman</td>
-            <td class="green">Yes</td>
-            <td><a href="apps-details.html">Manage</a></td>
-          </tr>
-          <tr>
-            <td>Powerhouse Productions</td>
-            <td>Powerhouse Pathways</td>
-            <td class="green">Yes</td>
-            <td><a href="apps-details.html">Manage</a></td>
-          </tr>
-          <tr>
-            <td>Cadaemia</td>
-            <td>Pulse</td>
-            <td class="red">No</td>
-            <td><a href="apps-details-not-invited.html">Manage</a></td>
-          </tr>
-        </tbody>
-      </table>
-
+      <div class="new-section">
+        <h2 class="heading-medium">Project Files</h2>
+        <table style="margin-bottom: 12px;">
+          <thead class="">
+            <tr class="">
+              <th class="">Name</th>
+              <th class="">Type</th>
+              <th class="">Size</th>
+              <th class="">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="">
+            <tr class="">
+              <th class="">filename-10246832</th>
+              <th class="">txt</th>
+              <th class="">100k</th>
+              <th class=""><a href="#">Download</a> &nbsp; <a href="#">Remove</a></th>
+            </tr>
+          </tbody>
+        </table>
+        <p class="font-xsmall">
+          <label for="file-upload">Select File</label>
+          <input type="file" id="file-upload">
+        </p>
+      </div>
 
 
 
