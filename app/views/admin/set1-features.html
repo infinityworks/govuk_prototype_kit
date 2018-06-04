@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHSD App Assessment Portal / Admin</title>
+    <title>NHSD App Assessment Portal / Admin / Features</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -70,9 +70,11 @@
             <nav id="proposition-menu">
               <a href="/apps_assessment/" id="proposition-name">NHS App Assessment Portal</a><strong class="phase-tag" style="position:relative; left:4px; top:-2px;">ADMIN</strong>
               <ul id="proposition-links">
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="getting-started.html">Get started</a></li>
-                <li><a href="#">Help &amp; support</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="set1-assessments.html">Assessments</a></li>
+                <li><a href="set1-features.html" class="active">Features</a></li>
+                <li><a href="set1-users.html">Users</a></li>
+                <li><a href="#">Log out</a></li>
               </ul>
             </nav>
           </div>
@@ -84,45 +86,53 @@
 
     <main id="content" role="main">
 
+      <div class="breadcrumbs">
+        <ol>
+          <li><a href="home.html">Admin</a></li>
+          <li aria-current="page">Features</li>
+        </ol>
+      </div>
+
       <h1 class="heading-large">Admin</h1>
 
-      <div class="js-tabs tabs-nav--3tabs">
-        <ul class="tabs-nav" role="tablist">
-          <li class="tabs-nav__item">
-            <a tabindex="0" href="/apps_assessment/apps.html" class="tabs-link" role="tab">Assessor</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
-          </li>
-          <li class="tabs-nav__item tabs-nav__item--active">
-            <a tabindex="1" href="/admin/home.html" class="tabs-link" role="tab">Admin</a>
-          </li>
-        </ul>
-      </div>
-
-
-      <h2 class="heading-medium">Admin categories</h2>
-      <div class="categories-lists">
-        <ol class="categories-list">
-          <li>
-            <h3><a href="set1-features.html">Features</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <ol class="categories-list">
-          <li>
-            <h3><a href="#">Users</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <ol class="categories-list">
-          <li>
-            <h3><a href="set2-category.html">Assessments</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-      </div>
-
+      <table>
+        <thead class="">
+          <tr class="">
+            <th class="">Name</th>
+            <th class="">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="">
+          <tr class="">
+            <td class="">Reviewer</td>
+            <td class=""><a href="set1-features-manage.html">Manage</a></td>
+          </tr>
+          <tr class="">
+            <td class="">DAQ Reviewer</td>
+            <td class=""><a href="set1-features-manage.html">Manage</a></td>
+          </tr>
+          <tr class="">
+            <td class="">Submit Your App Reviewer</td>
+            <td class=""><a href="set1-features-manage.html">Manage</a></td>
+          </tr>
+          <tr class="">
+            <td class="">Features Admin</td>
+            <td class=""><a href="set1-features-manage.html">Manage</a></td>
+          </tr>
+          <tr class="">
+            <td class="">Forms Admin</td>
+            <td class=""><a href="set1-features-manage.html">Manage</a></td>
+          </tr>
+          <tr class="">
+            <td class="">Assurances Admin</td>
+            <td class=""><a href="set1-features-manage.html">Manage</a></td>
+          </tr>
+          <tr class="">
+            <td class="">Admin</td>
+            <td class=""><a href="set1-features-manage.html">Manage</a></td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
 

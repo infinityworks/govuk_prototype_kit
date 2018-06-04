@@ -107,6 +107,19 @@
         <li aria-current="page"> Decline for now</li>
       </div>
 
+      <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          Custom message
+        </h2>
+
+        <ul class="error-summary-list">
+          <li><a href="#message-anchor">Please amend the custom message</a></li>
+        </ul>
+
+      </div>
+
+
       <h1 class="heading-large">Decline for now</h1>
 
 
@@ -121,7 +134,7 @@
           <input class="form-control" id="last-name-2" name="last-name-2" type="text" value="sample@nhs.uk">
         </div>
 
-        <div class="form-group">
+        <div class="form-group" id="message-anchor">
           <label class="form-label" for="textarea">
             Your email:
           </label>
@@ -184,10 +197,14 @@ Kind regards
 The Apps &amp; Wearables team
             </textarea>
 
-
         </div>
 
         <input type="submit" value="Send email" class="button button--blue button--large">
+
+
+
+        <br><br><br><br>
+        <a href="apps-details-submit-your-app-decline-email-error.html">See an example message validation</a>
 
       </form>
 
