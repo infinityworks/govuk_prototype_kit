@@ -98,8 +98,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis</p>
 
 
-
-
         <div class="filter-horz" style="border-bottom: 0">
 
           <a href="#" style="float: right" ;="" class="js-toggle-sort">Filter &amp; Sort ▼</a>
@@ -111,40 +109,13 @@
 
 
 
-
-
-
             <!-- CARDS -->
             <div id="container">
 
-            <!--
-              <div class="form-group inline">
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-                  <label for="radio-inline-1">All</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-                  <label for="radio-inline-1">Trimester one</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-                  <label for="radio-inline-1">Trimester two</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-                  <label for="radio-inline-1">Trimester three</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-                  <label for="radio-inline-1">For your baby</label>
-                </div>
-              </div>
-            -->
 
 
 
-              <div class="form-group hide" style="padding-top: 10px;">
+              <div class="callout callout--muted js-pregancy hide" style="padding-top: 20px; margin-top: 10px;">
                 <fieldset>
 
                   <div class="multiple-choice">
@@ -179,14 +150,16 @@
                     </label>
                   </div>
 
-                  <a href="set6-pregancy.html" class="button button--blue">Update</a>
+                  <div style="clear: both">
+                    <a href="set6-pregancy.html" class="button button--blue">Update</a>
+                  </div>
 
                 </fieldset>
               </div>
 
 
 
-              <hr style="margin-bottom: 0px;">
+              <hr style="margin-bottom: 0px; margin-top: 12px;">
 
               <div class="cardrow cardrow--type-pregnancyandbaby" data-name="KicksCount">
                 <img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1298/logo.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131654217710000000">
@@ -491,7 +464,7 @@
 
       $('.js-toggle-sort').on('click', function(e) {
 
-        $(".form-group").toggleClass("hide");
+        $(".js-pregancy").toggleClass("hide");
         e.preventDefault();
 
       });

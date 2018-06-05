@@ -30,6 +30,14 @@
 
 
 
+/* Background color on the */
+
+.multiple-choice [type=checkbox] + label::before {
+  background-color: #FFF;
+}
+
+
+
 /* Missing header elements */
 .breadcrumbs li {
   background-image: url("/images/separator-2x.png");

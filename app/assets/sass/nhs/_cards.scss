@@ -161,7 +161,7 @@
 
   .cardrow__price {
     margin-bottom: 0;
-    
+
     @include media(desktop) {
       position: absolute;
       top: 49px;
@@ -210,4 +210,15 @@
   .cardrow__img {
     top: 190px;
   }
+
+  .cardrow__price {
+    margin-bottom: 0;
+
+    @include media(desktop) {
+      position: absolute;
+      top: 189px;
+      //font-weight: bold;
+    }
+  }
+
 }
