@@ -24,3 +24,16 @@
   }
 
 }
+
+
+.categories-list--mobile-two-cols {
+  @include media(mobile) {
+    float: left;
+    width: 49%;
+  }
+  h3 {
+    font-size: 15px;
+    line-height: 1.31579;
+    font-weight: 600;
+  }
+}

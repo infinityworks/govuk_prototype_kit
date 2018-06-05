@@ -48,3 +48,9 @@
     display: none;
   }
 }
+
+.tablet-hide {
+  @include media(tablet) {
+    display: none;
+  }
+}
