@@ -42,3 +42,9 @@
 .nowrap {
   white-space: nowrap;
 }
+
+.mobile-hide {
+  @include media(mobile) {
+    display: none;
+  }
+}

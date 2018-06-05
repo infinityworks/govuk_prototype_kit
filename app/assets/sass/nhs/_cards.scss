@@ -159,6 +159,18 @@
     margin-bottom: 0;
   }
 
+  .cardrow__price {
+    margin-bottom: 0;
+    
+    @include media(desktop) {
+      position: absolute;
+      top: 49px;
+      right: 18px;
+
+      //font-weight: bold;
+    }
+  }
+
   .cardrow__featured {
     position: absolute;
     top: 0px;
