@@ -100,6 +100,15 @@
 
 
 
+        <div class="filter-horz" style="border-bottom: 0">
+
+          <a href="#" style="float: right" ;="" class="js-toggle-sort">Filter &amp; Sort ▼</a>
+          <h3 class="heading-medium" style="margin-bottom:0">2 Apps</h3>
+
+        </div>
+
+
+
 
 
 
@@ -107,6 +116,75 @@
 
             <!-- CARDS -->
             <div id="container">
+
+            <!--
+              <div class="form-group inline">
+                <div class="multiple-choice">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                  <label for="radio-inline-1">All</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                  <label for="radio-inline-1">Trimester one</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                  <label for="radio-inline-1">Trimester two</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                  <label for="radio-inline-1">Trimester three</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                  <label for="radio-inline-1">For your baby</label>
+                </div>
+              </div>
+            -->
+
+
+
+              <div class="form-group hide" style="padding-top: 10px;">
+                <fieldset>
+
+                  <div class="multiple-choice">
+                    <input id="pregancy-1" name="pregancy" type="checkbox" value="pregancy-1">
+                    <label for="pregancy-1">
+                      <strong style="font-weight: bold">Trimester one</strong>
+                      <br><p class="font-xsmall">The first trimester – weeks 0 to 13 – will probably be the most life-changing your life. You're going to be a mum! </p>
+                    </label>
+                  </div>
+
+                  <div class="multiple-choice">
+                    <input id="pregancy-2" name="pregancy" type="checkbox" value="pregancy-2">
+                    <label for="pregancy-2">
+                      <strong style="font-weight: bold">Trimester two</strong>
+                      <br><p class="font-xsmall">The second trimester covers weeks 14 to 26. You'll see lots of changes in you and your baby</p>
+                    </label>
+                  </div>
+
+                  <div class="multiple-choice">
+                    <input id="pregancy-3" name="pregancy" type="checkbox" value="pregancy-3">
+                    <label for="pregancy-3">
+                      <strong style="font-weight: bold">Trimester three</strong>
+                      <br><p class="font-xsmall">The first trimester – weeks 0 to 13 – will probably be the most life-changing your life. You're going to be a mum! </p>
+                    </label>
+                  </div>
+
+                  <div class="multiple-choice">
+                    <input id="pregancy-4" name="pregancy" type="checkbox" value="pregancy-4">
+                    <label for="pregancy-4">
+                      <strong style="font-weight: bold">For your baby</strong>
+                      <br><p class="font-xsmall">Hello world</p>
+                    </label>
+                  </div>
+
+                  <a href="set6-pregancy.html" class="button button--blue">Update</a>
+
+                </fieldset>
+              </div>
+
+
 
               <hr style="margin-bottom: 0px;">
 
@@ -409,6 +487,14 @@
 
       }
 
+
+
+      $('.js-toggle-sort').on('click', function(e) {
+
+        $(".form-group").toggleClass("hide");
+        e.preventDefault();
+
+      });
 
 
       /*  Number count  */
