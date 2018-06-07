@@ -40,6 +40,15 @@
     }
 }
 
+.tabs-nav--2tabs {
+  .tabs-nav__item {
+    @include media(mobile) {
+      width: calc(50% - 3px);
+      text-align: center;
+    }
+  }
+}
+
 .tabs-nav--3tabs {
   .tabs-nav__item {
     @include media(mobile) {

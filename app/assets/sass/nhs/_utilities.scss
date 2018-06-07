@@ -5,11 +5,21 @@
     position: sticky;
     z-index: 1;
   }
+  &.sticky--top {
+      top: 0;
+  }
 }
 
-.sticky.sticky--top {
-    top: 0;
+.sticky-mobile {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    &.sticky-mobile--top {
+        top: 0;
+    }
 }
+
+
 
 .cl {
   @include clearfix;
