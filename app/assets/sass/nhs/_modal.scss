@@ -7,25 +7,53 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+  background-color: #fefefe;
+  margin: 20px auto;
+
+  @include media(tablet) {
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-title {
+  @extend .heading-large;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid #000;
+  margin: 0;
+}
+
+.modal-inner {
+  overflow: scroll;
+  width: 100%;
+  padding-bottom: $baseline-grid-unit * 3;
+}
+
+.modal-footer {
+  clear: both;
+  border-top: 1px solid #000;
+  padding-top: $baseline-grid-unit * 2;
+  a {
+    margin-bottom: 0;
+  }
 }
 
 /* The Close Button */
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
 }
 
