@@ -171,6 +171,40 @@
     }
   }
 
+  // This is only used on Set6 - v4. Can remove is this doesn't win */
+  .cardrow__tags {
+
+    margin-top: 10px;
+
+    .cardrow-tag, .cardrow-moretags {
+      display: inline-block;
+      border: 1px solid $nhs-grey3;
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 2px 4px;
+      margin-bottom: 4px;
+    }
+
+    .cardrow-tag--free {
+      background-color: $nhs-blue;
+      border: 1px solid $nhs-blue;
+      color: #FFF;
+    }
+
+    .cardrow-tag--paid {
+      background-color: $nhs-grey1;
+      border: 1px solid $nhs-grey1;
+      color: #FFF;
+    }
+
+    .cardrow-moretags {
+      background-color: #FFF;
+      text-decoration: underline;
+      border: 1px solid #FFF;
+      cursor: pointer;
+    }
+  }
+
   .cardrow__featured {
     position: absolute;
     top: 0px;
