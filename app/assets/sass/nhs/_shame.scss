@@ -107,6 +107,15 @@ a.task-name:link {
   }
 }
 
+.form-control--search {
+  background-image: url("/images/icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 97% 6px;
+  @include media(tablet) {
+    background-position: 96% 9px;
+  }
+}
+
 .js-messages .panel:not(:first-child) {
     opacity: 0.6;
     -webkit-filter: grayscale(100%);
