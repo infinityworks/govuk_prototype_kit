@@ -1,17 +1,29 @@
 
-.app-store {
-
+.apps-store {
+  border-bottom: 2px solid $nhs-grey4;
+  clear: both;
+  padding-bottom: $baseline-grid-unit * 4;
+  @include clearfix;
 }
 
 .apps-store__item {
-  display: inline-block;
-  width: 200px;
-  margin-right: $baseline-grid-unit;
+
+  display: block;
+  float: left;
+  width: 50%;
+
+  @include media(tablet) {
+    width: 200px;
+  }
+
   a {
     display: block;
+    margin-right: $baseline-grid-unit;
   }
+
   img {
     display: block;
     width: 100%;
   }
+
 }
