@@ -95,7 +95,9 @@
 
 
 .callout--mobile-accordion {
-  border: 1px solid $nhs-grey4;
+  @include media(mobile) {
+    border: 1px solid $nhs-grey4;
+  }
   padding: 0px;
 
   .callout__title {
@@ -145,7 +147,9 @@
         }
       }
     }
-
+    .callout__list {
+      display: none;
+    }
     .callout__para {
       display: none;
       padding-left: $baseline-grid-unit;
@@ -156,6 +160,9 @@
 
     &.is-open {
       .callout__para {
+        display: block;
+      }
+      .callout__list {
         display: block;
       }
 
