@@ -1,0 +1,41 @@
+
+.app-tags {
+
+  margin-top: 10px;
+
+  .app-tags__item, .cardrow-moretags {
+    display: inline-block;
+    border: 1px solid $nhs-grey3;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    font-size: 14px;
+
+    @include media(desktop) {
+      font-size: 16px;
+      padding: 2px $baseline-grid-unit;
+    }
+  }
+
+  .app-tags__item--free {
+    background-color: $nhs-blue;
+    border: 1px solid $nhs-blue;
+    color: #FFF;
+  }
+
+  .app-tags__item--paid {
+    background-color: $nhs-grey1;
+    border: 1px solid $nhs-grey1;
+    color: #FFF;
+  }
+
+  /*
+  .cardrow-moretags {
+    background-color: #FFF;
+    text-decoration: underline;
+    border: 1px solid #FFF;
+    cursor: pointer;
+  }
+  */
+}
