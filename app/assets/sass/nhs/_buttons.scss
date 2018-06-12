@@ -18,8 +18,16 @@
   @include button(#F8F8F8);
 }
 
-.button--small, .button--tiny {
+.button--small {
   font-size: 16px;
+  @include media(mobile) {
+    width: auto;
+  }
+}
+
+.button--tiny {
+  font-size: 14px;
+
   @include media(mobile) {
     width: auto;
   }

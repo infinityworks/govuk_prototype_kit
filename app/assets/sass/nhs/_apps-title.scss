@@ -1,0 +1,25 @@
+
+.apps-title {
+
+}
+
+.apps-title__heading {
+  @extend .heading-medium;
+}
+
+.apps-title__btn {
+
+  @extend .button;
+  @extend .button--tiny;
+  @extend .button--blue;
+
+  float: right;
+  margin-left: $baseline-grid-unit;
+  margin-bottom: 0;
+  margin-top: -6px;
+
+  @include media(tablet) {
+    margin-top: -2px;
+  }
+
+}
