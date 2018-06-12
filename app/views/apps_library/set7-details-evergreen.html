@@ -117,17 +117,13 @@
 
             <h1 class="heading-large">Evergreen Life</h1>
 
-            <div class="tooltip" style="margin-bottom: 20px;">
-              <div class="tooltip__modal">
-                These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
-              </div>
-              <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="heading-small">Being tested in the NHS</span>
+            <div class="app-tags">
+              <div class="app-tags__item app-tags__item--free">Free</div>
+              <a href="set7-mental-health.html" class="app-tags__item">Mental health</a>
             </div>
-
 
             <p>Evergreen Life is a personal health record app that stores your health information in one place. You can also create an account on the <a href="https://evergreen-life.co.uk/">Evergreen Life</a> website.</p>
             <p>It enables you to actively manage your health, fitness and wellbeing. For example, you can track your lifestyle goals, book GP appointments, order repeat medication, and view and download your medical record using either the app or the <a href="https://evergreen-life.co.uk/our-product/">website.</a></p>
-
 
             <ul class="apps-store">
               <li class="apps-store__item">
@@ -180,13 +176,21 @@
               </ul>
             </p>
 
+            <h4 class="heading-medium">How does it work?</h4>
+            <p>Evergreen Life brings your health information together in one place. It collects and stores your medical, health, fitness and wellbeing records, and remembers your complete health journey.</p>
+            <p>You can also connect your record with family members, healthcare professionals or carers.</p>
+
             <h4 class="heading-medium">How do I access it?</h4>
             <p>The app is available as a free download from the iTunes app store and Google Play. You can also create an account on the Evergreen Life website.</p>
 
-            <h4 class="heading-medium">How does it work?</h4>
-            <p>Evergreen Life brings your health information together in one place. It collects and stores your medical, health, fitness and wellbeing records, and remembers your complete health journey.</p>
-
-            <p>You can also connect your record with family members, healthcare professionals or carers.</p>
+            <ul class="apps-store">
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-apple.png" class="apps-store-btn-apple"></a>
+              </li>
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-playstore.png" class="apps-store-btn-google"></a>
+              </li>
+            </ul>
 
           </div>
 
@@ -300,7 +304,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-      //$('.carousel').slick();
+
+      // Carousel
       $(".carousel").slick({
         arrows: true,
         centerMode: true,
@@ -311,6 +316,12 @@
         slidesToShow: 1,
         slidesToScroll: 1
       });
+
+      // Fake the app launch
+      $(".apps-store__item").click(function() {
+        alert( "This action would leave this website and launch the app store. We are currently in prototyping so this link doesn't work" );
+      });
+
     </script>
 
 

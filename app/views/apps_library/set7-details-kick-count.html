@@ -119,11 +119,9 @@
 
             <h1 class="heading-large">Kick Count</h1>
 
-            <div class="tooltip" style="margin-bottom: 20px;">
-              <div class="tooltip__modal">
-                These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
-              </div>
-              <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="heading-small">Being tested in the NHS</span>
+            <div class="app-tags">
+              <div class="app-tags__item app-tags__item--free">Free</div>
+              <a href="set7-pregancy.html" class="app-tags__item">Pregnancy and baby</a>
             </div>
 
 
@@ -153,11 +151,11 @@
             <table>
               <tr>
                 <th>App developer</th>
-                <td>Public Health England</td>
+                <td>Kick count</td>
               </tr>
               <tr>
                 <th>Price</th>
-                <td>&pound;0.79. Free in some areas</td>
+                <td>Free</td>
               </tr>
               <tr>
                 <th>Available on</th>
@@ -167,15 +165,26 @@
 
 
             <h4 class="heading-medium">Who is it suitable for?</h4>
-            <p>Food Scanner is for adults and children to help them cut down on sugar, fat and salt and make healthier choices.</p>
-
-            <h4 class="heading-medium">How do I access it?</h4>
-            <p>Change4Life Food scanner is free on the App Store and Google Play.</p>
+            <p>Kicks Count helps expectant parents get to know their baby's regular pattern of movement.</p>
 
             <h4 class="heading-medium">How does it work?</h4>
-            <p>Scan the barcode on a food or drink product with your app to reveal the sugar, saturated fat, salt and calories.</p>
-            <p>The app uses the green, orange and red traffic lights to reveal at a glance if you've made a healthy choice.  Look out for healthier snacks which get the thumbs up for being under 100 calories without being high in sugar, sat fat or salt.</p>
-            <p>The app is packed with loads of simple hints and tips to help you make healthier choices. Search ‘Change4Life’ to discover a whole range of ideas to help keep your family healthy and happy</p>
+            <p>Kicks Count helps you get to know your baby's normal pattern of movement.</p>
+            <p>Changes to your baby's movements may be a sign they're unwell.</p>
+            <p>Every time you feel your baby moving, tap the footprint image on the app.</p>
+            <p>You don't need to tap each time you feel a kick. The app just records each episode of movement.</p>
+            <p>You'll be able to see the number of episodes for each day.</p>
+
+            <h4 class="heading-medium">How do I access it?</h4>
+            <p>The app is free on the App store and Google Play.</p>
+
+            <ul class="apps-store">
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-apple.png" class="apps-store-btn-apple"></a>
+              </li>
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-playstore.png" class="apps-store-btn-google"></a>
+              </li>
+            </ul>
 
           </div>
 
@@ -286,7 +295,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-      //$('.carousel').slick();
+
+      // Carousel
       $(".carousel").slick({
         arrows: true,
         centerMode: true,
@@ -297,6 +307,12 @@
         slidesToShow: 1,
         slidesToScroll: 1
       });
+
+      // Fake the app launch
+      $(".apps-store__item").click(function() {
+        alert( "This action would leave this website and launch the app store. We are currently in prototyping so this link doesn't work" );
+      });
+
     </script>
 
 

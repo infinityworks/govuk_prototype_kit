@@ -117,11 +117,9 @@
 
             <h1 class="heading-large">myCOPD</h1>
 
-            <div class="tooltip" style="margin-bottom: 20px;">
-              <div class="tooltip__modal">
-                These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
-              </div>
-              <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="heading-small">Being tested in the NHS</span>
+            <div class="app-tags">
+              <div class="app-tags__item app-tags__item--free">Free</div>
+              <a href="set7-copd.html" class="app-tags__item">COPD</a>
             </div>
 
 
@@ -168,15 +166,7 @@
             <h4 class="heading-medium">Who is it suitable for?</h4>
             <p>myCOPD is suitable for all COPD (chronic obstructive pulmonary disease) patients at any stage of their disease.</p>
 
-            <h4 class="heading-medium">How do I access it?</h4>
-            <p>The myCOPD app is free to download from the Apple Store.</p>
-
-            <p>Alternatively you can contact your GP, COPD healthcare team or clinical commissioning group (CCG), to find out if myCOPD is available as a free NHS service in your area. If it is not, you can buy a lifetime licence for £20 from the supplier's website mymhealth.</p>
-
-            <p>myCOPD can be accessed on any device that connects to the internet, such as a computer, smartphone or tablet.</p>
-
             <h4 class="heading-medium">How does it work?</h4>
-
             <p>The&nbsp;tool will help you manage your COPD&nbsp;independently and reduce your reliance on GP and hospital appointments.&nbsp;</p>
             <p>myCOPD has been shown to correct 98% of inhaler errors without any other clinical intervention, resulting in an improvement in quality of life.&nbsp;</p>
             <p>Once logged in, you will have access to a dashboard full of self-care tools and educational resources, including:&nbsp;</p>
@@ -187,6 +177,20 @@
               <li>symptom tracker</li>
             </ul>
             <p><span>Clinicians can also use myCOPD to check in with their patients remotely, track their condition, update medication and improve their overall care.</span></p>
+
+            <h4 class="heading-medium">How do I access it?</h4>
+            <p>The myCOPD app is free to download from the Apple Store.</p>
+            <p>Alternatively you can contact your GP, COPD healthcare team or clinical commissioning group (CCG), to find out if myCOPD is available as a free NHS service in your area. If it is not, you can buy a lifetime licence for £20 from the supplier's website mymhealth.</p>
+            <p>myCOPD can be accessed on any device that connects to the internet, such as a computer, smartphone or tablet.</p>
+
+            <ul class="apps-store">
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-apple.png" class="apps-store-btn-apple"></a>
+              </li>
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-playstore.png" class="apps-store-btn-google"></a>
+              </li>
+            </ul>
 
           </div>
 
@@ -296,19 +300,25 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-      //$('.carousel').slick();
+
+      // Carousel
       $(".carousel").slick({
         arrows: true,
         centerMode: true,
         responsive: true,
-        centerPadding: true,
+        centerPadding: false,
         dots: true,
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       });
-    </script>
 
+      // Fake the app launch
+      $(".apps-store__item").click(function() {
+        alert( "This action would leave this website and launch the app store. We are currently in prototyping so this link doesn't work" );
+      });
+
+    </script>
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>

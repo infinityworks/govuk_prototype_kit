@@ -119,16 +119,12 @@
 
             <h1 class="heading-large">vCreate Neonatal</h1>
 
-            <div class="tooltip" style="margin-bottom: 20px;">
-              <div class="tooltip__modal">
-                These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
-              </div>
-              <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="heading-small">Being tested in the NHS</span>
+            <div class="app-tags">
+              <div class="app-tags__item app-tags__item--free">Free</div>
+              <a href="set7-pregancy.html" class="app-tags__item">Pregnancy and baby</a>
             </div>
 
-
             <p>vCreate Neonatal is a secure video messaging service that allows staff in neonatal units to record and send video updates to parents of premature and sick babies when they are unable to be with their child.</p>
-
 
             <ul class="apps-store">
               <li class="apps-store__item">
@@ -152,11 +148,11 @@
             <table>
               <tr>
                 <th>App developer</th>
-                <td>Public Health England</td>
+                <td>vCreate</td>
               </tr>
               <tr>
                 <th>Price</th>
-                <td>&pound;0.79. Free in some areas</td>
+                <td>Free</td>
               </tr>
               <tr>
                 <th>Available on</th>
@@ -166,15 +162,26 @@
 
 
             <h4 class="heading-medium">Who is it suitable for?</h4>
-            <p>Food Scanner is for adults and children to help them cut down on sugar, fat and salt and make healthier choices.</p>
-
-            <h4 class="heading-medium">How do I access it?</h4>
-            <p>Change4Life Food scanner is free on the App Store and Google Play.</p>
+            <p>vCreate Neonatal is suitable for parents of premature and sick babies who are in neonatal units.</p>
 
             <h4 class="heading-medium">How does it work?</h4>
-            <p>Scan the barcode on a food or drink product with your app to reveal the sugar, saturated fat, salt and calories.</p>
-            <p>The app uses the green, orange and red traffic lights to reveal at a glance if you've made a healthy choice.  Look out for healthier snacks which get the thumbs up for being under 100 calories without being high in sugar, sat fat or salt.</p>
-            <p>The app is packed with loads of simple hints and tips to help you make healthier choices. Search ‘Change4Life’ to discover a whole range of ideas to help keep your family healthy and happy</p>
+            <p>Unit staff record short video updates of babies for parents to watch when away from the unit. These are recorded on any device with a camera, such as a mobile phone or tablet and stored on the vCreate platform.</p>
+            <p>Parents register for an account, which has to be approved by the unit staff, and can then login to watch their baby's videos at any time on any device. Parents will also be alerted when new videos are available. </p>
+            <p>A baby care video diary builds up over time, which the parents have access to 24 hours a day.</p>
+            <p>Unit staff record videos when they have time and not at a prescribed rate. This process will have no impact on their clinical duties and the videos do not contain any sensitive clinical information.</p>
+
+            <h4 class="heading-medium">How do I access it?</h4>
+            <p>Visit the website to book a demo for your neonatal unit. The vCreate team will then be in touch to organise a time to suit the team.</p>
+            <p>If you require any further information, please email theteam@vcreate.tv or call 0333 121 8422.</p>
+
+            <ul class="apps-store">
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-apple.png" class="apps-store-btn-apple"></a>
+              </li>
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-playstore.png" class="apps-store-btn-google"></a>
+              </li>
+            </ul>
 
           </div>
 
@@ -284,7 +291,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-      //$('.carousel').slick();
+
+      // Carousel
       $(".carousel").slick({
         arrows: true,
         centerMode: true,
@@ -295,6 +303,12 @@
         slidesToShow: 1,
         slidesToScroll: 1
       });
+
+      // Fake the app launch
+      $(".apps-store__item").click(function() {
+        alert( "This action would leave this website and launch the app store. We are currently in prototyping so this link doesn't work" );
+      });
+
     </script>
 
 
