@@ -178,13 +178,9 @@
 
         <hr style="margin-bottom: 0; margin-top: 20px">
 
-
-
-
         <div class="grid-row" style="margin-bottom: 20px;">
 
           <div class="column-two-thirds">
-
 
             <!-- CARDS -->
             <div id="container">
@@ -498,6 +494,7 @@
               </div>
 
             </div>
+
           </div>
 
           <div class="column-one-third">
@@ -520,7 +517,6 @@
           </div>
         </div>
 
-
         <div class="grid-row">
           <div class="column-one-half">
             <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
@@ -536,12 +532,7 @@
           </div>
         </div>
 
-
       </div>
-
-
-
-
 
       <div class="grid">
         <div class="column-full">
@@ -580,22 +571,7 @@
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
     </main>
-
-
-
-
-
 
 
 
@@ -629,76 +605,99 @@
     <!-- Filter Modal -->
     <div id="filterModal" class="modal">
 
-      <!-- Modal content -->
       <div class="modal-content">
 
         <span class="close" id="sortClose">&times;</span>
-        <h3 class="modal-title">Add filter</h3>
 
-        <div class="modal-inner">
-          <div class="grid">
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-price">
-                <legend>
-                  <h4 class="heading-medium">Price</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="free" name="price" type="checkbox" value="Free">
-                  <label for="free">Free</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="paid" name="price" type="checkbox" value="Paid">
-                  <label for="paid">Paid</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="in-app" name="price" type="checkbox" value="In app purchase">
-                  <label for="in-app">In app purchase</label>
-                </div>
-              </fieldset>
+
+        <!-- FILTER -->
+        <div class="js-modal-filter" style="display: none">
+          <h3 class="modal-title">Add filter</h3>
+          <div class="modal-inner">
+            <div class="grid">
+              <div class="column-one-half" style="padding-bottom: 20px">
+                <fieldset class="fieldset-price">
+                  <legend>
+                    <h4 class="heading-medium">Price</h4>
+                  </legend>
+                  <div class="multiple-choice">
+                    <input id="free" name="price" type="checkbox" value="Free">
+                    <label for="free">Free</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="paid" name="price" type="checkbox" value="Paid">
+                    <label for="paid">Paid</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="in-app" name="price" type="checkbox" value="In app purchase">
+                    <label for="in-app">In app purchase</label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="column-one-half" style="padding-bottom: 20px">
+                <fieldset class="fieldset-device">
+                  <legend>
+                    <h4 class="heading-medium">Device</h4>
+                  </legend>
+                  <div class="multiple-choice">
+                    <input id="store-1" name="store-1" type="checkbox" value="Apple App Store">
+                    <label for="store-1">Apple App Store</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="store-2" name="store-2" type="checkbox" value="Google Play Store">
+                    <label for="store-2">Google Play Store</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="store-3" name="store-3" type="checkbox" value="Microsoft">
+                    <label for="store-3">Microsoft</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="store-4" name="store-4" type="checkbox" value="Web">
+                    <label for="store-4">Web based</label>
+                  </div>
+                </fieldset>
+              </div>
             </div>
-
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-device">
-                <legend>
-                  <h4 class="heading-medium">Device</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="store-1" name="store-1" type="checkbox" value="Apple App Store">
-                  <label for="store-1">Apple App Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-2" name="store-2" type="checkbox" value="Google Play Store">
-                  <label for="store-2">Google Play Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-3" name="store-3" type="checkbox" value="Microsoft">
-                  <label for="store-3">Microsoft</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-4" name="store-4" type="checkbox" value="Web">
-                  <label for="store-4">Web based</label>
-                </div>
-              </fieldset>
-            </div>
-
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset>
-                <legend>
-                  <h4 class="heading-medium">Sort by</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes" checked="checked">
-                  <label for="radio-inline-1">A/Z</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-                  <label for="radio-inline-2">Z/A</label>
-                </div>
-              </fieldset>
-            </div>
-
           </div>
         </div>
+
+
+        <!-- SORT -->
+        <div class="js-modal-sort" style="">
+          <h3 class="modal-title">Sort</h3>
+          <div class="modal-inner">
+            <div class="grid">
+              <div class="column-one-half" style="padding-bottom: 20px">
+                <fieldset class="fieldset-device">
+                  <legend>
+                    <h4 class="heading-medium">Please select</h4>
+                  </legend>
+                  <div class="multiple-choice">
+                    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Default">
+                    <label for="radio-inline-1">Default</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="radio-inline-3" type="radio" name="radio-inline-group" value="Alphabetically A-Z">
+                    <label for="radio-inline-3">Alphabetically A-Z</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="radio-inline-4" type="radio" name="radio-inline-group" value="Alphabetically Z-A">
+                    <label for="radio-inline-4">Alphabetically Z-A</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="radio-inline-5" type="radio" name="radio-inline-group" value="Date Asc">
+                    <label for="radio-inline-5">Date Asc</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="radio-inline-6" type="radio" name="radio-inline-group" value="Date Desc">
+                    <label for="radio-inline-6">Date Desc</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="modal-footer">
           <a href="#" class="button button--blue button--large" id="js-filter-update">Update</a>
@@ -890,18 +889,30 @@
 
       // FILTER
       var modal = document.getElementById('filterModal');
-      var btn = document.getElementById("filterBtn");
+      var btn1 = document.getElementById("filterBtn");
+      var btn2 = document.getElementById("sortBtn");
       var span = document.getElementsByClassName("close")[0];
 
-      btn.onclick = function() {
+      // filter
+      btn1.onclick = function() {
           modal.style.display = "block";
           $("html").addClass("no-scroll");
+          $(".js-modal-sort").hide();
+          $(".js-modal-filter").show();
+      };
+
+      // sort
+      btn2.onclick = function() {
+          modal.style.display = "block";
+          $("html").addClass("no-scroll");
+          $(".js-modal-sort").show();
+          $(".js-modal-filter").hide();
       };
 
       span.onclick = function() {
           modal.style.display = "none";
           $("html").removeClass("no-scroll");
-      }
+      };
 
       window.onclick = function(event) {
           if (event.target == modal) {
@@ -919,35 +930,6 @@
 
 
 
-
-      // SORT
-      var modalSort = document.getElementById('sortModal');
-      var btnSort = document.getElementById("sortBtn");
-      var spanSort = document.getElementById("sortClose")[0];
-
-      btn.onclick = function() {
-          modal.style.display = "block";
-          $("html").addClass("no-scroll");
-      };
-
-      span.onclick = function() {
-          modal.style.display = "none";
-          $("html").removeClass("no-scroll");
-      }
-
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      };
-
-      var pageHeight = $(window).height();
-      var pageWidth = $(window).width();
-      var mobileOffset = 220;
-
-      if (pageWidth < 600) {
-        $(".modal-inner").css("height", pageHeight - mobileOffset);
-      };
 
 
 

@@ -30,9 +30,7 @@
 
 
 
-
-/* Background color on the */
-
+/* Background color on the checkbox */
 .multiple-choice [type=checkbox] + label::before {
   background-color: #FFF;
 }
@@ -125,7 +123,7 @@ a.task-name:link {
     font-size: 22px;
     background-position: 98% 10px;
   }
-  
+
 }
 
 .js-messages .panel:not(:first-child) {
