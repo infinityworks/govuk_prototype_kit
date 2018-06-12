@@ -116,7 +116,7 @@
 
 
 .cardrow {
-  border-bottom: 1px solid $nhs-grey3;
+  border-bottom: 1px solid $nhs-grey4;
   position: relative;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -255,5 +255,35 @@
       //font-weight: bold;
     }
   }
+}
 
+.cardrow--last {
+  border-bottom: 0;
+}
+
+
+
+a.cardrow-title:link, a.cardrow-title:visited {
+  @extend .heading-medium;
+
+  display: block;
+  background-color: $nhs-grey5;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid $nhs-grey4;
+
+  padding: $baseline-grid-unit * 2;
+  text-decoration: none;
+  color: $nhs-black;
+  &:after {
+    float: right;
+    content: "See more >";
+    //@extend .heading-small;
+    margin: 0;
+    color: $nhs-blue;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+
+  }
 }
