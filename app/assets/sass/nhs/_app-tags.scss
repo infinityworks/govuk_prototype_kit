@@ -1,7 +1,8 @@
 
 .app-tags {
 
-  margin-top: 10px;
+  margin-top: $baseline-grid-unit;
+  margin-bottom: $baseline-grid-unit * 3;
 
   .app-tags__item, .cardrow-moretags {
     display: inline-block;
