@@ -416,10 +416,21 @@
 
       <table style="max-width:800px">
 
-        <tr>
+        <tr class="td-group">
           <td class="col1">-</td>
           <td>
             <a href="set7-home.html">Home</a>
+          </td>
+          <td style="text-align:right">
+            <span class="status status--red"></span>
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="col1">-</td>
+          <td>
+            <a href="set7-home-by-category.html">Home - Variation by category</a>
+            <p class="font-xsmall" style="margin:0">We would randomly select the top 3 per category</p>
           </td>
           <td style="text-align:right">
             <span class="status status--red"></span>
@@ -527,15 +538,21 @@
         text-align: center;
       }
 
+      .td-group td {
+        border-bottom:0px;
+      }
+
       /* Status - Not set */
       .status {
         position: relative;
       }
+
       .status:before {
         color: grey;
         content: "Not set";
         padding-right: 23px;
       }
+
       .status:after {
         position: absolute;
         right: 0px;
