@@ -1,9 +1,20 @@
 {
 	"pregancy": [
-		{"condition": "Pregnancy - Trimester one", "details": "Weeks 0 - 13", "website": "set7-pregancy.html?filter=t1"},
-		{"condition": "Pregnancy - Trimester two", "details": "Weeks 14 - 26", "website": "set7-pregancy.html?filter=t2"},
-		{"condition": "Pregnancy - Trimester three", "details": "Weeks 27 - 40", "website": "set7-pregancy.html?filter=t3"},
-		{"condition": "Pregnancy - Baby ", "details": "Hello world", "website": "set7-pregancy.html?filter=b1"}
+		{"condition": "Getting pregnant", "details": "", "website": "set7-pregancy.html?filter=t1"},
+		{"condition": "Pregnancy ", "details": "", "website": "set7-pregancy.html?filter=t2"},
+		{"condition": "Labour and birth", "details": "", "website": "set7-pregancy.html?filter=t3"},
+		{"condition": "Your newborn", "details": "", "website": "set7-pregancy.html?filter=b1"},
+		{"condition": "Babies and toddlers", "details": "", "website": "set7-pregancy.html?filter=b1"}
+	],
+	"healthy living": [
+		{"condition": "Eat well", "details": "test", "website": "set7-pregancy.html?filter=t1"},
+		{"condition": "Healthy weight", "details": "", "website": "set7-pregancy.html?filter=t2"},
+		{"condition": "Exercise", "details": "", "website": "set7-pregancy.html?filter=t3"},
+		{"condition": "Sleep and tiredness", "details": "", "website": "set7-pregancy.html?filter=b1"},
+		{"condition": "Sexual health", "details": "", "website": "set7-pregancy.html?filter=b1"},
+		{"condition": "Alcohol support", "details": "", "website": "set7-pregancy.html?filter=b1"},
+		{"condition": "Quit smoking", "details": "", "website": "set7-pregancy.html?filter=b1"},
+		{"condition": "healthy body", "details": "", "website": "set7-pregancy.html?filter=b1"}
 	],
 	"mental health": [
 		{"condition": "Addiction", "details": "", "website": "set7-mental-health.html"},

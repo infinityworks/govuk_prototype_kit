@@ -90,7 +90,6 @@
         <p>We provide links to health and well-being apps that are proven to treat, manage or organise your healthcare.</p>
 
 
-
         <!-- TABS -->
         <div class="js-tabs tabs-nav--grey tabs-nav--2tabs">
           <ul class="tabs-nav" role="tablist" style="margin-bottom: 0">
@@ -107,66 +106,96 @@
         <!-- TAB 1 - SEARCH -->
         <div class="js-tab-content-search callout callout--large callout--muted" style="margin-bottom: 24px;">
           <form action="#" id="conditionsForm">
-            <input id="example-conditions" placeholder="Search for health apps" class="form-control form-control--search" id="condition-f1" type="text" name="condition-f1" />
-            <p class="font-xsmall" style="color: #737373"><i>For example pregnancy, diabetes or healthy living</i></p>
+            <input id="example-conditions" placeholder="Search for conditions" class="form-control form-control--search" id="condition-f1" type="text" name="condition-f1" />
+            <p class="font-xsmall" style="color: #737373"><i>For example pregnancy or diabetes</i></p>
           </form>
         </div>
 
 
         <!-- TAB 2 - Category -->
-        <div class="js-tab-content-category callout callout--large callout--muted" style="margin-bottom: 24px; display: none">
-
-
-          <h3 class="heading-medium" style="margin-top:10px; margin-bottom:10px;">Title for category</h3>
-
-          <div class="grid-row">
-
-            <div class="column-one-half">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu viverra quam. Aenean suscipit suscipit mattis. </p>
-              <p>&nbsp;</p>
-            </div>
-
-            <div class="column-one-quarter">
-              <ul class="list list-bullet" style="margin-bottom:0">
-                <li><a href="#">Cancer</a></li>
-                <li><a href="set7-copd.html">COPD</a></li>
-                <li><a href="#">Dementia</a></li>
-                <li><a href="#">Dental</a></li>
-                <li><a href="#">Diabetes</a></li>
-                <li><a href="#">Healthy Living</a></li>
-              </ul>
-            </div>
-
-            <div class="column-one-quarter">
-              <ul class="list list-bullet">
-                <li><a href="#">Learning Disabilities</a></li>
-                <li><a href="set7-mental-health.html">Mental Health</a></li>
-                <li><a href="#">Online Community</a></li>
-                <li><a href="#">Other</a></li>
-                <li><a href="set7-pregancy.html">Pregnancy and Baby</a></li>
-              </ul>
-            </div>
-
+        <div class="js-tab-content-category callout callout--muted" style="margin-bottom: 24px; display: none">
+          <div class="categories-lists">
+            <ol class="categories-list categories-list--mobile-two-cols">
+              <li>
+                <h3><a href="#">Cancer</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+              <li>
+                <h3><a href="set7-copd.html">COPD</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+              <li>
+                <h3><a href="#">Dementia</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+            </ol>
+            <ol class="categories-list categories-list--mobile-two-cols">
+              <li>
+                <h3><a href="#">Dental</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+              <li>
+                <h3><a href="#">Diabetes</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+              <li>
+                <h3><a href="#">Healthy Living</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+            </ol>
+            <ol class="categories-list">
+              <li>
+                <h3><a href="set7-mental-health.html">Mental Health</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+              <li>
+                <h3><a href="#">Online Community</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+              <li>
+                <h3><a href="set7-pregancy.html">Pregnancy and Baby</a></h3>
+                <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+              </li>
+            </ol>
           </div>
-
-
-
-
-
         </div>
+
 
 
 
 
         <!-- THIS IS HORRIBLE - IF THIS STICKS REWORK -->
-        <div>
-          <a href="#" class="js-filter" style="float: right" id="filterBtn">Filter &amp; Sort</a>
-          <h1 class="heading-medium" style="margin:0">49 Apps</h1>
+        <div class="grid-row" style="margin-bottom: 20px;">
+
+          <div class="column-two-thirds">
+            <a href="#" class="js-filter tablet-hide" style="float: right;" id="filterBtn">Add Filter</a>
+            <h1 class="heading-medium" style="margin:0 0 10px;">49 Apps</h1>
+          </div>
+
+          <div class="column-one-third">
+            <table>
+              <tr>
+                <td style="width: 90px; border-bottom: 0; padding: 0"><label for="sort" class="sort-label">SORT BY: </label></td>
+                <td style="border-bottom: 0; padding: 0">
+                  <select class="form-control" id="sort" name="sortBy" style="width: 100%">
+                    <option class="" value="relevance" selected="">Relevance</option>
+                    <option class="" value="release_date">Release date</option>
+                    <option class="" value="title">Title</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
+        <!-- THIS IS HORRIBLE - IF THIS STICKS REWORK -->
+
+
 
         <div class="filter-by" style="display: none">
           <!-- <div class="filter-by__item">Apple iOS (46)</div>-->
         </div>
+
+
 
         <!--
         <table>
@@ -185,12 +214,12 @@
         </table>
         -->
 
-        <hr style="margin-bottom: 0; margin-top: 20px">
+        <!-- <hr style="margin-bottom: 0; margin-top: 20px"> -->
 
 
+        <div class="grid-row">
 
 
-        <div class="grid-row" style="margin-bottom: 20px;">
 
           <div class="column-two-thirds">
 
@@ -506,44 +535,163 @@
                 <a href="#" class="js-fake-loader-btn button button--blue">Load more apps</a>
               </div>
 
-            </div>
-          </div>
 
-          <div class="column-one-third">
 
-            <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
-              <h4 class="callout__title">How we review apps</h4>
-              <p class="callout__para">Our rigorous assessment makes sure only safe, secure and effective apps are published on our library. <a href="set7-how-we-review-apps.html">Find out more</a> </p>
-            </div>
 
-            <div class="callout callout--small callout--mobile-accordion" style="margin-bottom: 24px;">
-              <h4 class="callout__title">For developers</h4>
-              <p class="callout__para">Find out how you can get your app published on our library. <a href="/developer/wp-apps.html">Read more</a></p>
-            </div>
-
-            <div class="callout callout--small callout--mobile-accordion" style="margin-bottom: 24px;">
-              <h4 class="callout__title">For healthcare professionals</h4>
-              <p class="callout__para">Why you can confidently recommend the apps on our library. <a href="#">Read more</a></p>
-            </div>
+            </div><!-- container -->
 
           </div>
+
+          <div class="column-one-third mobile-hide">
+
+
+                <!-- FILTER -->
+                <div class="filter">
+
+                  Filter by:
+
+                  <div class="filter-section filter-section--toggles is-open">
+                    <div class="filter-section__title">CATEGORY</div>
+                    <div class="filter-section__contents">
+
+                      <fieldset class="filter-by-type">
+
+                        <div class="multiple-choice">
+                          <input id="type-cancer" name="type-cancer" type="checkbox" value="type-cancer">
+                          <label for="type-cancer">Cancer (1)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-copd" name="type-copd" type="checkbox" value="type-copd">
+                          <label for="type-copd">COPD (1)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-dementia" name="type-dementia" type="checkbox" value="type-dementia">
+                          <label for="type-dementia">Dementia (1)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-dental" name="type-dental" type="checkbox" value="type-dental">
+                          <label for="type-dental">Dental (1)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-diabetes" name="type-diabetes" type="checkbox" value="type-diabetes">
+                          <label for="type-diabetes">Diabetes (2)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-healthyliving" name="type-healthyliving" type="checkbox" value="type-healthyliving">
+                          <label for="type-healthyliving">Healthy Living (13)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-learningdisabilities" name="type-learningdisabilities" type="checkbox" value="type-learningdisabilities">
+                          <label for="type-learningdisabilities">Learning Disabilities (2)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-mentalhealth" name="type-mentalhealth" type="checkbox" value="type-mentalhealth">
+                          <label for="type-mentalhealth">Mental Health (13)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-onlinecommunity" name="type-onlinecommunity" type="checkbox" value="type-onlinecommunity">
+                          <label for="type-onlinecommunity">Online Community (2)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-other" name="type-other" type="checkbox" value="type-other">
+                          <label for="type-other">Other (8)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="type-pregnancyandbaby" name="type-pregnancyandbaby" type="checkbox" value="type-pregnancyandbaby">
+                          <label for="type-pregnancyandbaby">Pregnancy and Baby (2)</label>
+                        </div>
+                      </fieldset>
+
+                    </div>
+                  </div>
+
+                  <div class="filter-section filter-section--toggles">
+                    <div class="filter-section__title">PUBLISHER</div>
+                    <div class="filter-section__contents">
+
+                        <fieldset class="filter-by-publisher">
+                          <div class="multiple-choice">
+                            <input id="publisher-independent" name="publisher-independent" type="checkbox" value="publisher-independent">
+                            <label for="publisher-independent">Independent (1)</label>
+                          </div>
+                          <div class="multiple-choice">
+                            <input id="publisher-nhsengland" name="publisher-nhsengland" type="checkbox" value="publisher-nhsengland">
+                            <label for="publisher-nhsengland">NHS England (1)</label>
+                          </div>
+                          <div class="multiple-choice">
+                            <input id="publisher-nhstrusts" name="publisher-nhstrusts" type="checkbox" value="publisher-nhstrusts">
+                            <label for="publisher-nhstrusts">NHS Trusts (1)</label>
+                          </div>
+                        </fieldset>
+
+                    </div>
+                  </div>
+
+                  <div class="filter-section filter-section--toggles">
+                    <div class="filter-section__title">PRICE</div>
+                    <div class="filter-section__contents">
+
+                      <fieldset>
+                        <div class="multiple-choice">
+                          <input id="price-free" name="price-free" type="checkbox" value="price-free">
+                          <label for="price-free">Free (20)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="price-inapp" name="price-inapp" type="checkbox" value="price-inapp">
+                          <label for="price-inapp">In-App Purchase(5)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="price-paid" name="price-paid" type="checkbox" value="price-paid">
+                          <label for="price-paid">Paid (14)</label>
+                        </div>
+                      </fieldset>
+
+                    </div>
+                  </div>
+
+                  <div class="filter-section filter-section--toggles">
+                    <div class="filter-section__title">AVAILABLE ON</div>
+                    <div class="filter-section__contents">
+
+                      <fieldset>
+                        <div class="multiple-choice">
+                          <input id="available-on-1" name="available-on-1" type="checkbox" value="available-on-1">
+                          <label for="available-on-1">Google Play (2)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="available-on-2" name="available-on-2" type="checkbox" value="available-on-2">
+                          <label for="available-on-2">Apple iOS (2)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="available-on-3" name="available-on-3" type="checkbox" value="available-on-3">
+                          <label for="available-on-3">Microsoft (0)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="available-on-4" name="available-on-4" type="checkbox" value="available-on-4" disabled="">
+                          <label for="available-on-4">Website (2)</label>
+                        </div>
+                        <div class="multiple-choice">
+                          <input id="available-on-5" name="available-on-5" type="checkbox" value="available-on-5">
+                          <label for="available-on-5">Chat (2)</label>
+                        </div>
+                      </fieldset>
+
+                    </div>
+                  </div>
+
+
+                  <div class="filter-section filter-section--mobile-close">
+                    <a href="#" class="button">Done</a>
+                  </div>
+
+                </div>
+
+          </div>
+
+
+
         </div>
 
-
-        <div class="grid-row">
-          <div class="column-one-half">
-            <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
-              <h4 class="callout__title">Had an adverse reaction?</h4>
-              <p class="callout__para">If you’ve suffered an adverse reaction after using any of the apps listed here, please contact the developer directly and forward the details to NHS Digital at <a style="white-space:nowrap" href="mailto:m-health@nhs.net">m-health@nhs.net</a></p>
-            </div>
-          </div>
-          <div class="column-one-half">
-            <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
-              <h4 class="callout__title">Disclaimer</h4>
-              <p class="callout__para">Our rigorous assessment makes sure only safe, secure and effective apps are published on our library. &nbsp; <a href="https://apps.beta.nhs.uk/disclaimer/">Read more</a></p>
-            </div>
-          </div>
-        </div>
 
 
       </div>
@@ -607,17 +755,36 @@
 
 
 
+      <div class="grid">
+        <div class="column-one-half">
+          <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
+            <h4 class="callout__title">Had an adverse reaction?</h4>
+            <p class="callout__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam justo sed nibh convallis, sit amet tincidunt felis fermentum. Proin blandit sapien turpis,</p>
+            <ul class="callout__list list list-number">
+              <li>Contact the developer</li>
+              <li>Forward the details to <a href="mailto:m-health@nhs.net">m-health@nhs.net</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column-one-half">
+          <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
+            <h4 class="callout__title">Disclaimer</h4>
+            <p class="callout__para">Our rigorous assessment makes sure only safe, secure and effective apps are published on our library. &nbsp; <a href="set5-how-we-review-apps.html">Read more</a></p>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
+      <div class="grid">
+        <div class="column-full">
+          <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
+            <h4 class="callout__title">How we review apps</h4>
+            <p class="callout__para">Use of the tools / apps presented in this library are not intended to be a substitute for a consultation with a healthcare professional. It is up to you to contact a healthcare professional if you are concerned about your health. <a href="set7-how-we-review-apps.html">Find out more</a> </p>
+          </div>
+        </div>
+      </div>
 
 
     </main>
-
-
 
 
 
@@ -661,69 +828,155 @@
         <h3 class="modal-title">Filter &amp; Sort</h3>
 
         <div class="modal-inner">
-          <div class="grid">
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-price">
-                <legend>
-                  <h4 class="heading-medium">Price</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="free" name="price" type="checkbox" value="Free">
-                  <label for="free">Free</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="paid" name="price" type="checkbox" value="Paid">
-                  <label for="paid">Paid</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="in-app" name="price" type="checkbox" value="In app purchase">
-                  <label for="in-app">In app purchase</label>
-                </div>
-              </fieldset>
+
+          <div class="filter">
+
+            <div class="filter-section filter-section--toggles is-open" style="display: block">
+              <div class="filter-section__title">CATEGORY</div>
+              <div class="filter-section__contents">
+
+                <fieldset class="filter-by-type">
+
+                  <!--
+                  <div class="multiple-choice">
+                    <input id="type-1" name="type-1" type="checkbox" value="#type-1">
+                    <label for="type-1">All</label>
+                  </div>
+                  -->
+
+                  <div class="multiple-choice">
+                    <input id="type-cancer" name="type-cancer" type="checkbox" value="type-cancer">
+                    <label for="type-cancer">Cancer (1)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-copd" name="type-copd" type="checkbox" value="type-copd">
+                    <label for="type-copd">COPD (1)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-dementia" name="type-dementia" type="checkbox" value="type-dementia">
+                    <label for="type-dementia">Dementia (1)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-dental" name="type-dental" type="checkbox" value="type-dental">
+                    <label for="type-dental">Dental (1)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-diabetes" name="type-diabetes" type="checkbox" value="type-diabetes">
+                    <label for="type-diabetes">Diabetes (2)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-healthyliving" name="type-healthyliving" type="checkbox" value="type-healthyliving">
+                    <label for="type-healthyliving">Healthy Living (13)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-learningdisabilities" name="type-learningdisabilities" type="checkbox" value="type-learningdisabilities">
+                    <label for="type-learningdisabilities">Learning Disabilities (2)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-mentalhealth" name="type-mentalhealth" type="checkbox" value="type-mentalhealth">
+                    <label for="type-mentalhealth">Mental Health (13)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-onlinecommunity" name="type-onlinecommunity" type="checkbox" value="type-onlinecommunity">
+                    <label for="type-onlinecommunity">Online Community (2)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-other" name="type-other" type="checkbox" value="type-other">
+                    <label for="type-other">Other (8)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="type-pregnancyandbaby" name="type-pregnancyandbaby" type="checkbox" value="type-pregnancyandbaby">
+                    <label for="type-pregnancyandbaby">Pregnancy and Baby (2)</label>
+                  </div>
+                </fieldset>
+
+              </div>
             </div>
 
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-device">
-                <legend>
-                  <h4 class="heading-medium">Device</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="store-1" name="store-1" type="checkbox" value="Apple App Store">
-                  <label for="store-1">Apple App Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-2" name="store-2" type="checkbox" value="Google Play Store">
-                  <label for="store-2">Google Play Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-3" name="store-3" type="checkbox" value="Microsoft">
-                  <label for="store-3">Microsoft</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-4" name="store-4" type="checkbox" value="Web">
-                  <label for="store-4">Web based</label>
-                </div>
-              </fieldset>
+            <div class="filter-section filter-section--toggles" style="display: block">
+              <div class="filter-section__title">PUBLISHER</div>
+              <div class="filter-section__contents">
+
+                  <fieldset class="filter-by-publisher">
+                    <div class="multiple-choice">
+                      <input id="publisher-independent" name="publisher-independent" type="checkbox" value="publisher-independent">
+                      <label for="publisher-independent">Independent (1)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="publisher-nhsengland" name="publisher-nhsengland" type="checkbox" value="publisher-nhsengland">
+                      <label for="publisher-nhsengland">NHS England (1)</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="publisher-nhstrusts" name="publisher-nhstrusts" type="checkbox" value="publisher-nhstrusts">
+                      <label for="publisher-nhstrusts">NHS Trusts (1)</label>
+                    </div>
+                  </fieldset>
+
+              </div>
             </div>
 
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset>
-                <legend>
-                  <h4 class="heading-medium">Sort by</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes" checked="checked">
-                  <label for="radio-inline-1">A/Z</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-                  <label for="radio-inline-2">Z/A</label>
-                </div>
-              </fieldset>
+            <div class="filter-section filter-section--toggles" style="display: block">
+              <div class="filter-section__title">PRICE</div>
+              <div class="filter-section__contents">
+
+                <fieldset>
+                  <div class="multiple-choice">
+                    <input id="price-free" name="price-free" type="checkbox" value="price-free">
+                    <label for="price-free">Free (20)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="price-inapp" name="price-inapp" type="checkbox" value="price-inapp">
+                    <label for="price-inapp">In-App Purchase(5)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="price-paid" name="price-paid" type="checkbox" value="price-paid">
+                    <label for="price-paid">Paid (14)</label>
+                  </div>
+                </fieldset>
+
+              </div>
             </div>
 
+            <div class="filter-section filter-section--toggles">
+              <div class="filter-section__title">AVAILABLE ON</div>
+              <div class="filter-section__contents">
+
+                <fieldset>
+                  <div class="multiple-choice">
+                    <input id="available-on-1" name="available-on-1" type="checkbox" value="available-on-1">
+                    <label for="available-on-1">Google Play (2)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="available-on-2" name="available-on-2" type="checkbox" value="available-on-2">
+                    <label for="available-on-2">Apple iOS (2)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="available-on-3" name="available-on-3" type="checkbox" value="available-on-3">
+                    <label for="available-on-3">Microsoft (0)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="available-on-4" name="available-on-4" type="checkbox" value="available-on-4" disabled="">
+                    <label for="available-on-4">Website (2)</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="available-on-5" name="available-on-5" type="checkbox" value="available-on-5">
+                    <label for="available-on-5">Chat (2)</label>
+                  </div>
+                </fieldset>
+
+              </div>
+            </div>
+
+
+            <div class="filter-section filter-section--mobile-close">
+              <a href="#" class="button">Done</a>
+            </div>
 
           </div>
+
+
+
+
         </div>
 
 
@@ -778,10 +1031,6 @@
             listLocation: "mental health",
             maxNumberOfElements: 4,
             header: "Mental Health"
-        }, {
-            listLocation: "healthy living",
-            maxNumberOfElements: 4,
-            header: "Healthy Living"
         }],
 
         getValue: function(element) {
