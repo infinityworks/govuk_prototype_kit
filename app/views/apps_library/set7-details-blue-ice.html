@@ -117,17 +117,13 @@
 
             <h1 class="heading-large">Blue Ice</h1>
 
-            <div class="tooltip" style="margin-bottom: 20px;">
-              <div class="tooltip__modal">
-                These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
-              </div>
-              <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="heading-small">Being tested in the NHS</span>
+            <div class="app-tags">
+              <div class="app-tags__item app-tags__item--free">Free</div>
+              <a href="set7-mental-health.html" class="app-tags__item">Mental health</a>
             </div>
-
 
             <p>BlueIce is an evidenced-based app to help young people manage their emotions and reduce urges to self-harm.</p>
             <p>It includes a mood diary, a toolbox of of evidence-based techniques to reduce distress and automatic routing to emergency numbers if urges to harm continue.  </p>
-
 
             <a href="#" class="button">Visit website</a>
 
@@ -160,15 +156,14 @@
             <h4 class="heading-medium">Who is it suitable for?</h4>
             <p>BlueIce is suitable for young people attending mental health services who are self-harming.  </p>
 
+            <h4 class="heading-medium">How does it work?</h4>
+            <p>BlueIce has a mood wheel to track your mood and lets you add notes on how you're feeling or what you're doing.  You can use the mood diary to see patterns and identify triggers.</p>
+            <p>The app offers a personalised set of activities designed to reduce distress including a music library, photo library, physical activities, relaxation and mindfulness exercises, and spotting and challenging negative thoughts.</p>
+            <p>If you want to talk, the app allows you to click on one of three options to either talk to a selected person in your phone contacts, ChildLine or 111.</p>
+
             <h4 class="heading-medium">How do I access it?</h4>
             <p>BlueIce is a prescribed app designed to be used alongside face to face care provided by mental health services. </p>
 
-            <h4 class="heading-medium">How does it work?</h4>
-            <p>BlueIce has a mood wheel to track your mood and lets you add notes on how you're feeling or what you're doing.  You can use the mood diary to see patterns and identify triggers.</p>
-
-            <p>The app offers a personalised set of activities designed to reduce distress including a music library, photo library, physical activities, relaxation and mindfulness exercises, and spotting and challenging negative thoughts.</p>
-
-            <p>If you want to talk, the app allows you to click on one of three options to either talk to a selected person in your phone contacts, ChildLine or 111.</p>
 
           </div>
 
@@ -281,17 +276,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-      //$('.carousel').slick();
+
+      // Carousel
       $(".carousel").slick({
         arrows: true,
         centerMode: true,
         responsive: true,
-        centerPadding: true,
+        centerPadding: false,
         dots: true,
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       });
+
+      // Fake the app launch
+      $(".apps-store__item").click(function() {
+        alert( "This action would leave this website and launch the app store. We are currently in prototyping so this link doesn't work" );
+      });
+
     </script>
 
 

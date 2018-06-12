@@ -104,14 +104,10 @@
 
             <h1 class="heading-large">Change4Life Food Scanner</h1>
 
-            <!--
-            <div class="tooltip" style="margin-bottom: 20px;">
-              <div class="tooltip__modal">
-                These digital tools meet NHS quality standards for safety, usability and accessibility and are being tested now with NHS patients to see if there is sufficient evidence to provide them an NHS stamp of approval.
-              </div>
-              <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> <span class="heading-small">Being tested in the NHS</span>
+            <div class="app-tags">
+              <div class="app-tags__item app-tags__item--free">Free</div>
+              <a href="set7-mental-health.html" class="app-tags__item">Mental health</a>
             </div>
-            -->
 
             <p>The Change4Life Food Scanner app lets you look up the sugar, saturated fat and salt in everyday foods and drinks. Scan the barcodes of more than 140,000 products and get tips and hints along the way. The app is fun and engaging to help you and your family make healthier choices.</p>
 
@@ -160,6 +156,15 @@
             <p>Scan the barcode on a food or drink product with your app to reveal the sugar, saturated fat, salt and calories.</p>
             <p>The app uses the green, orange and red traffic lights to reveal at a glance if you've made a healthy choice.  Look out for healthier snacks which get the thumbs up for being under 100 calories without being high in sugar, sat fat or salt.</p>
             <p>The app is packed with loads of simple hints and tips to help you make healthier choices. Search ‘Change4Life’ to discover a whole range of ideas to help keep your family healthy and happy</p>
+
+            <ul class="apps-store">
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-apple.png" class="apps-store-btn-apple"></a>
+              </li>
+              <li class="apps-store__item">
+                <a href="#"><img src="/images/app-store-playstore.png" class="apps-store-btn-google"></a>
+              </li>
+            </ul>
 
           </div>
 
@@ -277,7 +282,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-      //$('.carousel').slick();
+
+      // Carousel
       $(".carousel").slick({
         arrows: true,
         centerMode: true,
@@ -288,6 +294,12 @@
         slidesToShow: 1,
         slidesToScroll: 1
       });
+
+      // Fake the app launch
+      $(".apps-store__item").click(function() {
+        alert( "This action would leave this website and launch the app store. We are currently in prototyping so this link doesn't work" );
+      });
+
     </script>
 
 
