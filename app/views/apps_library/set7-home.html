@@ -105,13 +105,10 @@
 
 
         <!-- TAB 1 - SEARCH -->
-        <div class="js-tab-content-search callout callout--muted" style="margin-bottom: 24px;">
+        <div class="js-tab-content-search callout callout--large callout--muted" style="margin-bottom: 24px;">
           <form action="#" id="conditionsForm">
-            <div class="form-group">
-              <label class="form-label mobile-hide" for="condition-f1"><span class="heading-medium">Search for a condition</span></label>
-              <input id="example-conditions" placeholder="Search for conditions" class="form-control form-control--search" id="condition-f1" type="text" name="condition-f1" />
-            </div>
-            <p class="font-xsmall" style="margin:0"><i>For example pregnancy or diabetes</i></p>
+            <input id="example-conditions" placeholder="Search for conditions" class="form-control form-control--search" id="condition-f1" type="text" name="condition-f1" />
+            <p class="font-xsmall" style="color: #737373"><i>For example pregnancy or diabetes</i></p>
           </form>
         </div>
 
@@ -759,6 +756,7 @@
       var options = {
 
         url: "/javascripts/conditions.json",
+        adjustWidth: false,
 
         categories: [{
             listLocation: "pregancy",

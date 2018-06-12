@@ -110,9 +110,18 @@ a.task-name:link {
 .form-control--search {
   background-image: url("/images/icon-search.png");
   background-repeat: no-repeat;
-  background-position: 97% 6px;
+  background-position: 97% 11px;
+  padding: 10px 14px 10px;
+
   @include media(tablet) {
-    background-position: 96% 9px;
+    background-position: 97% 14px;
+    width: 100%;
+  }
+
+  @include media(desktop) {
+    padding: 10px 14px 10px;
+    font-size: 22px;
+    background-position: 97% 16px
   }
 }
 

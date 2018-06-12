@@ -168,5 +168,14 @@
 
     }
   }
+}
 
+
+.callout--large {
+  @include media(desktop) {
+    padding-left: $baseline-grid-unit * 4;
+    padding-right: $baseline-grid-unit * 4;
+    padding-bottom: $baseline-grid-unit * 4;
+    padding-top: $baseline-grid-unit * 4;
+  }
 }
