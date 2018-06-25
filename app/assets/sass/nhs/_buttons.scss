@@ -33,6 +33,17 @@
   }
 }
 
+.button--text {
+  @include button($nhs-white);
+  -webkit-box-shadow: 0 2px 0 #FFF;
+  -moz-box-shadow: 0 2px 0 #FFF;
+  box-shadow: 0 2px 0 #FFF;
+  text-decoration: underline;
+  color: $nhs-blue;
+  padding-left: $baseline-grid-unit;
+  padding-right: $baseline-grid-unit;
+}
+
 .button--chevron {
   background-image: url("/images/icon-chevron.png");
   background-size: 13px 13px;
