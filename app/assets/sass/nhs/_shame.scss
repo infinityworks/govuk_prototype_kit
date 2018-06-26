@@ -131,7 +131,7 @@ a.task-name:link {
   @include media(tablet) {
     width: 64%;
     //padding: 10px 10px 6px;
-    margin-bottom: 4px;
+    margin-bottom: $baseline-grid-unit * 2;
   }
 }
 
@@ -155,6 +155,12 @@ a.task-name:link {
   }
 
 }
+
+.form-add-comment {
+  //border: 1px solid red;
+  @extend .font-xsmall;
+}
+
 
 .js-messages .panel:not(:first-child) {
     opacity: 0.6;
@@ -217,6 +223,10 @@ a.task-name:link {
 
 
 /* Panels */
+.panel {
+  margin-bottom: $baseline-grid-unit;
+}
+
 .panel--red {
   background-color: #FFF5F5;
   border-color: $nhs-red;
