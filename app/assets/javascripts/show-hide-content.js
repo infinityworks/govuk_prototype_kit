@@ -17,3 +17,14 @@ $( ".callout--mobile-accordion .callout__title" ).click(function() {
   $(this).parent().toggleClass("is-open");
 
 });
+
+
+
+$( ".task-list-action__link" ).click(function(e) {
+  $(this).parent().prev().slideToggle( "fast", function() {
+    // Animation complete.
+  });
+
+  e.preventDefault();
+
+});
