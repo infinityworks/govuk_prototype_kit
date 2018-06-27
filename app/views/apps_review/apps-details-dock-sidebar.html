@@ -235,7 +235,7 @@
 
 
               <div class="js-view-details">
-                <h4 class="heading-small">Question details</h4>
+                <h4 class="heading-small">Digital Tool Information</h4>
                 <table>
                   <tr>
                     <td class="font-xsmall">Published:</td>
@@ -257,7 +257,7 @@
                   </tr>
                   <tr>
                     <td class="font-xsmall">Project Files:</td>
-                    <td class="font-xsmall"><a href="#" class="js-btn-files">3 files</a></td>
+                    <td class="font-xsmall"><a href="#" class="js-btn-files">9 files</a></td>
                   </tr>
                 </table>
                 <p style="padding-top:10px;"><input type="submit" value="Updated" class="button js-page-submit" disabled></p>
@@ -340,14 +340,18 @@
 
 
 
-    $( ".js-btn-files" ).click(function() {
+    $( ".js-btn-files" ).click(function(e) {
       $( ".js-view-files" ).removeClass("js-hidden");
       $( ".js-view-details" ).addClass("js-hidden");
+
+      e.preventDefault();
     });
 
-    $( ".js-btn-details" ).click(function() {
+    $( ".js-btn-details" ).click(function(e) {
       $( ".js-view-files" ).addClass("js-hidden");
       $( ".js-view-details" ).removeClass("js-hidden");
+
+      e.preventDefault();
     });
 
 
