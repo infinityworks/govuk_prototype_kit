@@ -1,0 +1,9 @@
+{
+	"apps": [
+		{"condition": "Mediman", "details": "Pinpoint Tech", "website": "apps-details.html"},
+		{"condition": "Powerhouse Pathways", "details": "Powerhouse Productions", "website": "apps-details.html"},
+		{"condition": "Basic Time", "details": "Bergstrom Research International", "website": "apps-details.html"},
+		{"condition": "Take The Day", "details": "Take It Studios", "website": "apps-details.html"},
+		{"condition": "Comida", "details": "Byrenda", "website": "apps-details.html"}
+	]
+}
