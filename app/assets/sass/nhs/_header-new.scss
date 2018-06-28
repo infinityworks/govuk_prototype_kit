@@ -1,0 +1,29 @@
+.header-new {
+  background-color: $nhs-blue;
+  margin-bottom: $baseline-grid-unit * 6;
+  padding: 0 $baseline-grid-unit * 2;
+}
+
+.header-new__inner {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 20px 0;
+}
+
+.nhsuk-logo {
+  height: 40px;
+  display: inline-block;
+}
+
+.header-new-divider {
+  margin: $baseline-grid-unit * 2 0;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.header-new-heading {
+  color: #FFF;
+}
+
+.header-new-copy {
+  color: #FFF;
+}

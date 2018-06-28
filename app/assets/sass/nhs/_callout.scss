@@ -95,10 +95,14 @@
 
 
 .callout--mobile-accordion {
+
+  background-color: transparent;
+  padding: 0px;
+
   @include media(mobile) {
+    background-color: #FFF;
     border: 1px solid $nhs-grey4;
   }
-  padding: 0px;
 
   .callout__title {
     padding-left: $baseline-grid-unit * 2;

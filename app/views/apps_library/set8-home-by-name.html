@@ -33,7 +33,7 @@
 
   </head>
 
-  <body class="">
+  <body class="grey-bg">
 
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
@@ -47,151 +47,98 @@
       <p>GOV.UK uses cookies to make the site simpler. <a href="#">Find out more about cookies</a></p>
     </div>
 
-    <header role="banner" id="global-header" class="with-proposition">
-      <div class="header-wrapper">
+    <header role="banner" class="header-new">
+      <div class="header-new__inner">
 
-        <div class="header-global">
-          <div class="header-logo">
-            <a href="index.html" title="NHS" id="logo" class="content">
-              <img src="/images/logotype-nhs-colour__reverse@2x.png" alt="">
-            </a>
-          </div>
-        </div>
+        <a href="index.html" class="nhsuk-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="nhsuk-logo-title" role="img" width="100" height="40" style="margin:0">
+            <title id="nhsuk-logo-title">NHS logo</title>
+            <g fill-rule="nonzero" fill="none">
+              <path fill="#FFF" d="M0 39.842h98.203V0H0z"></path>
+              <path fill="#0058AD" d="M9.548 3.817H20.16l6.52 22.08h.09l4.465-22.08h8.021l-6.74 31.84H21.939l-6.65-22.032h-.09l-4.424 22.031H2.754l6.794-31.84M42.4 3.817h8.518l-2.502 12.18h10.069l2.508-12.18h8.519l-6.61 31.84h-8.518l2.826-13.638H47.135L44.31 35.656h-8.518L42.4 3.816M91.93 11.025c-1.64-.773-3.873-1.457-7.016-1.457-3.37 0-6.106.498-6.106 3.056 0 4.512 12.35 2.828 12.35 12.499 0 8.802-8.16 11.085-15.54 11.085-3.281 0-7.065-.78-9.842-1.648l2.006-6.477c1.682 1.096 5.058 1.827 7.835 1.827 2.646 0 6.789-.503 6.789-3.786 0-5.111-12.35-3.194-12.35-12.176 0-8.214 7.202-10.676 14.176-10.676 3.92 0 7.608.413 9.75 1.413l-2.052 6.34"></path>
+            </g>
+            <image class="nhsuk-logo nhsuk-logo__fallback" src="/images/nhs-logo.png" xlink:href=""></image>
+          </svg>
+        </a>
 
-        <!--
-        <div class="header-proposition">
-          <div class="content">
-            <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-            <nav id="proposition-menu">
-              <a href="/apps_library" id="proposition-name">NHS Apps Library</a>
-              <ul id="proposition-links">
-                <li><a href="/apps_library/set7-home-v4.html" class="active">Apps Library</a></li>
-                <li><a href="/developer/set7-home-v4.html">Submit an app</a></li>
-                <li><a href="/developer/set7-getting-started.html">Get started</a></li>
-                <li><a href="/developer/set7-faqs.html">FAQs</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        -->
+        <hr class="header-new-divider">
+
+        <h1 class="header-new-heading heading-large">NHS Apps Library</h1>
+        <p class="header-new-copy">We provide links to health and well-being apps that can help you to treat, manage or organise your healthcare.</p>
+
+        <form action="#" id="conditionsForm">
+          <input id="example-conditions" placeholder="Search for health apps" class="form-control form-control--search" id="condition-f1" type="text" name="condition-f1" />
+          <p class="header-new-copy"><i>For example pregnancy, diabetes or an app name</i></p>
+        </form>
 
       </div>
     </header>
 
 
-    <div id="global-header-bar"></div>
+
 
 
     <main id="content" role="main">
 
       <div class="container">
 
-        <h1 class="heading-large">NHS Apps Library</h1>
-        <p>We provide links to health and well-being apps that can help you to treat, manage or organise your healthcare.</p>
 
-
-        <!-- TABS -->
-        <div class="js-tabs tabs-nav--grey tabs-nav--2tabs">
-          <ul class="tabs-nav" role="tablist" style="margin-bottom: 0">
-            <li class="tabs-nav__item tabs-nav__item--active">
-              <a tabindex="0" href="#" class="tabs-link js-tab-search" role="tab">Search</a>
-            </li>
-            <li class="tabs-nav__item">
-              <a tabindex="1" href="#" class="tabs-link js-tab-category" role="tab">By Category</a>
-            </li>
-          </ul>
-        </div>
-
-
-        <!-- TAB 1 - SEARCH -->
-        <div class="js-tab-content-search callout callout--large callout--muted" style="margin-bottom: 24px;">
-          <form action="#" id="conditionsForm">
-            <input id="example-conditions" placeholder="Search for health apps" class="form-control form-control--search" id="condition-f1" type="text" name="condition-f1" />
-            <p class="font-xsmall" style="color: #737373"><i>For example pregnancy, diabetes or healthy living</i></p>
-          </form>
-        </div>
-
-
-        <!-- TAB 2 - Category -->
-        <div class="js-tab-content-category callout callout--large callout--muted" style="margin-bottom: 24px; display: none">
-
-          <h3 class="heading-medium" style="margin-top:10px; margin-bottom:10px;">Find an app</h3>
-
-          <div class="grid-row">
-            <div class="column-one-half">
-              <p>From booking GP appointments online to quitting smoking, we have apps to support all areas of your healthcare </p>
-              <p>&nbsp;</p>
-            </div>
-            <div class="column-one-quarter">
-              <ul class="list list-bullet" style="margin-bottom:0">
-                <li><a href="#">Cancer</a></li>
-                <li><a href="set7-copd.html">COPD</a></li>
-                <li><a href="#">Dementia</a></li>
-                <li><a href="#">Dental</a></li>
-                <li><a href="#">Diabetes</a></li>
-                <li><a href="#">Healthy Living</a></li>
-              </ul>
-            </div>
-            <div class="column-one-quarter">
-              <ul class="list list-bullet">
-                <li><a href="#">Learning Disabilities</a></li>
-                <li><a href="set7-mental-health.html">Mental Health</a></li>
-                <li><a href="#">Online Community</a></li>
-                <li><a href="#">Other</a></li>
-                <li><a href="set7-pregancy.html">Pregnancy and Baby</a></li>
-              </ul>
-            </div>
+        <div class="grid-row">
+          <div class="column-two-thirds mobile-column-one-half">
+            <h2 class="heading-medium" style="margin: 4px 0 18px;">70 apps</h2>
           </div>
+          <div class="column-one-third mobile-column-one-half">
 
-        </div>
-
-
-
-
-        <!-- THIS IS HORRIBLE - IF THIS STICKS REWORK -->
-        <div class="apps-title">
-          <a href="#" class="apps-title__btn js-filter" id="filterBtn">Add filter</a>
-          <a href="#" class="apps-title__btn js-sort" id="sortBtn">Sort (A/Z)</a>
-          <h1 class="apps-title__heading" style="margin:0">49 Apps</h1>
-        </div>
-
-        <div class="filter-by" style="display: none">
-          <!-- <div class="filter-by__item">Apple iOS (46)</div>-->
-        </div>
-
-        <!--
-        <table>
-          <tr>
-            <td style="width: 18%; white-space: nowrap; border-bottom: 0"><label for="select-box">Sort by &nbsp;</label></td>
-            <td style="border-bottom: 0">
+              <label class="form-label js-hidden" for="select-box">This is the label text</label>
               <select class="form-control" id="select-box" name="select-box" style="width: 100%">
-               <option>Relevence</option>
-               <option>Price low to high</option>
-               <option>Price high to low</option>
-               <option>Alphabetic A/Z</option>
-               <option>Alphabetic Z/A</option>
-             </select>
-           </td>
-         </tr>
-        </table>
-        -->
+                <option value="set8-home.html">By category</option>
+                <option value="set8-home-by-name.html" selected>By name</option>
+              </select>
 
-        <hr style="margin-bottom: 0; margin-top: 20px">
+          </div>
+        </div>
 
-        <div class="grid-row" style="margin-bottom: 20px;">
+
+
+
+
+
+        <hr style="margin-bottom: 24px; margin-top: 0px" class="mobile-hide">
+
+        <div class="grid-row" style="margin-bottom: 24px;">
 
           <div class="column-two-thirds">
 
             <!-- CARDS -->
             <div id="container">
 
-              <div class="cardrow cardrow--type-copd" data-name="myCOPD">
-                <a href="set7-details-copd.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1170/mycopd.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131708584730000000"></a>
-                <h3 class="cardrow__title"><a href="set7-details-copd.html" class="cardrow-link">myCOPD</a></h3>
-                <p class="cardrow__para" style="max-width: 680px;">myCOPD helps people with COPD to better manage their condition.</p>
+              <div class="cardrow cardrow--type-healthyliving" data-name="Active10walkingtracker">
+                <a href="set7-details.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1205/c-users-stsh3-desktop-active-10_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496032910000000"></a>
+                <h3 class="cardrow__title"><a href="set7-details.html" class="cardrow-link">Active 10 walking tracker</a></h3>
+                <p class="cardrow__para" style="max-width: 680px;">The Active 10 app will help you get into the habit of walking briskly for 10 minutes every day.</p>
                 <div class="app-tags">
-                  <div class="app-tags__item app-tags__item--paid">&pound;20. Free in some areas</div>
-                  <a href="set7-copd.html" class="app-tags__item">COPD</a>
+                  <div class="app-tags__item app-tags__item--free">Free</div>
+                  <a href="set7-mental-health.html" class="app-tags__item">Healthy living</a>
+                </div>
+              </div>
+
+              <div class="cardrow cardrow--type-mentalhealth" data-name="BlueIce">
+                <a href="set7-details-blue-ice.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1272/data1skh-users-rohe4-my-pictures-blueice-icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131539190460000000"></a>
+                <h3 class="cardrow__title"><a href="set7-details-blue-ice.html" class="cardrow-link">BlueIce</a></h3>
+                <p class="cardrow__para" style="max-width: 680px;">BlueIce is an evidenced-based app to help young people manage their emotions and reduce urges to self-harm.</p>
+                <div class="app-tags">
+                  <div class="app-tags__item app-tags__item--free">Free</div>
+                  <a href="set7-mental-health.html" class="app-tags__item">Mental health</a>
+                </div>
+              </div>
+
+              <div class="cardrow cardrow--type-healthyliving" data-name="Change4LifeFoodScanner">
+                <a href="set7-details.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1039/food-scanner.webp?anchor=center&mode=crop&width=120&height=120&rnd=131614475780000000"></a>
+                <h3 class="cardrow__title"><a href="set7-details.html" class="cardrow-link">Change4Life Food Scanner</a></h3>
+                <p class="cardrow__para" style="max-width: 680px;">The Change4Life Food Scanner app lets you look up the sugar, saturated fat and salt in everyday foods and drinks.</p>
+                <div class="app-tags">
+                  <div class="app-tags__item app-tags__item--free">Free</div>
+                  <a href="set7-mental-health.html" class="app-tags__item">Healthy living</a>
                 </div>
               </div>
 
@@ -212,6 +159,16 @@
                 <div class="app-tags">
                   <div class="app-tags__item app-tags__item--free">Free</div>
                   <a href="set7-mental-health.html" class="app-tags__item">Mental health</a>
+                </div>
+              </div>
+
+              <div class="cardrow cardrow--type-copd" data-name="myCOPD">
+                <a href="set7-details-copd.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1170/mycopd.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131708584730000000"></a>
+                <h3 class="cardrow__title"><a href="set7-details-copd.html" class="cardrow-link">myCOPD</a></h3>
+                <p class="cardrow__para" style="max-width: 680px;">myCOPD helps people with COPD to better manage their condition.</p>
+                <div class="app-tags">
+                  <div class="app-tags__item app-tags__item--paid">&pound;20. Free in some areas</div>
+                  <a href="set7-copd.html" class="app-tags__item">COPD</a>
                 </div>
               </div>
 
@@ -252,36 +209,6 @@
                 <div class="app-tags">
                   <div class="app-tags__item app-tags__item--free">Free</div>
                   <a href="set7-mental-health.html" class="app-tags__item">Other</a>
-                </div>
-              </div>
-
-              <div class="cardrow cardrow--type-mentalhealth" data-name="BlueIce">
-                <a href="set7-details-blue-ice.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1272/data1skh-users-rohe4-my-pictures-blueice-icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131539190460000000"></a>
-                <h3 class="cardrow__title"><a href="set7-details-blue-ice.html" class="cardrow-link">BlueIce</a></h3>
-                <p class="cardrow__para" style="max-width: 680px;">BlueIce is an evidenced-based app to help young people manage their emotions and reduce urges to self-harm.</p>
-                <div class="app-tags">
-                  <div class="app-tags__item app-tags__item--free">Free</div>
-                  <a href="set7-mental-health.html" class="app-tags__item">Mental health</a>
-                </div>
-              </div>
-
-              <div class="cardrow cardrow--type-healthyliving" data-name="Change4LifeFoodScanner">
-                <a href="set7-details.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1039/food-scanner.webp?anchor=center&mode=crop&width=120&height=120&rnd=131614475780000000"></a>
-                <h3 class="cardrow__title"><a href="set7-details.html" class="cardrow-link">Change4Life Food Scanner</a></h3>
-                <p class="cardrow__para" style="max-width: 680px;">The Change4Life Food Scanner app lets you look up the sugar, saturated fat and salt in everyday foods and drinks.</p>
-                <div class="app-tags">
-                  <div class="app-tags__item app-tags__item--free">Free</div>
-                  <a href="set7-mental-health.html" class="app-tags__item">Healthy living</a>
-                </div>
-              </div>
-
-              <div class="cardrow cardrow--type-healthyliving" data-name="Active10walkingtracker">
-                <a href="set7-details.html"><img class="cardrow__img" src="https://apps.beta.nhs.uk/media/1205/c-users-stsh3-desktop-active-10_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496032910000000"></a>
-                <h3 class="cardrow__title"><a href="set7-details.html" class="cardrow-link">Active 10 walking tracker</a></h3>
-                <p class="cardrow__para" style="max-width: 680px;">The Active 10 app will help you get into the habit of walking briskly for 10 minutes every day.</p>
-                <div class="app-tags">
-                  <div class="app-tags__item app-tags__item--free">Free</div>
-                  <a href="set7-mental-health.html" class="app-tags__item">Healthy living</a>
                 </div>
               </div>
 
@@ -600,205 +527,6 @@
 
 
 
-
-
-    <!-- Filter Modal -->
-    <div id="filterModal" class="modal">
-
-      <div class="modal-content">
-
-        <span class="close" id="sortClose">&times;</span>
-
-
-        <!-- FILTER -->
-        <div class="js-modal-filter" style="display: none">
-          <h3 class="modal-title">Add filter</h3>
-          <div class="modal-inner">
-            <div class="grid">
-              <div class="column-one-half" style="padding-bottom: 20px">
-                <fieldset class="fieldset-price">
-                  <legend>
-                    <h4 class="heading-medium">Price</h4>
-                  </legend>
-                  <div class="multiple-choice">
-                    <input id="free" name="price" type="checkbox" value="Free">
-                    <label for="free">Free</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="paid" name="price" type="checkbox" value="Paid">
-                    <label for="paid">Paid</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="in-app" name="price" type="checkbox" value="In app purchase">
-                    <label for="in-app">In app purchase</label>
-                  </div>
-                </fieldset>
-              </div>
-              <div class="column-one-half" style="padding-bottom: 20px">
-                <fieldset class="fieldset-device">
-                  <legend>
-                    <h4 class="heading-medium">Device</h4>
-                  </legend>
-                  <div class="multiple-choice">
-                    <input id="store-1" name="store-1" type="checkbox" value="Apple App Store">
-                    <label for="store-1">Apple App Store</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="store-2" name="store-2" type="checkbox" value="Google Play Store">
-                    <label for="store-2">Google Play Store</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="store-3" name="store-3" type="checkbox" value="Microsoft">
-                    <label for="store-3">Microsoft</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="store-4" name="store-4" type="checkbox" value="Web">
-                    <label for="store-4">Web based</label>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- SORT -->
-        <div class="js-modal-sort" style="">
-          <h3 class="modal-title">Sort</h3>
-          <div class="modal-inner">
-            <div class="grid">
-              <div class="column-one-half" style="padding-bottom: 20px">
-                <fieldset class="fieldset-device">
-                  <legend>
-                    <h4 class="heading-medium">Please select</h4>
-                  </legend>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-1" type="radio" name="radio-group" value="Default" checked>
-                    <label for="radio-inline-1">Default</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-3" type="radio" name="radio-group" value="Alphabetically A-Z">
-                    <label for="radio-inline-3">Alphabetically A-Z</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-4" type="radio" name="radio-group" value="Alphabetically Z-A">
-                    <label for="radio-inline-4">Alphabetically Z-A</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-5" type="radio" name="radio-group" value="Date Asc">
-                    <label for="radio-inline-5">Date Asc</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-6" type="radio" name="radio-group" value="Date Desc">
-                    <label for="radio-inline-6">Date Desc</label>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="modal-footer">
-          <a href="#" class="button button--blue button--large" id="js-filter-update">Update</a>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-
-
-    <!-- Sort Modal -->
-    <div id="sortModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-
-        <span class="close" id="sortClose">&times;</span>
-        <h3 class="modal-title">Filter &amp; Sort</h3>
-
-        <div class="modal-inner">
-          <div class="grid">
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-price">
-                <legend>
-                  <h4 class="heading-medium">Price</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="free" name="price" type="checkbox" value="Free">
-                  <label for="free">Free</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="paid" name="price" type="checkbox" value="Paid">
-                  <label for="paid">Paid</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="in-app" name="price" type="checkbox" value="In app purchase">
-                  <label for="in-app">In app purchase</label>
-                </div>
-              </fieldset>
-            </div>
-
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-device">
-                <legend>
-                  <h4 class="heading-medium">Device</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="store-1" name="store-1" type="checkbox" value="Apple App Store">
-                  <label for="store-1">Apple App Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-2" name="store-2" type="checkbox" value="Google Play Store">
-                  <label for="store-2">Google Play Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-3" name="store-3" type="checkbox" value="Microsoft">
-                  <label for="store-3">Microsoft</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-4" name="store-4" type="checkbox" value="Web">
-                  <label for="store-4">Web based</label>
-                </div>
-              </fieldset>
-            </div>
-
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset>
-                <legend>
-                  <h4 class="heading-medium">Sort by</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes" checked="checked">
-                  <label for="radio-inline-1">A/Z</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-                  <label for="radio-inline-2">Z/A</label>
-                </div>
-              </fieldset>
-            </div>
-
-
-          </div>
-        </div>
-
-
-        <div class="modal-footer">
-          <a href="#" class="button button--blue button--large" id="js-filter-update">Update</a>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-
-
     <script src="/javascripts/govuk-template.js?0.22.3"></script>
 
 
@@ -884,166 +612,19 @@
       $("#example-conditions").easyAutocomplete(options);
 
 
-
-
-
-
-
-      // Modal
-
-      // FILTER
-      var modal = document.getElementById('filterModal');
-      var btn1 = document.getElementById("filterBtn");
-      var btn2 = document.getElementById("sortBtn");
-      var span = document.getElementsByClassName("close")[0];
-
-      // filter
-      btn1.onclick = function() {
-          modal.style.display = "block";
-          $("html").addClass("no-scroll");
-          $(".js-modal-sort").hide();
-          $(".js-modal-filter").show();
-      };
-
-      // sort
-      btn2.onclick = function() {
-          modal.style.display = "block";
-          $("html").addClass("no-scroll");
-          $(".js-modal-sort").show();
-          $(".js-modal-filter").hide();
-      };
-
-      span.onclick = function() {
-          modal.style.display = "none";
-          $("html").removeClass("no-scroll");
-      };
-
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      };
-
-      var pageHeight = $(window).height();
-      var pageWidth = $(window).width();
-      var mobileOffset = 220;
-
-      if (pageWidth < 600) {
-        $(".modal-inner").css("height", pageHeight - mobileOffset);
-      };
-
-
-
-
-
-
-      // Filters
-      $("#js-filter-update").click(function() {
-
-        // Remove the modal
-        modal.style.display = "none";
-        $("html").removeClass("no-scroll");
-
-        // Check the checkboxes
-        var count = 0;
-        var price = $(".fieldset-price");
-        var device = $(".fieldset-device");
-        var filterBy = $(".filter-by");
-
-        $('input[type=checkbox]').each(function () {
-            //var sThisVal = ( ? "1" : "0");
-            //sList += (sList=="" ? sThisVal : "," + sThisVal);
-            if (this.checked) {
-
-              count = count + 1;
-
-              // 1. add filter facet
-              filterBy.append("<div class=filter-by__item>" + $(this).val() + "</div>");
-
-              // 2. add link
-              addLinks();
-
-            };
-
+      /* Jump to selectbox */
+      $(function(){
+        // bind change event to select
+        $('#select-box').on('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
         });
-
-        if (count > 0 ) {
-          $(".filter-by").show();
-          $(".js-filter").text("Filter & Sort (" + count + ")");
-        } else {
-          $(".filter-by").hide();
-          $(".js-filter").text("Filter & Sort");
-        }
-
-        //alert(count);
-
       });
 
-      // Handler for facet
-      function facetHandler() {
-
-        $(this).remove();
-
-        if (count > 0 ) {
-          $(".filter-by").show();
-          $(".js-filter").text("Filter & Sort (" + count + ")");
-        } else {
-          $(".filter-by").hide();
-          $(".js-filter").text("Filter & Sort");
-        }
-
-        //getID = "#" + $(this).attr("data");
-        //$(getID).prop('checked', false);
-        //alert(getID);
-
-      }
-
-
-      // Add links to filter facets
-      function addLinks() {
-
-        $('.filter-by__item').each(function() {
-          $(this).click(facetHandler);
-        });
-
-      }
-
-
-
-      // Fake loader
-      $(".js-fake-loader-btn").click(function(e) {
-        $(".js-fake-loader").show();
-        $(this).hide();
-        e.preventDefault();
-      });
-
-
-      // TABS
-      $(".js-tab-category").click(function(e) {
-        $(".tabs-nav__item").removeClass("tabs-nav__item--active");
-        $(this).parent().addClass("tabs-nav__item--active");
-
-        $(".js-tab-content-category").show();
-        $(".js-tab-content-search").hide();
-
-        e.preventDefault();
-      });
-
-      $(".js-tab-search").click(function(e) {
-        $(".tabs-nav__item").removeClass("tabs-nav__item--active");
-        $(this).parent().addClass("tabs-nav__item--active");
-
-        $(".js-tab-content-category").hide();
-        $(".js-tab-content-search").show();
-
-        e.preventDefault();
-      });
-
-
-
-
-
-    </script>
+      </script>
 
   </body>
 </html>
