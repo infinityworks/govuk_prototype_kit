@@ -22,13 +22,24 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   @include media(tablet) {
-
     float: left;
     width: 75%;
   }
 }
 
+.mobile-column-one-half {
+  @include media(mobile) {
+    float: left;
+    width: 50%;
+  }
+}
 
+
+/* taken from the new redesign project */
+/* https://nhsuk-redesign.azurewebsites.net */
+.grey-bg {
+  background-color: #f0f4f5;
+}
 
 /* Background color on the checkbox */
 .multiple-choice [type=checkbox] + label::before {

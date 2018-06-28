@@ -116,15 +116,20 @@
 
 
 .cardrow {
-  border-bottom: 1px solid $nhs-grey4;
   position: relative;
-  //padding-bottom: 25px;
-  padding-top: 25px;
+  background-color: #FFF;
+  border-bottom: 1px solid #FFF;
+
+  padding-top: 18px;
   padding-left: 90px;
+  padding-right: $baseline-grid-unit;
+  padding-bottom: $baseline-grid-unit / 2;
+  margin-bottom: $baseline-grid-unit * 2;
   min-height: 80px;
 
   @include media(desktop) {
     padding-left: 140px;
+    padding-right: $baseline-grid-unit * 2;
   }
 
   .cardrow-content {
@@ -136,14 +141,14 @@
 
   .cardrow__img {
     position: absolute;
-    top: 22px;
+    top: 18px;
     left: 14px;
     width: 60px;
     border-radius: 15px;
     border: 1px solid #BFC1C3;
 
     @include media(desktop) {
-      top: 25px;
+      //top: 25px;
       width: 90px;
       border-radius: 20px;
       left: 18px;
@@ -236,26 +241,30 @@ a.cardrow-title:link, a.cardrow-title:visited {
   @extend .heading-medium;
 
   display: block;
-  background-color: $nhs-grey5;
   margin-top: 0;
   margin-bottom: 0;
-  border-top: 1px solid $nhs-grey4;
-
-  padding: $baseline-grid-unit * 2;
+  //border-top: 1px solid $nhs-grey4;
+  padding: 30px 0 12px 0;
   text-decoration: none;
-  color: $nhs-black;
+  color: $nhs-blue;
+
   &:after {
-    float: right;
+    position: relative;
     content: "See more >";
-    //@extend .heading-small;
-    margin: 0;
+    margin-left: $baseline-grid-unit * 2;
+    top: 0;
     color: $nhs-blue;
     font-size: 16px;
     font-weight: 400;
     text-decoration: underline;
-    @include media(desktop) {
-      position: relative;
-      top: 3px;
+  }
+
+  &:active, &:focus {
+    background-color: transparent;
+    outline: 0;
+    &:after {
+      color: #000;
     }
   }
+
 }
