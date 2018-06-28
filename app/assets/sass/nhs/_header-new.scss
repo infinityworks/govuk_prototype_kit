@@ -1,13 +1,12 @@
 .header-new {
   background-color: $nhs-blue;
   margin-bottom: $baseline-grid-unit * 6;
-  padding: 0 $baseline-grid-unit * 2;
 }
 
 .header-new__inner {
   max-width: 960px;
   margin: 0px auto;
-  padding: 20px 0;
+  padding: $baseline-grid-unit * 2 $baseline-grid-unit * 2;
 }
 
 .nhsuk-logo {
