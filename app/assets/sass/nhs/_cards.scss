@@ -238,12 +238,12 @@
 
 
 a.cardrow-title:link, a.cardrow-title:visited {
+
   @extend .heading-medium;
 
   display: block;
   margin-top: 0;
   margin-bottom: 0;
-  //border-top: 1px solid $nhs-grey4;
   padding: 30px 0 12px 0;
   text-decoration: none;
   color: $nhs-blue;
@@ -257,6 +257,11 @@ a.cardrow-title:link, a.cardrow-title:visited {
     font-size: 16px;
     font-weight: 400;
     text-decoration: underline;
+
+    @include media(mobile) {
+      float: right;
+    }
+
   }
 
   &:active, &:focus {

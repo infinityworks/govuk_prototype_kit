@@ -41,15 +41,16 @@
   background-color: #f0f4f5;
 }
 
+
 /* Background color on the checkbox */
 .multiple-choice [type=checkbox] + label::before {
   background-color: #FFF;
 }
 
 
-
 /* Missing header elements */
 .breadcrumbs {
+  z-index: 2;
   background-color: #FFF;
 }
 
@@ -64,6 +65,8 @@
   margin-bottom: 0;
 }
 
+
+/* What is this? */
 .related-container {
   padding: 0 15px;
   -webkit-box-sizing: border-box;
@@ -71,7 +74,6 @@
   box-sizing: border-box;
   margin-top: 40px;
 }
-
 
 
 /* Task list extra classes */
@@ -114,8 +116,6 @@ a.task-name:link {
 }
 
 
-
-
 /* Extra line on the homepage sidebar */
 .govuk-related-items {
   margin-top: 40px;
@@ -124,9 +124,7 @@ a.task-name:link {
 }
 
 
-
 /* Forms */
-
 .form-label {
   margin-bottom: 7px;
 }
@@ -214,7 +212,6 @@ input[type="file"] {
 
 
 /* Greyscale old comments in the thread */
-
 .js-messages .panel:not(:first-child) {
     opacity: 0.6;
     -webkit-filter: grayscale(100%);
@@ -223,16 +220,13 @@ input[type="file"] {
 
 
 /* Field disabled */
-
 .form-control[type="text"]:disabled, textarea.form-control[disabled], select.form-control[disabled]  {
     background-color: #F8F8F8;
     border-color: #e0e0e0;
 }
 
 
-
 /* Trancate message thread */
-
 .form-group{
   .js-expand-button {
     display: none;
@@ -275,7 +269,6 @@ input[type="file"] {
 }
 
 
-
 /* Panels */
 .panel {
   margin-bottom: $baseline-grid-unit;
@@ -298,15 +291,6 @@ input[type="file"] {
 .panel--green-border {
   border-color: $nhs-green;
 }
-
-
-
-
-
-
-
-
-
 
 
 // status--completed
@@ -368,7 +352,6 @@ input[type="file"] {
 
 
 /* Header for set2-details.html header */
-
 .app-header {
 
   position: relative;
@@ -426,9 +409,6 @@ input[type="file"] {
       border: 1px solid rgba(0,0,0,0.08);
     }
 
-
-
-
     &:after {
       @include media(tablet) {
         content: "";
@@ -447,20 +427,12 @@ input[type="file"] {
 }
 
 
-/* Pie chart */
-.pie {
-  max-width: 60px;
-}
-
 .timer {
   display: none;
 }
 
 
-
-
 /* Link to feedback form */
-
 .feedback {
   position: fixed;
   bottom: 0px;
