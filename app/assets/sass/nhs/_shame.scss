@@ -125,7 +125,8 @@ a.task-name:link {
 
 
 
-/* Form controls */
+/* Forms */
+
 .form-label {
   margin-bottom: 7px;
 }
@@ -203,6 +204,17 @@ a.task-name:link {
   @extend .font-xsmall;
 }
 
+/* Input file upload */
+input[type="file"] {
+  background-color: #FFF;
+  padding: 10px 10px 9px;
+  font-size: 14px;
+  border-bottom: 2px solid #b8c0c5;
+}
+
+
+/* Greyscale old comments in the thread */
+
 .js-messages .panel:not(:first-child) {
     opacity: 0.6;
     -webkit-filter: grayscale(100%);
@@ -211,6 +223,7 @@ a.task-name:link {
 
 
 /* Field disabled */
+
 .form-control[type="text"]:disabled, textarea.form-control[disabled], select.form-control[disabled]  {
     background-color: #F8F8F8;
     border-color: #e0e0e0;
@@ -218,7 +231,7 @@ a.task-name:link {
 
 
 
-/* TRUNCATE HACK */
+/* Trancate message thread */
 
 .form-group{
   .js-expand-button {
