@@ -20,7 +20,7 @@
     padding: 3px 5px 1px;
     font-size: 16px;
   }
-  
+
 }
 
 .status--in-progress {
@@ -34,6 +34,10 @@
 }
 
 .status--with-vendor {
+  background-color: #F1F2F4;
+}
+
+.status--not-started {
   background-color: #F1F2F4;
 }
 
