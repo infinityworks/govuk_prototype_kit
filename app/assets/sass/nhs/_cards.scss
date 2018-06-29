@@ -119,17 +119,17 @@
   position: relative;
   background-color: #FFF;
   border-bottom: 1px solid #FFF;
-
   padding-top: 18px;
   padding-left: 90px;
   padding-right: $baseline-grid-unit;
   padding-bottom: $baseline-grid-unit / 2;
-  margin-bottom: $baseline-grid-unit * 2;
+  margin-bottom: $baseline-grid-unit;
   min-height: 80px;
 
   @include media(desktop) {
     padding-left: 140px;
     padding-right: $baseline-grid-unit * 2;
+    margin-bottom: $baseline-grid-unit * 2;
   }
 
   .cardrow-content {
