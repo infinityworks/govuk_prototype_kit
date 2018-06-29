@@ -211,7 +211,7 @@ a.task-name:link {
 
 
 /* Field disabled */
-.form-control[type="text"]:disabled, textarea.form-control[disabled]  {
+.form-control[type="text"]:disabled, textarea.form-control[disabled], select.form-control[disabled]  {
     background-color: #F8F8F8;
     border-color: #e0e0e0;
 }
