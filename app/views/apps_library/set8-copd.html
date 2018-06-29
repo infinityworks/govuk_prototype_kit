@@ -161,7 +161,6 @@
       </div>
 
 
-
     </main>
 
 
@@ -204,75 +203,11 @@
     <script src="/javascripts/auto-store-data.js"></script>
     <script src="/javascripts/show-hide-content.js"></script>
     <script src="/javascripts/jquery.easy-autocomplete.min.js"></script>
-
+    <script src="/javascripts/jquery.easy-autocomplete.min.js"></script>
+    <script src="/javascripts/jquery.easy-autocomplete-controller.js"></script>
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
-
-
-    <script>
-
-      // Hack
-      $('#example-conditions').removeAttr('style');
-
-      /* Mobile only toggle fitlers */
-
-      var options = {
-
-        url: "/javascripts/conditions.json",
-        adjustWidth: false,
-
-        categories: [{
-            listLocation: "pregancy",
-            maxNumberOfElements: 4,
-            header: "Pregancy"
-        }, {
-            listLocation: "mental health",
-            maxNumberOfElements: 4,
-            header: "Mental Health"
-        }, {
-            listLocation: "healthy living",
-            maxNumberOfElements: 4,
-            header: "Healthy Living"
-        }],
-
-        getValue: function(element) {
-            return element.condition;
-            return element.website;
-
-        },
-
-        template: {
-            type: "description",
-            fields: {
-                description: "details"
-            }
-        },
-
-        list: {
-            maxNumberOfElements: 8,
-            match: {
-                enabled: true
-            },
-            sort: {
-                enabled: true
-            }, onClickEvent: function() {
-
-              var websiteSelected = $("#example-conditions").getSelectedItemData().website;
-              window.location.href = websiteSelected;
-              //alert(websiteSelected);
-
-          }
-        },
-
-        theme: "square"
-
-      };
-
-      $("#example-conditions").easyAutocomplete(options);
-
-
-    </script>
 
 
   </body>

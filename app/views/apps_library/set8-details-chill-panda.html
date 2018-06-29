@@ -200,52 +200,43 @@
       </div>
 
 
-      <h3 class="heading-medium">App categories</h3>
-      <div class="callout callout--muted" style="margin-bottom: 24px; ">
-        <div class="categories-lists">
-          <ol class="categories-list categories-list--mobile-two-cols">
-            <li>
-              <h3><a href="#">Cancer</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-            <li>
-              <h3><a href="set8-copd.html">COPD</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-            <li>
-              <h3><a href="#">Dementia</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-          </ol>
-          <ol class="categories-list categories-list--mobile-two-cols">
-            <li>
-              <h3><a href="#">Dental</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-            <li>
-              <h3><a href="#">Diabetes</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-            <li>
-              <h3><a href="#">Healthy Living</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-          </ol>
-          <ol class="categories-list">
-            <li>
-              <h3><a href="set8-mental-health.html">Mental Health</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-            <li>
-              <h3><a href="#">Online Community</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-            <li>
-              <h3><a href="set8-pregancy.html">Pregnancy and Baby</a></h3>
-              <p class="mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-            </li>
-          </ol>
+      <div class="callout callout--large callout--muted" style="margin-bottom: 24px;">
+
+        <h3 class="heading-medium" style="margin-top:10px; margin-bottom:10px;">Find an app</h3>
+
+        <form action="#" id="conditionsForm">
+          <input id="example-conditions" placeholder="Search for health apps" class="form-control form-control--search" id="condition-f1" type="text" name="condition-f1" />
+          <p class="font-xsmall" style="color: #737373"><i>For example pregnancy, diabetes or healthy living</i></p>
+        </form>
+
+        <p>&nbsp;</p>
+
+        <div class="grid-row">
+          <div class="column-one-half">
+            <p>From booking GP appointments online to quitting smoking, we have apps to support all areas of your healthcare </p>
+            <p>&nbsp;</p>
+          </div>
+          <div class="column-one-quarter">
+            <ul class="list list-bullet" style="margin-bottom:0">
+              <li><a href="#">Cancer</a></li>
+              <li><a href="set8-copd.html">COPD</a></li>
+              <li><a href="#">Dementia</a></li>
+              <li><a href="#">Dental</a></li>
+              <li><a href="#">Diabetes</a></li>
+              <li><a href="#">Healthy Living</a></li>
+            </ul>
+          </div>
+          <div class="column-one-quarter">
+            <ul class="list list-bullet">
+              <li><a href="#">Learning Disabilities</a></li>
+              <li><a href="set8-mental-health.html">Mental Health</a></li>
+              <li><a href="#">Online Community</a></li>
+              <li><a href="#">Other</a></li>
+              <li><a href="set8-pregancy.html">Pregnancy and Baby</a></li>
+            </ul>
+          </div>
         </div>
+
       </div>
 
     </main>
@@ -280,7 +271,9 @@
     <script src="/javascripts/application.js"></script>
     <script src="/javascripts/auto-store-data.js"></script>
     <script src="/javascripts/show-hide-content.js"></script>
-
+    <script src="/javascripts/jquery.easy-autocomplete.min.js"></script>
+    <script src="/javascripts/jquery.easy-autocomplete-controller.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
 
