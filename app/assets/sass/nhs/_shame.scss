@@ -42,6 +42,10 @@
 }
 
 
+.highlight {
+  background-color: yellow;
+}
+
 /* Background color on the checkbox */
 .multiple-choice [type=checkbox] + label::before {
   background-color: #FFF;
