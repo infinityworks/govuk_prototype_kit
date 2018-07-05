@@ -72,6 +72,21 @@
     }
   }
 
+  &.tooltip--left {
+    .tooltip__modal {
+
+      left: -25px;
+
+      &:after {
+        top: -10px;
+        left: -190px;
+        border-top: 0;
+        border-bottom: solid 10px $nhs-grey1;
+      }
+
+    }
+  }
+
   &.tooltip--desktop-right {
     .tooltip__modal {
       @include media(desktop) {
