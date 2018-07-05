@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>NHSD App Assessment Portal / Admin</title>
+
+    <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="/stylesheets/govuk-template-ie7.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="/stylesheets/govuk-template-ie8.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="/stylesheets/govuk-template-print.css?0.22.3" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="/stylesheets/fonts-ie8.css?0.22.3" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="/stylesheets/fonts.css?0.22.3" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="/javascripts/ie.js?0.22.3"></script><![endif]-->
+
+    <link rel="shortcut icon" href="/images/nhs-icon.ico" type="image/x-icon" />
+
+    <link rel="mask-icon" href="/images/gov.uk_logotype_crown.svg?0.22.3" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png?0.22.3">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon-167x167.png?0.22.3">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png?0.22.3">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?0.22.3">
+
+
+    <meta name="theme-color" content="#0b0c0c" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/images/opengraph-image.png?0.22.3">
+
+
+  <!--[if lte IE 8]><link href="/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!--><link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+
+  </head>
+
+  <body class=""><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      <p>GOV.UK uses cookies to make the site simpler. <a href="#">Find out more about cookies</a></p>
+    </div>
+
+
+    <header role="banner" id="global-header" class="with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="index.html" title="NHS" id="logo" class="content">
+              <img src="/images/logotype-nhs-colour__reverse@2x.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="header-proposition">
+          <div class="content">
+            <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+            <nav id="proposition-menu">
+              <a href="/apps_assessment/" id="proposition-name">NHS App Assessment Portal</a><strong class="phase-tag" style="position:relative; left:4px; top:-2px;">GATEKEEPER</strong>
+              <ul id="proposition-links">
+                <li><a href="home.html" class="active">Apps</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="global-header-bar"></div>
+
+    <main id="content" role="main">
+
+      <h1 class="heading-large">Gatekeeper</h1>
+
+      <div class="js-tabs tabs-nav--3tabs">
+        <ul class="tabs-nav" role="tablist">
+          <li class="tabs-nav__item">
+            <a tabindex="0" href="/apps_assessment/apps.html" class="tabs-link" role="tab">Developer</a>
+          </li>
+          <li class="tabs-nav__item">
+            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
+          </li>
+          <li class="tabs-nav__item tabs-nav__item--active">
+            <a tabindex="3" href="/apps_review/apps.html" class="tabs-link" role="tab">Gatekeeper</a>
+          </li>
+          <li class="tabs-nav__item">
+            <a tabindex="4" href="/admin/home.html" class="tabs-link" role="tab">Admin</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <h2 class="heading-medium">My Apps</h2>
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <div class="">
+            <label class="form-label hide" for="select-box">View by:</label>
+            <select class="form-control" id="select-box" name="select-box">
+              <option value="apps.html">Recently added</option>
+              <option value="apps.html">Date added - Ascending</option>
+              <option value="apps.html">Date added - Descending</option>
+              <option value="apps.html">App name - A/Z</option>
+              <option value="apps.html">App name - Z/A</option>
+              <option value="apps.html">* Declined</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Team Name</th>
+            <th>App Name</th>
+            <th>Users</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>myCOPD</td>
+            <td class="font-xsmall">Mediman</td>
+            <td class="font-xsmall">
+              <div class="tooltip tooltip--left tooltip--under">
+                <div class="tooltip__modal">
+                  No users added
+                </div>
+                0
+              </div>
+            </td>
+            <td class="font-xsmall">2018-01-11 15:16:47 <div class="status status--awaiting">NEW</div></td>
+            <td class="font-xsmall"><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+          <tr>
+            <td>Cove</td>
+            <td class="font-xsmall">Powerhouse Pathways</td>
+            <td class="font-xsmall">
+              <div class="tooltip tooltip--left tooltip--under">
+                <div class="tooltip__modal">
+                  No users added
+                </div>
+                0
+              </div>
+            </td>
+            <td class="font-xsmall">2018-01-11 15:16:47 <div class="status status--awaiting">NEW</div></td>
+            <td class="font-xsmall"><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+          <tr>
+            <td>Chill Panda</td>
+            <td class="font-xsmall">Pulse</td>
+            <td class="font-xsmall">
+              <div class="tooltip tooltip--left tooltip--under">
+                <div class="tooltip__modal">
+                  <ul>
+                    <li><a href="manage-user.html">David Sayce</a></li>
+                    <li><a href="manage-user.html">Buster Jarret</a></li>
+                    <li><a href="manage-user.html">Kim Crowe</a></li>
+                  </ul>
+                </div>
+                3
+              </div>
+            </td>
+            <td class="font-xsmall">2018-01-11 15:16:47</td>
+            <td class="font-xsmall"><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+          <tr>
+            <td>MyChoicePad</td>
+            <td class="font-xsmall">Mediman</td>
+            <td class="font-xsmall">
+              <div class="tooltip tooltip--left tooltip--under">
+                <div class="tooltip__modal">
+                  <ul>
+                    <li><a href="manage-user.html">Freddy Smith</a></li>
+                  </ul>
+                </div>
+                1
+              </div>
+            </td>
+            <td class="font-xsmall">2018-01-11 15:16:47</td>
+            <td class="font-xsmall"><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+          <tr>
+            <td>My Health Guide</td>
+            <td class="font-xsmall">Pathways</td>
+            <td class="font-xsmall">
+              <div class="tooltip tooltip--left tooltip--under">
+                <div class="tooltip__modal">
+                  <ul>
+                    <li><a href="manage-user.html">David Sayce</a></li>
+                    <li><a href="manage-user.html">Buster Jarret</a></li>
+                    <li><a href="manage-user.html">Kim Crowe</a></li>
+                  </ul>
+                </div>
+                3
+              </div>
+            </td>
+            <td class="font-xsmall">2018-01-11 15:16:47</td>
+            <td class="font-xsmall"><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+          <tr>
+            <td>Changing Health</td>
+            <td class="font-xsmall">BBC</td>
+            <td class="font-xsmall">
+              <div class="tooltip tooltip--left tooltip--under">
+                <div class="tooltip__modal">
+                  <ul>
+                    <li><a href="manage-user.html">David Sayce</a></li>
+                    <li><a href="manage-user.html">Buster Jarret</a></li>
+                    <li><a href="manage-user.html">Kim Crowe</a></li>
+                  </ul>
+                </div>
+                3
+              </div>
+            </td>
+            <td class="font-xsmall">2018-01-11 15:16:47</td>
+            <td class="font-xsmall"><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+      <h2 class="heading-medium">Members</h2>
+
+      <table class="">
+          <thead class="">
+            <tr class="">
+              <th class="">Name</th>
+              <th class="">Email</th>
+              <th class="">Assigned</th>
+              <th class="">Status</th>
+              <th class="">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Freddy Smith</td>
+              <td class="font-xsmall">Freddy.Smith@nhs.net</td>
+              <td class="font-xsmall">
+                <div class="tooltip tooltip--left tooltip--under">
+                  <div class="tooltip__modal">
+                    <ul>
+                      <li><a href="#">Chilla Panda</a></li>
+                      <li><a href="#">MyChoicePad</a></li>
+                      <li><a href="#">My Health Guide</a></li>
+                      <li><a href="#">Changing Health</a></li>
+                    </ul>
+                  </div>
+                  4
+                </div>
+              </td>
+              <td class="font-xsmall">Active</td>
+              <td class="font-xsmall">
+                <a href="manage-user.html">Manage</a> &nbsp; <a href="#">Remove</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Joe Strachan</td>
+              <td class="font-xsmall">joe.strachan@ymail.com</td>
+              <td class="font-xsmall">
+                <div class="tooltip tooltip--left tooltip--under">
+                  <div class="tooltip__modal">
+                    No apps
+                  </div>
+                  0
+                </div>
+              </td>
+              <td class="font-xsmall">Invited</td>
+              <td class="font-xsmall">
+                <a href="#">Send invite again</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Darryl Waterhouse</td>
+              <td class="font-xsmall">darryl.waterhouse@nhs.net</td>
+              <td class="font-xsmall">
+                <div class="tooltip tooltip--left tooltip--under">
+                  <div class="tooltip__modal">
+                    <ul>
+                      <li><a href="#">Changing Health</a></li>
+                    </ul>
+                  </div>
+                  1
+                </div>
+              </td>
+              <td class="font-xsmall">Suspended</td>
+              <td class="font-xsmall">
+                <a href="manage-user.html">Manage</a> &nbsp; <a href="#">Remove</a>
+              </td>
+            </tr>
+            <!--
+            <tr id="invite-user-widget" class="">
+                <td colspan="2"><input type="text" id="InvitedTeamMember" name="InvitedTeamMember" class="form-control" placeholder="Email Address" value="" style="width:100%;margin-bottom: 5px;"></td>
+                <td colspan="2">
+                    <select class="form-control" style="width:100%;margin-bottom: 5px;">
+                        <option selected="true"></option>
+                        <option>Write Access</option>
+                        <option>Admin Access</option>
+                    </select>
+                </td>
+                <td class="font-xsmall">
+                    <input type="button" class="button button--text" asp-page-handler="" value="Cancel">
+                    <input type="submit" class="button" value="Invite" formaction="/app/dap/assessment/app/9">
+                </td>
+            </tr>
+            -->
+          </tbody>
+        </table>
+
+        <a href="#" class="button next">Invite</a>
+
+    </main>
+
+
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+      <p style="text-align: center; color: #adb1b5; padding-top: 20px;">Footer</p>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="/javascripts/govuk-template.js?0.22.3"></script>
+
+
+
+    <!-- Javascript -->
+    <!--[if lte IE 8]><script src="/javascripts/bind.js"></script><![endif]-->
+    <script src="/javascripts/jquery-1.11.3.js"></script>
+    <script src="/javascripts/govuk/details.polyfill.js"></script>
+    <script src="/javascripts/govuk/shim-links-with-button-role.js"></script>
+    <script src="/javascripts/govuk/show-hide-content.js"></script>
+    <script src="/javascripts/show-hide-content.js"></script>
+    <script src="/javascripts/application.js"></script>
+
+    <script src="/javascripts/auto-store-data.js"></script>
+
+    <!-- GOV.UK Prototype kit v6.3.0 -->
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+
+
+
+
+</body>
+</html>

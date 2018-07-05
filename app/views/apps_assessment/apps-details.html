@@ -185,6 +185,20 @@
                 <a href="#">Change Access</a> &nbsp; <a href="#">Remove</a>
               </td>
             </tr>
+            <tr id="invite-user-widget" class="">
+                <td colspan="2"><input type="text" id="InvitedTeamMember" name="InvitedTeamMember" class="form-control" placeholder="Email Address" value="" style="width:100%;margin-bottom: 5px;"></td>
+                <td colspan="2">
+                    <select class="form-control" style="width:100%;margin-bottom: 5px;">
+                        <option selected="true">Read Access</option>
+                        <option>Write Access</option>
+                        <option>Admin Access</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" class="button button--text" asp-page-handler="" value="Cancel">
+                    <input type="submit" class="button" value="Invite" formaction="/app/dap/assessment/app/9">
+                </td>
+            </tr>
           </tbody>
         </table>
         <p>

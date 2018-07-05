@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Review / Apps</title>
+    <title>NHS Apps Review / Apps / Details</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -70,29 +70,13 @@
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
               <a href="/apps_review" id="proposition-name">Apps Assessment</a>
-              <strong class="phase-tag" style="position:relative; left:4px; top:-2px;">REVIEWER</strong>
+              <strong class="phase-tag" style="position:relative; left:4px; top:-2px;">GATEKEEPER</strong>
 
               <ul id="proposition-links">
-                <li><a href="/apps_review/apps.html" class="active">Home</a></li>
-                <li><a href="/apps_review/profile.html">Profile</a></li>
-                <li class="proposition-links-right">
-
-                  <div class="tooltip tooltip--under tooltip--desktop-right">
-                    <div class="tooltip__modal">
-                        <p>Your roles:</p>
-                        <p><a href="#">Assessment</a></p>
-                        <p><a href="#" class="black">Review</a></p>
-                        <p><a href="#">Admin</a></p>
-                        <hr>
-                        <p class="flush"><a href="#">Log out</a></p>
-                    </div>
-                    <div class="tooltip__title">david.sayce@infinityworks.com</div>
-                  </div>
-
-                </li>
+                <li><a href="home.html" class="active">Apps</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
               </ul>
-
-
 
             </nav>
           </div>
@@ -105,75 +89,66 @@
 
     <main id="content" role="main">
 
-      <h1 class="heading-large">Your Apps</h1>
-
-      <div class="js-tabs tabs-nav--3tabs">
-        <ul class="tabs-nav" role="tablist">
-          <li class="tabs-nav__item">
-            <a tabindex="0" href="/apps_assessment/apps.html" class="tabs-link" role="tab">Developer</a>
-          </li>
-          <li class="tabs-nav__item tabs-nav__item--active">
-            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="/apps_gatekeeper/home.html" class="tabs-link" role="tab">Gatekeeper</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="/admin/home.html" class="tabs-link" role="tab">Admin</a>
-          </li>
-        </ul>
+      <div class="breadcrumbs">
+        <ol>
+          <li><a href="home.html">Gatekeeper Apps</a></li>
+          <li aria-current="page">Mediman</li>
+        </ol>
       </div>
 
-      <div class="grid-row">
-        <div class="column-two-thirds">
-          <div class="form-group-small">
-            <label class="form-label" for="select-box">View by:</label>
-            <select class="form-control" id="select-box" name="select-box">
-              <option value="apps.html">Recently updated</option>
-              <option value="apps.html">Date added - Ascending</option>
-              <option value="apps.html">Date added - Descending</option>
-              <option value="apps.html">App name - A/Z</option>
-              <option value="apps.html">App name - Z/A</option>
-              <option value="apps-todo-list.html">SME To-Do List</option>
-            </select>
-          </div>
-        </div>
+      <h1 class="heading-large">Mediman</h1>
+
+      <h2 class="heading-medium">Assessments</h2>
+      <div class="new-section">
+        <table class="ui celled collapsing stackable five column table">
+          <thead class="">
+            <tr class="">
+              <th class="">Name</th>
+              <th class="">Date Activated</th>
+              <th class="">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="">
+            <tr class="">
+              <td class="grey">Digital Assessment Questions</td>
+              <td class="grey">Not activated</td>
+              <td class=""></td>
+            </tr>
+            <tr class="">
+              <td class="">Submit Your App</td>
+              <td class="">2017-10-25 14:27:57</td>
+              <td class=""><a href="apps-details-submit-your-app.html">Go To Assessment</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
 
-      <table>
-        <thead>
-          <tr>
-            <th>Team Name</th>
-            <th>App Name</th>
-            <th>Assessment</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Pinpoint Tech</td>
-            <td>Mediman</td>
-            <td>Digital Assessment Questions</td>
-            <td><a href="apps-details.html">Manage</a></td>
-          </tr>
-          <tr>
-            <td>Powerhouse Productions</td>
-            <td>Powerhouse Pathways</td>
-            <td>Digital Assessment Questions</td>
-            <td><a href="apps-details.html">Manage</a></td>
-          </tr>
-          <!--
-          <tr>
-            <td>Cadaemia</td>
-            <td>Pulse</td>
-            <td>Submit Your App</td>
-            <td><a href="apps-details-not-invited.html">Manage</a></td>
-          </tr>
-          -->
-        </tbody>
-      </table>
-
+      <div class="new-section">
+        <h2 class="heading-medium">Project Files</h2>
+        <table style="margin-bottom: 12px;">
+          <thead class="">
+            <tr class="">
+              <th class="">Name</th>
+              <th class="">Type</th>
+              <th class="">Size</th>
+              <th class="">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="">
+            <tr class="">
+              <th class="">filename-10246832</th>
+              <th class="">txt</th>
+              <th class="">100k</th>
+              <th class=""><a href="#">Download</a> &nbsp; <a href="#">Remove</a></th>
+            </tr>
+          </tbody>
+        </table>
+        <p class="font-xsmall">
+          <label for="file-upload">Select File</label>
+          <input type="file" id="file-upload">
+        </p>
+      </div>
 
 
 
@@ -200,27 +175,11 @@
     <script src="/javascripts/govuk/shim-links-with-button-role.js"></script>
     <script src="/javascripts/govuk/show-hide-content.js"></script>
     <script src="/javascripts/application.js"></script>
-    <script src="/javascripts/show-hide-content.js"></script>
 
     <script src="/javascripts/auto-store-data.js"></script>
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
-
-
-    <script>
-      $(function(){
-        // bind change event to select
-        $('#select-box').on('change', function () {
-            var url = $(this).val(); // get selected value
-            if (url) { // require a URL
-                window.location = url; // redirect
-            }
-            return false;
-        });
-      });
-    </script>
-
 
 
 </body>
