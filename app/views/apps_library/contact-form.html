@@ -101,43 +101,52 @@
 
           <div class="column-two-thirds">
 
-            <div class="form-group">
-              <label class="form-label" for="textarea">
-                <span class="heading-medium">Your comments</span>
-              </label>
-              <p class="font-xsmall" >Please do not enter patient or personal data (such as NHS number, home address, telephone number, date of birth, National Insurance number etc.)</p>
-              <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"  style="width: 100%"></textarea>
-            </div>
 
-            <h3 class="heading-medium">Do you want a reply?</h3>
-            <p class="font-xsmall">
-              We will only use your email address to communicate with you on the issue you have reported.
-              Once resolved we will send you a short satisfaction survey to help us improve the service we provide.
-            </p>
 
-            <div class="form-group-small">
-              <label class="form-label" for="full-name-f1">Full name</label>
-              <input class="form-control" id="full-name-f1" type="text" name="full-name-f1" style="width: 100%">
-            </div>
 
-            <div class="form-group-small">
-              <label class="form-label" for="full-name-f1">Email Address</label>
-              <input class="form-control" id="full-name-f1" type="text" name="full-name-f1" style="width: 100%">
-            </div>
+            <form action="#" id="form-validate">
 
-            <div class="callout callout--muted">
-              <div class="multiple-choice">
-                <input id="privacy-policy" name="privacy-policy" type="checkbox" value="I agree">
-                <label for="privacy-policy" style="margin-bottom: 0">I have read and understood the <a href="#">privacy policy</a> and <a href="#">terms and conditions</a></label>
+              <div class="form-group">
+                <label class="form-label" for="yourComments">
+                  <span class="heading-medium">Your comments</span>
+                </label>
+                <p class="font-xsmall" >Please do not enter patient or personal data (such as NHS number, home address, telephone number, date of birth, National Insurance number etc.)</p>
+                <textarea class="form-control form-control-3-4" name="yourComments" id="yourComments" rows="5"  style="width: 100%"></textarea>
               </div>
-            </div>
 
-            <div class="form-group-small">
-              <input type="submit" class="button button--large" value="Submit">
-            </div>
+              <h3 class="heading-medium">Do you want a reply?</h3>
+              <p class="font-xsmall">
+                We will only use your email address to communicate with you on the issue you have reported.
+                Once resolved we will send you a short satisfaction survey to help us improve the service we provide.
+              </p>
+
+              <div class="form-group-small">
+                <label class="form-label" for="fullName">Full name</label>
+                <input class="form-control" id="fullName" type="text" name="fullName" style="width: 100%">
+              </div>
+
+              <div class="form-group-small">
+                <label class="form-label" for="emailAddress">Email address</label>
+                <input class="form-control" id="emailAddress" type="email" name="emailAddress" style="width: 100%">
+              </div>
+
+              <div class="callout callout--muted">
+                  <div class="form-group-small">
+                    <input id="agreeToPolicy" name="agreeToPolicy" type="checkbox" value="I agree">
+                    <label for="agreeToPolicy" style="margin-bottom: 0">I have read and understood the <a href="#">privacy policy</a> and <a href="#">terms and conditions</a></label>
+                  </div>
+              </div>
+
+              <div class="form-group-small">
+                <input type="submit" class="button button--large" value="Submit">
+              </div>
+
+            </form>
+
+
+
 
           </div>
-
         </div>
 
         <hr>
@@ -189,206 +198,6 @@
 
 
 
-
-
-
-    <!-- Filter Modal -->
-    <div id="filterModal" class="modal">
-
-      <div class="modal-content">
-
-        <span class="close" id="sortClose">&times;</span>
-
-
-        <!-- FILTER -->
-        <div class="js-modal-filter" style="display: none">
-          <h3 class="modal-title">Add filter</h3>
-          <div class="modal-inner">
-            <div class="grid">
-              <div class="column-one-half" style="padding-bottom: 20px">
-                <fieldset class="fieldset-price">
-                  <legend>
-                    <h4 class="heading-medium">Price</h4>
-                  </legend>
-                  <div class="multiple-choice">
-                    <input id="free" name="price" type="checkbox" value="Free">
-                    <label for="free">Free</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="paid" name="price" type="checkbox" value="Paid">
-                    <label for="paid">Paid</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="in-app" name="price" type="checkbox" value="In app purchase">
-                    <label for="in-app">In app purchase</label>
-                  </div>
-                </fieldset>
-              </div>
-              <div class="column-one-half" style="padding-bottom: 20px">
-                <fieldset class="fieldset-device">
-                  <legend>
-                    <h4 class="heading-medium">Device</h4>
-                  </legend>
-                  <div class="multiple-choice">
-                    <input id="store-1" name="store-1" type="checkbox" value="Apple App Store">
-                    <label for="store-1">Apple App Store</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="store-2" name="store-2" type="checkbox" value="Google Play Store">
-                    <label for="store-2">Google Play Store</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="store-3" name="store-3" type="checkbox" value="Microsoft">
-                    <label for="store-3">Microsoft</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="store-4" name="store-4" type="checkbox" value="Web">
-                    <label for="store-4">Web based</label>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- SORT -->
-        <div class="js-modal-sort" style="">
-          <h3 class="modal-title">Sort</h3>
-          <div class="modal-inner">
-            <div class="grid">
-              <div class="column-one-half" style="padding-bottom: 20px">
-                <fieldset class="fieldset-device">
-                  <legend>
-                    <h4 class="heading-medium">Please select</h4>
-                  </legend>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-1" type="radio" name="radio-group" value="Default" checked>
-                    <label for="radio-inline-1">Default</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-3" type="radio" name="radio-group" value="Alphabetically A-Z">
-                    <label for="radio-inline-3">Alphabetically A-Z</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-4" type="radio" name="radio-group" value="Alphabetically Z-A">
-                    <label for="radio-inline-4">Alphabetically Z-A</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-5" type="radio" name="radio-group" value="Date Asc">
-                    <label for="radio-inline-5">Date Asc</label>
-                  </div>
-                  <div class="multiple-choice">
-                    <input id="radio-inline-6" type="radio" name="radio-group" value="Date Desc">
-                    <label for="radio-inline-6">Date Desc</label>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="modal-footer">
-          <a href="#" class="button button--blue button--large" id="js-filter-update">Update</a>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-
-
-    <!-- Sort Modal -->
-    <div id="sortModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-
-        <span class="close" id="sortClose">&times;</span>
-        <h3 class="modal-title">Filter &amp; Sort</h3>
-
-        <div class="modal-inner">
-          <div class="grid">
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-price">
-                <legend>
-                  <h4 class="heading-medium">Price</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="free" name="price" type="checkbox" value="Free">
-                  <label for="free">Free</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="paid" name="price" type="checkbox" value="Paid">
-                  <label for="paid">Paid</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="in-app" name="price" type="checkbox" value="In app purchase">
-                  <label for="in-app">In app purchase</label>
-                </div>
-              </fieldset>
-            </div>
-
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset class="fieldset-device">
-                <legend>
-                  <h4 class="heading-medium">Device</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="store-1" name="store-1" type="checkbox" value="Apple App Store">
-                  <label for="store-1">Apple App Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-2" name="store-2" type="checkbox" value="Google Play Store">
-                  <label for="store-2">Google Play Store</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-3" name="store-3" type="checkbox" value="Microsoft">
-                  <label for="store-3">Microsoft</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="store-4" name="store-4" type="checkbox" value="Web">
-                  <label for="store-4">Web based</label>
-                </div>
-              </fieldset>
-            </div>
-
-            <div class="column-one-third" style="padding-bottom: 20px">
-              <fieldset>
-                <legend>
-                  <h4 class="heading-medium">Sort by</h4>
-                </legend>
-                <div class="multiple-choice">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes" checked="checked">
-                  <label for="radio-inline-1">A/Z</label>
-                </div>
-                <div class="multiple-choice">
-                  <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-                  <label for="radio-inline-2">Z/A</label>
-                </div>
-              </fieldset>
-            </div>
-
-
-          </div>
-        </div>
-
-
-        <div class="modal-footer">
-          <a href="#" class="button button--blue button--large" id="js-filter-update">Update</a>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-
-
     <script src="/javascripts/govuk-template.js?0.22.3"></script>
 
 
@@ -402,7 +211,7 @@
     <script src="/javascripts/application.js"></script>
     <script src="/javascripts/auto-store-data.js"></script>
     <script src="/javascripts/show-hide-content.js"></script>
-    <script src="/javascripts/jquery.easy-autocomplete.min.js"></script>
+    <script src="/javascripts/jquery.validate.min.js"></script>
 
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
@@ -410,228 +219,21 @@
 
     <script>
 
-      // Hack
-      $('#example-conditions').removeAttr('style');
+    // Validate form
+    $("#form-validate").validate({
+      rules: {
+        yourComments: "required",
+        fullName: "required",
+        "user[email]": "email",
+        agreeToPolicy: "required"
 
-      /* Mobile only toggle fitlers */
-
-      var options = {
-
-        url: "/javascripts/conditions.json",
-        adjustWidth: false,
-
-        categories: [{
-            listLocation: "pregancy",
-            maxNumberOfElements: 4,
-            header: "Pregancy"
-        }, {
-            listLocation: "mental health",
-            maxNumberOfElements: 4,
-            header: "Mental Health"
-        }, {
-            listLocation: "apps",
-            maxNumberOfElements: 4,
-            header: "Apps"
-        }, {
-            listLocation: "healthy living",
-            maxNumberOfElements: 4,
-            header: "Healthy Living"
-        }],
-
-        getValue: function(element) {
-            return element.condition;
-            return element.website;
-
-        },
-
-        template: {
-            type: "description",
-            fields: {
-                description: "details"
-            }
-        },
-
-        list: {
-            maxNumberOfElements: 8,
-            match: {
-                enabled: true
-            },
-            sort: {
-                enabled: true
-            }, onClickEvent: function() {
-
-              var websiteSelected = $("#example-conditions").getSelectedItemData().website;
-              window.location.href = websiteSelected;
-              //alert(websiteSelected);
-
-          }
-        },
-
-        theme: "square"
-
-      };
-
-      $("#example-conditions").easyAutocomplete(options);
-
-
-
-
-
-
-
-      // Modal
-
-      // FILTER
-      var modal = document.getElementById('filterModal');
-      var btn1 = document.getElementById("filterBtn");
-      var btn2 = document.getElementById("sortBtn");
-      var span = document.getElementsByClassName("close")[0];
-
-      // filter
-      btn1.onclick = function() {
-          modal.style.display = "block";
-          $("html").addClass("no-scroll");
-          $(".js-modal-sort").hide();
-          $(".js-modal-filter").show();
-      };
-
-      // sort
-      btn2.onclick = function() {
-          modal.style.display = "block";
-          $("html").addClass("no-scroll");
-          $(".js-modal-sort").show();
-          $(".js-modal-filter").hide();
-      };
-
-      span.onclick = function() {
-          modal.style.display = "none";
-          $("html").removeClass("no-scroll");
-      };
-
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      };
-
-      var pageHeight = $(window).height();
-      var pageWidth = $(window).width();
-      var mobileOffset = 220;
-
-      if (pageWidth < 600) {
-        $(".modal-inner").css("height", pageHeight - mobileOffset);
-      };
-
-
-
-
-
-
-      // Filters
-      $("#js-filter-update").click(function() {
-
-        // Remove the modal
-        modal.style.display = "none";
-        $("html").removeClass("no-scroll");
-
-        // Check the checkboxes
-        var count = 0;
-        var price = $(".fieldset-price");
-        var device = $(".fieldset-device");
-        var filterBy = $(".filter-by");
-
-        $('input[type=checkbox]').each(function () {
-            //var sThisVal = ( ? "1" : "0");
-            //sList += (sList=="" ? sThisVal : "," + sThisVal);
-            if (this.checked) {
-
-              count = count + 1;
-
-              // 1. add filter facet
-              filterBy.append("<div class=filter-by__item>" + $(this).val() + "</div>");
-
-              // 2. add link
-              addLinks();
-
-            };
-
-        });
-
-        if (count > 0 ) {
-          $(".filter-by").show();
-          $(".js-filter").text("Filter & Sort (" + count + ")");
-        } else {
-          $(".filter-by").hide();
-          $(".js-filter").text("Filter & Sort");
-        }
-
-        //alert(count);
-
-      });
-
-      // Handler for facet
-      function facetHandler() {
-
-        $(this).remove();
-
-        if (count > 0 ) {
-          $(".filter-by").show();
-          $(".js-filter").text("Filter & Sort (" + count + ")");
-        } else {
-          $(".filter-by").hide();
-          $(".js-filter").text("Filter & Sort");
-        }
-
-        //getID = "#" + $(this).attr("data");
-        //$(getID).prop('checked', false);
-        //alert(getID);
-
+      },highlight: function(element) {
+        $(element).parent().addClass("form-group-error");
+      },
+      unhighlight: function(element) {
+          $(element).parent().removeClass("form-group-error");
       }
-
-
-      // Add links to filter facets
-      function addLinks() {
-
-        $('.filter-by__item').each(function() {
-          $(this).click(facetHandler);
-        });
-
-      }
-
-
-
-      // Fake loader
-      $(".js-fake-loader-btn").click(function(e) {
-        $(".js-fake-loader").show();
-        $(this).hide();
-        e.preventDefault();
-      });
-
-
-      // TABS
-      $(".js-tab-category").click(function(e) {
-        $(".tabs-nav__item").removeClass("tabs-nav__item--active");
-        $(this).parent().addClass("tabs-nav__item--active");
-
-        $(".js-tab-content-category").show();
-        $(".js-tab-content-search").hide();
-
-        e.preventDefault();
-      });
-
-      $(".js-tab-search").click(function(e) {
-        $(".tabs-nav__item").removeClass("tabs-nav__item--active");
-        $(this).parent().addClass("tabs-nav__item--active");
-
-        $(".js-tab-content-category").hide();
-        $(".js-tab-content-search").show();
-
-        e.preventDefault();
-      });
-
-
-
-
+    });
 
     </script>
 
