@@ -49,6 +49,7 @@
 
     <header role="banner" id="global-header" class="with-proposition">
       <div class="header-wrapper">
+
         <div class="header-global">
           <div class="header-logo">
             <a href="index.html" title="NHS" id="logo" class="content">
@@ -62,14 +63,13 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/apps_library/home.html" id="proposition-name">
-                NHS Apps Library
-              </a>
-
+              <a href="/apps_library" id="proposition-name">NHS Apps Library</a>
               <ul id="proposition-links">
-                <li><a href="about-us.html">About us</a></li>
+                <li><a href="/apps_library/set7-home-v4.html" class="active">Apps Library</a></li>
+                <li><a href="/developer/set7-home-v4.html">Submit an app</a></li>
+                <li><a href="/developer/set7-getting-started.html">Get started</a></li>
+                <li><a href="/developer/set7-faqs.html">FAQs</a></li>
               </ul>
-
             </nav>
           </div>
         </div>
@@ -84,72 +84,94 @@
 
     <main id="content" role="main">
 
-      <div class="phase-banner">
-        <p>
-          <strong class="phase-tag">BETA</strong>
-          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-        </p>
-      </div>
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ol>
+            <li><a href="set1-home.html">NHS Apps Library</a></li>
+            <!-- <li><a href="set5-case-studies.html">Case Studies</a></li> -->
+            <li aria-current="page">Service Desk</li>
+          </ol>
+        </div>
 
 
-      <section class="search-banner" aria-label="Search form">
-          <div class="search-banner__pad">
-              <h3 class="search-banner__headline">Find digital tools to help you manage and improve your health</h3>
-              <form role="search" method="get" action="/search" class="search-banner__form">
-                  <div>
-                      <input type="text" name="query" id="query" class="search-banner__input" placeholder="Active 10" value="">
-                  </div>
-                  <div>
-                      <button class="search-banner__button"><span>Search</span></button>
-                  </div>
-              </form>
-          </div>
-      </section>
+        <h1 class="heading-large">Apps Library Service Desk</h1>
 
-      <!--
-      <div class="local-header">
-        <h2 class="local-header__title">NHS Digital provides technology, information and services, which help the NHS deliver better care</h2>
-        <form role="search" method="get" action="/search" class="search-banner__form">
-          <div>
-            <label class="form-label" for="full-name-f1">Full name</label>
-            <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+        <div class="grid-row">
+
+          <div class="column-two-thirds">
+
+
+
+
+            <form action="#" id="form-validate">
+
+              <div class="form-group">
+                <label class="form-label" for="yourComments">
+                  <span class="heading-medium">Your comments</span>
+                </label>
+                <p class="font-xsmall" >Please do not enter patient or personal data (such as NHS number, home address, telephone number, date of birth, National Insurance number etc.)</p>
+                <textarea class="form-control form-control-3-4" name="yourComments" id="yourComments" rows="5"  style="width: 100%"></textarea>
               </div>
-            <div>
-                <button class="search-banner__button"><span>Search</span></button>
+
+              <h3 class="heading-medium">Do you want a reply?</h3>
+              <p class="font-xsmall">
+                We will only use your email address to communicate with you on the issue you have reported.
+                Once resolved we will send you a short satisfaction survey to help us improve the service we provide.
+              </p>
+
+              <div class="form-group-small">
+                <label class="form-label" for="fullName">Full name</label>
+                <input class="form-control" id="fullName" type="text" name="fullName" style="width: 100%">
+              </div>
+
+              <div class="form-group-small">
+                <label class="form-label" for="emailAddress">Email address</label>
+                <input class="form-control" id="emailAddress" type="email" name="emailAddress" style="width: 100%">
+              </div>
+
+              <div class="callout callout--muted">
+                  <div class="form-group-small">
+                    <input id="agreeToPolicy" name="agreeToPolicy" type="checkbox" value="I agree">
+                    <label for="agreeToPolicy" style="margin-bottom: 0">I have read and understood the <a href="#">privacy policy</a> and <a href="#">terms and conditions</a></label>
+                  </div>
+              </div>
+
+              <div class="form-group-small">
+                <input type="submit" class="button button--large" value="Submit">
+              </div>
+
+            </form>
+
+
+
+
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="grid-row">
+          <div class="column-one-half">
+            <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
+              <h4 class="callout__title">Had an adverse reaction?</h4>
+              <p class="callout__para">If you’ve suffered an adverse reaction after using any of the apps listed here, please contact the developer directly and forward the details to NHS Digital at <a style="white-space:nowrap" href="mailto:m.health@nhs.net">m.health@nhs.net</a></p>
             </div>
-        </form>
-      </div>
-      -->
-
-      <p><span style="font-size:12px;">◀</span> <a class="back-to-previous" href="home.html"> Back <span class="visuallyhidden"> to the previous page</span></a></p>
-
-      <div class="apps-grid__title">
-        <p class="apps-grid__title__sortby">Sort by: <a href="home.html" class="apps-grid__title__sortby__link apps-grid__title__sortby__link--direction">Recently published</a> | <a href="home-alphabetic.html" class="apps-grid__title__sortby__link">Alphabetic</a></p>
-        <h2 class="apps-grid__title__text">Search for <strong>"Active 10"</strong></h2>
-      </div>
-
-
-      <div class="grid-row" id="js-grid">
-
-        <div class="column-one-half" id="js-item6">
-          <div class="cardapp">
-            <div class="cardapp__top">
-              <img class="cardapp__top__img" src="https://apps.beta.nhs.uk/media/1205/c-users-stsh3-desktop-active-10_icon.jpg?anchor=center&mode=crop&width=96&height=96&rnd=131496032910000000" alt="Active 10 walking tracker">
-              <a href="set1-details.html" class="cardapp__top__title">Active 10 walking tracker</a>
-              <!--<div class="cardapp__top__subtitle">NHS Approved</div>-->
-            </div>
-            <div class="cardapp__content">
-              The Active 10 app will help you get into the habit of walking briskly for 10 minutes every day.
-            </div>
-            <div class="cardapp__footer">
-              HEALTHY LIVING
+          </div>
+          <div class="column-one-half">
+            <div class="callout callout--small callout--mobile-accordion" style="clear:both; margin-bottom: 24px;">
+              <h4 class="callout__title">Disclaimer</h4>
+              <p class="callout__para">The NHS Apps Library does not provide medical advice and is not a substitute for a medical consultation &nbsp; <a href="set7-disclaimer.html">Read more</a></p>
             </div>
           </div>
         </div>
 
+
       </div>
 
+
     </main>
+
 
 
     <footer class="global-footer" role="contentinfo">
@@ -158,16 +180,23 @@
           <img src="/images/logotype-nhs-colour__reverse@2x.png" alt="" style="width: 100%;">
         </a>
         <ul class="link-list">
-          <li><a href="#" target="_blank">Disclaimer</a></li>
+          <li><a href="set7-disclaimer.html" target="">Disclaimer</a></li>
           <li><a href="#" target="_blank">Helpdesk</a></li>
           <li><a href="#" target="_blank">For Developers</a></li>
         </ul>
       </div>
     </footer>
 
-
+    <div class="feedback">
+      <a href="https://docs.google.com/forms/d/1Ws6q7gGbYOGWLPNaf5IKOc0dWkVqgWMeYm09DtVD6tc" target="_blank">Feedback</a>
+    </div>
 
     <div id="global-app-error" class="app-error hidden"></div>
+
+
+
+
+
 
     <script src="/javascripts/govuk-template.js?0.22.3"></script>
 
@@ -181,58 +210,32 @@
     <script src="/javascripts/govuk/show-hide-content.js"></script>
     <script src="/javascripts/application.js"></script>
     <script src="/javascripts/auto-store-data.js"></script>
+    <script src="/javascripts/show-hide-content.js"></script>
+    <script src="/javascripts/jquery.validate.min.js"></script>
 
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
-    <!-- Toggle the view on mobile -->
     <script>
 
-    if ($(window).width() < 641) {
+    // Validate form
+    $("#form-validate").validate({
+      rules: {
+        yourComments: "required",
+        fullName: "required",
+        "user[email]": "email",
+        agreeToPolicy: "required"
 
-      // Title toggle
-      $( ".apps-grid__controller__title" ).click(function() {
-          $( ".apps-grid__controller__list" ).slideToggle( "fast", function() {
-            // Animation complete.
-          });
-      });
-
-      // Close menu on selecing an item
-      $( ".apps-grid__controller__list__item__link" ).click(function() {
-          $( ".apps-grid__controller__list" ).slideToggle( "fast", function() {
-            // Animation complete.
-          });
-      });
-
-    }
-
-
-    // Fake the filters
-    $( ".apps-grid__controller__list__item__link" ).click(function() {
-        $(".apps-grid__controller__list__item__link").removeClass("apps-grid__controller__list__item__link--selected");
-        $( this ).addClass("apps-grid__controller__list__item__link--selected");
+      },highlight: function(element) {
+        $(element).parent().addClass("form-group-error");
+      },
+      unhighlight: function(element) {
+          $(element).parent().removeClass("form-group-error");
+      }
     });
-
-
-    // Fake alphabetic assend / decending
-    $( ".apps-grid__title__sortby__link--direction" ).click(function(e) {
-        $(this).toggleClass("apps-grid__title__sortby__link--direction--assending");
-
-        $('#js-grid > div').each(function() {
-            $(this).prependTo(this.parentNode);
-        });
-
-        e.preventDefault();
-    });
-
-
-
-
-
 
     </script>
-
 
   </body>
 </html>
