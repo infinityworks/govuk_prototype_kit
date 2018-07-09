@@ -108,9 +108,9 @@
           <p><span style="font-size:12px;">◀</span> <a class="back-to-previous" href="set1-home.html"> Back <span class="visuallyhidden"> to the previous page</span></a></p>
 
           <div class="apps-details-head">
-            <img class="apps-details-head__icon" src="https://apps.beta.nhs.uk/media/1170/mycopd_icon2.jpg?anchor=center&mode=crop&width=120&height=120&rnd=131364634110000000" alt="myCOPD">
+            <img class="apps-details-head__icon" src="/images/icon-Change4Life.png" alt="myCOPD">
             <div class="apps-details-details">
-              <h2 class="apps-details-details__title">myCOPD</h2>
+              <h2 class="apps-details-details__title">Change4Life Food Scanner</h2>
 
               <div class="tooltip apps-details-details__tooltip">
                 <div class="tooltip__modal">
@@ -119,8 +119,8 @@
                 <img src="/images/circle-dots_dark-blue-1.png" class="tooltip__icon"> Being tested in the NHS
               </div>
 
-              <p>Category: COPD</p>
-              <p>Price: £20. Free in some areas</p>
+              <p>Category: Healthy living</p>
+              <p>FREE</p>
               <p><img src="/images/icon-website.svg"> Website</p>
               <p><img src="/images/icon-mobile.svg"> Mobile App</p>
               <!-- <p><a href="https://mymhealth.com/mycopd" alt="Visit website" class="btn btn-primary external-badge" role="button">Visit website</a></p> -->
@@ -144,17 +144,17 @@
               <p>NHS Approved</p>
               -->
               <h3 class="heading-medium">Overview</h3>
-              <p>myCOPD helps people with COPD to better manage their condition. Use it to perfect your inhaler technique, improve your breathing, reduce exacerbations, track your medication and more.</p>
-              <h3 class="heading-medium">Screenshots</h3>
-            </div>
+              <p>The Change4Life Food Scanner app lets you look up the sugar, saturated fat and salt in everyday foods and drinks. Scan the barcodes of more than 140,000 products and get tips and hints along the way. The app is fun and engaging to help you and your family make healthier choices.</p>
 
-            <div class="carousel">
-              <div><img src="/images/BlueIce-1.png" alt="Screenshot1" style="margin: 0 auto; "></div>
-              <div><img src="https://apps.beta.nhs.uk/media/1167/mycopd-today.png" alt="Screenshot2" style="margin: 0 auto; "></div>
-              <div><img src="https://apps.beta.nhs.uk/media/1168/mycopd_inhaler-videos.png" alt="Screenshot3" style="margin: 0 auto; "></div>
-            </div>
+              <h4 class="heading-medium">Gallery</h4>
+              <div class="callout callout--attention">
+                <div class="carousel">
+                  <div><img src="https://apps.beta.nhs.uk/media/1281/screen_1.png" alt="Screenshot1" style="margin: 0 auto; "></div>
+                  <div><img src="https://apps.beta.nhs.uk/media/1284/screen_2_v2-002.png" alt="Screenshot2" style="margin: 0 auto; "></div>
+                  <div><img src="https://apps.beta.nhs.uk/media/1283/screen_3.png" alt="Screenshot3" style="margin: 0 auto; "></div>
+                </div>
+              </div>
 
-            <div class="apps-details__section">
               <h3 class="heading-medium">Who is it suitable for?</h3>
               <p>myCOPD is suitable for all COPD (chronic obstructive pulmonary disease) patients at any stage of their disease.</p>
 
@@ -222,22 +222,7 @@
 
 
     <!-- Slick slider -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" media="screen" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" media="screen" rel="stylesheet" />
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-      //$('.carousel').slick();
-      $(".carousel").slick({
-        arrows: true,
-        centerMode: true,
-        responsive: true,
-        centerPadding: true,
-        dots: true
-        //vertical: true,
-        //centerMode: true
-      });
-    </script>
 
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
@@ -245,6 +230,19 @@
 
     <!-- Toggle the view on mobile -->
     <script>
+
+    // Carousel
+    $(".carousel").slick({
+      arrows: true,
+      centerMode: true,
+      responsive: true,
+      centerPadding: false,
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+
 
     if ($(window).width() < 641) {
 
