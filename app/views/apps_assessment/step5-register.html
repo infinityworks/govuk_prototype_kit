@@ -88,25 +88,956 @@
 
       <div class="breadcrumbs">
         <ol>
-          <li><a href="/apps_assessment/apps.html">Apps &amp; wearables</a></li>
+          <li><a href="start-tab1.html">Apps &amp; wearables</a></li>
           <li aria-current="page">Register</li>
         </ol>
       </div>
 
 
       <h2 class="heading-xlarge">
-        <p class="grey font-xsmall">Step 5 or 5</p>
-        Register
+        <p class="grey font-xsmall">Step 5 of 6</p>
+        Eligibility
       </h2>
 
-      <h3 class="heading-medium">Confirmation</h3>
 
-      <p>
-        You have been sent an email to <a href="mailto:email@domain.co.uk">email@domain.co.uk</a>
-        with a registration link to continue
-      </p>
 
-      <p><a href="login-isolated.html" class="button">Continue</a></p>
+
+
+
+
+
+      <div class="form-group">
+        <fieldset class="inline">
+
+          <legend>
+            <h4 class="heading-small">Is your product available to the public?</h4>
+          </legend>
+
+          <div class="multiple-choice" data-target="product-available-yes">
+            <input id="radio-inline-1" type="radio" name="radio-inline-group-a" value="Yes">
+            <label for="radio-inline-1">Yes</label>
+          </div>
+
+          <div class="multiple-choice" data-target="product-available-no">
+            <input id="radio-inline-2" type="radio" name="radio-inline-group-a" value="No">
+            <label for="radio-inline-2">No</label>
+          </div>
+
+          <div class="panel panel-border-narrow js-hidden" id="product-available-yes">
+            <div class="form-group">
+              <label class="form-label" for="url-f1">Yes, please provide URL to the app store location</label>
+              <input class="form-control" id="url-f1" type="text" name="url-f1">
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+
+
+
+      <div class="form-group">
+        <fieldset class="inline">
+
+          <legend>
+            <h4 class="heading-small">Does your product use any form of NHS Branding?</h4>
+          </legend>
+
+          <div class="multiple-choice" data-target="nhs-branding-questions">
+            <input id="radio-inline-3" type="radio" name="radio-inline-group-b" value="Yes">
+            <label for="radio-inline-3">Yes</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-inline-4" type="radio" name="radio-inline-group-b" value="No">
+            <label for="radio-inline-4">No</label>
+          </div>
+
+          <div class="panel panel-border-narrow js-hidden" id="nhs-branding-questions">
+
+            <p class="">
+              Please provide confirmation of express permission from Department of Health
+            </p>
+            <div class="form-group-small">
+              <label class="form-label js-hidden" for="file-input">
+                Upload a file
+              </label>
+              <input type="file" id="file-input">
+            </div>
+
+            <p class="">
+              Does the branding complies with NHS England’s Branding Guidelines
+            </p>
+            <div class="multiple-choice">
+              <input id="radio-inline-7" type="radio" name="radio-inline-group4" value="Yes">
+              <label for="radio-inline-7">Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-8" type="radio" name="radio-inline-group4" value="No">
+              <label for="radio-inline-8">No</label>
+            </div>
+
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <label class="form-label" for="nutshell-describe-your-product">
+          <span class="heading-small">In a nutshell, describe your product?</span>
+        </label>
+        <textarea class="form-control form-control-3-4" name="nutshell-describe-your-product" id="nutshell-describe-your-product" rows="5"></textarea>
+      </div>
+
+
+      <div class="form-group">
+        <label class="form-label" for="situations-context">
+          <span class="heading-small">In what situations/context to you envision it to be used?</span>
+        </label>
+        <textarea class="form-control form-control-3-4" name="situations-context" id="situations-context" rows="5"></textarea>
+      </div>
+
+
+      <div class="form-group">
+        <label class="form-label" for="intended-end-users">
+          <span class="heading-small">Who is/are the intended end-users?</span>
+          <span class="form-hint">
+            Is there anything else we can say here? For example...
+          </span>
+        </label>
+        <input class="form-control" id="intended-end-users" type="text" name="intended-end-users">
+      </div>
+
+
+      <div class="form-group">
+        <label class="form-label" for="what-problem">
+          <span class="heading-small">What problem in the health system or to the end-user is your product trying to solve?</span>
+        </label>
+        <input class="form-control" id="what-problem" type="text" name="what-problem">
+      </div>
+
+
+      <div class="form-group">
+        <label class="form-label" for="estimate-the-population">
+          <span class="heading-small">Estimate the population who would use the product (per 100,000 population)</span>
+        </label>
+        <input class="form-control" id="estimate-the-population" type="text" name="estimate-the-population">
+      </div>
+
+
+
+
+      <div class="form-group">
+        <fieldset class="inline">
+
+          <legend>
+            <h4 class="heading-small">Do you think your product could replace a current NHS commissioned service?</h4>
+          </legend>
+
+          <div class="multiple-choice" data-target="replace-current-nhs-commissioned-service-yes">
+            <input id="radio-inline-9" type="radio" name="radio-inline-group-c" value="Yes">
+            <label for="radio-inline-9">Yes</label>
+          </div>
+
+          <div class="multiple-choice" data-target="replace-current-nhs-commissioned-service-no">
+            <input id="radio-inline-10" type="radio" name="radio-inline-group-c" value="No">
+            <label for="radio-inline-10">No</label>
+          </div>
+
+          <div class="panel panel-border-narrow js-hidden" id="replace-current-nhs-commissioned-service-yes">
+            <div class="form-group">
+              <label class="form-label" for="url-f1">What type commissioned service would it replace?</label>
+              <input class="form-control" id="url-f1" type="text" name="url-f1">
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <fieldset class="inline">
+
+          <legend>
+            <h4 class="heading-small">Does your product require registration or login details for full use of the product?</h4>
+          </legend>
+
+          <div class="multiple-choice" data-target="product-require-registration-yes">
+            <input id="radio-inline-11" type="radio" name="radio-inline-group-e" value="Yes">
+            <label for="radio-inline-11">Yes</label>
+          </div>
+
+          <div class="multiple-choice" data-target="product-require-registration-no">
+            <input id="radio-inline-12" type="radio" name="radio-inline-group-e" value="No">
+            <label for="radio-inline-12">No</label>
+          </div>
+
+          <div class="panel panel-border-narrow js-hidden" id="product-require-registration-yes">
+            <div class="form-group">
+              <label class="form-label" for="product-require-registration-f1">Please can you provide guest login</label>
+              <input class="form-control" id="product-require-registration-f1" type="text" name="product-require-registration-f1">
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <fieldset class="inline">
+
+          <legend>
+            <h4 class="heading-small">Does the tool integrate with a website or other software/device?</h4>
+          </legend>
+
+          <div class="multiple-choice" data-target="applicable-functionality-yes">
+            <input id="radio-inline-13" type="radio" name="radio-inline-group-d" value="Yes">
+            <label for="radio-inline-13">Yes</label>
+          </div>
+
+          <div class="multiple-choice" data-target="applicable-functionality-no">
+            <input id="radio-inline-14" type="radio" name="radio-inline-group-d" value="No">
+            <label for="radio-inline-14">No</label>
+          </div>
+
+          <div class="panel panel-border-narrow js-hidden" id="applicable-functionality-yes">
+            <div class="form-group">
+              <label class="form-label" for="applicable-functionality-f1">Please describe all applicable functionality</label>
+              <input class="form-control" id="applicable-functionality-f1" type="text" name="applicable-functionality-f1">
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <fieldset>
+
+          <legend>
+            <h4 class="heading-small">Does the product intend to connect to any of the following services?</h4>
+          </legend>
+
+          <div class="multiple-choice">
+            <input id="software-1" name="softwares" type="checkbox" value="health-and-social-care-network">
+            <label for="software-1">Health and Social Care Network</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-2" name="softwares" type="checkbox" value="nhs-mail">
+            <label for="software-2">NHS Mail</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-3" name="softwares" type="checkbox" value="spine">
+            <label for="software-3">Spine</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-4" name="softwares" type="checkbox" value="summary-care-records">
+            <label for="software-4">Summary Care Records</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-5" name="softwares" type="checkbox" value="nhs-pathways">
+            <label for="software-5">NHS Pathways</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-6" name="softwares" type="checkbox" value="electronic-referrals-service">
+            <label for="software-6">Electronic Referrals Service (eRS)</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-7" name="softwares" type="checkbox" value="etp">
+            <label for="software-7">Electronic Transfer of Prescription Service (ETP)</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-8" name="softwares" type="checkbox" value="gp2gp">
+            <label for="software-8">GP2GP</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-9" name="softwares" type="checkbox" value="gp-connect">
+            <label for="software-9">GP Connect</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="software-10" name="softwares" type="checkbox" value="gpsoc">
+            <label for="software-10">GPSoC Connection to Primary Care Systems (EMIS, TPP, VISION &amp; Microtest)</label>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+
+
+      <div class="form-group">
+        <fieldset>
+
+          <legend>
+            <h4 class="heading-small">Does the product intend to connect to any of the following services?</h4>
+          </legend>
+
+          <div class="multiple-choice">
+            <input id="this-apply-1" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-1">It is a clinical decision support system. <br><span class="font-xsmall">It contributes to decisions about treatment and may involve controlling other medical devices</span></label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-2" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-2">It is used as a calculator which provides information which impact treatment, diagnosis or care. <br><span class="font-xsmall">This information is obtained by analysing data entered by the user or collected by the device</span></label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-3" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-3">It is used to provide a psychological intervention to people with a diagnosed condition</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-4" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-4">It is used to facilitate the diagnosis or management of a condition by collecting information. <br><span class="font-xsmall">It may include features such as reminders or alerts</span></label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-5" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-5">It is used to facilitate communication with professionals</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-6" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-6">It is used to promote behaviour change to reduce personal risk factors for a specific condition</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-7" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-7">It enables people to interact with their data or appointments in the NHS or social care systems</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-8" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-8">It enables people to communicate with others </label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-9" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-9">It collects information to enable people to keep a personal record. <br><span class="font-xsmall">This data is not routinely shared</span></label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-10" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-10">It provides information to promote learning and improve awareness</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-11" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-11">It provides a digital solution to businesses (e.g. appointment booking or staff rotas)</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="this-apply-12" name="this-apply" type="checkbox" value="">
+            <label for="this-apply-12">It is used as an information or service finder and holds no personal data</label>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Which platforms the product is available for &amp; include version numbers for each?</h4>
+            </legend>
+
+            <div class="multiple-choice" data-target="iOS-yes">
+              <input id="available-for-ios" name="available-for" type="checkbox" value="iOS">
+              <label for="available-for-ios">iOS</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="iOS-yes">
+              <div class="form-group">
+                <label class="form-label" for="ios-f1">Version number</label>
+                <input class="form-control" id="ios-f1" type="text" name="ios-f1">
+              </div>
+            </div>
+
+            <div class="multiple-choice" data-target="android-yes">
+              <input id="available-for-android" name="available-for" type="checkbox" value="android">
+              <label for="available-for-android">Android</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="android-yes">
+              <div class="form-group">
+                <label class="form-label" for="android-f1">Version number</label>
+                <input class="form-control" id="android-f1" type="text" name="android-f1">
+              </div>
+            </div>
+
+            <div class="multiple-choice" data-target="windows-yes">
+              <input id="available-for-windows" name="available-for" type="checkbox" value="windows">
+              <label for="available-for-windows">Windows Mobile</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="windows-yes">
+              <div class="form-group">
+                <label class="form-label" for="windows-f1">Version number</label>
+                <input class="form-control" id="windows-f1" type="text" name="windows-f1">
+              </div>
+            </div>
+
+            <div class="multiple-choice" data-target="osx-yes">
+              <input id="available-for-osx" name="available-for" type="checkbox" value="osx">
+              <label for="available-for-osx">OS X</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="osx-yes">
+              <div class="form-group">
+                <label class="form-label" for="osx-f1">Version number</label>
+                <input class="form-control" id="osx-f1" type="text" name="osx-f1">
+              </div>
+            </div>
+
+            <div class="multiple-choice" data-target="linux-yes">
+              <input id="available-for-linux" name="available-for" type="checkbox" value="linux">
+              <label for="available-for-linux">Linux</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="linux-yes">
+              <div class="form-group">
+                <label class="form-label" for="linux-f1">Version number</label>
+                <input class="form-control" id="linux-f1" type="text" name="linux-f1">
+              </div>
+            </div>
+
+            <div class="multiple-choice" data-target="other-yes">
+              <input id="available-for-other" name="available-for" type="checkbox" value="other">
+              <label for="available-for-other">Other</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="linux-yes">
+              <div class="form-group">
+                <label class="form-label" for="other-f1">Version number</label>
+                <input class="form-control" id="other-f1" type="text" name="other-f1">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Does your product process (e.g. store) personal data of NHS or Social Care patient/client/service users?</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice" data-target="personal-data-yes">
+                <input id="radio-inline-15" type="radio" name="radio-inline-group-g" value="Yes">
+                <label for="radio-inline-15">Yes</label>
+              </div>
+
+              <div class="multiple-choice" data-target="personal-data-no">
+                <input id="radio-inline-16" type="radio" name="radio-inline-group-g" value="No">
+                <label for="radio-inline-16">No</label>
+              </div>
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="personal-data-yes">
+
+              <div class="multiple-choice">
+                <input id="in-the-uk-12" name="in-the-uk" type="checkbox" value="">
+                <label for="in-the-uk-12">In the UK</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="in-the-european-economic-area-12" name="in-the-european-economic-area" type="checkbox" value="">
+                <label for="in-the-european-economic-area-12">In the European Economic Area</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="adequate-level-of-protection-12" name="adequate-level-of-protection" type="checkbox" value="">
+                <label for="adequate-level-of-protection-12">In a country deemed ‘adequate’ i.e. recognised by the EU Commission to have an adequate level of protection</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="usa-under-privacy-shield-12" name="usa-under-privacy-shield" type="checkbox" value="">
+                <label for="usa-under-privacy-shield-12">In the USA under a Privacy Shield arrangement</label>
+              </div>
+
+              <div class="form-group" style="clear:both">
+                <label class="form-label" for="other-f12">Other</label>
+                <input class="form-control" id="other-f12" type="text" name="other-f12">
+              </div>
+
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Please choose the health condition or theme that your product is aimed at</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice" data-target="condition-or-theme-yes">
+                <input id="radio-inline-17" type="radio" name="radio-inline-group-g" value="Yes">
+                <label for="radio-inline-17">Yes</label>
+              </div>
+
+              <div class="multiple-choice" data-target="condition-or-theme-no">
+                <input id="radio-inline-18" type="radio" name="radio-inline-group-g" value="No">
+                <label for="radio-inline-18">No</label>
+              </div>
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="condition-or-theme-yes">
+
+              <div class="multiple-choice">
+                <input id="condition-or-theme-1" name="condition-or-theme" type="checkbox" value="">
+                <label for="condition-or-theme-1">Primary care </label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="condition-or-theme-2" name="condition-or-theme" type="checkbox" value="">
+                <label for="condition-or-theme-2">Cancer</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="condition-or-theme-3" name="condition-or-theme" type="checkbox" value="">
+                <label for="condition-or-theme-3">Mental Health</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="condition-or-theme-4" name="condition-or-theme" type="checkbox" value="">
+                <label for="condition-or-theme-4">Urgent and Emergency Care</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="condition-or-theme-5" name="condition-or-theme" type="checkbox" value="">
+                <label for="condition-or-theme-5">Maternity</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="condition-or-theme-6" name="condition-or-theme" type="checkbox" value="">
+                <label for="condition-or-theme-6">Child Health</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="condition-or-theme-7" name="condition-or-theme" type="checkbox" value="">
+                <label for="condition-or-theme-7">Patient Empowerment</label>
+              </div>
+
+              <div class="form-group" style="clear:both">
+                <label class="form-label" for="personal-data-f1">Other</label>
+                <input class="form-control" id="personal-data-f1" type="text" name="personal-data-f1">
+              </div>
+
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Is your product free to the public?</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice" data-target="is-it-free-yes">
+                <input id="radio-inline-19" type="radio" name="radio-inline-group-g" value="Yes">
+                <label for="radio-inline-19">Yes</label>
+              </div>
+
+              <div class="multiple-choice" data-target="is-it-free-no">
+                <input id="radio-inline-20" type="radio" name="radio-inline-group-g" value="No">
+                <label for="radio-inline-20">No</label>
+              </div>
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="is-it-free-no">
+
+              <div class="form-group">
+                <label class="form-label" for="how-much-does-the-app-costs">
+                  How much does the app costs?
+                </label>
+                <input class="form-control" id="how-much-does-the-app-costs" type="text" name="how-much-does-the-app-costs">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="what-is-the-source-of-the-funding">
+                  How much does the app costs? <br>
+                  <span class="font-xsmall">offers in purchase offers, advertising, free, one-off payment, subscription, other</span>
+                </label>
+                <input class="form-control" id="how-much-does-the-app-costs" type="text" name="what-is-the-source-of-the-funding">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="currency">
+                  Currency?
+                </label>
+                <input class="form-control" id="currency" type="text" name="currency">
+              </div>
+
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+
+
+
+        <div class="form-group">
+          <label class="form-label" for="describe-your-business">
+            Can you briefly describe your business model
+          </label>
+          <input class="form-control" id="describe-your-business" type="text" name="describe-your-business">
+        </div>
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Are you involved in a pilot / trial with a NHS hospital, trust, Clinical Commissioning Group (CCG) or primary care setting?</h4>
+            </legend>
+
+            <div>
+
+              <div class="multiple-choice" data-target="we-are-live-in-an-area">
+                <input id="radio-inline-21" type="radio" name="radio-inline-group-h" value="">
+                <label for="radio-inline-21">Yes, we are live in an area</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="we-are-live-in-an-area">
+                <div class="form-group">
+                  <label class="form-label" for="currency">
+                    Please give brief details
+                  </label>
+                  <input class="form-control" id="brief-details1" type="text" name="brief-details1">
+                </div>
+              </div>
+
+
+              <div class="multiple-choice" data-target="almost-we-have-a-go-live-date">
+                <input id="radio-inline-22" type="radio" name="radio-inline-group-h" value="">
+                <label for="radio-inline-22">Almost, we have a go live date</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="almost-we-have-a-go-live-date">
+                <div class="form-group">
+                  <label class="form-label" for="currency">
+                    Please give brief details
+                  </label>
+                  <input class="form-control" id="brief-details2" type="text" name="brief-details2">
+                </div>
+              </div>
+
+
+              <div class="multiple-choice" data-target="we-are-in-discussions">
+                <input id="radio-inline-23" type="radio" name="radio-inline-group-h" value="">
+                <label for="radio-inline-23">We are in discussions</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="we-are-in-discussions">
+                <div class="form-group">
+                  <label class="form-label" for="currency">
+                    Please give brief details
+                  </label>
+                  <input class="form-control" id="brief-details3" type="text" name="brief-details3">
+                </div>
+              </div>
+
+              <div class="multiple-choice" data-target="no-areas">
+                <input id="radio-inline-24" type="radio" name="radio-inline-group-h" value="">
+                <label for="radio-inline-24">No</label>
+              </div>
+
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="is-it-free-no">
+
+              <div class="form-group">
+                <label class="form-label" for="how-much-does-the-app-costs">
+                  How much does the app costs?
+                </label>
+                <input class="form-control" id="how-much-does-the-app-costs" type="text" name="how-much-does-the-app-costs">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="what-is-the-source-of-the-funding">
+                  How much does the app costs? <br>
+                  <span class="font-xsmall">offers in purchase offers, advertising, free, one-off payment, subscription, other</span>
+                </label>
+                <input class="form-control" id="how-much-does-the-app-costs" type="text" name="what-is-the-source-of-the-funding">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="currency">
+                  Currency?
+                </label>
+                <input class="form-control" id="currency" type="text" name="currency">
+              </div>
+
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+        <div class="form-group">
+          <label class="form-label" for="functionality-of-the-app">
+            <span class="heading-small">Please list the functionality of the app</span> <br><span class="font-xsmall">Include any calculating functions (e.g. Body Mass index, Weights charts for children, calorific counters) and any associated information outputs e.g. dietary or exercise suggestions.</span>
+          </label>
+          <textarea class="form-control form-control-3-4" name="functionality-of-the-app" id="functionality-of-the-app" rows="5"></textarea>
+        </div>
+
+
+        <div class="form-group">
+          <label class="form-label" for="how-the-digital-service-integrates">
+            <span class="heading-small">Please describe if and how the digital service integrates with other systems</span> <br><span class="font-xsmall">e.g. a GP System or a parent System. Other examples may include patient administration or prescribing systems.</span>
+          </label>
+          <textarea class="form-control form-control-3-4" name="how-the-digital-service-integrates" id="how-the-digital-service-integrates" rows="5"></textarea>
+        </div>
+
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Is your digital tool a medical device as defined within the Medical Device Directive?
+              Please check the guidance provided by MHRA.</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice" data-target="medical-device-directive-yes">
+                <input id="radio-inline-25" type="radio" name="radio-inline-group-i" value="Yes">
+                <label for="radio-inline-25">Yes</label>
+              </div>
+
+              <div class="multiple-choice" data-target="is-it-free-no">
+                <input id="radio-inline-26" type="radio" name="radio-inline-group-i" value="No">
+                <label for="radio-inline-26">No</label>
+              </div>
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="medical-device-directive-yes">
+
+              <div class="form-group">
+                <label class="form-label" for="agreement-from-MHRA">
+                  Please provide evidence confirming agreement from MHRA or a notified body.
+                </label>
+                <input class="form-control" id="agreement-from-MHRA" type="text" name="agreement-from-MHRA">
+              </div>
+
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">PROBLEM HERE - if don't know , does the digital tool indicate a diagnosis, treatment, is used for monitoring of a physiological process or disease, supports clinical decisions, performs calculations or indicates individual risk scores for a medical purpose?</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice" data-target="hummmm-yes">
+                <input id="radio-inline-27" type="radio" name="radio-inline-group-j" value="Yes">
+                <label for="radio-inline-27">Yes</label>
+              </div>
+
+              <div class="multiple-choice" data-target="hummmm-no">
+                <input id="radio-inline-28" type="radio" name="radio-inline-group-j" value="No">
+                <label for="radio-inline-28">No</label>
+              </div>
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="hummmm-yes">
+
+              <p>I DON'T GET THIS ONE</p>
+              <p>If the answer is ‘Yes’ to any of the listed uses, then the digital tool probably
+                falls under the category of a medical device and guidance must be sought from the MHRA.
+                On line guidance should be consulted first, this includes guidance on device
+                classification: https://www.gov.uk/government/publications/medical-devices-software-applications-apps
+                Specific regulatory questions should be addressed to Devices.Regulatory@mhra.gsi.gov.uk
+              </p>
+
+
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">PROBLEM HERE - If defined as a medical device the digital tool should be is  'CE' marked to show the manufacturer's declaration that the application complies with the EU Medical device directives. Please provide the following evidence:</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice" data-target="hummmm-yes">
+                <input id="radio-inline-27" type="radio" name="radio-inline-group-j" value="Yes">
+                <label for="radio-inline-27">Yes</label>
+              </div>
+
+              <div class="multiple-choice" data-target="hummmm-no">
+                <input id="radio-inline-28" type="radio" name="radio-inline-group-j" value="No">
+                <label for="radio-inline-28">No</label>
+              </div>
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="hummmm-yes">
+
+              <p>I DON'T GET THIS ONE</p>
+              <p>
+                Class 1 devices [most]
+              - evidence of registration with MHRA and self-declaration of conformity, or
+              Class 11a and above devices
+              - CE certificate from a Notified Body
+              All
+              - Your post market surveillance plan.
+              </p>
+
+
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Does your digital tool constitute a pharmacy service that requires registration with the General Pharmaceutical Council?</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice">
+                <input id="radio-inline-29" type="radio" name="radio-inline-group-k" value="Yes">
+                <label for="radio-inline-29">Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-inline-30" type="radio" name="radio-inline-group-k" value="No">
+                <label for="radio-inline-30">No</label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Does your digital tool form part of a service that requires registered health or care professionals to operate?</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice">
+                <input id="radio-inline-31" type="radio" name="radio-inline-group-l" value="Yes">
+                <label for="radio-inline-31">Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-inline-32" type="radio" name="radio-inline-group-l" value="No">
+                <label for="radio-inline-32">No</label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h4 class="heading-small">Please confirm registration status and fitness to practice in England by suppyling names of registrants and appropriate identifiers/codes.</h4>
+            </legend>
+
+            <div class="inline">
+              <div class="multiple-choice">
+                <input id="radio-inline-33" type="radio" name="radio-inline-group-l" value="Yes">
+                <label for="radio-inline-33">Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="radio-inline-34" type="radio" name="radio-inline-group-l" value="No">
+                <label for="radio-inline-34">No</label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      <p><a href="step6-register.html" class="button">Continue</a></p>
 
     </main>
 
