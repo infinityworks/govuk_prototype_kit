@@ -97,12 +97,108 @@
         <div class="column-two-thirds">
 
           <h2 class="heading-xlarge">
-            <p class="grey font-xsmall">Step 1 of 6</p>
+            <p class="grey font-xsmall">Step 1 of 5</p>
             Register
           </h2>
 
 
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                <h4 class="heading-small">Is your company registered in the UK?</h4>
+              </legend>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="radio-inline-5" type="radio" name="radio-inline-group-0" value="Yes">
+                  <label for="radio-inline-5">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="radio-inline-6" type="radio" name="radio-inline-group-0" value="No">
+                  <label for="radio-inline-6">No</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
 
+
+          <div class="form-group">
+
+            <fieldset>
+              <legend>
+                <h4 class="heading-small">Is your product available to the public?</h4>
+              </legend>
+              <div class="inline">
+                <div class="multiple-choice" data-target="product-available-yes">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group-a" value="Yes">
+                  <label for="radio-inline-1">Yes</label>
+                </div>
+                <div class="multiple-choice" data-target="product-available-no">
+                  <input id="radio-inline-2" type="radio" name="radio-inline-group-a" value="No">
+                  <label for="radio-inline-2">No</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <p style="clear:both"></p>
+
+            <!-- NO --------->
+            <div class="js-hidden" id="product-available-no">
+              <p>Do we want to say anything here?</p>
+            </div>
+
+            <!-- YES --------->
+            <div class="panel panel-border-narrow js-hidden" id="product-available-yes">
+              <div class="form-group">
+                <label class="form-label" for="url-f1">Yes, please provide URL to the app store location</label>
+                <input class="form-control" id="url-f1" type="text" name="url-f1">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+            <fieldset>
+
+              <legend>
+                <h3 class="heading-small">Please choose the health condition or theme that your product is aimed at</h3>
+              </legend>
+
+              <div class="multiple-choice">
+                <input id="app-type1" name="app-type" type="checkbox" value="primary-care">
+                <label for="app-type1">Primary care</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="app-type2" name="app-type" type="checkbox" value="cancer">
+                <label for="app-type2">Cancer</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="app-type3" name="app-type" type="checkbox" value="mental-health">
+                <label for="app-type3">Mental Health</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="app-type3" name="app-type" type="checkbox" value="urgent-and-emergency-care">
+                <label for="app-type3">Urgent and Emergency Care</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="app-type3" name="app-type" type="checkbox" value="maternity">
+                <label for="app-type3">Maternity</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="app-type3" name="app-type" type="checkbox" value="child-health">
+                <label for="app-type3">Child Health</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="app-type3" name="app-type" type="checkbox" value="patient-empowerment">
+                <label for="app-type3">Patient Empowerment</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="app-type3" name="app-type" type="checkbox" value="other">
+                <label for="app-type3">Other</label>
+              </div>
+
+            </fieldset>
+          </div>
 
 
 
@@ -110,157 +206,61 @@
             <fieldset>
 
               <legend>
-                <h4 class="heading-small">Is your product available to the public?</h4>
+                <h4 class="heading-small">
+                  Does your product use any form of NHS Branding?
+                </h4>
               </legend>
 
               <div class="inline">
-                <div class="multiple-choice" data-target="product-available-yes">
-                  <input id="radio-inline-1" type="radio" name="radio-inline-group-a" value="Yes">
-                  <label for="radio-inline-1">Yes</label>
+                <div class="multiple-choice" data-target="nhs-branding-questions">
+                  <input id="radio-inline-5" type="radio" name="radio-inline-groupb" value="Yes">
+                  <label for="radio-inline-5">Yes</label>
                 </div>
-
-                <div class="multiple-choice" data-target="product-available-no">
-                  <input id="radio-inline-2" type="radio" name="radio-inline-group-a" value="No">
-                  <label for="radio-inline-2">No</label>
+                <div class="multiple-choice">
+                  <input id="radio-inline-6" type="radio" name="radio-inline-groupb" value="No">
+                  <label for="radio-inline-6">No</label>
                 </div>
               </div>
 
               <p style="clear:both"></p>
 
+              <div class="panel panel-border-narrow js-hidden" id="nhs-branding-questions">
 
-              <!-- NO --------->
-              <div class="js-hidden" id="product-available-no">
-
-                <p>
-                  Do we want to say anything here?
+                <p class="">
+                  Please provide confirmation of express permission from Department of Health
                 </p>
+                <div class="form-group-small">
+                  <label class="form-label js-hidden" for="file-input">
+                    Upload a file
+                  </label>
+                  <input type="file" id="file-input">
+                </div>
+
+                <p class="">
+                  Does the branding complies with NHS England’s Branding Guidelines
+                </p>
+                <div class="multiple-choice">
+                  <input id="radio-inline-7" type="radio" name="radio-inline-group4" value="Yes">
+                  <label for="radio-inline-7">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="radio-inline-8" type="radio" name="radio-inline-group4" value="No">
+                  <label for="radio-inline-8">No</label>
+                </div>
 
               </div>
-
-
-              <!-- YES --------->
-              <div class="panel panel-border-narrow js-hidden" id="product-available-yes">
-                <div class="form-group">
-                  <label class="form-label" for="url-f1">Yes, please provide URL to the app store location</label>
-                  <input class="form-control" id="url-f1" type="text" name="url-f1">
-                </div>
-              </div>
-
-
-                <div class="form-group">
-                  <fieldset>
-
-                    <legend>
-                      <h3 class="heading-small">Please choose the health condition or theme that your product is aimed at</h3>
-                    </legend>
-
-                    <div class="multiple-choice">
-                      <input id="app-type1" name="app-type" type="checkbox" value="primary-care">
-                      <label for="app-type1">Primary care</label>
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="app-type2" name="app-type" type="checkbox" value="cancer">
-                      <label for="app-type2">Cancer</label>
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="app-type3" name="app-type" type="checkbox" value="mental-health">
-                      <label for="app-type3">Mental Health</label>
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="app-type3" name="app-type" type="checkbox" value="urgent-and-emergency-care">
-                      <label for="app-type3">Urgent and Emergency Care</label>
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="app-type3" name="app-type" type="checkbox" value="maternity">
-                      <label for="app-type3">Maternity</label>
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="app-type3" name="app-type" type="checkbox" value="child-health">
-                      <label for="app-type3">Child Health</label>
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="app-type3" name="app-type" type="checkbox" value="patient-empowerment">
-                      <label for="app-type3">Patient Empowerment</label>
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="app-type3" name="app-type" type="checkbox" value="other">
-                      <label for="app-type3">Other</label>
-                    </div>
-
-                  </fieldset>
-                </div>
-
-
-
-                <div class="form-group">
-                  <fieldset>
-
-                    <legend>
-                      <h4 class="heading-small">
-                        Does your product use any form of NHS Branding?
-                      </h4>
-                    </legend>
-
-                    <div class="inline">
-                      <div class="multiple-choice" data-target="nhs-branding-questions">
-                        <input id="radio-inline-5" type="radio" name="radio-inline-groupb" value="Yes">
-                        <label for="radio-inline-5">Yes</label>
-                      </div>
-                      <div class="multiple-choice">
-                        <input id="radio-inline-6" type="radio" name="radio-inline-groupb" value="No">
-                        <label for="radio-inline-6">No</label>
-                      </div>
-                    </div>
-
-                    <p style="clear:both"></p>
-
-                    <div class="panel panel-border-narrow js-hidden" id="nhs-branding-questions">
-
-                      <p class="">
-                        Please provide confirmation of express permission from Department of Health
-                      </p>
-                      <div class="form-group-small">
-                        <label class="form-label js-hidden" for="file-input">
-                          Upload a file
-                        </label>
-                        <input type="file" id="file-input">
-                      </div>
-
-                      <p class="">
-                        Does the branding complies with NHS England’s Branding Guidelines
-                      </p>
-                      <div class="multiple-choice">
-                        <input id="radio-inline-7" type="radio" name="radio-inline-group4" value="Yes">
-                        <label for="radio-inline-7">Yes</label>
-                      </div>
-                      <div class="multiple-choice">
-                        <input id="radio-inline-8" type="radio" name="radio-inline-group4" value="No">
-                        <label for="radio-inline-8">No</label>
-                      </div>
-
-                    </div>
-
-                  </fieldset>
-                </div>
-
-
-                <div class="form-group">
-                  <a href="step2-register.html" class="button button--large">Continue</a>
-                </div>
-
-
-
 
             </fieldset>
           </div>
 
 
+          <div class="form-group">
+            <a href="step2-register.html" class="button button--large">Continue</a>
+          </div>
 
-
-
-
-
-
+          <div class="form-group">
+            <a href="step2-failed.html" class="button button--grey">Admin: Fail state</a>
+          </div>
 
 
 
