@@ -8,6 +8,7 @@
     padding-right: $baseline-grid-unit;
 }
 
+/* Reverse the grid - Not used anymore but could be useful */
 .grid-row--reverse > .column-third, .grid-row--reverse > .column-one-third, .grid-row--reverse > .column-two-thirds, .grid-row--reverse > .column-one-half {
   @include media(tablet) {
     float: right;
@@ -92,7 +93,7 @@
 }
 
 .breadcrumbs li {
-  background-image: url("/images/separator-2x.png");
+  background-image: url("../images/separator-2x.png");
   margin-bottom: 0;
 }
 
@@ -188,8 +189,14 @@ a.task-name:link {
   }
 }
 
+/* Added so that the red error border from the GOV styles is also applied when a form-control is classed as "error" by jQuery validate */
+.form-control.error {
+    border: 4px solid #b10e1e;
+}
+
+/* Used on Apps library v8 prototype */
 .form-control--search {
-  background-image: url("/images/icon-search.png");
+  background-image: url("../images/icon-search.png");
   background-repeat: no-repeat;
   background-position: 97% 10px;
   background-size: 20px 20px;
@@ -236,10 +243,18 @@ a.task-name:link {
 /* Input file upload */
 input[type="file"] {
   background-color: #FFF;
-  padding: 10px 10px 9px;
+  height: auto;
+  padding: 5px 4px 4px;
   font-size: 14px;
   //border-bottom: 2px solid #b8c0c5;
 }
+
+/* Taken from shim.css - Not looked into why this is needed yet
+.fileUpload {
+    height:auto;
+    padding:5px 4px 4px;
+}
+*/
 
 
 /* Greyscale old comments in the thread */
@@ -410,8 +425,6 @@ input[type="file"] {
     min-height: 175px;
   }
 
-
-
   .app-header__bg {
     width: 100%;
   }
@@ -452,15 +465,15 @@ input[type="file"] {
         filter: blur(4px);
       }
     }
-
   }
 }
 
 
+/* I don't know what this is:
 .timer {
   display: none;
 }
-
+*/
 
 /* Link to feedback form */
 .feedback {
