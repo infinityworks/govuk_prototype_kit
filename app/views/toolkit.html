@@ -81,35 +81,6 @@
         <p>These elements have been taken from the NHS-Frontend-Toolkit and the Gov.uk websites.</p>
 
 
-        <h2 class="heading-medium">Faux DAQ Radios</h2>
-
-        <p>The old system made updates automatically. The first phase of the new build requires the user to save the form</p>
-        <div class="js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
-          <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroupb01" value="1" id="b01a">
-          <label for="b01a">Approve</label>
-          <input type="radio" class="v2-radio-button radio-button--reject js-btn-reject" name="radioButtonGroupb01" value="2" id="b01b">
-          <label for="b01b">Reject</label>
-          <input type="radio" class="v2-radio-button radio-button--request js-btn-request" name="radioButtonGroupb01" value="3" id="b01c">
-          <label for="b01c">Information request</label>
-        </div>
-
-
-        <pre class="language-markup js-hidden">
-          <code>
-&#x3C;div class=&#x22;js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small&#x22;&#x3E;
-  &#x3C;input type=&#x22;radio&#x22; class=&#x22;v2-radio-button radio-button--approve&#x22; name=&#x22;radioButtonGroupb01&#x22; value=&#x22;1&#x22; id=&#x22;b01a&#x22;&#x3E;
-  &#x3C;label for=&#x22;b01a&#x22;&#x3E;Approve&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;radio&#x22; class=&#x22;v2-radio-button radio-button--reject js-btn-reject&#x22; name=&#x22;radioButtonGroupb01&#x22; value=&#x22;2&#x22; id=&#x22;b01b&#x22;&#x3E;
-  &#x3C;label for=&#x22;b01b&#x22;&#x3E;Reject&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;radio&#x22; class=&#x22;v2-radio-button radio-button--request js-btn-request&#x22; name=&#x22;radioButtonGroupb01&#x22; value=&#x22;3&#x22; id=&#x22;b01c&#x22;&#x3E;
-  &#x3C;label for=&#x22;b01c&#x22;&#x3E;Information request&#x3C;/label&#x3E;
-&#x3C;/div&#x3E;
-          </code>
-        </pre>
-        <a href="#" class="button button--small button--grey">Show HTML</a>
-
-        <hr>
-
         <!-- ################################################################################ -->
 
         <h2 class="heading-medium">Colour swatches</h2>
@@ -254,6 +225,42 @@
 
         <hr>
 
+
+
+
+        <h2 class="heading-medium">Faux DAQ Radios</h2>
+
+        <p>The old system made updates automatically. The first phase of the new build requires the user to save the form</p>
+        <div class="js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small">
+          <input type="radio" class="v2-radio-button radio-button--approve" name="radioButtonGroupb01" value="1" id="b01a">
+          <label for="b01a">Approve</label>
+          <input type="radio" class="v2-radio-button radio-button--reject js-btn-reject" name="radioButtonGroupb01" value="2" id="b01b">
+          <label for="b01b">Reject</label>
+          <input type="radio" class="v2-radio-button radio-button--request js-btn-request" name="radioButtonGroupb01" value="3" id="b01c">
+          <label for="b01c">Information request</label>
+        </div>
+
+
+        <div style="clear:both; border-top: 10px solid #F0F4F5; margin-top:40px;">
+          <pre class="language-markup" style="display: none">
+            <code>
+  &#x3C;div class=&#x22;js-radio-buttons v2-radio-buttons-wrapper v2-radio-buttons-wrapper--small&#x22;&#x3E;
+    &#x3C;input type=&#x22;radio&#x22; class=&#x22;v2-radio-button radio-button--approve&#x22; name=&#x22;radioButtonGroupb01&#x22; value=&#x22;1&#x22; id=&#x22;b01a&#x22;&#x3E;
+    &#x3C;label for=&#x22;b01a&#x22;&#x3E;Approve&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;radio&#x22; class=&#x22;v2-radio-button radio-button--reject js-btn-reject&#x22; name=&#x22;radioButtonGroupb01&#x22; value=&#x22;2&#x22; id=&#x22;b01b&#x22;&#x3E;
+    &#x3C;label for=&#x22;b01b&#x22;&#x3E;Reject&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;radio&#x22; class=&#x22;v2-radio-button radio-button--request js-btn-request&#x22; name=&#x22;radioButtonGroupb01&#x22; value=&#x22;3&#x22; id=&#x22;b01c&#x22;&#x3E;
+    &#x3C;label for=&#x22;b01c&#x22;&#x3E;Information request&#x3C;/label&#x3E;
+  &#x3C;/div&#x3E;
+            </code>
+          </pre>
+          <a href="#" class="button button--chevron button--grey js-toggle-html">Show HTML</a>
+        </div>
+
+
+
+
+
         <!-- ################################################################################ -->
 
         <h2 class="heading-medium">Buttons</h2>
@@ -282,35 +289,39 @@
 
         <p><input type="submit" class="button button--text" value="Text button"></p>
 
-        <pre class="language-markup">
-          <code>
-  &lt;p&gt;&lt;a href="#" class="button"&gt;Default button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--blue"&gt;Blue button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--red"&gt;Red button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--grey"&gt;Grey button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--light-grey"&gt;Light grey button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--small"&gt;Small button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--chevron"&gt;Chevron&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--chevron button--grey"&gt;Chevron in grey&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button-start"&gt;Start button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href="#" class="button button--large"&gt;Large button&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;input type="submit" class="button button--text" value="Text button"&gt;&lt;/p&gt;
-          </code>
-        </pre>
 
 
+        <div style="clear:both; border-top: 10px solid #F0F4F5; margin-top:40px;">
+          <pre class="language-markup" style="display: none">
+            <code>
+    &lt;p&gt;&lt;a href="#" class="button"&gt;Default button&lt;/a&gt;&lt;/p&gt;
 
-        <hr>
+    &lt;p&gt;&lt;a href="#" class="button button--blue"&gt;Blue button&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button--red"&gt;Red button&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button--grey"&gt;Grey button&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button--light-grey"&gt;Light grey button&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button--small"&gt;Small button&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button--chevron"&gt;Chevron&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button--chevron button--grey"&gt;Chevron in grey&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button-start"&gt;Start button&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="#" class="button button--large"&gt;Large button&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;input type="submit" class="button button--text" value="Text button"&gt;&lt;/p&gt;
+            </code>
+          </pre>
+          <a href="#" class="button button--chevron button--grey js-toggle-html">Show HTML</a>
+        </div>
+
+
+
 
         <!-- ################################################################################ -->
 
@@ -323,18 +334,22 @@
           <p class="local-header__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus lacus et sagittis condimentum. Vivamus quis sollicitudin orci, a pulvinar ante.</p>
         </div>
 
-        <pre class="language-markup">
-          <code>
-  &lt;div class="local-header"&gt;
-    &lt;h2 class="local-header__title"&gt;Local header&lt;/h2&gt;
-    &lt;p class="local-header__para"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus lacus et sagittis condimentum. Vivamus quis sollicitudin orci, a pulvinar ante.&lt;/p&gt;
-  &lt;/div&gt;
-          </code>
-        </pre>
+        <div style="clear:both; border-top: 10px solid #F0F4F5; margin-top:40px;">
+          <pre class="language-markup" style="display: none">
+            <code>
+    &lt;div class="local-header"&gt;
+      &lt;h2 class="local-header__title"&gt;Local header&lt;/h2&gt;
+      &lt;p class="local-header__para"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus lacus et sagittis condimentum. Vivamus quis sollicitudin orci, a pulvinar ante.&lt;/p&gt;
+    &lt;/div&gt;
+            </code>
+          </pre>
+          <a href="#" class="button button--chevron button--grey js-toggle-html">Show HTML</a>
+        </div>
 
 
 
-        <hr>
+
+
 
         <!-- ################################################################################ -->
 
@@ -350,18 +365,29 @@
         <div class="status status--awaiting">Awaiting</div>
 
 
-
-
-
-
         <p style="clear:both">&nbsp;</p>
 
 
-        <hr>
+        <div style="clear:both; border-top: 10px solid #F0F4F5; margin-top:40px;">
+          <pre class="language-markup" style="display: none">
+            <code>
+    &#x3C;div class=&#x22;status&#x22;&#x3E;Not set&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;status status--in-progress&#x22;&#x3E;In progress&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;status status--approved&#x22;&#x3E;Approved&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;status status--with-vendor&#x22;&#x3E;With vendor&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;status status--reject&#x22;&#x3E;Rejected&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;status status--info-request&#x22;&#x3E;Information Requested&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;status status--awaiting&#x22;&#x3E;Awaiting&#x3C;/div&#x3E;
+            </code>
+          </pre>
+          <a href="#" class="button button--chevron button--grey js-toggle-html">Show HTML</a>
+        </div>
+
+
 
         <!-- ################################################################################ -->
 
-        <h2 class="heading-medium">Tabs</h2>
+        <h2 class="heading-medium">Tabs (GOV)</h2>
 
         <aside class="part-navigation-container" role="complementary">
           <nav role="navigation" class="app-c-contents-list" data-module="track-click" aria-label="Pages in this guide">
@@ -382,30 +408,42 @@
         </aside>
 
 
-        <pre class="language-markup">
-          <code>
-  &lt;aside class="part-navigation-container" role="complementary"&gt;
-    &lt;nav role="navigation" class="app-c-contents-list" data-module="track-click" aria-label="Pages in this guide"&gt;
-      &lt;h2&gt;Contents&lt;/h2&gt;
-      &lt;ol class="app-c-contents-list__list"&gt;
-        &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed app-c-contents-list__list-item--active" aria-current="true"&gt;Overview&lt;/li&gt;
-        &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed"&gt;
-          &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="/carers-credit/what-youll-get" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;What you'll get&amp;quot;}" href="/carers-credit/what-youll-get"&gt;What you'll get&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
-          &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="/carers-credit/eligibility" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;Eligibility&amp;quot;}" href="/carers-credit/eligibility"&gt;Eligibility&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
-          &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="/carers-credit/how-to-claim" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;How to claim&amp;quot;}" href="/carers-credit/how-to-claim"&gt;How to claim&lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ol&gt;
-    &lt;/nav&gt;
-  &lt;/aside&gt;
-          </code>
-        </pre>
+        <div style="clear:both; border-top: 10px solid #F0F4F5; margin-top:40px;">
+          <pre class="language-markup" style="display: none">
+            <code>
+    &lt;aside class="part-navigation-container" role="complementary"&gt;
+      &lt;nav role="navigation" class="app-c-contents-list" data-module="track-click" aria-label="Pages in this guide"&gt;
+        &lt;h2&gt;Contents&lt;/h2&gt;
+        &lt;ol class="app-c-contents-list__list"&gt;
+          &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed app-c-contents-list__list-item--active" aria-current="true"&gt;Overview&lt;/li&gt;
+          &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed"&gt;
+            &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="/carers-credit/what-youll-get" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;What you'll get&amp;quot;}" href="/carers-credit/what-youll-get"&gt;What you'll get&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
+            &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="/carers-credit/eligibility" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;Eligibility&amp;quot;}" href="/carers-credit/eligibility"&gt;Eligibility&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed "&gt;
+            &lt;a class="app-c-contents-list__link" data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="/carers-credit/how-to-claim" data-track-options="{&amp;quot;dimension29&amp;quot;:&amp;quot;How to claim&amp;quot;}" href="/carers-credit/how-to-claim"&gt;How to claim&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/nav&gt;
+    &lt;/aside&gt;
+            </code>
+          </pre>
+          <a href="#" class="button button--chevron button--grey js-toggle-html">Show HTML</a>
+        </div>
 
 
-        <hr>
+
+        <!-- ################################################################################ -->
+
+        <h2 class="heading-medium">Tabs</h2>
+
+
+
+
+
+
 
         <!-- ################################################################################ -->
 
@@ -472,8 +510,76 @@
         </div>
 
 
+        <div style="clear:both; border-top: 10px solid #F0F4F5; margin-top:40px;">
+          <pre class="language-markup" style="display: none">
+            <code>
+    &#x3C;div class=&#x22;callout&#x22;&#x3E;
+      &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
 
-        <hr>
+    &#x3C;div class=&#x22;callout callout--info&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Info&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;callout callout--attention&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Attention&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;callout callout--warning&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Warning&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;callout callout--alert&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Alert&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;callout callout--severe&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Severe&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;callout callout--error&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Error&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;callout callout--muted&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Muted&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;callout callout--compact&#x22;&#x3E;
+      &#x3C;h2 class=&#x22;callout__title&#x22;&#x3E;Compact&#x3C;/h2&#x3E;
+      &#x3C;p class=&#x22;callout__para&#x22;&#x3E;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur assumenda beatae, dolor eaque eos expedita fugiat iure, laborum libero magnam magni natus non quasi quibusdam repellendus saepe sapiente, velit.
+      &#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+            </code>
+          </pre>
+          <a href="#" class="button button--chevron button--grey js-toggle-html">Show HTML</a>
+        </div>
+
+
+
+
 
         <!-- ################################################################################ -->
 
@@ -634,27 +740,34 @@
 
 
 
-        <pre class="language-markup">
-          <code>
-  &lt;div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions"&gt;
-    &lt;div class="subsection-controls js-subsection-controls"&gt;
-      &lt;button aria-expanded="false" aria-controls="subsection_content_0 subsection_content_1 subsection_content_2 subsection_content_3 "&gt;Open all&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class="subsection-wrapper" style="clear: both"&gt;
-      &lt;div class="js-subsection subsection"&gt;
-        &lt;div class="subsection__header"&gt;
-          &lt;h2 class="subsection__title" id="find-patterns"&gt;&lt;button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_3"&gt;Title&lt;/button&gt;&lt;/h2&gt;
-          &lt;p class="subsection__description"&gt;Sub title&lt;/p&gt;
-          &lt;span class="subsection__icon"&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="subsection__content js-subsection-content js-hidden" id="subsection_content_3"&gt;
-          CONTENT
+        <div style="clear:both; border-top: 10px solid #F0F4F5; margin-top:40px;">
+          <pre class="language-markup" style="display: none">
+            <code>
+    &lt;div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions"&gt;
+      &lt;div class="subsection-controls js-subsection-controls"&gt;
+        &lt;button aria-expanded="false" aria-controls="subsection_content_0 subsection_content_1 subsection_content_2 subsection_content_3 "&gt;Open all&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="subsection-wrapper" style="clear: both"&gt;
+        &lt;div class="js-subsection subsection"&gt;
+          &lt;div class="subsection__header"&gt;
+            &lt;h2 class="subsection__title" id="find-patterns"&gt;&lt;button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_3"&gt;Title&lt;/button&gt;&lt;/h2&gt;
+            &lt;p class="subsection__description"&gt;Sub title&lt;/p&gt;
+            &lt;span class="subsection__icon"&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="subsection__content js-subsection-content js-hidden" id="subsection_content_3"&gt;
+            CONTENT
+          &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-          </code>
-        </pre>
+            </code>
+          </pre>
+          <a href="#" class="button button--chevron button--grey js-toggle-html">Show HTML</a>
+        </div>
+
+
+
+
 
 
 
@@ -685,10 +798,19 @@
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
     <script>
+
       $( ".subsection__header" ).click(function() {
         $( this ).next().toggleClass( "js-hidden" );
         $( this ).parent().toggleClass( "subsection--is-open" );
       });
+
+      $( ".js-toggle-html" ).click(function(e) {
+        $(this).prev().slideToggle( "fast", function() {
+          // Animation complete.
+        });
+        e.preventDefault();
+      });
+
     </script>
 
   </body>
