@@ -9,6 +9,13 @@
     @extend .heading-medium;
   }
 
+  .article_nav__subheading {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: $baseline-grid-unit * 2;
+  }
+
   .article_nav__list {
 
     list-style: disc;
