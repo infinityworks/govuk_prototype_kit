@@ -53,6 +53,10 @@
   background-color: #FFF;
 }
 
+.multiple-choice:last-child, .multiple-choice:last-of-type {
+  margin-bottom: $baseline-grid-unit;
+}
+
 
 /*.error-summary is included in the GDS patterns. But no confirmation message with the same format */
 .confirm-summary {
