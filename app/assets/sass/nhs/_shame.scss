@@ -15,6 +15,12 @@
   }
 }
 
+/* Used on toolkit: http://localhost:3000/toolkit.html */
+.language-markup {
+  @extend .font-xsmall;
+  padding: $baseline-grid-unit $baseline-grid-unit * 3;
+  overflow: scroll;
+}
 
 /* Missing grid elements */
 .column-three-quarters {
@@ -182,6 +188,7 @@ a.task-name:link {
 
 .form-control {
   margin-bottom: $baseline-grid-unit;
+  background-color: #FFF;
   @include media(tablet) {
     width: 64%;
     //padding: 10px 10px 6px;
