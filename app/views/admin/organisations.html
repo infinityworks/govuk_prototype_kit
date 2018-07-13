@@ -84,56 +84,48 @@
 
     <main id="content" role="main">
 
-      <h1 class="heading-large">Admin</h1>
-
-      <div class="js-tabs tabs-nav--3tabs">
-        <ul class="tabs-nav" role="tablist">
-          <li class="tabs-nav__item">
-            <a tabindex="0" href="/apps_assessment/apps.html" class="tabs-link" role="tab">Developer</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
-          </li>
-          <li class="tabs-nav__item tabs-nav__item--active">
-            <a tabindex="1" href="/admin/home.html" class="tabs-link" role="tab">Admin</a>
-          </li>
-        </ul>
-      </div>
-
-
-      <h2 class="heading-medium">Admin categories</h2>
-      <div class="categories-lists">
-        <ol class="categories-list">
-          <li>
-            <h3><a href="assign.html">Assign Reviewers</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <ol class="categories-list">
-          <li>
-            <h3><a href="#">Users</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <ol class="categories-list">
-          <li>
-            <h3><a href="set2-category.html">Assessments</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <ol class="categories-list">
-          <li>
-            <h3><a href="pre-qual-fail-log.html">Pre-Qual Fail Log</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <ol class="categories-list">
-          <li>
-            <h3><a href="organisations.html">Organisations</a></h3>
-            <p>For exmaple NHS digital and Our mobile health</p>
-          </li>
+      <div class="breadcrumbs">
+        <ol>
+          <li><a href="home.html">Home</a></li>
+          <li aria-current="page">Organisations</li>
         </ol>
       </div>
+
+      <h1 class="heading-large">Organisations</h1>
+      <p class="highlight">Talk to Hayley - This is coming up on a future sprint</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Organisation</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NHS Digital</td>
+            <td><a href="organisation-details.html">Manage</a></td>
+          </tr>
+          <tr>
+            <td>Our Mobile Health</td>
+            <td><a href="organisation-details.html">Manage</a></td>
+          </tr>
+          <!--
+          <tr>
+            <td>Cadaemia</td>
+            <td>Pulse</td>
+            <td>Submit Your App</td>
+            <td><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+          -->
+        </tbody>
+      </table>
+
+
+      <div class="form-group-small">
+        <a href="#" class="button button--blue">Add a new Organisation</a>
+      </div>
+
 
     </main>
 
@@ -167,23 +159,13 @@
     <!-- Toggle content -->
     <script>
 
-    $( ".js-step-title-button" ).click(function() {
+    $( ".js-anotherQuestion" ).click(function() {
 
-      linkPath = $(this).find(".js-toggle-link");
-      contentPath = $(this).parent().parent().parent().parent().find(".js-panel");
-
-      $( contentPath ).toggleClass("js-hidden");
+      $( "#anotherQuestion" ).show();
+      $(this).hide();
 
     });
 
-
-    $( ".js-step-controls-button" ).click(function() {
-
-      allPath = $(this).parent().next().find(".js-panel");
-
-      $( allPath ).removeClass("js-hidden");
-
-    });
 
 
     </script>
