@@ -84,60 +84,64 @@
 
     <main id="content" role="main">
 
-      <h1 class="heading-large">Admin</h1>
-
-      <div class="js-tabs tabs-nav--3tabs">
-        <ul class="tabs-nav" role="tablist">
-          <li class="tabs-nav__item">
-            <a tabindex="0" href="/apps_assessment/apps.html" class="tabs-link" role="tab">Developer</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
-          </li>
-          <li class="tabs-nav__item tabs-nav__item--active">
-            <a tabindex="1" href="/admin/home.html" class="tabs-link" role="tab">Admin</a>
-          </li>
-        </ul>
-      </div>
-
-
-      <h2 class="heading-medium">Admin categories</h2>
-      <div class="categories-lists">
-        <ol class="categories-list">
-          <li>
-            <h3><a href="assign.html">Assign Reviewers</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <!--
-        <ol class="categories-list">
-          <li>
-            <h3><a href="#">Users</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        -->
-        <!--
-        <ol class="categories-list">
-          <li>
-            <h3><a href="set2-category.html">Assessments</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        -->
-        <ol class="categories-list">
-          <li>
-            <h3><a href="pre-qual-fail-log.html">Pre-Qual Fail Log</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
-          </li>
-        </ol>
-        <ol class="categories-list">
-          <li>
-            <h3><a href="organisations.html">Organisations</a></h3>
-            <p>For exmaple NHS digital and Our mobile health</p>
-          </li>
+      <div class="breadcrumbs">
+        <ol>
+          <li><a href="home.html">Home</a></li>
+          <li aria-current="page">Pre-Qual Fail Log</li>
         </ol>
       </div>
+
+      <h1 class="heading-large">Pre-Qual Fail Log</h1>
+      <p>Every use that fails at Pre-Qual are saved into this log</p>
+
+
+      <h2 class="heading-medium">Download all records</h2>
+      <p><a href="#" class="button button--blue">.csv</a> or <a href="#" class="button button--blue">.exl</a></p>
+
+      <hr>
+
+      <h2 class="heading-medium">Or search for an failed answer</h2>
+
+      <div class="form-group-small" id="">
+        <label class="form-label" for="select-box">Select month</label>
+        <select class="form-control" id="select-box" name="select-box">
+          <option>Jan 2018</option>
+          <option>Feb 2018</option>
+          <option>Mar 2018</option>
+          <option>Apr 2018</option>
+          <option>May 2018</option>
+          <option>June 2018</option>
+        </select>
+      </div>
+
+      <div class="form-group-small">
+        <label class="form-label" for="select-box">Select question</label>
+        <select class="form-control" id="select-box" name="select-box">
+          <option>1. Is your company registered in the UK?</option>
+          <option>2. Is your product available to the public?</option>
+          <option>3. Please choose the health condition or theme that your product is aimed at</option>
+          <option>4. Please choose the health condition or theme that your product is aimed at</option>
+          <option>5. Does your product use any form of NHS Branding?</option>
+          <option>5.1 Please provide confirmation of express permission from Department of Health </option>
+          <option>5.2 Does the branding complies with NHS England’s Branding Guidelines</option>
+        </select>
+        <p><a href="#" class="js-anotherQuestion">Add another question</a></p>
+      </div>
+
+      <div class="form-group-small" id="anotherQuestion" style="display:none">
+        <label class="form-label" for="select-box">Select question</label>
+        <select class="form-control" id="select-box" name="select-box">
+          <option>1. Is your company registered in the UK?</option>
+          <option>2. Is your product available to the public?</option>
+          <option>3. Please choose the health condition or theme that your product is aimed at</option>
+          <option>4. Please choose the health condition or theme that your product is aimed at</option>
+          <option>5. Does your product use any form of NHS Branding?</option>
+          <option>5.1 Please provide confirmation of express permission from Department of Health </option>
+          <option>5.2 Does the branding complies with NHS England’s Branding Guidelines</option>
+        </select>
+      </div>
+
+      <input type="submit" class="button button--blue" value="Download">
 
     </main>
 
@@ -171,23 +175,13 @@
     <!-- Toggle content -->
     <script>
 
-    $( ".js-step-title-button" ).click(function() {
+    $( ".js-anotherQuestion" ).click(function() {
 
-      linkPath = $(this).find(".js-toggle-link");
-      contentPath = $(this).parent().parent().parent().parent().find(".js-panel");
-
-      $( contentPath ).toggleClass("js-hidden");
+      $( "#anotherQuestion" ).show();
+      $(this).hide();
 
     });
 
-
-    $( ".js-step-controls-button" ).click(function() {
-
-      allPath = $(this).parent().next().find(".js-panel");
-
-      $( allPath ).removeClass("js-hidden");
-
-    });
 
 
     </script>
