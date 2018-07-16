@@ -1,0 +1,16 @@
+/* Page breadcrumbs - missing from header elements */
+.breadcrumbs {
+  z-index: 2;
+  background-color: #FFF;
+}
+
+.breadcrumbs__inner {
+  max-width: 960px;
+  padding: 0 $baseline-grid-unit * 2;
+  margin: 0 auto;
+}
+
+.breadcrumbs li {
+  background-image: url("../images/separator-2x.png");
+  margin-bottom: 0;
+}
