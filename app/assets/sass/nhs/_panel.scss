@@ -1,0 +1,40 @@
+
+/* Panels */
+.panel {
+  margin-bottom: $baseline-grid-unit;
+}
+
+.panel--red {
+  background-color: #FFF5F5;
+  border-color: $nhs-red;
+}
+
+.panel--red-border {
+  border-color: $nhs-red;
+}
+
+.panel--green {
+  background-color: #EDFFF2;
+  border-color: $nhs-green;
+}
+
+.panel--green-border {
+  border-color: $nhs-green;
+}
+
+.panel--header {
+  border: 10px solid $nhs-blue;
+
+  @include media(tablet) {
+    padding: $baseline-grid-unit * 4;
+  }
+
+  .panel--header__title {
+    @extend .heading-medium;
+    margin-top: 0;
+  }
+
+  .panel--header__side {
+    float: right;
+  }
+}
