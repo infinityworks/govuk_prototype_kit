@@ -92,12 +92,26 @@
       </div>
 
 
+      <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">Your attention is required</h2>
+
+        <!-- <p>Optional description of the errors and how to correct them</p> -->
+
+        <ul class="error-summary-list">
+          <li><a href="#loginForm">Email address isn't in the correct format</a></li>
+        </ul>
+
+      </div>
+
+
+
       <h2 class="heading-large">Login</h2>
 
-      <form action="apps.html">
+      <form action="apps.html" id="loginForm">
         <p>
           <label class="form-label" for="email-f1">Email Address</label>
-          <input class="form-control" id="email-f1" type="text" name="email-f1">
+          <input class="form-control" id="email-f1" type="text" name="email-f1" value="example@domain.co.uk">
         </p>
         <p>
           <label class="form-label" for="password-f1">Password</label>
