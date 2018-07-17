@@ -68,7 +68,7 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/apps_developer/" id="proposition-name">Apps Assessment</a><strong class="phase-tag" style="position:relative; left:4px; top:-2px;">ADMIN</strong>
+              <a href="/apps_admin/" id="proposition-name">Apps Assessment</a><strong class="phase-tag" style="position:relative; left:4px; top:-2px;">ADMIN</strong>
               <ul id="proposition-links">
                 <li><a href="apps.html" class="active">Apps</a></li>
                 <li><a href="getting-started.html">Get started</a></li>
@@ -84,62 +84,60 @@
 
     <main id="content" role="main">
 
-      <div class="breadcrumbs">
-        <ol>
-          <li><a href="home.html">Home</a></li>
-          <li aria-current="page">Assign</li>
-        </ol>
-      </div>
+      <h1 class="heading-large">Admin</h1>
 
-      <h1 class="heading-large">Assign Reviewer</h1>
-
-
-
-
-
-      <div class="js-tabs">
+      <div class="js-tabs tabs-nav--3tabs">
         <ul class="tabs-nav" role="tablist">
+          <li class="tabs-nav__item">
+            <a tabindex="0" href="/apps_developer/apps.html" class="tabs-link" role="tab">Developer</a>
+          </li>
+          <li class="tabs-nav__item">
+            <a tabindex="1" href="/apps_review/apps.html" class="tabs-link" role="tab">Reviewer</a>
+          </li>
           <li class="tabs-nav__item tabs-nav__item--active">
-            <a tabindex="0" href="assign.html" class="tabs-link" role="tab">Action Required</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="assign-inreview.html" class="tabs-link" role="tab">In Review</a>
-          </li>
-          <li class="tabs-nav__item">
-            <a tabindex="1" href="assign-all.html" class="tabs-link" role="tab">All</a>
+            <a tabindex="1" href="/admin/home.html" class="tabs-link" role="tab">Admin</a>
           </li>
         </ul>
       </div>
 
 
-      <table>
-        <thead>
-          <tr>
-            <th>Team Name</th>
-            <th>App Name</th>
-            <th>Assessment Stage</th>
-            <th>Assigned</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Infinity Works Test App</td>
-            <td>Infinity Works Test App</td>
-            <td>3. DAQs (Submited)</td>
-            <td>No</td>
-            <td><a href="assign-details.html">Assign</a></td>
-          </tr>
-          <tr>
-            <td>MyApp</td>
-            <td>MyApp</td>
-            <td>3. DAQs (Submited)</td>
-            <td>No</td>
-            <td><a href="assign-details.html">Assign</a></td>
-          </tr>
-        </tbody>
-      </table>
-
+      <h2 class="heading-medium">Admin categories</h2>
+      <div class="categories-lists">
+        <ol class="categories-list">
+          <li>
+            <h3><a href="assign.html">Assign Reviewers</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+          </li>
+        </ol>
+        <!--
+        <ol class="categories-list">
+          <li>
+            <h3><a href="#">Users</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+          </li>
+        </ol>
+        -->
+        <!--
+        <ol class="categories-list">
+          <li>
+            <h3><a href="set2-category.html">Assessments</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+          </li>
+        </ol>
+        -->
+        <ol class="categories-list">
+          <li>
+            <h3><a href="pre-qual-fail-log.html">Pre-Qual Fail Log</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus in risus convallis </p>
+          </li>
+        </ol>
+        <ol class="categories-list">
+          <li>
+            <h3><a href="organisations.html">Organisations</a></h3>
+            <p>For exmaple NHS digital and Our mobile health</p>
+          </li>
+        </ol>
+      </div>
 
     </main>
 
@@ -163,86 +161,36 @@
     <script src="/javascripts/govuk/shim-links-with-button-role.js"></script>
     <script src="/javascripts/govuk/show-hide-content.js"></script>
     <script src="/javascripts/application.js"></script>
+
     <script src="/javascripts/auto-store-data.js"></script>
-    <script src="/javascripts/jquery.easy-autocomplete.min.js"></script>
 
     <!-- GOV.UK Prototype kit v6.3.0 -->
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
 
+    <!-- Toggle content -->
+    <script>
 
-        <script>
+    $( ".js-step-title-button" ).click(function() {
 
-          // Fake the selectbox jump
+      linkPath = $(this).find(".js-toggle-link");
+      contentPath = $(this).parent().parent().parent().parent().find(".js-panel");
 
-          $(function(){
-            // bind change event to select
-            $('#select-box').on('change', function () {
-                var url = $(this).val(); // get selected value
-                if (url) { // require a URL
-                    window.location = url; // redirect
-                }
-                return false;
-            });
-          });
+      $( contentPath ).toggleClass("js-hidden");
+
+    });
 
 
+    $( ".js-step-controls-button" ).click(function() {
 
-            // Search box
+      allPath = $(this).parent().next().find(".js-panel");
 
-            // Hack
-            $('#example-search').removeAttr('style');
+      $( allPath ).removeClass("js-hidden");
 
-            /* Mobile only toggle fitlers */
+    });
 
-            var options = {
 
-              url: "/javascripts/search.json",
-              adjustWidth: false,
-
-              categories: [{
-                  listLocation: "apps",
-                  maxNumberOfElements: 4,
-                  header: "Apps"
-              }],
-
-              getValue: function(element) {
-                  return element.condition;
-                  return element.website;
-
-              },
-
-              template: {
-                  type: "description",
-                  fields: {
-                      description: "details"
-                  }
-              },
-
-              list: {
-                  maxNumberOfElements: 8,
-                  match: {
-                      enabled: true
-                  },
-                  sort: {
-                      enabled: true
-                  }, onClickEvent: function() {
-
-                    var websiteSelected = $("#example-search").getSelectedItemData().website;
-                    window.location.href = websiteSelected;
-                    //alert(websiteSelected);
-
-                }
-              },
-
-              theme: "square"
-
-            };
-
-            $("#example-search").easyAutocomplete(options);
-
-          </script>
-
+    </script>
 
 
 </body>

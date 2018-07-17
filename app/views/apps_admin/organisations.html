@@ -68,7 +68,7 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/apps_developer/" id="proposition-name">Apps Assessment</a><strong class="phase-tag" style="position:relative; left:4px; top:-2px;">ADMIN</strong>
+              <a href="/apps_admin/" id="proposition-name">Apps Assessment</a><strong class="phase-tag" style="position:relative; left:4px; top:-2px;">ADMIN</strong>
               <ul id="proposition-links">
                 <li><a href="apps.html" class="active">Apps</a></li>
                 <li><a href="getting-started.html">Get started</a></li>
@@ -87,61 +87,45 @@
       <div class="breadcrumbs">
         <ol>
           <li><a href="home.html">Home</a></li>
-          <li aria-current="page">Pre-Qual Fail Log</li>
+          <li aria-current="page">Organisations</li>
         </ol>
       </div>
 
-      <h1 class="heading-large">Pre-Qual Fail Log</h1>
-      <p>Every use that fails at Pre-Qual are saved into this log</p>
+      <h1 class="heading-large">Organisations</h1>
+      <p class="highlight">Talk to Hayley - This is coming up on a future sprint</p>
 
+      <table>
+        <thead>
+          <tr>
+            <th>Organisation</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NHS Digital</td>
+            <td><a href="organisation-details.html">Manage</a></td>
+          </tr>
+          <tr>
+            <td>Our Mobile Health</td>
+            <td><a href="organisation-details.html">Manage</a></td>
+          </tr>
+          <!--
+          <tr>
+            <td>Cadaemia</td>
+            <td>Pulse</td>
+            <td>Submit Your App</td>
+            <td><a href="apps-details-not-invited.html">Manage</a></td>
+          </tr>
+          -->
+        </tbody>
+      </table>
 
-      <h2 class="heading-medium">Download all records</h2>
-      <p><a href="#" class="button button--blue">.csv</a> or <a href="#" class="button button--blue">.exl</a></p>
-
-      <hr>
-
-      <h2 class="heading-medium">Or search for an failed answer</h2>
-
-      <div class="form-group-small" id="">
-        <label class="form-label" for="select-box">Select month</label>
-        <select class="form-control" id="select-box" name="select-box">
-          <option>Jan 2018</option>
-          <option>Feb 2018</option>
-          <option>Mar 2018</option>
-          <option>Apr 2018</option>
-          <option>May 2018</option>
-          <option>June 2018</option>
-        </select>
-      </div>
 
       <div class="form-group-small">
-        <label class="form-label" for="select-box">Select question</label>
-        <select class="form-control" id="select-box" name="select-box">
-          <option>1. Is your company registered in the UK?</option>
-          <option>2. Is your product available to the public?</option>
-          <option>3. Please choose the health condition or theme that your product is aimed at</option>
-          <option>4. Please choose the health condition or theme that your product is aimed at</option>
-          <option>5. Does your product use any form of NHS Branding?</option>
-          <option>5.1 Please provide confirmation of express permission from Department of Health </option>
-          <option>5.2 Does the branding complies with NHS England’s Branding Guidelines</option>
-        </select>
-        <p><a href="#" class="js-anotherQuestion">Add another question</a></p>
+        <a href="#" class="button button--blue">Add a new Organisation</a>
       </div>
 
-      <div class="form-group-small" id="anotherQuestion" style="display:none">
-        <label class="form-label" for="select-box">Select question</label>
-        <select class="form-control" id="select-box" name="select-box">
-          <option>1. Is your company registered in the UK?</option>
-          <option>2. Is your product available to the public?</option>
-          <option>3. Please choose the health condition or theme that your product is aimed at</option>
-          <option>4. Please choose the health condition or theme that your product is aimed at</option>
-          <option>5. Does your product use any form of NHS Branding?</option>
-          <option>5.1 Please provide confirmation of express permission from Department of Health </option>
-          <option>5.2 Does the branding complies with NHS England’s Branding Guidelines</option>
-        </select>
-      </div>
-
-      <input type="submit" class="button button--blue" value="Download">
 
     </main>
 
