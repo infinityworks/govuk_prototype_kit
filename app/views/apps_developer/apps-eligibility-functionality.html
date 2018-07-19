@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Review / Apps / Details</title>
+    <title>NHS Apps Assessment / Eligibility</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -69,15 +69,12 @@
           <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-              <a href="/apps_review" id="proposition-name">Apps Assessment</a>
-              <strong class="phase-tag" style="position:relative; left:4px; top:-2px;">REVIEWER</strong>
-
+              <a href="/apps_developer" id="proposition-name">Apps Assessment</a>
               <ul id="proposition-links">
-                <li><a href="apps.html" class="active">Apps</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="logout.html">Logout</a></li>
+                <li><a href="/apps_developer/apps.html">Apps</a></li>
+                <li><a href="/apps_developer/profile.html" class="active">Profile</a></li>
+                <li><a href="/apps_developer/logout.html">Logout</a></li>
               </ul>
-
             </nav>
           </div>
         </div>
@@ -91,68 +88,101 @@
 
       <div class="breadcrumbs">
         <ol>
-          <li><a href="apps.html">Apps</a></li>
-          <li aria-current="page">Pinpoint Tech</li>
+          <li><a href="apps-view2.html">Apps</a></li>
+          <li><a href="apps-home.html">Cadaemia</a></li>
+          <li><a href="assessment-home.html">Digital Assessment Questions</a></li>
+          <li aria-current="page">Eligibility</li>
         </ol>
       </div>
 
-      <h1 class="heading-large">Pinpoint Tech</h1>
 
-      <h2 class="heading-medium">Assessments</h2>
-      <div class="new-section">
-        <table class="ui celled collapsing stackable five column table">
-          <thead class="">
-            <tr class="">
-              <th class="">Name</th>
-              <th class="">Date Activated</th>
-              <th class=""></th>
-            </tr>
-          </thead>
-          <tbody class="">
-            <tr class="">
-              <td class=""><a href="apps-details-tasklist.html">Digital Assessment Questions</a></td>
-              <td class="">2018-01-11 15:16:47</td>
-              <td class=""><div class="status status--in-progress">In Progress</div></td>
-            </tr>
-            <tr class="">
-              <td class=""><a href="apps-details-submit-your-app.html">Submit Your App</a></td>
-              <td class="">2017-10-25 14:27:57</td>
-              <td class=""><div class="status status--approved">Approved</div></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-
-      <div class="new-section">
-        <h2 class="heading-medium">Project Files</h2>
-        <table style="margin-bottom: 12px;">
-          <thead class="">
-            <tr class="">
-              <th class="">Name</th>
-              <th class="">Type</th>
-              <th class="">Size</th>
-              <th class="">Actions</th>
-            </tr>
-          </thead>
-          <tbody class="">
-            <tr class="">
-              <th class="">filename-10246832</th>
-              <th class="">txt</th>
-              <th class="">100k</th>
-              <th class=""><a href="#">Download</a> &nbsp; <a href="#">Remove</a></th>
-            </tr>
-          </tbody>
-        </table>
-        <p class="font-xsmall">
-          <label for="file-upload">Select File</label>
-          <input type="file" id="file-upload">
-        </p>
-      </div>
+      <h2 class="heading-xlarge">
+        Functionality
+      </h2>
 
 
 
 
+              <div class="form-group">
+                <fieldset>
+
+                  <legend>
+                    <h4 class="heading-small">Does your digital tool constitute a pharmacy service that requires registration with the General Pharmaceutical Council?</h4>
+                  </legend>
+
+                  <div class="inline">
+                    <div class="multiple-choice">
+                      <input id="radio-inline-31" type="radio" name="radio-inline-group-l" value="Yes">
+                      <label for="radio-inline-31">Yes</label>
+                    </div>
+
+                    <div class="multiple-choice">
+                      <input id="radio-inline-32" type="radio" name="radio-inline-group-l" value="No">
+                      <label for="radio-inline-32">No</label>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+
+
+              <div class="form-group">
+                <fieldset>
+
+                  <legend>
+                    <h4 class="heading-small">Does your digital tool form part of a service that requires registered health or care professionals to operate?</h4>
+                  </legend>
+
+                  <div class="inline">
+                    <div class="multiple-choice">
+                      <input id="radio-inline-33" type="radio" name="radio-inline-group-m" value="Yes">
+                      <label for="radio-inline-33">Yes</label>
+                    </div>
+
+                    <div class="multiple-choice">
+                      <input id="radio-inline-34" type="radio" name="radio-inline-group-m" value="No">
+                      <label for="radio-inline-34">No</label>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+
+
+
+              <div class="form-group">
+                <fieldset>
+
+                  <legend>
+                    <h4 class="heading-small">Please confirm registration status and fitness to practice in England by suppyling names of registrants and appropriate identifiers/codes.</h4>
+                  </legend>
+
+                  <div class="inline">
+                    <div class="multiple-choice">
+                      <input id="radio-inline-35" type="radio" name="radio-inline-group-n" value="Yes">
+                      <label for="radio-inline-35">Yes</label>
+                    </div>
+
+                    <div class="multiple-choice">
+                      <input id="radio-inline-36" type="radio" name="radio-inline-group-n" value="No">
+                      <label for="radio-inline-36">No</label>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+
+
+
+
+
+
+
+
+      <p><a href="step6-register.html" class="button">Continue</a></p>
 
     </main>
 

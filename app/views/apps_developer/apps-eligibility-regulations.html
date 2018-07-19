@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>NHS Apps Assessment / Register Step 2 of 5</title>
+    <title>NHS Apps Assessment / Eligibility</title>
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="/stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -88,54 +88,146 @@
 
       <div class="breadcrumbs">
         <ol>
-          <li><a href="start-tab1.html">Apps &amp; wearables</a></li>
-          <li aria-current="page">Register</li>
+          <li><a href="apps-view2.html">Apps</a></li>
+          <li><a href="apps-home.html">Cadaemia</a></li>
+          <li><a href="assessment-home.html">Digital Assessment Questions</a></li>
+          <li aria-current="page">Eligibility</li>
         </ol>
       </div>
 
 
+      <h2 class="heading-xlarge">
+        Regulations
+      </h2>
 
 
-      <div class="grid-row">
-        <div class="column-two-thirds">
+      <div class="form-group">
+        <fieldset>
 
-          <h2 class="heading-xlarge">
-            <p class="grey font-xsmall">Step 2 of 5</p>
-            Register
-          </h2>
+          <legend>
+            <h4 class="heading-small">Is your digital tool a medical device as defined within the Medical Device Directive?
+            Please check the guidance provided by MHRA.</h4>
+          </legend>
 
-          <h3 class="heading-medium">Personal Details</h3>
+          <div class="inline">
+            <div class="multiple-choice" data-target="medical-device-directive-yes">
+              <input id="radio-inline-25" type="radio" name="radio-inline-group-i" value="Yes">
+              <label for="radio-inline-25">Yes</label>
+            </div>
 
-          <p>
-            <label class="form-label" for="app-name-f1">Full name</label>
-            <input class="form-control" id="app-name-f1" type="text" name="app-name-f1">
-          </p>
-
-          <p>
-            <label class="form-label" for="app-company-f1"><span class="heading-small">Email address</span></label>
-            <input class="form-control" id="app-company-f1" type="text" name="app-company-f1">
-          </p>
-
-          <p>
-            <label class="form-label" for="app-company-f1"><span class="heading-small">Password</span></label>
-            <input class="form-control" id="app-company-f1" type="password" name="app-company-f1">
-          </p>
-
-          <p>
-            <label class="form-label" for="app-company-f1"><span class="heading-small">Confirm password</span></label>
-            <input class="form-control" id="app-company-f1" type="password" name="app-company-f1">
-          </p>
-
-          <div class="form-group">
-            <a href="step3-register.html" class="button button--large">Continue</a>
+            <div class="multiple-choice" data-target="is-it-free-no">
+              <input id="radio-inline-26" type="radio" name="radio-inline-group-i" value="No">
+              <label for="radio-inline-26">No</label>
+            </div>
           </div>
 
-        </div>
+          <div class="panel panel-border-narrow js-hidden" id="medical-device-directive-yes">
+
+            <div class="form-group">
+              <label class="form-label" for="agreement-from-MHRA">
+                Please provide evidence confirming agreement from MHRA or a notified body.
+              </label>
+              <input class="form-control" id="agreement-from-MHRA" type="text" name="agreement-from-MHRA">
+            </div>
+
+          </div>
+
+        </fieldset>
       </div>
 
 
 
 
+      <div class="form-group">
+        <fieldset>
+
+          <legend>
+            <h4 class="heading-small">PROBLEM HERE - if don't know , does the digital tool indicate a diagnosis, treatment, is used for monitoring of a physiological process or disease, supports clinical decisions, performs calculations or indicates individual risk scores for a medical purpose?</h4>
+          </legend>
+
+          <div class="inline">
+            <div class="multiple-choice" data-target="hummmm-yes">
+              <input id="radio-inline-27" type="radio" name="radio-inline-group-j" value="Yes">
+              <label for="radio-inline-27">Yes</label>
+            </div>
+
+            <div class="multiple-choice" data-target="hummmm-no">
+              <input id="radio-inline-28" type="radio" name="radio-inline-group-j" value="No">
+              <label for="radio-inline-28">No</label>
+            </div>
+          </div>
+
+          <div class="panel panel-border-narrow js-hidden" id="hummmm-yes">
+
+            <p>I DON'T GET THIS ONE</p>
+            <p>If the answer is ‘Yes’ to any of the listed uses, then the digital tool probably
+              falls under the category of a medical device and guidance must be sought from the MHRA.
+              On line guidance should be consulted first, this includes guidance on device
+              classification: https://www.gov.uk/government/publications/medical-devices-software-applications-apps
+              Specific regulatory questions should be addressed to Devices.Regulatory@mhra.gsi.gov.uk
+            </p>
+
+
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <fieldset>
+
+          <legend>
+            <h4 class="heading-small">PROBLEM HERE - If defined as a medical device the digital tool should be is  'CE' marked to show the manufacturer's declaration that the application complies with the EU Medical device directives. Please provide the following evidence:</h4>
+          </legend>
+
+          <div class="inline">
+            <div class="multiple-choice" data-target="hummmm2-yes">
+              <input id="radio-inline-29" type="radio" name="radio-inline-group-k" value="Yes">
+              <label for="radio-inline-29">Yes</label>
+            </div>
+
+            <div class="multiple-choice" data-target="hummmm2-no">
+              <input id="radio-inline-30" type="radio" name="radio-inline-group-k" value="No">
+              <label for="radio-inline-30">No</label>
+            </div>
+          </div>
+
+          <div class="panel panel-border-narrow js-hidden" id="hummmm2-yes">
+
+            <p>I DON'T GET THIS ONE</p>
+            <p>
+              Class 1 devices [most]
+            - evidence of registration with MHRA and self-declaration of conformity, or
+            Class 11a and above devices
+            - CE certificate from a Notified Body
+            All
+            - Your post market surveillance plan.
+            </p>
+
+
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <p><a href="step6-register.html" class="button">Continue</a></p>
 
     </main>
 
